@@ -1,0 +1,22 @@
+# Appendix: Glossary
+
+| Term                             | Definition                                                                                                                                                                             |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 10DLC                            | 10-digit long code. Registration for A2P SMS messaging. Requires an AWS Support ticket.                                                                                                |
+| Amazon Connect message templates | Amazon Connect feature used as the migration target for email and SMS message templates.                                                                                               |
+| Amazon Pinpoint                  | AWS customer engagement service reaching End of Support on October 30, 2026.                                                                                                           |
+| AppFlow                          | AWS service used to ingest endpoint data from S3 into Amazon Connect Customer Profiles.                                                                                                |
+| Bootstrap                        | Tool command that deploys a CloudFormation stack with required infrastructure. Must run before any export or import step.                                                              |
+| Contact Flow                     | Amazon Connect resource that defines the sequence of actions in a customer interaction. Pinpoint journeys are imported as Contact Flows.                                               |
+| Customer Profiles                | Amazon Connect feature that stores customer data. Migration target for Pinpoint endpoints.                                                                                             |
+| DIMENSIONAL segment              | A Pinpoint segment defined by attribute-based filters. The tool imports these segments into Customer Profiles.                                                                         |
+| EOS                              | End of Support. Amazon Pinpoint reaches EOS on October 30, 2026.                                                                                                                       |
+| Express Setup                    | Tool command that provisions a production-ready Amazon Connect instance with required infrastructure.                                                                                  |
+| IMPORT segment                   | A Pinpoint segment created by uploading a CSV or JSON file. The tool does not import these segments.                                                                                   |
+| Journey Builder                  | Amazon Connect feature for creating multi-step, multi-channel customer journeys.                                                                                                       |
+| Migration state                  | A JSON file stored in S3 at `s3://<bucket>/instances/<instance-id>/state.json`. Records ARN mappings for templates, segments, and endpoint attributes. Do not manually edit this file. |
+| Node.js                          | Runtime environment required to execute the migration tool. Version 22 or later is required.                                                                                           |
+| Outbound Campaigns V2            | Amazon Connect API for creating and managing outbound campaigns.                                                                                                                       |
+| Preflight                        | Tool command that validates the AWS environment before migration. Read-only; no resources are created.                                                                                 |
+| Q\_MESSAGE\_TEMPLATES            | An Amazon Connect knowledge base integration type required for importing message templates. Must be configured on the Connect instance before running `import-templates`.              |
+| SCP                              | Service Control Policy. An AWS Organizations policy that can restrict IAM permissions.                                                                                                 |
