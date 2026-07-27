@@ -1,0 +1,76 @@
+# ============================================================================
+# Build the MkDocs site and publish to GitHub Pages under /cxportal/
+#
+# COMMIT THIS FILE TO:  .github/workflows/deploy-docs.yml
+#
+# Result: content is served at https://docs.caylent.com/cxportal/
+#   - The whole site is built into a top-level `cxportal/` folder so the
+#     subpath matches what Dani configured on DNS.
+#   - A CNAME file (docs.caylent.com) is written at the site root so GitHub
+#     Pages keeps the custom domain.
+#
+# One-time setup after committing:
+#   Repo Settings -> Pages -> Build and deployment -> Source = "GitHub Actions"
+# ============================================================================
+
+name: Deploy docs
+
+on:
+  push:
+    branches:
+      - main            # change to your default branch if different
+  workflow_dispatch:    # allows manual runs from the Actions tab
+
+# Permissions required by the GitHub Pages deploy action
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deploy at a time; don't cancel an in-progress one
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install MkDocs Material
+        run: pip install mkdocs-material
+
+      - name: Build site
+        run: mkdocs build --strict
+
+      # Move the built site into a cxportal/ subfolder so the published
+      # URL is docs.caylent.com/cxportal/ (not the domain root).
+      - name: Nest site under /cxportal/
+        run: |
+          mkdir -p _publish/cxportal
+          cp -r site/* _publish/cxportal/
+          # Keep the custom domain on the Pages site
+          echo "docs.caylent.com" > _publish/CNAME
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _publish
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
