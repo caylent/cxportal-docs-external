@@ -52,21 +52,167 @@ plugins:
 markdown_extensions:
   - admonition            # note/warning/tip callout boxes
   - attr_list
+  - md_in_html            # required for the "grid cards" homepage layout
   - tables
   - toc:
       permalink: true     # anchor link on each heading
   - pymdownx.highlight    # syntax highlighting for code
   - pymdownx.superfences  # fenced code + nested blocks
   - pymdownx.details      # collapsible sections
+  - pymdownx.emoji:       # renders :material-*: / :octicons-*: icons (homepage cards)
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 # ---------------------------------------------------------------------------
 # Navigation
 # ---------------------------------------------------------------------------
-# Leave `nav` commented out to let MkDocs auto-build the menu from the folder
-# structure in docs/. Once content is in, define an explicit order here, e.g.:
-#
-# nav:
-#   - Home: index.md
-#   - Getting Started: getting-started.md
-#   - Pinpoint Migration Tool: pinpoint/index.md
+# IMPORTANT: every path below is relative to the docs/ folder. For these to
+# resolve, all the product folders (Cases/, access-management/, campaigns/,
+# migration-tool/, etc.) and the loose top-level .md files must be MOVED INTO
+# docs/, keeping their folder structure. Files not listed here still publish
+# (MkDocs just won't put them in the menu).
 # ---------------------------------------------------------------------------
+nav:
+  - Home: index.md
+  - What Is CxPortal?: what-is-cxportal.md
+  - Getting Started with CxPortal: getting-started-with-cxportal.md
+  - Submitting a Support Request: submitting-a-support-request.md
+
+  - Access Management:
+      - Overview: access-management/access-management.md
+      - Getting Started: access-management/getting-started-with-access-management.md
+      - Create & Manage Roles: access-management/create-and-manage-roles.md
+      - Review Permissions & Restrict Access: access-management/review-instance-permissions-and-restrict-access.md
+      - Best Practices: access-management/access-management-best-practices.md
+
+  - User Management:
+      - Overview: user-management/user-management.md
+      - Getting Started: user-management/getting-started-with-user-management.md
+      - Adding a User: user-management/adding-a-user.md
+      - Managing Existing Users: user-management/managing-existing-users.md
+      - Reference: user-management/user-management-reference.md
+
+  - Campaigns:
+      - Overview: campaigns/campaigns.md
+      - Getting Started: campaigns/getting-started-with-campaigns.md
+      - Campaigns Dashboard: campaigns/campaigns-dashboard.md
+      - Manage Campaign Groups: campaigns/manage-campaign-groups.md
+      - Voice Notification Campaigns: campaigns/voice-notification-campaigns.md
+      - Voice Survey Campaigns: campaigns/voice-survey-campaigns.md
+      - SMS Notification Campaigns: campaigns/sms-notification-campaigns.md
+      - SMS Survey Campaigns: campaigns/sms-survey-campaigns.md
+      - Best Practices: campaigns/campaigns-best-practices.md
+
+  - Cases:
+      - Overview: Cases/cases.md
+      - Getting Started: Cases/getting-started-with-cases.md
+      - Working with Cases as a General User: Cases/working-with-cases-as-a-general-user.md
+      - Working with Cases as a Company Admin: Cases/working-with-cases-as-a-company-admin.md
+      - Best Practices: Cases/cases-best-practices.md
+
+  - Dynamic Flow Configurator (DFC):
+      - Overview: dynamic-flow-configurator-dfc/dynamic-flow-configurator-dfc-homepage.md
+      - Getting Started: dynamic-flow-configurator-dfc/getting-started-with-dfc.md
+      - Setting Up Entities & Schemas: dynamic-flow-configurator-dfc/setting-up-entities-and-schemas.md
+      - Managing Hours of Operation & Closures: dynamic-flow-configurator-dfc/managing-hours-of-operation-and-closures.md
+      - Bulk Editing & Deleting Items: dynamic-flow-configurator-dfc/bulk-editing-and-deleting-items.md
+      - Importing & Exporting Data: dynamic-flow-configurator-dfc/importing-and-exporting-data.md
+      - Managing DFC Permissions: dynamic-flow-configurator-dfc/managing-dfc-permissions.md
+      - Developer Reference (Node.js Client): dynamic-flow-configurator-dfc/developer-reference-node.js-client.md
+      - Best Practices: dynamic-flow-configurator-dfc/dfc-best-practices.md
+
+  - Editing Agents in Bulk:
+      - Overview: editing-agents-in-bulk/editing-agents-in-bulk-homepage.md
+      - Getting Started: editing-agents-in-bulk/getting-started-with-bulk-agent-management.md
+      - Making Bulk Changes to Agents: editing-agents-in-bulk/making-bulk-changes-to-agents.md
+      - Change Requests & Timing: editing-agents-in-bulk/change-requests-and-timing.md
+      - Exporting Agent Data: editing-agents-in-bulk/exporting-agent-data.md
+      - Reference: editing-agents-in-bulk/reference-bulk-edit-agents.md
+      - Permissions & Support: editing-agents-in-bulk/permissions-and-support.md
+      - Best Practices: editing-agents-in-bulk/best-practices-for-editing-agents-in-bulk.md
+
+  - Flow Analyzer:
+      - Overview: flow-analyzer/flow-analyzer-homepage.md
+      - Getting Started: flow-analyzer/getting-started-with-flow-analyzer.md
+      - Investigating a Contact: flow-analyzer/investigating-a-contact.md
+      - Reference: flow-analyzer/flow-analyzer-reference.md
+      - Best Practices: flow-analyzer/flow-analyzer-best-practices.md
+
+  - Knowledge Management:
+      - Overview: knowledge-management/knowledge-management.md
+      - Getting Started: knowledge-management/getting-started.md
+      - Setting Up Knowledge Bases: knowledge-management/setting-up-knowledge-bases.md
+      - Adding Articles: knowledge-management/adding-articles.md
+      - Managing Tags: knowledge-management/managing-tags.md
+      - Change Management: knowledge-management/change-management.md
+      - Best Practices & Troubleshooting: knowledge-management/best-practices-and-troubleshooting.md
+
+  - Proficiency-Based Routing:
+      - Overview: proficiency-based-routing/proficiency-based-routing.md
+      - Getting Started: proficiency-based-routing/getting-started-with-pbr.md
+      - Add & Customize Predefined Attributes: proficiency-based-routing/add-and-customize-predefined-attributes.md
+      - Create Values: proficiency-based-routing/create-values.md
+      - Add & Manage Routing Rules: proficiency-based-routing/add-and-manage-routing-rules.md
+      - View Agent Assignments: proficiency-based-routing/view-agent-assignments.md
+      - Change Management: proficiency-based-routing/pbr-change-management.md
+      - Best Practices: proficiency-based-routing/pbr-best-practices.md
+
+  - Q in Connect:
+      - Overview: q-in-connect/q-in-connect.md
+      - Getting Started: q-in-connect/getting-started-with-q-in-connect.md
+      - Create & Manage Knowledge Bases: q-in-connect/create-and-manage-knowledge-bases.md
+      - Configure AI Agents: q-in-connect/configure-ai-agents.md
+      - Setting Up Prompts: q-in-connect/setting-up-prompts.md
+      - Best Practices: q-in-connect/q-in-connect-best-practices.md
+
+  - Administration:
+      - Managing Instances: managing-instances.md
+      - Applying an Infrastructure Update: applying-an-infrastructure-update.md
+      - Enabling New Features with Permissions: enabling-new-features-with-permissions.md
+      - Security & Data Access: security-and-data-access.md
+      - CX Central: cxcentral.md
+
+  - Pinpoint Migration Tool:
+      - Introduction: migration-tool/introduction.md
+      - Migration Overview: migration-tool/migration-overview.md
+      - Quickstart: migration-tool/quickstart.md
+      - Requirements: migration-tool/requirements.md
+      - Setting Up the IAM Role: migration-tool/setting-up-the-iam-role.md
+      - Command Reference:
+          - Overview: migration-tool/command-reference.md
+          # NOTE: the folder below is literally named "command-reference pages"
+          # (with a space). Paths are quoted so they work, but the space becomes
+          # %20 in URLs — recommend renaming the folder to "command-reference".
+          - express-setup: "migration-tool/command-reference pages/express-setup.md"
+          - preflight: "migration-tool/command-reference pages/preflight.md"
+          - bootstrap: "migration-tool/command-reference pages/bootstrap.md"
+          - export-campaigns: "migration-tool/command-reference pages/export-campaigns.md"
+          - export-endpoints: "migration-tool/command-reference pages/export-endpoints.md"
+          - export-journeys: "migration-tool/command-reference pages/export-journeys.md"
+          - export-segments: "migration-tool/command-reference pages/export-segments.md"
+          - export-templates: "migration-tool/command-reference pages/export-templates.md"
+          - import-campaigns: "migration-tool/command-reference pages/import-campaigns.md"
+          - import-endpoints: "migration-tool/command-reference pages/import-endpoints.md"
+          - import-journeys: "migration-tool/command-reference pages/import-journeys.md"
+          - import-segments: "migration-tool/command-reference pages/import-segments.md"
+          - import-templates: "migration-tool/command-reference pages/import-templates.md"
+      - Migration Results & Reporting: migration-tool/migration-results-and-reporting.md
+      - Post-Migration Actions: migration-tool/post-migration-actions.md
+      - Known Limitations: migration-tool/known-limitations.md
+      - Troubleshooting: migration-tool/troubleshooting.md
+      - Glossary: migration-tool/appendix-glossary.md
+      - Support & Contact: migration-tool/support-and-contact.md
+
+  # NOTE: the ACGR homepage filename below contains a space
+  # ("...acgr homepage.md"). Path is quoted so it works, but consider renaming
+  # the file to acgr-homepage.md for a cleaner URL.
+  - Amazon Connect Global Resiliency (ACGR):
+      - Overview: "amazon-connect-global-resiliency-acgr/amazon-connect-global-resiliency-acgr homepage.md"
+      - Getting Started: amazon-connect-global-resiliency-acgr/getting-started-with-acgr.md
+      - Multi-Region Resiliency: amazon-connect-global-resiliency-acgr/acgr-multi-region-resiliency.md
+      - Managing Traffic Distribution Groups (TDGs): amazon-connect-global-resiliency-acgr/managing-traffic-distribution-groups-tdgs.md
+      - Managing Playbooks: amazon-connect-global-resiliency-acgr/managing-playbooks.md
+      - Triggering a Failover: amazon-connect-global-resiliency-acgr/triggering-a-failover.md
+      - Setting Up SSO Authentication: amazon-connect-global-resiliency-acgr/setting-up-sso-authentication.md
+      - Reference: amazon-connect-global-resiliency-acgr/acgr-reference.md
+      - Best Practices: amazon-connect-global-resiliency-acgr/acgr-best-practices.md
