@@ -180,22 +180,19 @@ nav:
       - Setting Up the IAM Role: migration-tool/setting-up-the-iam-role.md
       - Command Reference:
           - Overview: migration-tool/command-reference.md
-          # NOTE: the folder below is literally named "command-reference pages"
-          # (with a space). Paths are quoted so they work, but the space becomes
-          # %20 in URLs — recommend renaming the folder to "command-reference".
-          - express-setup: "migration-tool/command-reference pages/express-setup.md"
-          - preflight: "migration-tool/command-reference pages/preflight.md"
-          - bootstrap: "migration-tool/command-reference pages/bootstrap.md"
-          - export-campaigns: "migration-tool/command-reference pages/export-campaigns.md"
-          - export-endpoints: "migration-tool/command-reference pages/export-endpoints.md"
-          - export-journeys: "migration-tool/command-reference pages/export-journeys.md"
-          - export-segments: "migration-tool/command-reference pages/export-segments.md"
-          - export-templates: "migration-tool/command-reference pages/export-templates.md"
-          - import-campaigns: "migration-tool/command-reference pages/import-campaigns.md"
-          - import-endpoints: "migration-tool/command-reference pages/import-endpoints.md"
-          - import-journeys: "migration-tool/command-reference pages/import-journeys.md"
-          - import-segments: "migration-tool/command-reference pages/import-segments.md"
-          - import-templates: "migration-tool/command-reference pages/import-templates.md"
+          - express-setup: "migration-tool/command-reference-pages/express-setup.md"
+          - preflight: "migration-tool/command-reference-pages/preflight.md"
+          - bootstrap: "migration-tool/command-reference-pages/bootstrap.md"
+          - export-campaigns: "migration-tool/command-reference-pages/export-campaigns.md"
+          - export-endpoints: "migration-tool/command-reference-pages/export-endpoints.md"
+          - export-journeys: "migration-tool/command-reference-pages/export-journeys.md"
+          - export-segments: "migration-tool/command-reference-pages/export-segments.md"
+          - export-templates: "migration-tool/command-reference-pages/export-templates.md"
+          - import-campaigns: "migration-tool/command-reference-pages/import-campaigns.md"
+          - import-endpoints: "migration-tool/command-reference-pages/import-endpoints.md"
+          - import-journeys: "migration-tool/command-reference-pages/import-journeys.md"
+          - import-segments: "migration-tool/command-reference-pages/import-segments.md"
+          - import-templates: "migration-tool/command-reference-pages/import-templates.md"
       - Migration Results & Reporting: migration-tool/migration-results-and-reporting.md
       - Post-Migration Actions: migration-tool/post-migration-actions.md
       - Known Limitations: migration-tool/known-limitations.md
