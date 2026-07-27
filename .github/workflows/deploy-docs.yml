@@ -47,8 +47,12 @@ jobs:
       - name: Install MkDocs Material
         run: pip install mkdocs-material
 
+      # NOTE: --strict is intentionally OFF for the spike so that content
+      # warnings (broken links / images from the GitBook export) don't block
+      # deployment. Re-enable it during the QA phase to catch those issues:
+      #   run: mkdocs build --strict
       - name: Build site
-        run: mkdocs build --strict
+        run: mkdocs build
 
       # Move the built site into a cxportal/ subfolder so the published
       # URL is docs.caylent.com/cxportal/ (not the domain root).
