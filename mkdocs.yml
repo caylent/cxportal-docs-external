@@ -1,0 +1,72 @@
+# ============================================================================
+# CxPortal Documentation — MkDocs Material configuration
+#
+# Published to: https://docs.caylent.com/cxportal/
+# The /cxportal/ subpath is set via site_url below and enforced at deploy
+# time by the GitHub Actions workflow (.github/workflows/deploy-docs.yml).
+# ============================================================================
+
+site_name: CxPortal Documentation
+site_url: https://docs.caylent.com/cxportal/
+site_description: Pronetx CxPortal product documentation
+# use_directory_urls keeps clean URLs (e.g. /page/ instead of /page.html)
+use_directory_urls: true
+
+# ---------------------------------------------------------------------------
+# Theme
+# ---------------------------------------------------------------------------
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant      # faster page loads (SPA-style)
+    - navigation.tracking     # URL updates as you scroll
+    - navigation.top          # "back to top" button
+    - navigation.sections     # group nav items into sections
+    - search.suggest          # autocomplete in the search box
+    - search.highlight        # highlight matches on the page
+    - content.code.copy       # copy button on code blocks
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+# ---------------------------------------------------------------------------
+# Built-in search (replaces GitBook search)
+# ---------------------------------------------------------------------------
+plugins:
+  - search
+
+# ---------------------------------------------------------------------------
+# Markdown extensions (nice-to-haves that match common GitBook content)
+# ---------------------------------------------------------------------------
+markdown_extensions:
+  - admonition            # note/warning/tip callout boxes
+  - attr_list
+  - tables
+  - toc:
+      permalink: true     # anchor link on each heading
+  - pymdownx.highlight    # syntax highlighting for code
+  - pymdownx.superfences  # fenced code + nested blocks
+  - pymdownx.details      # collapsible sections
+
+# ---------------------------------------------------------------------------
+# Navigation
+# ---------------------------------------------------------------------------
+# Leave `nav` commented out to let MkDocs auto-build the menu from the folder
+# structure in docs/. Once content is in, define an explicit order here, e.g.:
+#
+# nav:
+#   - Home: index.md
+#   - Getting Started: getting-started.md
+#   - Pinpoint Migration Tool: pinpoint/index.md
+# ---------------------------------------------------------------------------
