@@ -1,6 +1,6 @@
 # Security & Data Access
 
-CxPortal connects to your AWS account to manage and display your Amazon Connect environment. This page explains what CxPortal can access, where your data lives, and how Pronetx access to your instance is controlled. Use it to answer security and compliance questions about your CxPortal deployment.
+CxPortal connects to your AWS account to manage and display your Amazon Connect environment. This page explains what CxPortal can access, where your data lives, and how Caylent access to your instance is controlled. Use it to answer security and compliance questions about your CxPortal deployment.
 
 ## Who Uses This
 
@@ -23,14 +23,14 @@ CxPortal accesses your AWS account through an IAM role created by the CloudForma
 Because the role is defined in the CloudFormation template, you can review every permission it grants before and after installation.
 
 !!! success ""
-    You are welcome to review the IAM role and raise any permissions you consider too broad with your Pronetx team.
+    You are welcome to review the IAM role and raise any permissions you consider too broad with your Caylent team.
 
 
 ***
 
 ## Data Persistence
 
-CxPortal does not store your customer or operational data in Pronetx's AWS account.
+CxPortal does not store your customer or operational data in Caylent's AWS account.
 
 All information displayed in CxPortal — including logs and operational data — is retrieved from your AWS environment in real time, using cross-account access, at the moment a user loads a page. When the page closes, no copy of that data remains outside your account.
 
@@ -53,14 +53,14 @@ Call recordings are not currently accessible through CxPortal.
 
 ***
 
-## Pronetx Access Model
+## Caylent Access Model
 
-When Pronetx sets up your CxPortal instance, two companies are configured with access:
+When Caylent sets up your CxPortal instance, two companies are configured with access:
 
 * **Your company** – Your users, managed through the roles you create
-* **Pronetx** – The Pronetx Professional Services (PS) team, which uses CxPortal to build and manage your Amazon Connect setup
+* **Caylent** – The Caylent Professional Services (PS) team, which uses CxPortal to build and manage your Amazon Connect setup
 
-Pronetx access is controlled through the same role-based mechanism you use for your own users. Pronetx assigns access to the specific roles that need it — there is no separate or elevated access path.
+Caylent access is controlled through the same role-based mechanism you use for your own users. Caylent assigns access to the specific roles that need it — there is no separate or elevated access path.
 
 ***
 
@@ -72,12 +72,12 @@ An automated flow testing tool that uses AI exists but requires a separate custo
 
 ***
 
-### Removing Pronetx Access
+### Removing Caylent Access
 
-You can request that Pronetx remove its access to your instance at any time.
+You can request that Caylent remove its access to your instance at any time.
 
 !!! warning ""
-    Removing Pronetx access prevents the PS team from using CxPortal to develop and support your system. Factor this into the timing of any access change, particularly during active implementation work.
+    Removing Caylent access prevents the PS team from using CxPortal to develop and support your system. Factor this into the timing of any access change, particularly during active implementation work.
 
 
 ***

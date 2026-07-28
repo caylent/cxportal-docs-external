@@ -44,7 +44,7 @@ SSO is deployed across both AWS regions, so users with SSO can continue to sign 
 
 ## Enabling SSO for Your Organization
 
-Enabling SSO is a five-step process. Some steps are performed by your organization in the Microsoft Entra admin center. Other steps are performed by Pronetx after you submit a support request.
+Enabling SSO is a five-step process. Some steps are performed by your organization in the Microsoft Entra admin center. Other steps are performed by Caylent after you submit a support request.
 
 ### Before You Begin
 
@@ -56,14 +56,14 @@ You will need:
 
 ***
 
-### Step 1: Submit a Support Request to Pronetx
+### Step 1: Submit a Support Request to Caylent
 
-Contact Pronetx to begin SSO onboarding by submitting a support request. Indicate that you want to enable SSO for your organization.
+Contact Caylent to begin SSO onboarding by submitting a support request. Indicate that you want to enable SSO for your organization.
 
 For instructions, see the [Submit a Support Request page](../submitting-a-support-request.md).
 
 !!! info ""
-    **Important:** Pronetx will confirm receipt and let you know when you can begin the Entra configuration steps below.
+    **Important:** Caylent will confirm receipt and let you know when you can begin the Entra configuration steps below.
 
 
 ***
@@ -76,7 +76,7 @@ Register a new application in the Microsoft Entra admin center. This application
 2. Click **+ New registration**.
 3. Enter a display name for the application. For example: CxPortal or \<CompanyName>CxPortal.
 4. Select the supported account type appropriate for your organization.
-5. Leave the Redirect URI field blank. You will add this in Step 5, after Pronetx provisions your user pool.
+5. Leave the Redirect URI field blank. You will add this in Step 5, after Caylent provisions your user pool.
 6. Click **Register**.
 
 ***
@@ -97,7 +97,7 @@ Create a client secret that CxPortal will use to authenticate with Entra ID.
 
 ***
 
-### Step 4: Collect Application Identifiers and Send to Pronetx
+### Step 4: Collect Application Identifiers and Send to Caylent
 
 From the application's Overview page in the Entra admin center, collect the following values:
 
@@ -105,22 +105,22 @@ From the application's Overview page in the Entra admin center, collect the foll
 * **Directory (tenant) ID**
 * **Client secret (copied in Step 3)**
 
-Send these values to Pronetx securely through the support request from Step 1. Pronetx will use these values to provision your CxPortal user pool.
+Send these values to Caylent securely through the support request from Step 1. Caylent will use these values to provision your CxPortal user pool.
 
 !!! info ""
-    **Note:** Pronetx will provision your user pool and then send you a redirect URI to use in the next step. Wait for Pronetx to confirm provisioning is complete before continuing to Step 5.
+    **Note:** Caylent will provision your user pool and then send you a redirect URI to use in the next step. Wait for Caylent to confirm provisioning is complete before continuing to Step 5.
 
 
 ***
 
 ### Step 5: Configure the Redirect URI in Entra ID
 
-Once Pronetx confirms that your user pool has been provisioned, they will send you a redirect URI. Add this redirect URI to your Entra application registration. This allows Entra to redirect users back to CxPortal after authentication.
+Once Caylent confirms that your user pool has been provisioned, they will send you a redirect URI. Add this redirect URI to your Entra application registration. This allows Entra to redirect users back to CxPortal after authentication.
 
 12.  Return to your application in the Microsoft Entra admin center.
 13. Navigate to **Authentication.**
 14. Click **+ Add Redirect URI**, then select **Web**.
-15. Enter the redirect URI provided by Pronetx. It will follow this format:
+15. Enter the redirect URI provided by Caylent. It will follow this format:
 
 `https://<provided-domain>/oauth2/idpresponse`
 
@@ -130,7 +130,7 @@ Once Pronetx confirms that your user pool has been provisioned, they will send y
 
 ## Verifying SSO Is Working
 
-Once Step 5 is complete, Pronetx will notify you that SSO is ready to use. To verify:
+Once Step 5 is complete, Caylent will notify you that SSO is ready to use. To verify:
 
 1. Navigate to the CxPortal login page.
 2. Select the **SSO sign-in** option.
@@ -138,7 +138,7 @@ Once Step 5 is complete, Pronetx will notify you that SSO is ready to use. To ve
 4. Sign in with your corporate credentials.
 5. You should be redirected back to CxPortal and signed in successfully.
 
-If sign-in fails, contact Pronetx support and reference your original support request.
+If sign-in fails, contact Caylent support and reference your original support request.
 
 ***
 
@@ -146,13 +146,13 @@ If sign-in fails, contact Pronetx support and reference your original support re
 
 The table below summarizes who is responsible for each step in the SSO setup process.
 
-<table><thead><tr><th width="80">Step</th><th width="442">Action</th><th>Owner</th></tr></thead><tbody><tr><td>1</td><td>Submit a support request to Pronetx</td><td>Customer</td></tr><tr><td>2</td><td>Register application in Entra ID</td><td>Customer</td></tr><tr><td>3</td><td>Create client secret and store securely</td><td>Customer</td></tr><tr><td>4</td><td>Send client ID, tenant ID, and client secret to Pronetx</td><td>Customer</td></tr><tr><td>5</td><td>Provision the CxPortal user pool and send redirect URI</td><td>Pronetx</td></tr><tr><td>6</td><td>Add redirect URI to Entra application</td><td>Customer</td></tr></tbody></table>
+<table><thead><tr><th width="80">Step</th><th width="442">Action</th><th>Owner</th></tr></thead><tbody><tr><td>1</td><td>Submit a support request to Caylent</td><td>Customer</td></tr><tr><td>2</td><td>Register application in Entra ID</td><td>Customer</td></tr><tr><td>3</td><td>Create client secret and store securely</td><td>Customer</td></tr><tr><td>4</td><td>Send client ID, tenant ID, and client secret to Caylent</td><td>Customer</td></tr><tr><td>5</td><td>Provision the CxPortal user pool and send redirect URI</td><td>Caylent</td></tr><tr><td>6</td><td>Add redirect URI to Entra application</td><td>Customer</td></tr></tbody></table>
 
 ***
 
 ## Related Pages
 
 * Multi-Region Resiliency — [how CxPortal stays available during a regional outage](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/cx-portal-all-content/acgr/acgr-multi-region-resiliency)
-* Submit a Support Request — [how to contact Pronetx for SSO onboarding and other requests](../submitting-a-support-request.md)
+* Submit a Support Request — [how to contact Caylent for SSO onboarding and other requests](../submitting-a-support-request.md)
 
 ***

@@ -11,7 +11,7 @@ Use the following best practices to optimize using Knowledge Management
 
 ## Troubleshooting
 
-This section provides guidance for common issues you may encounter when working with Knowledge Management. If the steps below do not resolve your issue, [contact Pronetx support](../submitting-a-support-request.md)
+This section provides guidance for common issues you may encounter when working with Knowledge Management. If the steps below do not resolve your issue, [contact Caylent support](../submitting-a-support-request.md)
 
 <details>
 
@@ -56,7 +56,7 @@ Both the “Sync Knowledge Bases” and “Sync Articles” operations import co
 
 * Review the confirmation warning that appears before syncing. The sync may overwrite existing content in CxPortal.
 * Ensure you are selecting the correct sync operation for your intended scope. Use “Sync Knowledge Bases” to sync all Knowledge Bases, or “Sync Articles” to sync articles for a specific Knowledge Base.
-* If the issue persists, [contact Pronetx support](../submitting-a-support-request.md).
+* If the issue persists, [contact Caylent support](../submitting-a-support-request.md).
 
 </details>
 

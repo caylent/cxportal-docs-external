@@ -2,7 +2,7 @@
 
 ## How It Works
 
-When Pronetx ships a feature with a new permission, the permission is added to CxPortal automatically as part of the release. However, the feature isn't visible to anyone yet.
+When Caylent ships a feature with a new permission, the permission is added to CxPortal automatically as part of the release. However, the feature isn't visible to anyone yet.
 
 An admin must assign the new permission to the appropriate roles in CxPortal user management. Until that happens, the feature is live in the system but not accessible to users.
 
@@ -33,7 +33,7 @@ Repeat for each instance where you want to enable access.
 
 * Assigning permissions is an **admin action** in CxPortal, it does not require any changes to your AWS account or deployment team involvement.
 * If a Type 3 infrastructure update is also part of the release, the permission assignment and the infrastructure update are independent. You can do them in either order, but the feature won't fully work until both are complete.
-* Pronetx will note in the release documentation when a new permission is included and what it controls.
+* Caylent will note in the release documentation when a new permission is included and what it controls.
 
 ***
 

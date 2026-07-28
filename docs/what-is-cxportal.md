@@ -1,8 +1,8 @@
 # What is CxPortal?
 
-CxPortal is a web-based portal built by Pronetx that simplifies the management and configuration of your Amazon Connect contact center. It gives your team the tools to handle day-to-day operations, configuration changes, and incident response, without needing direct AWS access or technical expertise.
+CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. It gives your team the tools to handle day-to-day operations, configuration changes, and incident response, without needing direct AWS access or technical expertise.
 
-CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Pronetx workspace. Together they give your organization a single place to manage your contact center and get support.
+CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
 
 ***
 

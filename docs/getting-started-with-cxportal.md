@@ -6,7 +6,7 @@
 
 ![](../assets/images/8a49KEZlz0jfLu8K2V7B.png)
 
-2. **You'll land on CxCentral** — your unified Pronetx workspace for accessing products, submitting support requests, and viewing release notes.
+2. **You'll land on CxCentral** — your unified Caylent workspace for accessing products, submitting support requests, and viewing release notes.
 3. **Open CxPortal** — click CxPortal in the left navigation menu, or use the Quick Links on the CxCentral homepage.
 
 ***

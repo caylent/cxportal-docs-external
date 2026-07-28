@@ -9,7 +9,7 @@
 The DFC Node.js Client is used to query DFC data programmatically. It resolves items and entities by path for a given Amazon Connect instance.
 
 !!! info ""
-    **Note:**&#x54;his package is not published to the public NPM registry. You must request it from Pronetx before installation.
+    **Note:**&#x54;his package is not published to the public NPM registry. You must request it from Caylent before installation.
 
 
 ***

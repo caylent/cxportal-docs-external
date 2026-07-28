@@ -2,12 +2,12 @@
 
 ## Overview
 
-The <mark style="color:$primary;">**Pronetx Migration Tool for Amazon Pinpoint**</mark> is a CLI-based automation tool that migrates supported Amazon Pinpoint configurations to Amazon Connect.
+The <mark style="color:$primary;">**Caylent Migration Tool for Amazon Pinpoint**</mark> is a CLI-based automation tool that migrates supported Amazon Pinpoint configurations to Amazon Connect.
 
 Amazon Pinpoint reaches End of Support (EOS) on October 30, 2026. After that date, customers must use supported AWS services for campaign and messaging workflows. This tool provides a structured migration path for eligible Pinpoint resources.
 
 !!! info ""
-    The tool is distributed through [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-zzpgnprbmmnj6?sr=0-7\&ref_=beagle\&applicationId=AWSMPContessa) and executes locally using the customer's own AWS credentials. Pronetx does not require direct access to customer AWS accounts.
+    The tool is distributed through [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-zzpgnprbmmnj6?sr=0-7\&ref_=beagle\&applicationId=AWSMPContessa) and executes locally using the customer's own AWS credentials. Caylent does not require direct access to customer AWS accounts.
 
 
 ### Effect on Your Existing Pinpoint Environment

@@ -20,7 +20,7 @@ When you [log in](https://portal.pronetx.com), you'll land here:
 
 ### What You Can Do in CxCentral
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Navigate to CxPortal and other Pronetx tools via Quick Links or the left navigation menu</td><td><a href="/files/JPAruY2u0yQmuLVApDIg">/files/JPAruY2u0yQmuLVApDIg</a></td></tr><tr><td>Contact the Pronetx team to report issues, request features, or send feedback — and track your open tickets</td><td><a href="/files/zP9tIGavovIxK5fdfjtc">/files/zP9tIGavovIxK5fdfjtc</a></td></tr><tr><td>Stay up to date with the latest product updates, new features, and improvements across your Pronetx products</td><td><a href="/files/L5Xs0YPiasMBMJM4lxO7">/files/L5Xs0YPiasMBMJM4lxO7</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Navigate to CxPortal and other Caylent tools via Quick Links or the left navigation menu</td><td><a href="/files/JPAruY2u0yQmuLVApDIg">/files/JPAruY2u0yQmuLVApDIg</a></td></tr><tr><td>Contact the Caylent team to report issues, request features, or send feedback — and track your open tickets</td><td><a href="/files/zP9tIGavovIxK5fdfjtc">/files/zP9tIGavovIxK5fdfjtc</a></td></tr><tr><td>Stay up to date with the latest product updates, new features, and improvements across your Caylent products</td><td><a href="/files/L5Xs0YPiasMBMJM4lxO7">/files/L5Xs0YPiasMBMJM4lxO7</a></td></tr></tbody></table>
 
 ***
 

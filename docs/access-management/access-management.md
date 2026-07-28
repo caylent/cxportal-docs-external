@@ -40,7 +40,7 @@ Access Management controls what users can see and do in CxPortal through a syste
 | Term                     | Definition                                                                                                                                                                              |
 | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Access Management**    | A feature that lets authorized users control roles and permissions across instances, including setting global and instance-level permissions.                                           |
-| **CxCentral**            | A unified workspace from Pronetx that provides access to all products and services, support requests, release notes, and user guides.                                                   |
+| **CxCentral**            | A unified workspace from Caylent that provides access to all products and services, support requests, release notes, and user guides.                                                   |
 | **Role**                 | A configurable set of permissions assigned to users that controls their access to features and products. Roles can be created, edited, and deleted.                                     |
 | **Permissions**          | Settings that control what actions a user can perform on CxPortal, defining who can access something, what they can do, and under what conditions.                                      |
 | **Global Permissions**   | Controls a user's ability to make changes not tied to a specific instance. Options are Access Management permissions and Case Support permissions.                                      |
@@ -97,8 +97,8 @@ Administrators can use Access Management to update or modify existing roles and 
 
 ## Related Modules
 
-* **CxPortal** — CxPortal is a web-based portal built by Pronetx that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Pronetx workspace. Together they give your organization a single place to manage your contact center and get support.
-* **CxCentral** — Your unified Pronetx workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Pronetx products, support, and resources.
+* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
+* **CxCentral** — Your unified Caylent workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Caylent products, support, and resources.
 * **User Management** — User management allows you to manage your users and their assigned roles within your organization. Within user management, you can see name, user ID, status, and role, as well as add users and edit or disable existing ones.
 
 <br>

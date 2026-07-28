@@ -1,10 +1,10 @@
 # Applying an Infrastructure Update
 
-When Pronetx ships a Type 3 update, your deployment team needs to apply an infrastructure change to each instance before the new feature works there. This page explains what that involves and how to handle it.
+When Caylent ships a Type 3 update, your deployment team needs to apply an infrastructure change to each instance before the new feature works there. This page explains what that involves and how to handle it.
 
-## What Pronetx Provides
+## What Caylent Provides
 
-For every Type 3 release, Pronetx provides:
+For every Type 3 release, Caylent provides:
 
 * **Updated CloudFormation templates** — the infrastructure changes packaged and ready to deploy
 * **Deployment instructions** — what to apply, in what order, and any instance-specific considerations
@@ -30,9 +30,9 @@ Apply the infrastructure update to each instance separately. The feature only be
 
 ***
 
-## If Pronetx Deploys on Your Behalf
+## If Caylent Deploys on Your Behalf
 
-For customers who allow it, Pronetx can act as the deployment team and apply the CloudFormation templates directly to your AWS account. If you'd like to set this up or have questions about it, contact your Pronetx account team or submit a support request.
+For customers who allow it, Caylent can act as the deployment team and apply the CloudFormation templates directly to your AWS account. If you'd like to set this up or have questions about it, contact your Caylent account team or submit a support request.
 
 ***
 

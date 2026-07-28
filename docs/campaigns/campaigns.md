@@ -106,7 +106,7 @@ Customize Voice Notification or SMS Notification campaign to send important upda
 
 ## Related Modules
 
-* **CxPortal** — CxPortal is a web-based portal built by Pronetx that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Pronetx workspace. Together they give your organization a single place to manage your contact center and get support.
-* **CxCentral** — Your unified Pronetx workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Pronetx products, support, and resources.
+* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
+* **CxCentral** — Your unified Caylent workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Caylent products, support, and resources.
 
 <br>

@@ -94,6 +94,6 @@ Surface real-time answers and recommended actions to live agents during customer
 
 ## Related Modules
 
-* **CxCentral** — Your unified Pronetx workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Pronetx products, support, and resources.
-* **CxPortal** — CxPortal is a web-based portal built by Pronetx that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Pronetx workspace. Together they give your organization a single place to manage your contact center and get support.
+* **CxCentral** — Your unified Caylent workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Caylent products, support, and resources.
+* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
 * **Knowledge Management** — Knowledge Management lets you easily manage your documentation and sync with Connect Agents directly in CxPortal. You can manage knowledge bases, articles, and compare versions to refine your Connect Agents AI to detect customer issues and provide personalized responses and recommended actions. For more information, see [Knowledge Management](knowledge-management.md).

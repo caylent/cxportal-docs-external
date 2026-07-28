@@ -69,7 +69,7 @@ Once the primary region is available again, new requests automatically route bac
 
 ### Outage Communication
 
-When a regional outage is detected, Pronetx may display a banner on the CxPortal login page with status information.
+When a regional outage is detected, Caylent may display a banner on the CxPortal login page with status information.
 
 !!! info ""
     **Note:** Banner notifications are provided on a best-effort basis and should not be relied on as the sole indicator of system status. Customers should maintain their own monitoring and incident response procedures.
