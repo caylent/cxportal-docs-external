@@ -78,6 +78,7 @@ See [Managing DFC Permissions](dynamic-flow-configurator-dfc/managing-dfc-permis
 
 * Access the DFC Browser and navigate entities → [Getting Started with DFC](dynamic-flow-configurator-dfc/getting-started-with-dfc.md)
 * Set up entities, sub-entities, schemas, and items → [Setting Up Entities and Schemas](dynamic-flow-configurator-dfc/setting-up-entities-and-schemas.md)
+* Edit SSML voice content in a Prompt field → [Editing Prompt Fields](...)
 * Import and export data between environments → [Importing and Exporting Data](dynamic-flow-configurator-dfc/importing-and-exporting-data.md)
 * Manage roles and entity-level access → [Managing DFC Permissions](dynamic-flow-configurator-dfc/managing-dfc-permissions.md)
 * Look up field types, limits, and the Node.js client → [DFC Reference](dynamic-flow-configurator-dfc/developer-reference-node.js-client.md)
