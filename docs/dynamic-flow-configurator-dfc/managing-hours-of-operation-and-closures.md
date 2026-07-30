@@ -8,9 +8,7 @@ description: >-
 
 Entities can include **Hours of Operation** and **Closure** fields in their schema. You set their values per item from the item's editing tray: hours as weekly open/closed rules with time ranges, and _closures_ as dated periods — such as holidays — when normal hours don't apply.
 
-+Each field's heading in the editing tray shows its field name (for example, "Chat hours" or "Holiday closures"), so entities with more than one Hours of Operation or Closure field are distinguishable at a glance. A field with no name falls back to a generic heading — "Hours of Operation," or a count-based heading such as "2 Closures."
-
-+
+Each field's heading in the editing tray shows its field name (for example, "Chat hours" or "Holiday closures"), so entities with more than one Hours of Operation or Closure field are distinguishable at a glance. A field with no name falls back to a generic heading — "Hours of Operation," or a count-based heading such as "2 Closures."
 
 ***
 
