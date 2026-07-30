@@ -7,7 +7,7 @@
 # ============================================================================
 
 site_name: CxPortal Documentation
-site_url: https://docs.caylent.com/cxportal/
+site_url: !ENV [SITE_URL, "https://docs.caylent.com/cxportal/"]
 site_description: Caylent CxPortal product documentation
 # use_directory_urls keeps clean URLs (e.g. /page/ instead of /page.html)
 use_directory_urls: true
