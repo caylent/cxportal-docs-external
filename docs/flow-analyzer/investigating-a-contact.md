@@ -6,7 +6,7 @@ Investigate an issue end-to-end using Flow Analyzer. For additional information 
 
 ## Before You Begin
 
-* You can access Flow Analyzer under **Insights** (see [Getting Started with Flow Analyzer](getting-started-with-flow-analyzer.md)).
+* You can access Flow Analyzer under **Flow Insights** (see [Getting Started with Flow Analyzer](getting-started-with-flow-analyzer.md)).
 * Have a Contact ID from a log, ticket, or report — or enough details (timeframe, agent, queue, channel, or contact attributes) to filter for the interaction.
 
 ***
@@ -15,7 +15,7 @@ Investigate an issue end-to-end using Flow Analyzer. For additional information 
 
 #### Step 1: Open Flow Analyzer
 
-1. Go to **CxPortal** > **Insights** > **Flow Analyzer**.
+1. Go to **CxPortal** > **Flow Insights** > **Flow Analyzer**.
 2. Review the contact list panel on the left. It contains the Contact ID search bar, the **Live Contacts** checkbox, the **Advanced** link, and a list of recent contacts.
 
 ***
