@@ -3,7 +3,7 @@
 ## How to Access Flow Analyzer
 
 1. Log in to CxPortal.
-2. In the left sidebar, go to **Insights** > **Flow Analyzer**.
+2. In the left sidebar, go to **Flow Insights** > **Flow Analyzer**.
 
 The first thing you see is the contact list panel on the left.
 
