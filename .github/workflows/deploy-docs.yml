@@ -2,6 +2,11 @@ name: Deploy docs
 
 on:
   pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - closed
   push:
     branches:
       - main
@@ -11,12 +16,15 @@ permissions:
   contents: read
 
 concurrency:
-  group: docs-production
-  cancel-in-progress: false
+  group: docs-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' && github.event.action != 'closed' }}
 
 jobs:
   build:
+    if: github.event_name != 'pull_request' || github.event.action != 'closed'
     runs-on: ubuntu-latest
+    env:
+      SITE_URL: ${{ github.event_name == 'pull_request' && format('https://docs.caylent.com/previews/pr-{0}/', github.event.pull_request.number) || 'https://docs.caylent.com/cxportal/' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
@@ -42,7 +50,7 @@ jobs:
           path: site/
           if-no-files-found: error
 
-  deploy:
+  deploy-production:
     if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
@@ -83,6 +91,95 @@ jobs:
             aws cloudfront create-invalidation \
               --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
               --paths "/*" \
+              --query "Invalidation.Id" \
+              --output text
+          )"
+          aws cloudfront wait invalidation-completed \
+            --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
+            --id "${invalidation_id}"
+
+  deploy-preview:
+    if: github.event_name == 'pull_request' && github.event.action != 'closed'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: preview
+      url: https://docs.caylent.com/previews/pr-${{ github.event.pull_request.number }}/
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Download site artifact
+        uses: actions/download-artifact@v8.0.1
+        with:
+          name: cxportal-docs
+          path: site/
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6.2.3
+        with:
+          role-to-assume: ${{ vars.AWS_PREVIEW_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Publish preview to S3
+        env:
+          PREVIEW_PREFIX: previews/pr-${{ github.event.pull_request.number }}
+        run: |
+          aws s3 sync site/ "s3://${{ vars.DOCS_BUCKET }}/${PREVIEW_PREFIX}/" \
+            --delete \
+            --cache-control "public,max-age=300"
+          aws s3 cp site/ "s3://${{ vars.DOCS_BUCKET }}/${PREVIEW_PREFIX}/" \
+            --recursive \
+            --exclude "*" \
+            --include "*.html" \
+            --cache-control "public,max-age=0,must-revalidate" \
+            --content-type "text/html"
+
+      - name: Invalidate preview
+        run: |
+          invalidation_id="$(
+            aws cloudfront create-invalidation \
+              --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
+              --paths "/previews/pr-${{ github.event.pull_request.number }}/*" \
+              --query "Invalidation.Id" \
+              --output text
+          )"
+          aws cloudfront wait invalidation-completed \
+            --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
+            --id "${invalidation_id}"
+
+      - name: Add preview link to run summary
+        run: |
+          echo "### [Open PR preview](https://docs.caylent.com/previews/pr-${{ github.event.pull_request.number }}/)" \
+            >> "${GITHUB_STEP_SUMMARY}"
+
+  cleanup-preview:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    environment:
+      name: preview
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6.2.3
+        with:
+          role-to-assume: ${{ vars.AWS_PREVIEW_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Delete preview from S3
+        run: |
+          aws s3 rm \
+            "s3://${{ vars.DOCS_BUCKET }}/previews/pr-${{ github.event.pull_request.number }}/" \
+            --recursive
+
+      - name: Invalidate deleted preview
+        run: |
+          invalidation_id="$(
+            aws cloudfront create-invalidation \
+              --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
+              --paths "/previews/pr-${{ github.event.pull_request.number }}/*" \
               --query "Invalidation.Id" \
               --output text
           )"
