@@ -78,8 +78,6 @@ The editor shows one of three validation states above the playback controls:
 
 Play is only available when the state is valid.
 
-[VERIFY: the exact structural SSML error messages surfaced in Code View (for example, unclosed tags or a missing root `<speak>` tag) — confirm final copy against the live UI before publishing a full list.]
-
 ***
 
 ### Previewing Prompt Audio
@@ -114,8 +112,6 @@ To change one of these tags, switch to **Code View** and edit the SSML directly.
 | **Play fails with an error message** | Amazon Polly rejected the synthesized speech (for example, an unsupported setting for the selected voice) | Review the specific error shown, adjust the prompt content, and try again. |
 
 ***
-
-[GAP: a full field-by-field description of the Code View's Monaco-based editor experience (line numbers, inline error squiggles) — Source needed: live UI walkthrough, since exact editor chrome isn't confirmable from the code diff alone.]
 
 **Need help?** Click **Support** in the top navigation of CxPortal to submit a request.
 
