@@ -3,7 +3,7 @@
 #
 # Published to: https://docs.caylent.com/cxportal/
 # The /cxportal/ subpath is set via site_url below and enforced at deploy
-# time by the GitHub Actions workflow (.github/workflows/deploy-docs.yml).
+# time by the AWS deployment workflow (.github/workflows/deploy-docs.yml).
 # ============================================================================
 
 site_name: CxPortal Documentation
@@ -68,7 +68,7 @@ markdown_extensions:
 # ---------------------------------------------------------------------------
 # IMPORTANT: every path below is relative to the docs/ folder. For these to
 # resolve, all the product folders (Cases/, access-management/, campaigns/,
-# migration-tool/, etc.) and the loose top-level .md files must be MOVED INTO
+# pinpoint/, etc.) and the loose top-level .md files must be MOVED INTO
 # docs/, keeping their folder structure. Files not listed here still publish
 # (MkDocs just won't put them in the menu).
 # ---------------------------------------------------------------------------
@@ -173,32 +173,32 @@ nav:
       - CX Central: cxcentral.md
 
   - Pinpoint Migration Tool:
-      - Introduction: migration-tool/introduction.md
-      - Migration Overview: migration-tool/migration-overview.md
-      - Quickstart: migration-tool/quickstart.md
-      - Requirements: migration-tool/requirements.md
-      - Setting Up the IAM Role: migration-tool/setting-up-the-iam-role.md
+      - Introduction: pinpoint/index.md
+      - Migration Overview: pinpoint/migration-overview.md
+      - Quickstart: pinpoint/quickstart.md
+      - Requirements: pinpoint/requirements.md
+      - Setting Up the IAM Role: pinpoint/setting-up-the-iam-role.md
       - Command Reference:
-          - Overview: migration-tool/command-reference.md
-          - express-setup: "migration-tool/command-reference-pages/express-setup.md"
-          - preflight: "migration-tool/command-reference-pages/preflight.md"
-          - bootstrap: "migration-tool/command-reference-pages/bootstrap.md"
-          - export-campaigns: "migration-tool/command-reference-pages/export-campaigns.md"
-          - export-endpoints: "migration-tool/command-reference-pages/export-endpoints.md"
-          - export-journeys: "migration-tool/command-reference-pages/export-journeys.md"
-          - export-segments: "migration-tool/command-reference-pages/export-segments.md"
-          - export-templates: "migration-tool/command-reference-pages/export-templates.md"
-          - import-campaigns: "migration-tool/command-reference-pages/import-campaigns.md"
-          - import-endpoints: "migration-tool/command-reference-pages/import-endpoints.md"
-          - import-journeys: "migration-tool/command-reference-pages/import-journeys.md"
-          - import-segments: "migration-tool/command-reference-pages/import-segments.md"
-          - import-templates: "migration-tool/command-reference-pages/import-templates.md"
-      - Migration Results & Reporting: migration-tool/migration-results-and-reporting.md
-      - Post-Migration Actions: migration-tool/post-migration-actions.md
-      - Known Limitations: migration-tool/known-limitations.md
-      - Troubleshooting: migration-tool/troubleshooting.md
-      - Glossary: migration-tool/appendix-glossary.md
-      - Support & Contact: migration-tool/support-and-contact.md
+          - Overview: pinpoint/command-reference.md
+          - express-setup: "pinpoint/command-reference-pages/express-setup.md"
+          - preflight: "pinpoint/command-reference-pages/preflight.md"
+          - bootstrap: "pinpoint/command-reference-pages/bootstrap.md"
+          - export-campaigns: "pinpoint/command-reference-pages/export-campaigns.md"
+          - export-endpoints: "pinpoint/command-reference-pages/export-endpoints.md"
+          - export-journeys: "pinpoint/command-reference-pages/export-journeys.md"
+          - export-segments: "pinpoint/command-reference-pages/export-segments.md"
+          - export-templates: "pinpoint/command-reference-pages/export-templates.md"
+          - import-campaigns: "pinpoint/command-reference-pages/import-campaigns.md"
+          - import-endpoints: "pinpoint/command-reference-pages/import-endpoints.md"
+          - import-journeys: "pinpoint/command-reference-pages/import-journeys.md"
+          - import-segments: "pinpoint/command-reference-pages/import-segments.md"
+          - import-templates: "pinpoint/command-reference-pages/import-templates.md"
+      - Migration Results & Reporting: pinpoint/migration-results-and-reporting.md
+      - Post-Migration Actions: pinpoint/post-migration-actions.md
+      - Known Limitations: pinpoint/known-limitations.md
+      - Troubleshooting: pinpoint/troubleshooting.md
+      - Glossary: pinpoint/appendix-glossary.md
+      - Support & Contact: pinpoint/support-and-contact.md
 
   # NOTE: the ACGR homepage filename below contains a space
   # ("...acgr homepage.md"). Path is quoted so it works, but consider renaming

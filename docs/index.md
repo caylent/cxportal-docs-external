@@ -110,7 +110,7 @@ or jump straight to a module below.
 
     Command-line tool to export and import Amazon Pinpoint resources.
 
-    [Open :octicons-arrow-right-24:](migration-tool/introduction.md)
+    [Open :octicons-arrow-right-24:](pinpoint/index.md)
 
 </div>
 
