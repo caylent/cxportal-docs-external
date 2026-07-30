@@ -1,35 +1,17 @@
-# ============================================================================
-# Build the MkDocs site and publish to GitHub Pages under /cxportal/
-#
-# COMMIT THIS FILE TO:  .github/workflows/deploy-docs.yml
-#
-# Result: content is served at https://docs.caylent.com/cxportal/
-#   - The whole site is built into a top-level `cxportal/` folder so the
-#     subpath matches what Dani configured on DNS.
-#   - A CNAME file (docs.caylent.com) is written at the site root so GitHub
-#     Pages keeps the custom domain.
-#
-# One-time setup after committing:
-#   Repo Settings -> Pages -> Build and deployment -> Source = "GitHub Actions"
-# ============================================================================
-
 name: Deploy docs
 
 on:
+  pull_request:
   push:
     branches:
-      - main            # change to your default branch if different
-  workflow_dispatch:    # allows manual runs from the Actions tab
+      - main
+  workflow_dispatch:
 
-# Permissions required by the GitHub Pages deploy action
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
-# Only one deploy at a time; don't cancel an in-progress one
 concurrency:
-  group: pages
+  group: docs-production
   cancel-in-progress: false
 
 jobs:
@@ -37,44 +19,73 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: "3.12"
+          cache: pip
 
-      - name: Install MkDocs Material
-        run: pip install mkdocs-material
+      - name: Install dependencies
+        run: pip install --requirement requirements.txt
 
-      # NOTE: --strict is intentionally OFF for the spike so that content
-      # warnings (broken links / images from the GitBook export) don't block
-      # deployment. Re-enable it during the QA phase to catch those issues:
-      #   run: mkdocs build --strict
+      # The imported GitBook content has a known warning backlog. Keep the
+      # production build non-strict until those warnings are resolved.
       - name: Build site
         run: mkdocs build
 
-      # Move the built site into a cxportal/ subfolder so the published
-      # URL is docs.caylent.com/cxportal/ (not the domain root).
-      - name: Nest site under /cxportal/
-        run: |
-          mkdir -p _publish/cxportal
-          cp -r site/* _publish/cxportal/
-          # Keep the custom domain on the Pages site
-          echo "docs.caylent.com" > _publish/CNAME
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v7.0.1
         with:
-          path: _publish
+          name: cxportal-docs
+          path: site/
+          if-no-files-found: error
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      name: production
+      url: https://docs.caylent.com/cxportal/
+    permissions:
+      contents: read
+      id-token: write
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Download site artifact
+        uses: actions/download-artifact@v8.0.1
+        with:
+          name: cxportal-docs
+          path: site/
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6.2.3
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Publish to S3
+        run: |
+          aws s3 sync site/ "s3://${{ vars.DOCS_BUCKET }}/cxportal/" \
+            --delete \
+            --cache-control "public,max-age=300"
+          aws s3 cp site/ "s3://${{ vars.DOCS_BUCKET }}/cxportal/" \
+            --recursive \
+            --exclude "*" \
+            --include "*.html" \
+            --cache-control "public,max-age=0,must-revalidate" \
+            --content-type "text/html"
+
+      - name: Invalidate CloudFront
+        run: |
+          invalidation_id="$(
+            aws cloudfront create-invalidation \
+              --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
+              --paths "/*" \
+              --query "Invalidation.Id" \
+              --output text
+          )"
+          aws cloudfront wait invalidation-completed \
+            --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
+            --id "${invalidation_id}"
