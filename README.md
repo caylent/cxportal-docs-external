@@ -1,6 +1,6 @@
 # CxPortal Documentation
 
-The **external, customer-facing** documentation for CxPortal — the user guides customers read to use the Cxportal's modules (DFC, Campaigns, ACGR, Knowledge Management, Proficiency-Based Routing, and more).
+The **external, customer-facing** documentation for CxPortal — the user guides customers read to use the CxPortal's modules (DFC, Campaigns, ACGR, Knowledge Management, Proficiency-Based Routing, and more).
 
 Built with [MkDocs](https://www.mkdocs.org/) and published to **[docs.caylent.com/cxportal](https://docs.caylent.com/cxportal/)**. Migrated from GitBook.
 
