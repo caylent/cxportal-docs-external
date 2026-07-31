@@ -87,13 +87,13 @@ PBR is subject to role-based access. You must have a specific role designated by
 
 ## What You Can Do
 
-* Access the PBR browser → [Getting Started with PBR](proficiency-based-routing/getting-started-with-pbr.md)
-* Create predefined attributes → [Add and Customize Predefined Attributes](proficiency-based-routing/add-and-customize-predefined-attributes.md)
-* Set up values → [Create Values](proficiency-based-routing/create-values.md)
-* Manage agent assignments → [View Agent Assignments](proficiency-based-routing/view-agent-assignments.md)
-* Define routing rules → [Add and Manage Routing Rules](proficiency-based-routing/add-and-manage-routing-rules.md)
-* Capture changes → [PBR Change Management ](proficiency-based-routing/pbr-change-management.md)
-* Review Best Practices → [PBR Best Practices](proficiency-based-routing/pbr-best-practices.md)
+* Access the PBR browser → [Getting Started with PBR](getting-started-with-pbr.md)
+* Create predefined attributes → [Add and Customize Predefined Attributes](add-and-customize-predefined-attributes.md)
+* Set up values → [Create Values](create-values.md)
+* Manage agent assignments → [View Agent Assignments](view-agent-assignments.md)
+* Define routing rules → [Add and Manage Routing Rules](add-and-manage-routing-rules.md)
+* Capture changes → [PBR Change Management ](pbr-change-management.md)
+* Review Best Practices → [PBR Best Practices](pbr-best-practices.md)
 
 ***
 
@@ -129,5 +129,5 @@ Track all routing configuration changes through audit logs, enforce approval wor
 
 ## Related Modules
 
-* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
+* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through CxCentral, your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
 * **CxCentral** — Your unified Caylent workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Caylent products, support, and resources.
