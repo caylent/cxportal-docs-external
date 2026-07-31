@@ -64,7 +64,7 @@ Campaigns are subject to role-based access. You must have a specific role design
 
 ## What You Can Do
 
-* Access the campaigns browser → [Getting Started with Campaigns ](campaigns/getting-started-with-campaigns.md)
+* Access the campaigns browser → [Getting Started with Campaigns](campaigns/getting-started-with-campaigns.md)
 * Create voice survey campaigns→ [Voice Survey Campaigns ](campaigns/voice-survey-campaigns.md)
 * Create voice notification campaigns→ [Voice Notification Campaigns](campaigns/voice-notification-campaigns.md)
 * Create SMS survey campaigns→ [SMS Survey Campaigns](campaigns/sms-survey-campaigns.md)
