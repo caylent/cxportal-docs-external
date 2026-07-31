@@ -83,7 +83,7 @@ You can delete a user at any time. To delete:
 
 ### Send a Password Reminder
 
-On the user detail page, click **Send Forgot Password Reminder**. For the detailed workflow, see [Edit a User](#edit-a-user).
+On the user detail page, click **Send Forgot Password Reminder**. For the detailed workflow, see [Edit a User](managing-existing-users.md).
 
 ***
 
