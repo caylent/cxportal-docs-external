@@ -46,11 +46,11 @@ Before you begin:
 
 What you can do in this module:
 
-* Monitor primary and secondary Region health and resource distribution → [**Triggering a Failover**](amazon-connect-global-resiliency-acgr/triggering-a-failover.md)
-* Trigger a failover when a Region needs to fail over →[ **Triggering a Failover**](amazon-connect-global-resiliency-acgr/triggering-a-failover.md)
-* Create, edit, and delete failover scenarios → [**Managing Playbooks**](amazon-connect-global-resiliency-acgr/managing-playbooks.md)
-* Create Traffic Distribution Groups and assign agents and phone numbers → [**Managing Traffic Distribution Groups**](amazon-connect-global-resiliency-acgr/managing-traffic-distribution-groups-tdgs.md)
-* Adjust how agents and phone numbers are distributed between Regions → [**Managing Traffic Distribution Groups**](amazon-connect-global-resiliency-acgr/managing-traffic-distribution-groups-tdgs.md)
+* Monitor primary and secondary Region health and resource distribution → [**Triggering a Failover**](triggering-a-failover.md)
+* Trigger a failover when a Region needs to fail over →[ **Triggering a Failover**](triggering-a-failover.md)
+* Create, edit, and delete failover scenarios → [**Managing Playbooks**](managing-playbooks.md)
+* Create Traffic Distribution Groups and assign agents and phone numbers → [**Managing Traffic Distribution Groups**](managing-traffic-distribution-groups-tdgs.md)
+* Adjust how agents and phone numbers are distributed between Regions → [**Managing Traffic Distribution Groups**](managing-traffic-distribution-groups-tdgs.md)
 
 ***
 
