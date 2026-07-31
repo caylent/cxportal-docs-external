@@ -28,12 +28,12 @@ Flow Analyzer helps teams resolve issues faster, reduces the need to search acro
 
 ### What You Can Do
 
-* Find a contact by Contact ID or Advanced Filters → [Investigating a Contact](flow-analyzer/investigating-a-contact.md)
-* Review the contact journey in Flow View or Interaction View → [Investigating a Contact](flow-analyzer/investigating-a-contact.md)
-* Check detected issues in the **Problems** tab → [Flow Analyzer Reference](flow-analyzer/flow-analyzer-reference.md?fallback=true)
-* Investigate Flow Logs, Interaction Logs, and the Details panel → [Flow Analyzer Reference](flow-analyzer/flow-analyzer-reference.md?fallback=true)
-* Review AI conversations with the Queue Transcript and Assistant Logs → [Flow Analyzer Reference](flow-analyzer/flow-analyzer-reference.md?fallback=true)
-* Jump from a flagged block straight to the Amazon Connect flow editor with **Open in Connect** →  [Investigating a Contact](flow-analyzer/investigating-a-contact.md)
+* Find a contact by Contact ID or Advanced Filters → [Investigating a Contact](investigating-a-contact.md)
+* Review the contact journey in Flow View or Interaction View → [Investigating a Contact](investigating-a-contact.md)
+* Check detected issues in the **Problems** tab → [Flow Analyzer Reference](flow-analyzer-reference.md?fallback=true)
+* Investigate Flow Logs, Interaction Logs, and the Details panel → [Flow Analyzer Reference](flow-analyzer-reference.md?fallback=true)
+* Review AI conversations with the Queue Transcript and Assistant Logs → [Flow Analyzer Reference](flow-analyzer-reference.md?fallback=true)
+* Jump from a flagged block straight to the Amazon Connect flow editor with **Open in Connect** →  [Investigating a Contact](investigating-a-contact.md)
 
 ***
 
