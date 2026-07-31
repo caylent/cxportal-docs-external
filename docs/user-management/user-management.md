@@ -32,11 +32,11 @@ User Management lets you manage your users and their assigned roles within your 
 
 What you can do in this module:
 
-* Add a user → [Adding a User](user-management/adding-a-user.md)
-* View a user's details → [Getting Started with User Management](user-management/getting-started-with-user-management.md)
-* Deactivate a user → [Managing Existing Users](user-management/managing-existing-users.md)
-* Send a password reminder → [Managing Existing Users](user-management/managing-existing-users.md)
-* Change a user's role → [Managing Existing Users](user-management/managing-existing-users.md)
+* Add a user → [Adding a User](adding-a-user.md)
+* View a user's details → [Getting Started with User Management](getting-started-with-user-management.md)
+* Deactivate a user → [Managing Existing Users](managing-existing-users.md)
+* Send a password reminder → [Managing Existing Users](managing-existing-users.md)
+* Change a user's role → [Managing Existing Users](managing-existing-users.md)
 
 ***
 
