@@ -61,10 +61,10 @@ You must have one of these permissions for the Admin menu to appear in CxPortal.
 
 ## What You Can Do
 
-* Access the Access Management Browser → [Getting Started with Access Management](/access-management/getting-started-with-access-management)
-* Create roles → ​[Create and Manage Roles](access-management/create-and-manage-roles.md)
-* View instance permissions and restrict access → ​[Review Instance Permissions and Restrict Access ​](access-management/review-instance-permissions-and-restrict-access.md)
-* Review best practices → [Access Management Best Practices​](access-management/access-management-best-practices.md)
+* Access the Access Management Browser → [Getting Started with Access Management](getting-started-with-access-management.md)
+* Create roles → ​[Create and Manage Roles](create-and-manage-roles.md)
+* View instance permissions and restrict access → ​[Review Instance Permissions and Restrict Access ​](review-instance-permissions-and-restrict-access.md)
+* Review best practices → [Access Management Best Practices​](access-management-best-practices.md)
 
 ***
 
@@ -98,7 +98,7 @@ Administrators can use Access Management to update or modify existing roles and 
 
 ## Related Modules
 
-* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
+* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through CxCentral, your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
 * **CxCentral** — Your unified Caylent workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Caylent products, support, and resources.
 * **User Management** — User management allows you to manage your users and their assigned roles within your organization. Within user management, you can see name, user ID, status, and role, as well as add users and edit or disable existing ones.
 
