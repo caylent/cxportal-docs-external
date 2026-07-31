@@ -83,7 +83,7 @@ You can delete a user at any time. To delete:
 
 ### Send a Password Reminder
 
-On the user detail page, click **Send Forgot Password Reminder**. For the detailed workflow, see [Edit a User](https://github.com/caylent/cxportal-docs-external/edit/main/docs/user-management/managing-existing-users.md#edit-a-user).
+On the user detail page, click **Send Forgot Password Reminder**. For the detailed workflow, see [Edit a User](https://docs.caylent.com/cxportal/user-management/managing-existing-users/#edit-a-user).
 
 ***
 
