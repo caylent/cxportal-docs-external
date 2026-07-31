@@ -15,14 +15,11 @@ This guide walks you through getting started, submitting and managing cases for 
 
 ## Benefits at a Glance
 
-<img width="2000" height="1414" alt="cases" src="https://github.com/user-attachments/assets/d11d58cd-2ef8-4738-824e-aa858f0af1fc" />
-
 * **Centralized tracking**— View, track, and manage all support cases in one place
 * **Easy submission** — Submit cases directly from CxCentral
 * **Role-based access** — Tailored views for users and admins
 * **Bulk editing** — Update multiple cases at once
-
-![](../assets/images/pg0Pd5PBjuMueoUYqT9E.png)
+<img width="2000" height="1414" alt="cases" src="https://github.com/user-attachments/assets/d11d58cd-2ef8-4738-824e-aa858f0af1fc" />
 
 ***
 
