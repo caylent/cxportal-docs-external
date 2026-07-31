@@ -5,7 +5,7 @@
 Use the following best practices to optimize using Knowledge Management
 
 * It’s recommended to use markdown as the file format for your articles. For more information, see [Articles](adding-articles.md).
-* Add tags on your articles or Knowledge Bases to set filters for better search results. For more information, see [Tags](bookmark://_Tags).
+* Add tags on your articles or Knowledge Bases to set filters for better search results. For more information, see [Tags](managing-tags.md)
 
 ***
 
