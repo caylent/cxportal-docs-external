@@ -10,7 +10,8 @@ Flow Analyzer is a troubleshooting tool in CxPortal that lets you see the full j
 
 Flow Analyzer helps teams resolve issues faster, reduces the need to search across multiple AWS consoles, and lowers reliance on senior engineers. It makes flow debugging accessible across the contact center.
 
-![](../assets/images/d5CZu7NcPkLBVIvluXl8.png)
+<img width="2000" height="1414" alt="flow analyzer" src="https://github.com/user-attachments/assets/5c13a0cd-219b-497f-8762-f62e3a32a7bd" />
+
 
 ***
 
