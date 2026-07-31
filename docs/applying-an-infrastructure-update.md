@@ -40,7 +40,7 @@ For customers who allow it, Caylent can act as the deployment team and apply the
 
 Infrastructure updates and permission assignments are independent steps. If the release also includes a new permission, an admin handles that separately in CxPortal user management; it doesn't require deployment team involvement.
 
-See [Enabling New Features with Permissions →](broken://pages/bdab411806fac8f691a46a8a417088407a485cf6)
+See [Enabling New Features with Permissions →](https://docs.caylent.com/cxportal/enabling-new-features-with-permissions/)
 
 ***
 
