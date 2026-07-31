@@ -64,7 +64,8 @@ What you can do in this module:
 
 <img width="2000" height="1414" alt="10" src="https://github.com/user-attachments/assets/bfc41fdd-7302-4c90-8641-8d3668e3dc54" />
 
-ACGR centralizes failover controls and reduces the steps required to restore traffic during a service disruption.
+!!! info ""
+    **Note** ACGR centralizes failover controls and reduces the steps required to restore traffic during a service disruption.
 
 ***
 
