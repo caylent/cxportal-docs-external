@@ -26,7 +26,7 @@ Bulk actions let you change or remove many items at once instead of submitting a
 
 Before you can bulk edit or bulk delete:
 
-* Your role must have the **Bulk editing** capability enabled in DFC Permissions. Without it, the row checkboxes and bulk controls are not shown and any bulk attempt is refused. See [Managing DFC Permissions.](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/cx-portal-all-content/dynamic-flow-configurator-dfc/managing-dfc-permissions)
+* Your role must have the **Bulk editing** capability enabled in DFC Permissions. Without it, the row checkboxes and bulk controls are not shown and any bulk attempt is refused. See [Managing DFC Permissions.](managing-dfc-permissions.md)
 * Roles with the **Admin** permission level always have bulk editing — it's enabled automatically and can't be turned off.
 * You also need the item edit rights (for bulk edit) or delete rights (for bulk delete) on the entity. The bulk-editing capability doesn't add access beyond your existing item permissions.
 
