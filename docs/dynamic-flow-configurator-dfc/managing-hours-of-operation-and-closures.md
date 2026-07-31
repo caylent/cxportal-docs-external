@@ -65,6 +65,6 @@ A change request is created and routed through the standard DFC approval flow. Y
 
 ## Support
 
-If you run into issues not covered here, contact the support team through the [**Support**](submitting-a-support-request.md) page.
+If you run into issues not covered here, contact the support team through the [**Support**](https://docs.caylent.com/cxportal/submitting-a-support-request/) page.
 
 ***
