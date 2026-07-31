@@ -65,6 +65,6 @@ A change request is created and routed through the standard DFC approval flow. Y
 
 ## Support
 
-If you run into issues not covered here, contact the support team through the [**Support**](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/submitting-a-support-request) page.
+If you run into issues not covered here, contact the support team through the [**Support**](submitting-a-support-request.md) page.
 
 ***
