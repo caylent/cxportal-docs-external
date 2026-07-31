@@ -62,11 +62,9 @@ What you can do in this module:
 * **Standardized Response** — Use consistent, repeatable recovery procedures.
 * **Centralized Management** — Manage multi-Region operations from one place.
 
-![](../assets/images/l1jSB1rS0yUfjx6E0OMj.png)
+<img width="2000" height="1414" alt="10" src="https://github.com/user-attachments/assets/bfc41fdd-7302-4c90-8641-8d3668e3dc54" />
 
-!!! info ""
-    ACGR centralizes failover controls and reduces the steps required to restore traffic during a service disruption.
-
+ACGR centralizes failover controls and reduces the steps required to restore traffic during a service disruption.
 
 ***
 
