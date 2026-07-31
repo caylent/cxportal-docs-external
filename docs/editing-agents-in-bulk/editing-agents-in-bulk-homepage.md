@@ -66,8 +66,8 @@ What you can do in this module:
 
 ## Related Modules
 
-* [**User Management** ](user-management.md)—  Add, edit, deactivate, and organize the people in your organization, and assign each user the roles that apply to them.
-* [**Access Management** ](access-management.md)— Define roles and permissions behind them, and control what those roles can see and do across the system.
-* [**Proficiency Based Routing (PBR)** ](proficiency-based-routing.md)— Intelligently match incoming contacts with the right agents based on their skills and experience levels.
+* [**User Management** ](https://docs.caylent.com/cxportal/user-management/user-management/)—  Add, edit, deactivate, and organize the people in your organization, and assign each user the roles that apply to them.
+* [**Access Management** ](https://docs.caylent.com/cxportal/access-management/access-management/)— Define roles and permissions behind them, and control what those roles can see and do across the system.
+* [**Proficiency Based Routing (PBR)** ](https://docs.caylent.com/cxportal/proficiency-based-routing/proficiency-based-routing/)— Intelligently match incoming contacts with the right agents based on their skills and experience levels.
 
 ***
