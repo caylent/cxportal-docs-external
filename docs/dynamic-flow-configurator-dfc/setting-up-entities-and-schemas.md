@@ -6,7 +6,7 @@ description: Create entities, sub-entities, and schemas, then add items to an en
 
 ## Before You Begin
 
-* You need a DFC permission level that allows creating entities and editing schemas (**Entity Editor** or **Admin**) to create entities, sub-entities, and define schemas. Adding items requires at least **Item Creator**. See [Managing DFC Permissions](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/dynamic-flow-configurator-dfc/managing-dfc-permissions).
+* You need a DFC permission level that allows creating entities and editing schemas (**Entity Editor** or **Admin**) to create entities, sub-entities, and define schemas. Adding items requires at least **Item Creator**. See [Managing DFC Permissions](managing-dfc-permissions.md).
 * Plan your schema before adding items. Once items populate a field with data, the field's name and type are locked and the field can't be deleted.
 
 {% hint style="warning" %}
@@ -24,7 +24,7 @@ before adding items or sub-entities.
 * **Schemas are long-lived.** Design them carefully before use.
 * **Defaults fall back to null.** If no defaults are configured for an entity, all fields return `null` when the entity is queried with a trailing slash.
 * **Sub-entity depth (recommended).** Limit sub-entities to no more than five levels deep to improve\
-  clarity, reuse, and query performance. See [DFC Best Practices.](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/dynamic-flow-configurator-dfc/dfc-best-practices)
+  clarity, reuse, and query performance. See [DFC Best Practices.](dfc-best-practices.md)
 * **Import performance.** A 1 MB import file typically completes in approximately two minutes; import\
   time depends on file size.
 
@@ -120,7 +120,7 @@ When you set a field's **Type** to **Reference**, specify the path to the refere
 
 Available field types: Amazon Connect Resource, Boolean, Closure, Date Time, Hours of Operation, JSON, Number, Pick List, Prompt, Reference, String, YAML.
 
-For editing a Prompt field's SSML content, see [Editing Prompt Fields](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/dynamic-flow-configurator-dfc/editing-prompt-fields).
+For editing a Prompt field's SSML content, see [Editing Prompt Fields](editing-prompt-fields.md).
 
 The **Amazon Connect Resource** type lets you select from the following resource types:
 
