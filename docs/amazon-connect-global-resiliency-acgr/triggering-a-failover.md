@@ -5,7 +5,7 @@ Trigger a failover from the ACGR Dashboard to redirect live call traffic between
 ## Before You Begin
 
 * You need the **ACGR Admin** role to trigger a failover directly.
-* At least one **Playbook** must exist. The **Failover Now** action is unavailable until a Playbook is configured (see [Managing Playbooks](../../cxportal/amazon-connect-global-resiliency-acgr/managing-playbooks.md)).
+* At least one **Playbook** must exist. The **Failover Now** action is unavailable until a Playbook is configured (see [Managing Playbooks](https://docs.caylent.com/cxportal/amazon-connect-global-resiliency-acgr/managing-playbooks/).
 * Confirm the correct scenario is selected and that the team is prepared before proceeding.
 
 ***
