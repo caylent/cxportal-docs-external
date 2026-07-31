@@ -65,12 +65,12 @@ Knowledge Management is subject to role-based access. You must have a specific r
 
 ## What You Can Do <a href="#use-cases" id="use-cases"></a>
 
-* Access the Knowledge Management Browser → [Getting Started with Knowledge Management](knowledge-management/getting-started.md)
-* Set up Knowledge Bases → [Setting Up Knowledge Bases](knowledge-management/setting-up-knowledge-bases.md)
-* Add articles to Knowledge Bases→ [Adding Articles](knowledge-management/adding-articles.md)
-* Manage tags and metadata → [Managing Tags](knowledge-management/managing-tags.md)
-* Capture changes made in Knowledge Management→ [Change Management](knowledge-management/change-management.md)
-* Review best practices and troubleshooting tips→ [Best Practices and Troubleshooting](knowledge-management/best-practices-and-troubleshooting.md)
+* Access the Knowledge Management Browser → [Getting Started with Knowledge Management](getting-started.md)
+* Set up Knowledge Bases → [Setting Up Knowledge Bases](setting-up-knowledge-bases.md)
+* Add articles to Knowledge Bases→ [Adding Articles](adding-articles.md)
+* Manage tags and metadata → [Managing Tags](managing-tags.md)
+* Capture changes made in Knowledge Management→ [Change Management](change-management.md)
+* Review best practices and troubleshooting tips→ [Best Practices and Troubleshooting](best-practices-and-troubleshooting.md)
 
 ***
 
@@ -107,4 +107,4 @@ Centralized access-controlled documentation system with version tracking, metada
 ## Related Modules  <a href="#use-cases" id="use-cases"></a>
 
 * **CxCentral** — Your unified Caylent workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Caylent products, support, and resources.
-* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
+* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through CxCentral, your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
