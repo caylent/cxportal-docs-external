@@ -6,8 +6,8 @@ Once you've selected the agents you want to update, use the **Bulk Actions** too
 
 ## Before You Begin
 
-* You need an administrative role with access to the **Bulk Edit** section. Submitting a bulk change may require Change Management approval, depending on your organization's role and instance configuration. See [Change Requests and Timing.](../../cxportal/editing-agents-in-bulk/change-requests-and-timing.md)
-* Find the agents you want to update first. See [Filtering Agents](../proficiency-based-routing.md).
+* You need an administrative role with access to the **Bulk Edit** section. Submitting a bulk change may require Change Management approval, depending on your organization's role and instance configuration. See [Change Requests and Timing.](change-requests-and-timing.md)
+* Find the agents you want to update first. See [Filtering Agents](https://docs.caylent.com/cxportal/editing-agents-in-bulk/getting-started-with-bulk-agent-management/#filtering-agents).
 
 ***
 
@@ -71,7 +71,7 @@ Update the After Call Work duration for selected agents.
 4. Click **Apply Changes**, complete the **Change Request Details** window, and click **Submit**.
 
 !!! info ""
-    **Info — What happens after you submit:** Whether the change needs approval before it's applied depends on your organization's configuration, and processing time scales with the number of agents. See [Change Requests and Timing](../../cxportal/editing-agents-in-bulk/change-requests-and-timing.md) for the full lifecycle and timing.
+    **Info — What happens after you submit:** Whether the change needs approval before it's applied depends on your organization's configuration, and processing time scales with the number of agents. See [Change Requests and Timing](change-requests-and-timing.md) for the full lifecycle and timing.
 
 
 ***
