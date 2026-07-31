@@ -45,7 +45,7 @@ CxPortal is built around a set of modules — each one covering a specific area 
 !!! info ""
     You can submit a support request from any page in CxPortal or CxCentral. Press **Support** in the upper right corner, fill out the form, and submit. You'll receive a confirmation email with your ticket number. Track your request in the **Support Cases** widget on CxCentral.
 
-    For the full walkthrough, see [Submitting a Request](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/submitting-a-request-support).
+    For the full walkthrough, see [Submitting a Request](https://docs.caylent.com/cxportal/submitting-a-support-request/).
 
 
 ***
