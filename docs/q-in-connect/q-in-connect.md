@@ -13,7 +13,8 @@ Q in Connect offers a generative AI-powered assistant for customer service that 
 * **AI Agents** — Handle multi-step problems without human intervention
 * **Knowledge Bases** — Manage content sources for AI responses
 
-![](../assets/images/lPJi1UKXYg7cGvsWmfTY.png)
+<img width="2000" height="1414" alt="Q in connect" src="https://github.com/user-attachments/assets/1eceac1b-4384-4dba-93bb-b4d750ca1d53" />
+
 
 ***
 
