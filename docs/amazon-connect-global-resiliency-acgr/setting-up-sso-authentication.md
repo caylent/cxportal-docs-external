@@ -8,7 +8,7 @@ CxPortal supports two methods for signing in:
 * Single sign-on (SSO) via Microsoft Entra ID (Azure AD), available as an opt-in.
 
 !!! info ""
-    **Important:** SSO is required to access CxPortal during a regional outage. Username and password authentication is not available when the primary AWS region is unavailable. For details on what is and is not available during an outage, see the [Multi-Region Resiliency](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/cx-portal-all-content/acgr/acgr-multi-region-resiliency) page.
+    **Important:** SSO is required to access CxPortal during a regional outage. Username and password authentication is not available when the primary AWS region is unavailable. For details on what is and is not available during an outage, see the [Multi-Region Resiliency](https://docs.caylent.com/cxportal/amazon-connect-global-resiliency-acgr/acgr-multi-region-resiliency/) page.
 
 
 ***
@@ -152,7 +152,7 @@ The table below summarizes who is responsible for each step in the SSO setup pro
 
 ## Related Pages
 
-* Multi-Region Resiliency — [how CxPortal stays available during a regional outage](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/cx-portal-all-content/acgr/acgr-multi-region-resiliency)
-* Submit a Support Request — [how to contact Caylent for SSO onboarding and other requests](../submitting-a-support-request.md)
+* Multi-Region Resiliency — [how CxPortal stays available during a regional outage](https://docs.caylent.com/cxportal/amazon-connect-global-resiliency-acgr/amazon-connect-global-resiliency-acgr%20homepage/)
+* Submit a Support Request — [how to contact Caylent for SSO onboarding and other requests](https://docs.caylent.com/cxportal/submitting-a-support-request/)
 
 ***
