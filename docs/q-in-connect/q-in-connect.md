@@ -2,7 +2,7 @@
 
 ## Overview
 
-Q in Connect offers a generative AI-powered assistant for customer service that delivers information and actions to solve issues in real time. With Q in Connect, you can customize [Prompts](#prompts), [AI Agents](#ai-agents), and [Knowledge Bases](#knowledge-bases) to refine detect customer issues and provide personalized responses and recommended actions.
+Q in Connect offers a generative AI-powered assistant for customer service that delivers information and actions to solve issues in real time. With Q in Connect, you can customize [Prompts](setting-up-prompts.md), [AI Agents](configure-ai-agents.md), and [Knowledge Bases](create-and-manage-knowledge-bases.md) to refine detect customer issues and provide personalized responses and recommended actions.
 
 ***
 
@@ -55,11 +55,11 @@ To work with Q in Connect, users need permissions to view and manage Prompts, AI
 
 ## What You Can Do
 
-* Access the Q in Connect browser ​→ [Getting Started with Q in Connect](q-in-connect/getting-started-with-q-in-connect.md)
-* Set up prompts→ [Setting Up Prompts​](q-in-connect/setting-up-prompts.md)
-* Manage AI Agents → ​[Configure AI Agents](q-in-connect/configure-ai-agents.md)
-* Add Knowledge Bases →​ [Create and Manage Knowledge Bases​](q-in-connect/create-and-manage-knowledge-bases.md)
-* Review best practices and troubleshooting tips→ [Q in Connect Best Practices](q-in-connect/q-in-connect-best-practices.md)
+* Access the Q in Connect browser ​→ [Getting Started with Q in Connect](getting-started-with-q-in-connect.md)
+* Set up prompts→ [Setting Up Prompts​](setting-up-prompts.md)
+* Manage AI Agents → ​[Configure AI Agents](configure-ai-agents.md)
+* Add Knowledge Bases →​ [Create and Manage Knowledge Bases​](create-and-manage-knowledge-bases.md)
+* Review best practices and troubleshooting tips→ [Q in Connect Best Practices](q-in-connect-best-practices.md)
 
 ***
 
@@ -96,5 +96,5 @@ Surface real-time answers and recommended actions to live agents during customer
 ## Related Modules
 
 * **CxCentral** — Your unified Caylent workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Caylent products, support, and resources.
-* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
+* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through CxCentral, your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
 * **Knowledge Management** — Knowledge Management lets you easily manage your documentation and sync with Connect Agents directly in CxPortal. You can manage knowledge bases, articles, and compare versions to refine your Connect Agents AI to detect customer issues and provide personalized responses and recommended actions. For more information, see [Knowledge Management](knowledge-management.md).
