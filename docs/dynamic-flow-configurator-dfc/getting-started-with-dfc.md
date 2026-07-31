@@ -84,7 +84,7 @@ To remove a single filter, click the **x** on its chip. To remove every filter, 
 
 ## **Previewing Voice and Language with Local Speech Setting**
 
-*Local Speech Setting* plays voice and language pairs in your browser so you can hear how prompt content sounds. You can also open it from a **Prompt** field's playback-language dropdown — see [Editing Prompt Fields](...).
+*Local Speech Setting* plays voice and language pairs in your browser so you can hear how prompt content sounds. You can also open it from a **Prompt** field's playback-language dropdown — see [Editing Prompt Fields](editing-prompt-fields.md)
 
 1. In the sub-header, click **Local Speech Setting** (the speaker icon).
 2. Select a **Language**.
