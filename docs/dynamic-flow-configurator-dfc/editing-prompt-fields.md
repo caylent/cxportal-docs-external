@@ -14,7 +14,7 @@ A **Prompt** field stores the SSML (Speech Synthesis Markup Language) content Am
 
 ## Before You Begin
 
-* The entity's schema must include a **Prompt** field. See [Setting Up Entities and Schemas](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/dynamic-flow-configurator-dfc/setting-up-entities-and-schemas).
+* The entity's schema must include a **Prompt** field. See [Setting Up Entities and Schemas](setting-up-entities-and-schemas.md).
 * You need item edit permission on the entity to change prompt content.
 * Root `<speak>` tags are applied automatically — you don't need to add them yourself.
 
@@ -87,7 +87,7 @@ Play is only available when the state is valid.
 3. If Amazon Polly rejects the synthesized speech (for example, an unsupported combination for a given voice), the message updates to "Couldn't play - " followed by the specific reason, and a toast notification also reports the error.
 
 {% hint style="info" %}
-**Note:** Playback here previews how the text sounds in your browser only — it doesn't affect what callers hear in Amazon Connect. To set up which voice plays for each language, see [Previewing Voice and Language with Local Speech Setting](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/dynamic-flow-configurator-dfc/getting-started-with-dfc#previewing-voice-and-language-with-local-speech-setting).
+**Note:** Playback here previews how the text sounds in your browser only — it doesn't affect what callers hear in Amazon Connect. To set up which voice plays for each language, see [Previewing Voice and Language with Local Speech Setting](https://docs.caylent.com/cxportal/dynamic-flow-configurator-dfc/getting-started-with-dfc/#previewing-voice-and-language-with-local-speech-setting).
 {% endhint %}
 
 ***
