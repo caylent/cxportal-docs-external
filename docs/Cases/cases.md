@@ -19,6 +19,8 @@ This guide walks you through getting started, submitting and managing cases for 
 * **Easy submission** — Submit cases directly from CxCentral
 * **Role-based access** — Tailored views for users and admins
 * **Bulk editing** — Update multiple cases at once
+
+  
 <img width="2000" height="1414" alt="cases" src="https://github.com/user-attachments/assets/d11d58cd-2ef8-4738-824e-aa858f0af1fc" />
 
 ***
@@ -71,7 +73,7 @@ As a **company admin**, you can create cases, edit open cases, and view all case
 
 ## What You Can Do
 
-*Access the Cases Module →[Getting Started with Cases](getting-started-with-cases.md)
+* Access the Cases module → [Getting Started with Cases](getting-started-with-cases.md) 
 * **(General user)** Create and view your own support cases → [Working with Cases as a General User](working-with-cases-as-a-general-user.md)
 * **(Company Admin)** Create and view cases for your entire organization → [Working with Cases as a Company Admin](working-with-cases-as-a-company-admin.md)
 * Review best practices → [Cases Best Practices](cases-best-practices.md)
@@ -109,4 +111,4 @@ A company admin notices repeat support requests and want to understand the bigge
 ## Related Modules
 
 * **CxCentral** — Your unified Caylent workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Caylent products, support, and resources.
-* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through [CxCentral](cxcentral.md), your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
+* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through CxCentral, your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
