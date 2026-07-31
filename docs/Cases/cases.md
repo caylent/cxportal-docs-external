@@ -63,8 +63,8 @@ Some cases functionality is subject to role-bases access. As a **general user**,
 
 As a **company admin**, you can create cases, edit open cases, and view all cases across your organization. Select your role to see the full workflow:
 
-* ​[General User​](#working-with-cases-as-a-general-user)
-* ​[Company Admin](working-with-cases-as-a-company-admin)
+* [General User](working-with-cases-as-a-general-user.md)
+* [Company Admin](working-with-cases-as-a-company-admin.md)
 
 ***
 
