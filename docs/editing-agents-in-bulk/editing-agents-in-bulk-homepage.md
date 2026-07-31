@@ -26,7 +26,8 @@ In large contact centers, or during campaigns, seasonal peaks, or sudden volume 
 
 Bulk Edit applies the same change to every selected agent in one action.
 
-![](../assets/images/hpe1TwxX6Szbm3FBeD49.png)
+<img width="2000" height="1414" alt="bulk edit agents" src="https://github.com/user-attachments/assets/b8474f90-9d5b-4621-a078-3bd1f5ed8a65" />
+
 
 ***
 
