@@ -85,6 +85,6 @@ You need to confirm that required steps, such as disclosures or recording settin
 
 ### Related Modules
 
-* [**Q in Connect**](q-in-connect.md) — For flows that use `GetCustomerInput`, Flow Analyzer's Interaction Logs display Q in Connect (QiC) insights showing how the customer interacted with the menu.
+* [**Q in Connect**](https://docs.caylent.com/cxportal/q-in-connect/q-in-connect/) — For flows that use `GetCustomerInput`, Flow Analyzer's Interaction Logs display Q in Connect (QiC) insights showing how the customer interacted with the menu.
 
 ***
