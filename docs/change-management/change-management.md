@@ -42,6 +42,10 @@ Before you begin:
 - Export audit log records → *Exporting Audit Log Records*
 - Add a description to any record → *Updating a Record's Description*
 
+## Benefits At a Glance
+
+
+
 ## How it Works
 
 Changes are created in other CxPortal modules (for example DFC entities and items, Proficiency Routing attributes and routing rules, or Bulk Edit agent updates) and flow through Change Management:
