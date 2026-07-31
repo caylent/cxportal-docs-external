@@ -14,7 +14,8 @@
 * **Routing rules** — Build logic to route contacts automatically
 * **Change management** — Track, approve, and schedule routing changes
 
-![](../assets/images/cLOJwAXkQFsKz6ZTBmeY.png)
+<img width="2000" height="1414" alt="Proficiency based routing" src="https://github.com/user-attachments/assets/b1cfbc62-169f-4179-aa69-b069a1f6e81e" />
+
 
 ***
 
