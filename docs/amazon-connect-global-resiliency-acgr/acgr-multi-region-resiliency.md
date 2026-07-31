@@ -95,6 +95,6 @@ This resiliency model covers CxPortal availability only. It does not cover:
 * Customer contact routing during an Amazon Connect outage
 * Agent availability in an Amazon Connect region
 
-To manage failover for your Amazon Connect contact center across regions, use the ACGR module in CxPortal. See the [Getting Started with ACGR](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/cx-portal-all-content/acgr/acgr-dashboard) for details.
+To manage failover for your Amazon Connect contact center across regions, use the ACGR module in CxPortal. See the [Getting Started with ACGR](https://docs.caylent.com/cxportal/amazon-connect-global-resiliency-acgr/getting-started-with-acgr/) for details.
 
 ***
