@@ -15,7 +15,8 @@
 * **Flexible Timing** — Launch now or schedule with quiet hours
 * **Performance Dashboard** — Track metrics and delivery rates in real time
 
-![](../assets/images/0H9lyZCtwauVI4uysSCa.png)
+<img width="2000" height="1414" alt="12" src="https://github.com/user-attachments/assets/92d3f7e8-5ca3-461c-91ee-47b3e1587b4d" />
+
 
 ***
 
