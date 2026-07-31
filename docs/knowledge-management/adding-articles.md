@@ -93,8 +93,8 @@ You can sync articles directly from Connect Agents to your Knowledge Bases.
 5. Click **Compare Versions**.
 6. Review the side-by-side comparison.
 
-!!! info ""
-    Tracked changes are only visible in **.txt files**, where additions and deletions are highlighted in red and green. For all other file types, tracked changes are not displayed — both versions are shown side by side for manual comparison.
+
+Note: Tracked changes are only visible in **.txt files**, where additions and deletions are highlighted in red and green. For all other file types, tracked changes are not displayed — both versions are shown side by side for manual comparison.
 
 
 ***
