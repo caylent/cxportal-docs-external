@@ -15,7 +15,8 @@
 * **Discoverability** — Use tags to help Connect Agents locate information and improve response accuracy.
 * **Syncing** — Sync updates directly to Connect Agents without manual intervention.
 
-![](../assets/images/AnL5D7zHPC9xQ9S43kRh.png)
+<img width="2000" height="1414" alt="knowledge management" src="https://github.com/user-attachments/assets/fac6137e-4a54-42da-b4d4-25da7373de2b" />
+
 
 ***
 
