@@ -26,7 +26,8 @@ Technical teams define the structure and rules once. Business and operations tea
 * **Centralized control** — Keep behavior consistent by managing data in one place.
 * **Built-in safeguards** — Limit risk through role-based access and schema guardrails.
 
-![](../assets/images/8JtL9y2x04osT06hZq4F.png)
+<img width="2000" height="1414" alt="dfc" src="https://github.com/user-attachments/assets/a8c5c81c-f71b-400b-9ae4-4a3c3323dd8d" />
+
 
 ***
 
