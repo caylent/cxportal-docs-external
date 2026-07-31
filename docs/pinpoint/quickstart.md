@@ -1,6 +1,6 @@
 # Quickstart
 
-This page provides a concise end-to-end walkthrough for running a migration. For detailed command options and behavior, see [Command Reference](https://app.gitbook.com/o/opQ0rpO2Nre84YobY1Yy/s/dyDQVofhudWFz4f9dscL/~/edit/~/changes/TCnfJeuTwhEt7N90QI4J/pronetx-migration-tool-for-amazon-pinpoint/command-reference).
+This page provides a concise end-to-end walkthrough for running a migration. For detailed command options and behavior, see [Command Reference](command-reference.md).
 
 ### **Prerequisites checklist**
 
@@ -14,7 +14,7 @@ Before running any commands, confirm the following:
 
 **Permissions**
 
-* IAM role or profile has the required permissions. See [setting up the IAM Role](https://pronetx.gitbook.io/portal/M6apoD9LCAkiMWFcxuXH/pronetx-migration-tool-for-amazon-pinpoint/pronetx-migration-tool-for-amazon-pinpoint/quickstart/setting-up-the-iam-role).
+* IAM role or profile has the required permissions. See [setting up the IAM Role](setting-up-the-iam-role.md).
 
 **Amazon Connect**
 
@@ -179,7 +179,7 @@ node ./pinpoint-migration-tool.mjs import-journeys -r <region> -p <profile> -i <
 
 #### **Step 9 — Review the migration report**
 
-After migration completes, review the migration report output and the migration state file in S3. [See Post-Migration Actions.](https://app.gitbook.com/o/opQ0rpO2Nre84YobY1Yy/s/dyDQVofhudWFz4f9dscL/~/edit/~/changes/TCnfJeuTwhEt7N90QI4J/pronetx-migration-tool-for-amazon-pinpoint/post-migration-actions)
+After migration completes, review the migration report output and the migration state file in S3. [See Post-Migration Actions.](post-migration-actions.md)
 
 ***
 
