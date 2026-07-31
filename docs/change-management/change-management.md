@@ -43,7 +43,12 @@ Before you begin:
 - Add a description to any record → *Updating a Record's Description*
 
 ## Benefits At a Glance
+* **Control** — Only authorized changes go live via approvals
+* **Visibility** — View all changes across features in one place
+* **Full Audit Trail** — Searchable history of who changed what and when
+* **Safe Ops** — Streamline reviews while maintaining accountability
 
+<img width="2000" height="1414" alt="11" src="https://github.com/user-attachments/assets/c552c5e5-406e-4593-bfb6-24346267297f" />
 
 
 ## How it Works
