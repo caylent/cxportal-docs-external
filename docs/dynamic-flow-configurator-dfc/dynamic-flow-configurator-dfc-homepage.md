@@ -40,7 +40,7 @@ DFC works by defining structured data once and reusing it everywhere. When you u
 ## Who Uses This
 
 * **Business Admins / Operations Teams** — Manage flow data: update operational values such as prompts, hours of operation, allow/block lists, and transfer routing without editing contact flows or writing code.
-* **Developers / Technical Teams** — Define entity schemas and references, and integrate DFC data into Amazon Connect contact flows and Lambda functions using the [DFC Node.js Client.](dynamic-flow-configurator-dfc/developer-reference-node.js-client.md)
+* **Developers / Technical Teams** — Define entity schemas and references, and integrate DFC data into Amazon Connect contact flows and Lambda functions using the [DFC Node.js Client.](developer-reference-node.js-client.md)
 
 !!! info ""
     DFC is not intended for agents and does not require deep technical or development expertise.
@@ -71,18 +71,18 @@ Before you begin:
 * With the **User** level, you also need entity tags assigned in DFC before you can view any entities. Without tags, you can see the DFC module but cannot view any entities.
 * Creating or deleting top-level entities and modifying schemas requires a higher permission level (**Entity Editor** or **Admin**). If certain actions are not visible in the UI, your role may not include those permissions.
 
-See [Managing DFC Permissions](dynamic-flow-configurator-dfc/managing-dfc-permissions.md) for the full setup.
+See [Managing DFC Permissions](managing-dfc-permissions.md) for the full setup.
 
 ***
 
 ## What You Can Do
 
-* Access the DFC Browser and navigate entities → [Getting Started with DFC](dynamic-flow-configurator-dfc/getting-started-with-dfc.md)
-* Set up entities, sub-entities, schemas, and items → [Setting Up Entities and Schemas](dynamic-flow-configurator-dfc/setting-up-entities-and-schemas.md)
-* Edit SSML voice content in a Prompt field → [Editing Prompt Fields](...)
-* Import and export data between environments → [Importing and Exporting Data](dynamic-flow-configurator-dfc/importing-and-exporting-data.md)
-* Manage roles and entity-level access → [Managing DFC Permissions](dynamic-flow-configurator-dfc/managing-dfc-permissions.md)
-* Look up field types, limits, and the Node.js client → [DFC Reference](dynamic-flow-configurator-dfc/developer-reference-node.js-client.md)
+* Access the DFC Browser and navigate entities → [Getting Started with DFC](getting-started-with-dfc.md)
+* Set up entities, sub-entities, schemas, and items → [Setting Up Entities and Schemas](setting-up-entities-and-schemas.md)
+* Edit SSML voice content in a Prompt field → [Editing Prompt Fields](editing-prompt-fields.md)
+* Import and export data between environments → [Importing and Exporting Data](importing-and-exporting-data.md)
+* Manage roles and entity-level access → [Managing DFC Permissions](managing-dfc-permissions.md)
+* Look up field types, limits, and the Node.js client → [DFC Reference](developer-reference-node.js-client.md)
 
 ***
 
@@ -126,6 +126,6 @@ Define transfer points that control how contacts route to queues or external des
 
 ## Related Modules
 
-* **CxCentral** — Create and manage the roles and user assignments that DFC permissions build on. DFC permission levels are configured against a role in CxCentral before entity tags are assigned in DFC. See [Managing DFC permissions.](dynamic-flow-configurator-dfc/managing-dfc-permissions.md)
+* **CxCentral** — Create and manage the roles and user assignments that DFC permissions build on. DFC permission levels are configured against a role in CxCentral before entity tags are assigned in DFC. See [Managing DFC permissions.](managing-dfc-permissions.md)
 
 ***
