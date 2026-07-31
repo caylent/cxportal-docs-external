@@ -7,7 +7,7 @@ CxPortal is hosted in AWS across two regions. The primary region handles normal 
 If the primary region becomes unavailable, traffic for multi-region components automatically routes to the secondary region. No manual intervention is required at the infrastructure level. Users with active sessions will need to sign out and sign back in to reach the secondary region.
 
 !!! info ""
-    **Important:** This page describes the resiliency of CxPortal itself. It does not describe multi-region resiliency for your Amazon Connect instance. For information on managing failover for your Connect contact center, see the [ACGR module documentation](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/cx-portal-all-content/acgr/acgr-dashboard).
+    **Important:** This page describes the resiliency of CxPortal itself. It does not describe multi-region resiliency for your Amazon Connect instance. For information on managing failover for your Connect contact center, see the [ACGR module documentation](https://docs.caylent.com/cxportal/amazon-connect-global-resiliency-acgr/getting-started-with-acgr/).
 
 
 ***
