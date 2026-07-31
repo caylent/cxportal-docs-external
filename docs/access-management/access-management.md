@@ -13,7 +13,8 @@
 * **Permissions** — Set global and instance-level access controls
 * **Access control** — Restrict access at instance and module levels
 
-![](../assets/images/GrmgNQZgtlxYsMzQKjDj.png)
+<img width="2000" height="1414" alt="access management" src="https://github.com/user-attachments/assets/7166a568-b2ff-4953-a41f-5d7a8296ffcc" />
+
 
 ***
 
