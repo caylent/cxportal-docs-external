@@ -27,7 +27,7 @@ When you [log in](https://portal.pronetx.com), you'll land here:
 ### Need Help?
 
 !!! info ""
-    Click **Support** in the upper right corner of CxCentral to open the support form. Once submitted you'll receive a confirmation email and your ticket will appear in the **Open Requests** widget on the homepage. For the full walkthrough, see [Submitting a Request](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/cx-portal-all-content/submitting-a-request-support).
+    Click **Support** in the upper right corner of CxCentral to open the support form. Once submitted you'll receive a confirmation email and your ticket will appear in the **Open Requests** widget on the homepage. For the full walkthrough, see [Submitting a Request](https://docs.caylent.com/cxportal/submitting-a-support-request/).
 
 
 ***
