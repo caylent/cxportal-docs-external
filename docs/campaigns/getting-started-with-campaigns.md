@@ -46,10 +46,10 @@ The campaigns module is split into main three areas:
 Now that you have created a Campaign, here is what to do next:
 
 * Follow the workflow to create content for the chosen campaign type:
-  * Voice survey campaign → [Voice Survey Campaigns ](voice-survey-campaigns)
-  * Voice notification campaign→ [Voice Notification Campaigns](voice-notification-campaigns)
-  * SMS survey campaign→ [SMS Survey Campaigns](sms-survey-campaigns)
-  * SMS notification campaign→ [SMS Notification Campaigns(sms-notification-campaigns)
-* Manage your campaign groups→ [Manage Campaign Groups](manage-campaign-groups)
-* Review metrics on the campaigns dashboard→ [Campaigns Dashboard](campaigns-dashboard)
-* Review campaigns best practices→ [Campaigns Best Practices](campaigns-best-practices)
+  * Voice survey campaign → [Voice Survey Campaigns ](voice-survey-campaigns.md)
+  * Voice notification campaign→ [Voice Notification Campaigns](voice-notification-campaigns.md)
+  * SMS survey campaign→ [SMS Survey Campaigns](sms-survey-campaigns.md)
+  * SMS notification campaign→ [SMS Notification Campaigns](voice-notification-campaigns.md)
+* Manage your campaign groups→ [Manage Campaign Groups](manage-campaign-groups.md)
+* Review metrics on the campaigns dashboard→ [Campaigns Dashboard](campaigns-dashboard.md)
+* Review campaigns best practices→ [Campaigns Best Practices](campaigns-best-practices.md)
