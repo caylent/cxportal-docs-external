@@ -59,8 +59,8 @@ Bulk Edit applies the same change to every selected agent in one action.
 What you can do in this module:
 
 * **Filter the agent list** to narrow it before taking action → [Filtering Agents](submitting-a-support-request.md)
-* **Select agents and apply a bulk change** to Routing Profile, Auto Accept Calls, or ACW Time Limit → [Making Bulk Changes](editing-agents-in-bulk/making-bulk-changes-to-agents.md)
-* **Export the agent list**, either all agents or just your current selection → [Exporting Agent Data](editing-agents-in-bulk/exporting-agent-data.md)
+* **Select agents and apply a bulk change** to Routing Profile, Auto Accept Calls, or ACW Time Limit → [Making Bulk Changes](making-bulk-changes-to-agents.md)
+* **Export the agent list**, either all agents or just your current selection → [Exporting Agent Data](exporting-agent-data.md)
 
 ***
 
