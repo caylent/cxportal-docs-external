@@ -12,7 +12,7 @@ When Pronetx ships an update to CxPortal, what happens next depends on what chan
 
 This page explains the three types of updates, what each one means for your team, and what action (if any) you need to take.
 
-A new permission can be added as part of a Type 2 or Type 3 release — never Type 1, which by definition requires no new permission. If a new permission is added, it needs to be assigned to a role through user management before users can access the new feature. Further details are covered here: [Enabling New Features with Permissions →](https://pronetx.gitbook.io/cxportal-1/TKhZFkVm1x41xyPjrIP9/cx-portal-all-content/releases-and-updates/enabling-new-features-with-permissions)
+A new permission can be added as part of a Type 2 or Type 3 release — never Type 1, which by definition requires no new permission. If a new permission is added, it needs to be assigned to a role through user management before users can access the new feature. Further details are covered here: [Enabling New Features with Permissions →](https://docs.caylent.com/cxportal/enabling-new-features-with-permissions/)
 
 ***
 
@@ -88,7 +88,7 @@ Pronetx provides updated CloudFormation templates and deployment instructions. F
 
 ## Next Steps
 
-* **Admins:** [Enabling New Features with Permissions →](https://pronetx.gitbook.io/cxportal-1/M6apoD9LCAkiMWFcxuXH/cx-portal-all-content/releases-and-updates/enabling-new-features-with-permissions)
-* **Deployment teams:** [Applying an Infrastructure Update →](/broken/pages/7db298056068b230168ed271152dbb05231e1b67)
+* **Admins:** [Enabling New Features with Permissions →](https://docs.caylent.com/cxportal/enabling-new-features-with-permissions/)
+* **Deployment teams:** [Applying an Infrastructure Update →](https://docs.caylent.com/cxportal/applying-an-infrastructure-update/)
 
 ***
