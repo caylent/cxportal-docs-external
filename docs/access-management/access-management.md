@@ -61,7 +61,7 @@ You must have one of these permissions for the Admin menu to appear in CxPortal.
 
 ## What You Can Do
 
-* Access the Access Management Browser → [Getting Started with Access Management ​](access-management/getting-started-with-access-management.md)
+* Access the Access Management Browser → [Getting Started with Access Management](#getting-started-with-access-management)
 * Create roles → ​[Create and Manage Roles](access-management/create-and-manage-roles.md)
 * View instance permissions and restrict access → ​[Review Instance Permissions and Restrict Access ​](access-management/review-instance-permissions-and-restrict-access.md)
 * Review best practices → [Access Management Best Practices​](access-management/access-management-best-practices.md)
