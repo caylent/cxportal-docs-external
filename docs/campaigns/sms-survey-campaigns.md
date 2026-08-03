@@ -39,8 +39,7 @@ Keep the following limits in mind when building an SMS Survey campaign:
 4. Enter a **Campaign name**. Names must start with a letter or number and may only contain letters, numbers, hyphens, or underscores (spaces are not permitted). Campaign names must be unique to all past and future campaigns.
 5. Use the **Source Phone dropdown** to select the outbound phone number for the campaign.
 
-!!! info ""
-    **Note:** You can only select a phone number that supports SMS and you can’t use the same phone number for multiple SMS surveys.
+**Note:** You can only select a phone number that supports SMS and you can’t use the same phone number for multiple SMS surveys.
 
 
 6. Use the **Language dropdown** to select one or more languages. English is selected by default, but you can also add Spanish. When multiple languages are selected, question content can be entered per language.
