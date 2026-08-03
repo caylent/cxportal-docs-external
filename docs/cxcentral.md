@@ -14,7 +14,8 @@ Log in at portal.pronetx.com and you'll land on CxCentral; from there, navigate 
 
 When you [log in](https://portal.pronetx.com), you'll land here:
 
-<img width="1906" height="900" alt="cxcentral-homepage" src="https://github.com/user-attachments/assets/01ddf2c1-7326-44a1-b059-aa423c9ee3f4" />
+<img width="1906" height="900" alt="cxcentral-home_sanitized" src="https://github.com/user-attachments/assets/a4abaf63-b03d-47fe-b598-5c62cf588406" />
+
 
 
 ***
