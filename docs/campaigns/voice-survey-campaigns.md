@@ -94,8 +94,7 @@ Your contact list must adhere to the following file guidelines:
 * Phone numbers must contain at least 11 digits with no spaces, dashes, or parentheses (e.g., +15551234567). A leading + is optional and CxPortal adds it automatically.
 * You may optionally add a language column. Valid values are en-US, es-US, or leave the cell empty. This column is used to specify the preferred language for each contact.
 
-!!! info ""
-    **Note:** If no language is specified, the default language is used. You can view the default language in the language dropdown when adding messages.
+**Note:** If no language is specified, the default language is used. You can view the default language in the language dropdown when adding messages.
 
 
 * Make sure the column headers match these names exactly so the file can be processed correctly.
