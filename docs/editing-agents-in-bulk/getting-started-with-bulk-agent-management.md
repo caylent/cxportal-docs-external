@@ -8,9 +8,9 @@ To open the Agent Management page:
 2. In the left navigation panel, expand **Bulk Edit**.
 3. Click **Agents**.
 
-<img width="1897" height="910" alt="agent-management_sanitized" src="https://github.com/user-attachments/assets/d1abd7ff-8117-415c-860c-da47f4285668" />
-
 The page opens to your full agent roster in a filterable, sortable table. The header shows an **Export All** button and a **Filter Agents** panel.
+
+<img width="1897" height="910" alt="agent-management_sanitized" src="https://github.com/user-attachments/assets/d1abd7ff-8117-415c-860c-da47f4285668" />
 
 ***
 
