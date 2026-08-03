@@ -4,7 +4,7 @@
 
 1. **Go to** [**portal.pronetx.com**](https://portal.pronetx.com) — sign in with the credentials your organization provided.
 
-***<img width="1756" height="751" alt="cxportal-login_sanitized" src="https://github.com/user-attachments/assets/04a7eb21-9c78-42e4-b6aa-fea06bcaaa85" />
+<img width="1756" height="751" alt="cxportal-login_sanitized" src="https://github.com/user-attachments/assets/04a7eb21-9c78-42e4-b6aa-fea06bcaaa85" />
 
 2. **You'll land on CxCentral** — your unified Caylent workspace for accessing products, submitting support requests, and viewing release notes.
 3. **Open CxPortal** — click CxPortal in the left navigation menu, or use the Quick Links on the CxCentral homepage.
