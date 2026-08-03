@@ -24,7 +24,8 @@
 
 An organization maintains a set of Knowledge Bases (up to 10), and each Knowledge Base contains a collection of Articles representing discrete content units in supported formats. Tags can be applied to both Articles and Knowledge Bases to enrich retrieval, providing structured filtering and lookup beyond full-text matching. When a Knowledge Base is synced to Connect, Connect Agents reference it during contact flows, using the indexed and tagged content to classify incoming issues and generate context-aware responses.
 
-![](../assets/images/MUXPl1t0TSGyrd3zrFsr.png)
+<img width="2000" height="1414" alt="km arch" src="https://github.com/user-attachments/assets/a50cbeb1-44fb-4f9f-b6c1-7c3f6aba874a" />
+
 
 ***
 
