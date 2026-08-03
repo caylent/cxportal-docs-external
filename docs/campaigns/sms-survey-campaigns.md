@@ -78,11 +78,10 @@ Your contact list must adhere to the following file guidelines:
 
 * The file must be a CSV file. Other file types aren’t supported.
 * Your CSV file must include three columns: first\_name, last\_name, and phone\_number. All values in these columns must be provided for every row.
-* Phone numbers must start with + and contain at least 11 digits (e.g., +15551234567).
+* Phone numbers must contain at least 11 digits with no spaces, dashes, or parentheses (e.g., +15551234567). A leading + is optional and CxPortal adds it automatically.
 * You may optionally add a language column. Valid values are en-US, es-US, or leave the cell empty. This column is used to specify the preferred language for each contact.
 
-!!! info ""
-    **Note:** If no language is specified, the default language is used. You can view the default language in the language dropdown when adding messages.
+**Note:** If no language is specified, the default language is used. You can view the default language in the language dropdown when adding messages.
 
 
 * Make sure the column headers match these names exactly so the file can be processed correctly.
@@ -91,8 +90,10 @@ Your contact list must adhere to the following file guidelines:
 
 * first\_name,last\_name,phone\_number,language
 * John,Doe,+15551234567,en-US
-* Jane,Smith,+15559876543,es-US
+* Jane,Smith,15559876543,es-US
 * Bob,Johnson,+15551112222,
+
+**Note:** If a row's phone number is still invalid after this check, the upload is rejected. Use digit only with the optional leading "+" and at least 11 digits total (no spaces, dashes, or other characters).
 
 To upload a contact list:
 
