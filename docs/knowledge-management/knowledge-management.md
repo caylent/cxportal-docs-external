@@ -34,7 +34,7 @@ An organization maintains a set of Knowledge Bases (up to 10), and each Knowledg
 * **Business /** **Contact Center Admins** — A user responsible for creating and managing knowledge bases, uploading articles, managing tags, and syncing content to AI agents.
 * **Knowledge/Content Manager** — A user responsible for maintaining the quality and accuracy of documentation. They would use features like version comparison, article editing, and tagging to ensure the right information is available to AI agents. They care about content structure and best practices like using Markdown.
 * **Contact Center Operations Manager** — A user who oversees the overall performance of the contact center. They benefit from the system indirectly — better knowledge management means better AI agent performance, fewer escalations, and improved customer satisfaction metrics.
-* **Content Reviewer** — A user who needs visibility into knowledge bases and articles but doesn't manage them directly. This could be a compliance officer, quality assurance reviewer, or a team lead who monitors content without editing it.
+* **Content Reviewer** — A user who needs visibility into knowledge bases and articles but doesn't manage them directly. This could be a compliance officer, quality assurance reviewer, or a team lead who monitors content without editing it. 
 
 ***
 
