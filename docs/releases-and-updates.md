@@ -1,9 +1,3 @@
----
-icon: up-to-line
-cover: ../.gitbook/assets/confluence header (1) (1).png
-coverY: 0
----
-
 # Releases & Updates
 
 ## How Updates are Delivered
