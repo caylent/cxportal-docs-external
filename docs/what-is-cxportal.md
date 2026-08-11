@@ -8,17 +8,14 @@ CxPortal sits on top of your Amazon Connect environment and is accessed through 
 
 ### Who This Is For
 
-{% column width="33.33333333333333%" %}
 **Business admins**
+- Day-to-day configuration changes and portal management
 
-Day-to-day configuration changes and portal management
-{% column width="33.33333333333333%" %}
 **Developers & QA**
-
-Debugging flows, visualizing call paths, technical investigation
+- Debugging flows, visualizing call paths, technical investigation
+  
 **Operations teams**
-
-Handling outages, monitoring performance, incident response
+- Handling outages, monitoring performance, incident response
 ***
 
 ### Key Objectives
