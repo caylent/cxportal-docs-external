@@ -21,13 +21,12 @@ CxPortal sits on top of your Amazon Connect environment and is accessed through 
 ### Key Objectives
 
 **Faster onboarding**
-
 Get your team productive quickly with clear, task-oriented guides
+
 **Self-service workflows**
-
 Handle common tasks and configuration changes independently
-**Incident confidence**
 
+**Incident confidence**
 Respond correctly to outages and failovers without escalation
 ***
 
