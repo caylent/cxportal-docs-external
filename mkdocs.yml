@@ -45,6 +45,30 @@ theme:
 # ---------------------------------------------------------------------------
 plugins:
   - search
+  # ---------------------------------------------------------------------------
+  # Redirects (mkdocs-redirects)
+  #
+  # CONVENTION -- READ BEFORE RENAMING OR MOVING ANY PAGE:
+  #   MkDocs derives a page's URL from its file path, so renaming or moving a
+  #   .md file CHANGES its published URL and breaks every existing link and
+  #   bookmark to the old one. Whenever you rename or move a page you MUST add
+  #   an entry below mapping the OLD path to the NEW path:
+  #
+  #       'old/path.md': 'new/path.md'
+  #
+  #   Both sides are paths relative to docs/, written with the .md extension.
+  #   The left side is the page that no longer exists (its file is gone); the
+  #   right side is where it now lives. mkdocs-redirects then publishes a tiny
+  #   HTML stub at the old URL that forwards visitors to the new one.
+  #
+  #   Keep old entries indefinitely -- links live on in emails, tickets, and
+  #   bookmarks long after a page moves.
+  # ---------------------------------------------------------------------------
+  - redirects:
+      redirect_maps:
+        # Seed example (verified): the short "/getting-started/" slug forwards
+        # to the full Getting Started page. Add one line per future move.
+        'getting-started.md': 'getting-started-with-cxportal.md'
 
 # ---------------------------------------------------------------------------
 # Markdown extensions (nice-to-haves that match common GitBook content)
