@@ -1,0 +1,4 @@
+# Enforce consistent line endings so edits from any editor, CI runner, or the
+# release-docs automation produce clean diffs — and so every environment agrees on
+# what changed. This repo is uniformly CRLF today, so adding this is zero-churn.
+*.md text eol=crlf
