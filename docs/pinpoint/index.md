@@ -2,7 +2,7 @@
 
 ## Overview
 
-The <mark style="color:$primary;">**Caylent Migration Tool for Amazon Pinpoint**</mark> is a CLI-based automation tool that migrates supported Amazon Pinpoint configurations to Amazon Connect.
+The **Caylent Migration Tool for Amazon Pinpoint** is a CLI-based automation tool that migrates supported Amazon Pinpoint configurations to Amazon Connect.
 
 Amazon Pinpoint reaches End of Support (EOS) on October 30, 2026. After that date, customers must use supported AWS services for campaign and messaging workflows. This tool provides a structured migration path for eligible Pinpoint resources.
 
@@ -26,7 +26,7 @@ Your Pinpoint environment remains fully operational while you run the tool. You 
 
 <details>
 
-<summary><mark style="color:$primary;"><strong>Deploy bootstrap infrastructure</strong></mark></summary>
+<summary>**Deploy bootstrap infrastructure**</summary>
 
 Deploys a bootstrap stack that provisions the S3 bucket, IAM export role, Customer Profiles domain, and KMS key required by all subsequent commands.
 
@@ -34,7 +34,7 @@ Deploys a bootstrap stack that provisions the S3 bucket, IAM export role, Custom
 
 <details>
 
-<summary><mark style="color:$primary;"><strong>Scan and inventory Pinpoint resources</strong></mark></summary>
+<summary><strong>Scan and inventory Pinpoint resources</strong></summary>
 
 Scans a specified Pinpoint application and inventories endpoints, templates, campaigns, segments, journeys, and channel configurations.
 
@@ -42,7 +42,7 @@ Scans a specified Pinpoint application and inventories endpoints, templates, cam
 
 <details>
 
-<summary><mark style="color:$primary;"><strong>Evaluate migration eligibility</strong></mark></summary>
+<summary><strong>Evaluate migration eligibility</strong></summary>
 
 Evaluates each resource for migration eligibility and classifies it as Eligible, Eligible-with-Warnings, or Not-Eligible.
 
@@ -50,7 +50,7 @@ Evaluates each resource for migration eligibility and classifies it as Eligible,
 
 <details>
 
-<summary><mark style="color:$primary;"><strong>Migrate supported resources</strong></mark></summary>
+<summary><strong>Migrate supported resources</strong></summary>
 
 Migrates supported resources to Amazon Connect Outbound Campaigns, Amazon Connect Customer Profiles, and Amazon Connect message templates.
 
@@ -58,7 +58,7 @@ Migrates supported resources to Amazon Connect Outbound Campaigns, Amazon Connec
 
 <details>
 
-<summary><mark style="color:$primary;"><strong>Generate migration reports</strong></mark></summary>
+<summary><strong>Generate migration reports</strong></summary>
 
 Generates detailed reports summarizing migration outcomes and required manual actions.
 
