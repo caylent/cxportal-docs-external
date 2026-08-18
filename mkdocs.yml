@@ -206,7 +206,7 @@ nav:
 
   - Resiliency:
       - Amazon Connect Global Resiliency (ACGR):
-          - Overview: "amazon-connect-global-resiliency-acgr/amazon-connect-global-resiliency-acgr-overview.md"
+          - Overview: "amazon-connect-global-resiliency-acgr/amazon-connect-global-resiliency-acgr/overview.md"
           - Getting Started: amazon-connect-global-resiliency-acgr/getting-started-with-acgr.md
           - Multi-Region Resiliency: amazon-connect-global-resiliency-acgr/acgr-multi-region-resiliency.md
           - Managing Traffic Distribution Groups (TDGs): amazon-connect-global-resiliency-acgr/managing-traffic-distribution-groups-tdgs.md
