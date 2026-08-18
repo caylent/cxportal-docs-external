@@ -8,7 +8,6 @@ Amazon Connect requires agent changes one at a time by default, so this gives yo
 
 ***
 
-{% column width="50%" %}
 **Who this is for**
 
 **Business Admins** — Contact center administrators responsible for configuring agents in Amazon Connect.
