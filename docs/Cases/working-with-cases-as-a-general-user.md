@@ -7,7 +7,7 @@ Make sure the following are in place before submitting a support case as a Gener
 * **CxCentral access.** You'll need a CxCentral account with credentials provided by your organization.
 * **No access? Use email instead.** If you can't get into CxCentral, you can still submit a case using the support email address your organization provides. It enters the same support system.
 * **Know your role.** As a General User, you can submit cases and view your own case history. Creating cases on behalf of others, editing across the organization, and managing contacts are admin functions—if you need those, contact your company admin.
-* **Gather your details ahead of time.** Have your title, priority, case type, and a clear description ready, along with any files that help explain the issue, so you can complete the support form in one pass.
+* **Gather your details ahead of time.** Have your title, case type, priority, product, module, and a clear description ready, along with any files that help explain the issue, so you can complete the support form in one pass. Priority can't be selected until you've chosen a Case Type, and Product/Module are both required.
 * **Check your attachments.** Confirm each file is within the size and format limits below before you upload.
 
 ***
@@ -32,10 +32,16 @@ Keep the following limits in mind when using Cases:
 1. Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
 2. Sign in with the credentials your organization provides.
 3. Click **Support** in the top right corner of the screen.
-4. Fill out the support request form and add attachments.
-5. Click **Submit**.
+4. Enter a **Case Title**, select a **Case Type**, then choose a **Priority**. Priority stays disabled until you've chosen a Case Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
+5. Select a **Product** and a **Module** to classify what the case is about — the Module options depend on the Product you pick.
+6. Add a **Summary**, and attach files or add CC recipients as needed.
+7. Click **Submit**
 
 A success message appears upon submission. You can navigate to the cases dashboard to view your case details.
+
+ !!! info ""
+
+     If you open the support form while viewing a specific module (for example, ACGR or Access Management), Product and Module are pre-filled to match what you were viewing. You can still change them before submitting.
 
 !!! info ""
     If you can't access CxCentral, you can submit a support case using the support email address your organization provides.
