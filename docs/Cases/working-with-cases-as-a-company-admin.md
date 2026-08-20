@@ -6,7 +6,7 @@ Make sure the following are in place before creating or managing support cases a
 
 * **CxCentral access with admin privileges.** You'll need a CxCentral account with company admin permissions, using credentials provided by your organization.
 * **Understand your reach.** As a company admin, you can create cases, edit open cases, view all cases across your organization, manage contact profiles, and bulk-edit case statuses. This is broader than a General User, who can only submit and view their own cases.
-* **Gather case details ahead of time.** Have the title, priority, case type, module, feature, and a clear description ready, plus any attachments, so you can complete the Create a Case form in one pass.
+* **Gather case details ahead of time.** Have the title, case type, priority, product, module, and a clear description ready, plus any attachments, so you can complete the Create a Case form in one pass. Priority can't be selected until you've chosen a Case Type.
 * **Line up your CC recipients.** Decide who should be kept in the loop before you create the case. CC'd recipients receive email notifications for any case activity, so confirm their addresses up front.
 * **Set up contact profiles.** If you're managing contacts, have each person's name and email ready (both required); all other details are optional. Profiles let you tie cases back to the right people in your organization.
 * **Check your attachments.** Confirm each file is within the size and format limits below before uploading.
@@ -35,13 +35,15 @@ Keep the following limits in mind when using Cases:
 1. Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
 2. Sign in with the credentials your organization provides.
 3. Click **Support** in the top right corner of the screen. This takes you to the Create a Case page.
-4. Enter a **Title**, **Priority**, **Case Type**, and **Description** for your case. 
-5. Select a **Module** and **Feature**. Both are required:
-   * **Module** — the product area the case relates to: **Cases**, **CxCentral**, or **CxPortal**.
-   * **Feature** — the specific area within that Module. The Feature options depend on the Module you select (see the table below); if a Module has only one Feature, it's selected automatically. 
-6. Enter a **Description**. Add attachments or comments as needed.
-7. (Optional) Add CC recipients to the case. All CC'd recipients will get email notifications for any case activity.
+4. Enter a **Title**. The **Company** and **Reported By** fields are pre-filled with your own company and profile — both stay editable if you're filing the case on behalf of someone else.
+5. Select a **Case Type**, then choose a **Priority**. Priority stays disabled until you've chosen a Case Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
+6. Select a **Product** and a **Module** to classify what the case is about. The Module options depend on the Product you pick.
+7. Add a **Description**, and attach files or add CC recipients as needed. All CC'd recipients will get email notifications for any case activity.
 8. Click **Save**.
+
+!!! info ""
+    **Note:** If you open **Create a Case** from the support icon while viewing a specific module (for example, ACGR or Access Management), Product and Module are pre-filled to match what you were viewing. You can still change them before saving.
+
 
 #### Module and Feature options
 
