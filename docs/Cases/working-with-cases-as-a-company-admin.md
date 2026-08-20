@@ -46,16 +46,28 @@ Keep the following limits in mind when using Cases:
 
 
 #### Module and Feature options
-
-| Module | Feature options |
-
-|---|---|
-
-| Cases | n/a (auto-selected) |
-
-| CxCentral | Admin: Access Management, Admin: Module Deployments, Admin: Notifications, Admin: Release Notes, Admin: Superadmin, CxCentral home |
-
-| CxPortal | ACGR, Agent Management, Analytics & Dashboards, Bulk Edit, Campaigns, Change Management, CxPortal home, DFC, Flow Insights, Knowledge Management, Proficiency Routing, Q in Connect |
+<table>
+  <thead>
+    <tr>
+      <th>Module</th>
+      <th>Feature options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cases</td>
+      <td>n/a (auto-selected)</td>
+    </tr>
+    <tr>
+      <td>CxCentral</td>
+      <td>Admin: Access Management, Admin: Module Deployments, Admin: Notifications, Admin: Release Notes, Admin: Superadmin, CxCentral home</td>
+    </tr>
+    <tr>
+      <td>CxPortal</td>
+      <td>ACGR, Agent Management, Analytics &amp; Dashboards, Bulk Edit, Campaigns, Change Management, CxPortal home, DFC, Flow Insights, Knowledge Management, Proficiency Routing, Q in Connect</td>
+    </tr>
+  </tbody>
+</table>
 
 !!! info ""
     **Note:** Module and Feature apply when creating a new case. They aren't shown when editing an existing case.
@@ -75,7 +87,7 @@ You can view your case history and all cases submitted across your organization.
 
 1. On the cases dashboard, click the **Reference Number** for the case you want to edit. This opens the Case Details page.
 2. On the Case Details page, click **Edit Case**.
-3. Edit the case details and add attachments or comments to the case.
+3. Edit the case details — including **Case Type**, **Priority**, **Product**, and **Module** — and add attachments or comments to the case.
 4. Click **Update** to apply your changes.
 
 Once case details are updated, you'll receive an email notification detailing the changes.
