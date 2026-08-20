@@ -40,7 +40,6 @@ Keep the following limits in mind when using Cases:
 A success message appears upon submission. You can navigate to the cases dashboard to view your case details.
 
  !!! info ""
-
      If you open the support form while viewing a specific module (for example, ACGR or Access Management), Product and Module are pre-filled to match what you were viewing. You can still change them before submitting.
 
 !!! info ""
