@@ -43,7 +43,7 @@ What you can do in this module:
 ## Related Modules
 
 * **Roles** — Users sits alongside Roles under **Admin** > **Access management**; roles defined there are what you assign to users.
-* **Change Requests** — the third Access management sub-page, which controls which actions require a change request.
+* **Change Requests** — the third Access management sub-page, which controls which actions require a change request. The page now warns you if you try to navigate away with unsaved changes, letting you discard them or go back and save first.
 
 ***
 
