@@ -31,6 +31,11 @@ The editing tray opens fully editable — there's no separate edit mode. The foo
 4. (Optional) Add more time ranges to a day: a. Click the **+** next to the day. The **Edit Hours of Operation** modal opens with a weekly calendar view. b. Add or adjust ranges in the calendar. c. Save the modal. Additional ranges appear nested under their day, where you can edit them directly.
 5. Click **Save** and review your changes (see Reviewing and Submitting Your Changes below).
 
+
+!!! info ""
+      **Note:** To make a day open all day, set its end time to **00:00** (midnight). It's automatically stored and displayed as **23:59**, since the system has no 24:00 end-of-day value. A pinging dot over the End time field, with a "Full day — 12:00 AM to 11:59 PM" tooltip, marks a range set this way.
+
+
 ***
 
 ## Adding or Deleting Closures
