@@ -24,14 +24,9 @@
 
 ***
 
-### Troubleshooting
+## Support
 
-| Problem | Cause | Solution |
-| --- | --- | --- |
-| The Search Results page shows "You don't have access to DFC." | Your role doesn't currently have a DFC permission level assigned. | Contact your Access Management admin to have a DFC permission level added to your role. |
-| The Search Results page shows "Something went wrong loading results." | The search request failed to load. | Try the search again. If it keeps failing, submit a support request. |
-
-!!! info ""
-    [VERIFY] The exact wording of the in-progress-scan messaging (shown while DFC is still checking your data for matches) and the parent-entity context line shown under an item result are confirmed in the code but not independently verified against a live search — check both against the running UI before publishing.
+If you run into issues not covered here, contact the support team through the [**Support**](https://docs.caylent.com/cxportal/submitting-a-support-request/) page.
 
 ***
+
