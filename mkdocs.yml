@@ -162,6 +162,7 @@ nav:
       - Dynamic Flow Configurator (DFC):
           - Overview: dynamic-flow-configurator-dfc/dynamic-flow-configurator-dfc-homepage.md
           - Getting Started: dynamic-flow-configurator-dfc/getting-started-with-dfc.md
+          - Searching DFC: dynamic-flow-configurator-dfc/searching-dfc.md
           - Setting Up Entities & Schemas: dynamic-flow-configurator-dfc/setting-up-entities-and-schemas.md
           - Managing Hours of Operation & Closures: dynamic-flow-configurator-dfc/managing-hours-of-operation-and-closures.md
           - Editing Prompt Fields: dynamic-flow-configurator-dfc/editing-prompt-fields.md
