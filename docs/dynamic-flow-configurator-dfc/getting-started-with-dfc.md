@@ -34,6 +34,12 @@ Selecting an entity adds two controls next to its name:
 !!! info ""
     **Note:** The Settings gear and More menu don't appear at the Home (root) level.
 
+    
+***    
+
+## Searching DFC
+
+A search bar in the DFC header lets you search across items and entities instance-wide, without navigating into each entity individually. See [Searching DFC](searching-dfc.md) for the full workflow.
 
 ***
 
@@ -47,8 +53,14 @@ The entity list shows the most recently created entities first. To change the or
 !!! info ""
     **Note:** Official Order appears in the sort menu but is currently disabled. The sort control is hidden when the list is empty.
 
+***
+
+## Sorting the Items Table
+
+Click a column header's menu to sort the items table ascending or descending. Reference columns and Amazon Connect Resource columns (Queue, Phone Number, and similar) support sorting, the same as other column types. Sorting and searching a column covers every row in the entity, not just the rows currently loaded on screen.
 
 ***
+
 
 ## Filtering the Items Table
 
