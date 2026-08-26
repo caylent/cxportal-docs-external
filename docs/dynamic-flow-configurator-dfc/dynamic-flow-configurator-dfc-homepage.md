@@ -78,6 +78,7 @@ See [Managing DFC Permissions](managing-dfc-permissions.md) for the full setup.
 ## What You Can Do
 
 * Access the DFC Browser and navigate entities → [Getting Started with DFC](getting-started-with-dfc.md)
+* Search across items and entities → [Searching DFC](searching-dfc.md)
 * Set up entities, sub-entities, schemas, and items → [Setting Up Entities and Schemas](setting-up-entities-and-schemas.md)
 * Edit SSML voice content in a Prompt field → [Editing Prompt Fields](editing-prompt-fields.md)
 * Import and export data between environments → [Importing and Exporting Data](importing-and-exporting-data.md)
