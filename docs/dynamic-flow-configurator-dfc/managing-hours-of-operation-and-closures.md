@@ -8,7 +8,8 @@ description: >-
 
 Entities can include **Hours of Operation** and **Closure** fields in their schema. You set their values per item from the item's editing tray: hours as weekly open/closed rules with time ranges, and _closures_ as dated periods — such as holidays — when normal hours don't apply.
 
-Each field's heading in the editing tray shows its field name (for example, "Chat hours" or "Holiday closures"), so entities with more than one Hours of Operation or Closure field are distinguishable at a glance. A field with no name falls back to a generic heading — "Hours of Operation," or a count-based heading such as "2 Closures."
+* Each field's heading in the editing tray shows its field name (for example, "Chat hours" or "Holiday closures"), so entities with more than one Hours of Operation or Closure field are distinguishable at a glance. 
+* A field with no name falls back to a generic heading: "Hours of Operation," or a count-based heading such as "2 Closures."
 
 ***
 
@@ -46,9 +47,11 @@ The editing tray opens fully editable — there's no separate edit mode. The foo
 4. To remove an existing closure, click its delete button.
 5. Click **Save** and review your changes (see Reviewing and Submitting Your Changes below).
 
-{% hint style="info" %}
-**Note:** When the list has more than three closures, a second + Closure button appears at the bottom of the list so you don't have to scroll back to the top.
-{% endhint %}
+
+!!! info ""
+      **Note:** When the list has more than three closures, a second + Closure button appears at the bottom of the list so you don't have to scroll back to the top.
+
+
 
 ***
 
@@ -62,9 +65,8 @@ The editing tray opens fully editable — there's no separate edit mode. The foo
 
 A change request is created and routed through the standard DFC approval flow. Your changes apply once it's approved.
 
-{% hint style="info" %}
-**Note:** An item with no hours and no closures opens with every day showing Closed and a single blank closure card ready to fill in.
-{% endhint %}
+!!! info ""
+      **Note:** An item with no hours and no closures opens with every day showing Closed and a single blank closure card ready to fill in.
 
 ***
 
