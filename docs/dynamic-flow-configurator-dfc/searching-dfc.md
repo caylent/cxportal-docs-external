@@ -12,11 +12,11 @@
 ### Search DFC
 
 1. In the DFC header, click the search bar (labeled **Search DFC**) and type your search term. You need at least 2 characters before a search runs.
-2. Press Enter, or wait for results to load, to go to the Search Results page.
+2. Press Enter
 3. Results are grouped into two sections:
     - **Items** — matching records inside entities
     - **Entities** — matching entities and sub-entities
-4. Each section header shows a result count summary, for example "Found *N* results for '*query*'." If DFC hasn't finished scanning your data yet, the summary reflects that instead of showing an empty result.
+4. Each section header shows a result count summary. If DFC hasn't finished scanning your data yet, the summary reflects that instead of showing an empty result.
 5. Click **Load more** (or **Continue searching**) at the bottom of a section to fetch the next page of results.
 
 !!! info ""
