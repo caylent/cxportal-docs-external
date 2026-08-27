@@ -34,11 +34,12 @@ Keep the following limits in mind when building a Voice Survey campaign:
 ### Create a Voice Survey Campaign
 
 1. Open CxPortal.
-2. In the left menu, click **Campaigns**, and then **Create Campaign**.
-3. Select a **Campaign Group**. A group must be selected before you can proceed. Campaigns can’t be created without a group.
-4. Click **Voice Survey**, and then **Content**.
-5. Enter a **Campaign name**. Names must start with a letter or number and may only contain letters, numbers, hyphens, or underscores (spaces are not permitted). Campaign names must be unique to all past and future campaigns.
-6. Use the **Source Phone dropdown** to select the outbound phone number for the campaign.
+2. In the left menu, click **Campaigns**, and then **Dashboard**.
+3. Click **+ Create Campaign**.
+4. Select a **Campaign Group**. A group must be selected before you can proceed. Campaigns can’t be created without a group. 
+5. Click **Voice Survey**, and then **Content**.
+6. Enter a **Campaign name**. Names must start with a letter or number and may only contain letters, numbers, hyphens, or underscores (spaces are not permitted). Campaign names must be unique to all past and future campaigns.
+7. Use the **Source Phone dropdown** to select the outbound phone number for the campaign.
 
 !!! info ""
     **Note:** You can only select an Amazon Connect phone number that supports voice.
