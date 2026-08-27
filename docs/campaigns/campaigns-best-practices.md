@@ -2,11 +2,28 @@
 
 Following these practices will help you run campaigns that are well-organized, reach more recipients, and respect their experience.
 
-* **Organize with Campaign Groups from the start** — Set up groups thoughtfully, since they act like departments and control which campaigns each user can see. Clear, meaningful group names make it easier to keep activity segmented and visibility appropriate.
-* **Match campaign duration to the message type** — Use the duration guidelines as a guide: up to 24 hours for emergency alerts, 7 days for service notifications, 14 days for general communications, and 30 days for surveys.
-* **Respect recipients with quiet hours** — Define quiet-hour windows so calls and messages aren't sent at inappropriate times, which helps protect your sender reputation and recipient goodwill.
-* **Clean your contact list before uploading** — Double-check that your CSV uses the exact required column headers, includes all required values, and formats phone numbers correctly (at least 11 digits, no spaces, dashes, or parentheses; a leading + is optional and is added automatically if missing). This prevents processing errors and failed sends.
-* **Use the language column to personalize reach** — When contacting a mixed audience, specify each recipient's preferred language (en-US or es-US) so messages are delivered in the right language.
-* **Fine-tune voice with SSML** — For voice campaigns, use the SSML editor to control pacing, pauses, pronunciation, and emphasis so messages sound clear and natural.
-* **Preview and review before launching** — Use the Preview option to hear voice notifications ahead of time, and always review your messages, schedule, and contacts on the review screen before clicking Launch.
-* **Monitor performance and watch your spam rate** — Check the Dashboard regularly to track delivery rate, response rate, and especially spam rate, which can signal deliverability issues worth addressing.
+## Recommended Configurations
+* Verify sender identities early — Set up and verify your sender email addresses before creating campaigns. Verification may take time, and campaigns cannot send until the sender identity is verified.
+* Organize campaigns by campaign group — Use campaign groups to align campaigns with business units or agencies. This keeps recipient lists, templates, and topics organized.
+* Use topics within campaign groups — Topics help subcategorize your campaigns and associate default templates, reducing manual configuration when creating campaigns.
+* Test with small recipient lists first — Before launching a campaign to a large contact list, create a small test list to verify the email template renders correctly and the campaign executes as expected.
+* Use descriptive naming conventions — Name campaigns, templates, and recipient lists with consistent, descriptive names that include the campaign group, purpose, and date where applicable.
+* Publish templates before creating campaigns — Templates must be in a Published state to be selected during campaign creation. Save drafts while editing, but publish before scheduling a campaign.
+
+## Common Pitfalls
+**Avoid: Using unverified sender identities**
+Campaigns require verified sender identities. Attempting to create a campaign with an unverified sender will fail.
+
+**Avoid: Uploading CSV files with incorrect formatting**
+Recipient lists rely on properly formatted CSV files with email addresses. Malformed files may result in incomplete or failed uploads.
+
+**Avoid: Scheduling campaigns without quiet hours**
+Sending emails during off-hours may lead to lower engagement and higher spam complaints. Configure quiet hours to restrict sending to appropriate time windows.
+
+**Avoid: Creating campaigns without reviewing the email preview**
+The template editor includes a Preview tab that shows how the email renders for recipients. Always review the preview before publishing to catch formatting issues.
+
+## Performance and Scaling
+* Monitor the Delivery Rate on the Dashboard to identify deliverability issues early.
+* Review the Spam rate in campaign details. A high spam rate may indicate issues with your email content or sender reputation.
+* Use the Dashboard date range selector and filters to compare campaign performance across periods and campaign groups.
