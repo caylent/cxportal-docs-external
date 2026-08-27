@@ -42,8 +42,8 @@ Keep the following in mind when working with Prompts:
 3. On the Prompt list, click the **Pencil icon** in the Actions column.
 4. Edit the text in the Prompt Template box as needed.
 5. Click **Save Prompt** to apply your changes.
-6. (Optional) Click **View Versions** to see all versions of the Prompt.
-   1. Select two versions and click **Compare** to see inline differences. Lines highlighted in red are removed, and lines highlighted in green are added or modified. **Note:** You can have up to 50 versions of a Prompt at one time.
+6. (Optional) Click the prompt version dropdown at the top of the page to see all versions of the Prompt.
+   1. Click **Manage Versions** to compare versions and see inline differences. Lines highlighted in red are removed, and lines highlighted in green are added or modified. **Note:** You can have up to 50 versions of a Prompt at one time.
 
 ***
 
