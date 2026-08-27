@@ -14,11 +14,9 @@
 3. Find the user with the **Search Users** box or the **Filter by role** dropdown.
 4. Click the **View Details** (eye) icon on the right of the user's row. This opens the user detail page.
 
-!!! info ""
-    The user detail page shows:
-
-    * **User Details** — the user's **EMAIL** and **LOGIN METHODS** (for example, "Password · Confirmed"), with the actions **Deactivate**, **Edit Profile**, and **Send Forgot Password Reminder**.
-    * **Role and Instance Access** — the **ROLE NAME**, a **Change Role** button, and an **Instance Name** table listing the instances the user can access.
+The user detail page shows:
+* **User Details** — the user's **EMAIL** and **LOGIN METHODS** (for example, "Password · Confirmed"), with the actions **Deactivate**, **Edit Profile**, and **Send Forgot Password Reminder**.
+* **Role and Instance Access** — the **ROLE NAME**, a **Change Role** button, and an **Instance Name** table listing the instances the user can access.
 
 
 ***
@@ -67,8 +65,7 @@ You can reactivate a user that has been previously deactivated:
 
 ### Delete a User
 
-!!! info ""
-    Deleting a user removes their data and access to the system. **This is irreversible**.
+Note: Deleting a user removes their data and access to the system. **This is irreversible**.
 
 
 You can delete a user at any time. To delete:
