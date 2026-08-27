@@ -182,12 +182,16 @@ nav:
       - Campaigns:
           - Overview: campaigns/campaigns.md
           - Getting Started: campaigns/getting-started-with-campaigns.md
-          - Campaigns Dashboard: campaigns/campaigns-dashboard.md
-          - Manage Campaign Groups: campaigns/manage-campaign-groups.md
+          - Manage Sender Identities: campaigns/manage-sender-identities.md
+          - Manage Recipient Lists: campaigns/managing-recipient-lists.md
+          - Manage Email Templates: campaigns/managing-email-templates.md
+          - Manage Account and Campaign Groups: campaigns/manage-account-and-campaign-groups.md
+          - Create a Campaign: campaigns/create-a-campaign.md
           - Voice Notification Campaigns: campaigns/voice-notification-campaigns.md
           - Voice Survey Campaigns: campaigns/voice-survey-campaigns.md
           - SMS Notification Campaigns: campaigns/sms-notification-campaigns.md
           - SMS Survey Campaigns: campaigns/sms-survey-campaigns.md
+          - Email Campaigns: campaigns/email-campaigns.md
           - Best Practices: campaigns/campaigns-best-practices.md
       - Knowledge Management:
           - Overview: knowledge-management/knowledge-management.md
