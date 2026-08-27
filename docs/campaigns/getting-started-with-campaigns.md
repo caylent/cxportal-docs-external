@@ -2,48 +2,41 @@
 
 ## How to Access Campaigns
 
-1.  Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
-2. Sign in with the credentials your organization provides.
-3. In the left menu, click **CxPortal**.
-4. In the left menu, click **Campaigns**.
-
-!!! info ""
-    Note: If certain actions are not visible in the UI, your role may not include those permissions.
-
+1. Log in to CxPortal at your organization’s portal URL.
+2. In the left sidebar, click **Campaigns**.
+3. The module expands to show five sub-pages: Dashboard, Sender Identities, Recipient Lists, Email Templates, and Account Management.
+4. Click **Dashboard** to begin.
 
 ## Understanding the Campaigns Browser Layout
 
 You can access Campaigns in left menu in CxPortal. Expand Campaigns to access your campaigns and campaign groups.
 
-The campaigns module is split into main three areas:
+The campaigns module is split into a few areas:
 
 * **The Campaigns Dashboard**: This page is your central hub for tracking how your agencies and campaigns are performing. It gives you a high-level performance overview, filters to focus on the campaigns that matter to you, and a searchable list of all your campaigns. From here you can see key metrics at a glance, adjust the time range you're viewing, and open any individual campaign to see more detail.
-* **Create Campaign**: This page is where you build and launch your campaigns. You choose a campaign type—Voice Survey, Voice Notification, SMS Survey, or SMS Notification—then add your content, set a schedule, and upload your contact list. Once everything looks right, you review the details and launch.
-* **Campaign Groups**: This page lets you organize campaigns into logical groups that work like departments. Groups help segment campaign activity and control who sees what, so users only view the campaigns relevant to them. From this page you can create new groups, see activity associated with each one, and remove groups you no longer need.
+* **Sender Identities**: This page lets you manage the verified email addresses used as the “from” address in your campaigns.
+* **Recipients List**: This page lets you upload and manage CSV-based contact lists used to define who receives your campaigns. Each list is scoped to a campaign group and tracks its status, recipient count, and associated topics.
+* **Email Templates**: This page lets you create, edit, and version reusable HTML email templates scoped to campaign groups. Templates support Connect-style variable placeholders and must be published before they can be used in campaigns.
+* **Account Management**: This page provides a centralized view of your organizational hierarchy—accounts, campaign groups, and topics—and lets you manage group structure, add new groups and topics, and view aggregate metrics. 
+
 
 ***
 
 ## Your First Task
 
-**Try it: Create your first Campaign**
+**Try it: Review the Dashboard**
 
-1. Open CxPortal.
-2. In the left menu, click **Campaigns**, and then **Create Campaign**.
-3. Select a **Campaign Group**. A group must be selected before you can proceed. Campaigns can’t be created without a group.
-4. Select a **Campaign type**. The four types are:
-
-* Voice Survey — Interactive voice calls with up to 5 questions; recipients respond via keypad.
-* Voice Notification — Automated voice calls delivering pre-recorded or text-to-speech messages.
-* SMS Survey — Interactive text surveys with up to 5 questions; recipients respond via text.
-* SMS Notification — One-way text messages sent directly to mobile devices.
-
-5. Click **Content** to proceed.
+1. Navigate to **Campaigns > Dashboard** in the left sidebar.
+2. Review the Overall Performance cards to see a summary of your campaign metrics.
+3. Use the date range selector to change the reporting period.
+4. Click **Show Filters** to filter campaigns by Campaign Group, Type, or Status.
+5. Click on a campaign name in the table to view its details.
 
 ***
 
 ## What to Do Next
 
-Now that you have created a Campaign, here is what to do next:
+Now that you have reviewed the dashboard, here is what to do next:
 
 * Follow the workflow to create content for the chosen campaign type:
   * Voice survey campaign → [Voice Survey Campaigns ](voice-survey-campaigns.md)
