@@ -2,7 +2,7 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-**Campaigns** is a powerful outreach tool built into CxPortal that lets your team engage contacts at scale across voice and SMS channels. With four campaign types — Voice Survey, Voice Notification, SMS Survey, and SMS Notification — you can collect feedback, deliver automated alerts, and broadcast targeted messages all from one place. A guided builder with multi-language support, SSML voice editing, and flexible scheduling makes launching campaigns fast and effortless.
+**Campaigns** lets you create, manage, and track outbound email campaigns to your contacts. Use this module to build targeted email campaigns by defining sender identities, uploading recipient lists, designing email templates, and scheduling campaign delivery. Campaigns centralize your outbound communication workflows so you can monitor performance and optimize engagement across your contact center operations.
 
 [Watch video](https://www.youtube.com/watch?index=5&list=PLpgcSwyApvJBEYmlf0pjnS2XvFjvR8X1Y&v=KoF-f8uwW84)
 
@@ -34,9 +34,10 @@ Finally, you review your messages, schedule, and contacts, and launch. Once the 
 
 ## Who Uses This <a href="#key-terms" id="key-terms"></a>
 
-* **Campaign Manager / Marketing Manager** — The primary builder and owner of campaigns. They're responsible for designing outreach strategies, selecting campaign types, crafting messaging, and launching campaigns to the right audiences at the right time. They care most about ease of creation, scheduling flexibility, and campaign performance.
-* **Contact Center Manager / Operations Manager** — Focused on the big picture — monitoring campaign performance across groups, tracking delivery and response rates, and ensuring outreach is running efficiently. They rely heavily on the Dashboard to spot issues and make operational decisions in real time.
-* **Departmental Team Lead** — A group-level user who only sees campaigns relevant to their department. They may monitor performance within their Campaign Group and coordinate with campaign managers to ensure messaging aligns with their team's goals.
+* **Business Admins** — Configure campaign groups, manage sender identities, and oversee campaign performance
+* **Operations Teams** — Monitor delivery rates, track campaign statuses, and manage recipient lists
+* **Developers** — Integrate campaign data with external systems and manage email template HTML
+* **Sales Reps** — Review campaign performance metrics and delivery outcomes
 
 ***
 
@@ -46,19 +47,31 @@ Campaigns is powerful outreach tool that lets your team engage contacts at scale
 
 | Term                   | Definition                                                                                                                                                             |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Campaign**           | A configured outreach effort that sends voice calls or SMS messages to a list of contacts. Campaigns are organized into groups and can be monitored via the dashboard. |
-| **Campaign Group**     | A logical grouping of campaigns that functions as a department within the platform. Users assigned to a group only see campaigns relevant to that group.               |
-| **Voice Survey**       | An interactive voice call campaign that presents up to 5 questions, with recipients responding via phone keypad.                                                       |
-| **Voice Notification** | An automated outbound voice call that delivers a pre-recorded or text-to-speech message without expecting a response.                                                  |
-| **SMS Survey**         | An interactive text-based campaign of up to 5 questions where recipients respond via SMS.                                                                              |
-| **SMS Notification**   | A one-way outbound text message campaign, limited to 500 characters per message.                                                                                       |
-| **Contact List**       | A CSV file uploaded to a campaign containing recipient information (first name, last name, phone number, and optionally language).                                     |
+| **Campaign**           | An outbound email notification sent to a defined set of contacts using a specific template, sender identity, and schedule.                                             |
+| **Campaign Group**     | An organizational unit that groups related campaigns, recipient lists, templates, and topics together. Campaign groups are typically aligned to business units or agencies.            |
+| **Topic**       | A subcategory within a campaign group that further organizes campaigns. Topics have a default template and track subscriber counts.  |
+| **Sender Identity** | A verified email address used as the “from” address when sending campaign emails. Only verified domains can be used to send emails. |
+| **Recipient List**         | A CSV-based contact list uploaded to CxPortal that defines the email addresses and attributes of campaign recipients.    |
+| **Email Template**   | A reusable, versioned HTML email layout scoped to a campaign group. Templates support Connect-style variable placeholders for personalization.                                                    |
+| **Account**       | The top-level organizational container that holds campaign groups. Use Account Management to distribute target users across multiple campaign groups and topics.                                  |
 
 ***
 
-## Permissions
+## Prerequisites and Permissions
 
-Campaigns are subject to role-based access. You must have a specific role designated by your organization to create campaigns.
+* You must have the appropriate admin or campaign management role assigned to your account.
+* At least one Amazon Connect instance must be configured in CxPortal.
+* To send campaigns, you must have at least one verified sender identity configured.
+* A recipient list must be uploaded before you can create a campaign.
+* At least one published email template must exist before you can create a campaign.
+* AWS SES service must be put into production mode prior to using Campaigns.
+* You must have a registered domain in SES in order to create sender identities. 
+
+Campaigns are subject to role-based access. You must have a specific role designated by your organization to create campaigns. 
+
+An Admin role can perform all functions in Campaigns.  
+A User role can use campaigns but can’t manage users, enable or disable accounts, create accounts, or delete campaign groups.
+
 
 ***
 
