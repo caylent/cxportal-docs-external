@@ -11,9 +11,10 @@ Reverting rolls back a change that has already been executed. You revert from th
 ## Steps
 
 1. In the left sidebar, click **Change Management** > **Audit Log**.
-1. Click the row menu (**Open menu**) on the record, then click **Review change** (or **Review bulk change**).
-1. Review the **Before State** and **After State**.
-1. Click **Revert**.
+2. Click the row menu (**Open menu**) on the record, then click **Review change** (or **Review bulk change**).
+3. Review the **Before State** and **After State**.
+4. Click **Revert**.
+5. Review the inline confirmation message to proceed.
     - On a bulk record, click **Revert Bulk** to revert the whole group, or click **View Individual Records** and use the per-record **Revert** button to revert a single record within the group.
 
 > **Note:** Bulk records with **Change Type** **Import** can't be reverted. **Revert** / **Revert Bulk** is disabled for them — both at the bulk level and for individual records within the group — with a tooltip explaining that bulk reversions on imports are disabled.
