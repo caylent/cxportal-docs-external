@@ -86,7 +86,8 @@ A User role can use campaigns but can’t manage users, enable or disable accoun
   * Create voice survey campaigns → [Voice Survey Campaigns ](voice-survey-campaigns.md)
   * Create voice notification campaigns→ [Voice Notification Campaigns](voice-notification-campaigns.md)
   * Create SMS survey campaigns → [SMS Survey Campaigns](sms-survey-campaigns.md)
-  * Create SMS notification campaigns→ [SMS Notification Campaigns](voice-notification-campaigns.md)
+  * Create SMS notification campaigns → [SMS Notification Campaigns](voice-notification-campaigns.md)
+  * Create Email Campaigns → [Email Campaigns](email-campaigns.md)
 * Review best practices → [Campaigns Best Practices](campaigns-best-practices.md)
 
 ***
