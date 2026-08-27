@@ -38,11 +38,14 @@ The campaigns module is split into a few areas:
 
 Now that you have reviewed the dashboard, here is what to do next:
 
-* Follow the workflow to create content for the chosen campaign type:
-  * Voice survey campaign → [Voice Survey Campaigns ](voice-survey-campaigns.md)
-  * Voice notification campaign→ [Voice Notification Campaigns](voice-notification-campaigns.md)
-  * SMS survey campaign→ [SMS Survey Campaigns](sms-survey-campaigns.md)
-  * SMS notification campaign→ [SMS Notification Campaigns](voice-notification-campaigns.md)
-* Manage your campaign groups→ [Manage Campaign Groups](manage-campaign-groups.md)
-* Review metrics on the campaigns dashboard→ [Campaigns Dashboard](campaigns-dashboard.md)
-* Review campaigns best practices→ [Campaigns Best Practices](campaigns-best-practices.md)
+* Manage Sender Identities → [Managing Sender Identities](managing-sender-identities.md)
+* Manage Recipient Lists → [Managing Recipient Lists](manage-recipient-lists.md)
+* Manage Email Templates → [Managing Email Templates](managing-email-templates.md)
+* Manage Accounts and Campaign Groups → [Account Management and Campaign Groups](manage-account-and-campaign-groups.md)
+* Create a Campaign → [Create a Campaign](create-a-campaign.md)
+  * Create voice survey campaigns → [Voice Survey Campaigns ](voice-survey-campaigns.md)
+  * Create voice notification campaigns→ [Voice Notification Campaigns](voice-notification-campaigns.md)
+  * Create SMS survey campaigns → [SMS Survey Campaigns](sms-survey-campaigns.md)
+  * Create SMS notification campaigns→ [SMS Notification Campaigns](voice-notification-campaigns.md)
+* Review best practices → [Campaigns Best Practices](campaigns-best-practices.md)
+
