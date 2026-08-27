@@ -78,12 +78,16 @@ A User role can use campaigns but can’t manage users, enable or disable accoun
 ## What You Can Do
 
 * Access the campaigns browser → [Getting Started with Campaigns](getting-started-with-campaigns.md)
-* Create voice survey campaigns→ [Voice Survey Campaigns ](voice-survey-campaigns.md)
-* Create voice notification campaigns→ [Voice Notification Campaigns](voice-notification-campaigns.md)
-* Create SMS survey campaigns→ [SMS Survey Campaigns](sms-survey-campaigns.md)
-* Create SMS notification campaigns→ [SMS Notification Campaigns](voice-notification-campaigns.md)
-* Manage campaign groups → [Manage Campaign Groups](manage-campaign-groups.md)
-* Review the campaigns dashboard→ [Campaigns Dashboard](campaigns-dashboard.md)
+* Manage Sender Identities → [Managing Sender Identities](managing-sender-identities.md)
+* Manage Recipient Lists → [Managing Recipient Lists](manage-recipient-lists.md)
+* Manage Email Templates → [Managing Email Templates](managing-email-templates.md)
+* Manage Accounts and Campaign Groups → [Account Management and Campaign Groups](manage-account-and-campaign-groups.md)
+* Create a Campaign → [Create a Campaign](create-a-campaign.md)
+  * Create voice survey campaigns → [Voice Survey Campaigns ](voice-survey-campaigns.md)
+  * Create voice notification campaigns→ [Voice Notification Campaigns](voice-notification-campaigns.md)
+  * Create SMS survey campaigns → [SMS Survey Campaigns](sms-survey-campaigns.md)
+  * Create SMS notification campaigns→ [SMS Notification Campaigns](voice-notification-campaigns.md)
+* Review the campaigns dashboard → [Campaigns Dashboard](campaigns-dashboard.md)
 * Review best practices → [Campaigns Best Practices](campaigns-best-practices.md)
 
 ***
