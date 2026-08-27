@@ -34,16 +34,14 @@ Keep the following limits in mind when using Cases:
 3. Click **Support** in the top right corner of the screen.
 4. Enter a **Case Title**, select a **Case Type**, then choose a **Priority**. Priority stays disabled until you've chosen a Case Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
 5. Select a **Product** and a **Module** to classify what the case is about — the Module options depend on the Product you pick.
-6. Add a **Summary**, and attach files or add CC recipients as needed.
+6. Add a **Summary** and attach files or add CC recipients as needed. A summary has a 3,000-character limit.
 7. Click **Submit**
 
 A success message appears upon submission. You can navigate to the cases dashboard to view your case details.
 
- !!! info ""
-     If you open the support form while viewing a specific module (for example, ACGR or Access Management), Product and Module are pre-filled to match what you were viewing. You can still change them before submitting.
+If you open the support form while viewing a specific module (for example, ACGR or Access Management), Product and Module are pre-filled to match what you were viewing. You can still change them before submitting.
 
-!!! info ""
-    If you can't access CxCentral, you can submit a support case using the support email address your organization provides.
+If you can't access CxCentral, you can submit a support case using the support email address your organization provides.
 
 
 ***
@@ -85,7 +83,7 @@ The case details page shows a comprehensive overview and activity for your case.
 
 ### Search for a Case <a href="#search-for-a-case" id="search-for-a-case"></a>
 
-1. On the cases dashboard, enter the **Reference Number** into the Case Search box at the top of the page.
+1. On the cases dashboard, use the **Search by** dropdown at the top of the page to filter case search results.
 2. Use the **Status dropdown** at the top of the page to filter by case status or click the **calendar icon** to search using a date range.
 
 ***
