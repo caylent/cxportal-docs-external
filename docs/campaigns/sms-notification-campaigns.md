@@ -33,11 +33,12 @@ Keep the following limits in mind when building an SMS Notification campaign:
 
 ### Create an SMS Notification Campaign
 
-1. In the left menu, click **Campaigns**, and then **Create Campaign**.
-2. Select a **Campaign Group**. A group must be selected before you can proceed. Campaigns can’t be created without a group.
-3. Click **SMS Notification**, and then **Content**.
-4. Enter a **Campaign name**. Names must start with a letter or number and may only contain letters, numbers, hyphens, or underscores (spaces are not permitted). Campaign names must be unique to all past and future campaigns.
-5. Use the **Source Phone dropdown** to select the outbound phone number for the campaign.
+1.   In the left menu, click **Campaigns**, and then **Dashboard**.
+2.   Click **+ Create Campaign**.
+3. Select a **Campaign Group**. A group must be selected before you can proceed. Campaigns can’t be created without a group.
+4. Click **SMS Notification**, and then **Content**.
+5. Enter a **Campaign name**. Names must start with a letter or number and may only contain letters, numbers, hyphens, or underscores (spaces are not permitted). Campaign names must be unique to all past and future campaigns.
+6. Use the **Source Phone dropdown** to select the outbound phone number for the campaign.
 
 !!! info ""
     **Note:** You can only select a phone number that supports SMS.
@@ -101,4 +102,4 @@ To upload a contact list:
 
 1. Review your campaign details. This includes messages, schedule, and contacts.
 2. To edit any of the campaign information or details, click the **edit button** on the right side of each section.
-3. Once you have confirmed all details, click **Launch Campaign**.
+3. Once you have confirmed all details, click **Launch**.
