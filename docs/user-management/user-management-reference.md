@@ -31,6 +31,7 @@ Observed login-method status badges:
 
 * **NOT\_CONFIGURED**
 * **Invite Expired**
+* **Invite Sent**
 * **Confirmed**
 * **Active** (SSO)
 
