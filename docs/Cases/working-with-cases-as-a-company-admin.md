@@ -38,11 +38,11 @@ Keep the following limits in mind when using Cases:
 4. Enter a **Title**. The **Company** and **Reported By** fields are pre-filled with your own company and profile — both stay editable if you're filing the case on behalf of someone else.
 5. Select a **Case Type**, then choose a **Priority**. Priority stays disabled until you've chosen a Case Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
 6. Select a **Product** and a **Module** to classify what the case is about. The Module options depend on the Product you pick.
-7. Add a **Description**, and attach files or add CC recipients as needed. All CC'd recipients will get email notifications for any case activity.
+7. Add a **Description**, and attach files or add CC recipients as needed. All CC'd recipients will get email notifications for any case activity. Descriptions have a 3,000-character limit.
 8. Click **Save**.
 
-!!! info ""
-    **Note:** If you open **Create a Case** from the support icon while viewing a specific module (for example, ACGR or Access Management), Product and Module are pre-filled to match what you were viewing. You can still change them before saving.
+
+**Note:** If you open **Create a Case** from the support icon while viewing a specific module (for example, ACGR or Access Management), Product and Module are pre-filled to match what you were viewing. You can still change them before saving.
 
 
 #### Module and Feature options
@@ -69,8 +69,8 @@ Keep the following limits in mind when using Cases:
   </tbody>
 </table>
 
-!!! info ""
-    **Note:** Module and Feature apply when creating a new case. They aren't shown when editing an existing case.
+
+**Note:** Module and Feature apply when creating a new case. They aren't shown when editing an existing case.
 
 
 ### View All Cases
@@ -92,8 +92,8 @@ You can view your case history and all cases submitted across your organization.
 
 Once case details are updated, you'll receive an email notification detailing the changes.
 
-!!! info ""
-    **Note:** You can't edit a case if it's Closed. You need to reopen a closed case to make any edits.
+
+**Note:** You can't edit a case if it's Closed. You need to reopen a closed case to make any edits.
 
 
 ***
@@ -104,8 +104,8 @@ Once case details are updated, you'll receive an email notification detailing th
 2. Under the case details, upload images and files in the attachments box. You can drag and drop or click the attachments box to select files from your computer.
 3. Once attachments are added, you can preview the file in the attachment box. If a preview is not available, click the **Download button** to open the file on your computer.
 
-!!! info ""
-    **Note:** Some file types (PDF, CSV, and DOC) cannot be previewed in the attachment box but can be downloaded and opened on your computer. The maximum file size is 10 MB per file. Supported file types include JPG, PNG, PDF, DOC, XLS, CSV, and ZIP.
+
+**Note:** Some file types (PDF, CSV, and DOC) cannot be previewed in the attachment box but can be downloaded and opened on your computer. The maximum file size is 10 MB per file. Supported file types include JPG, PNG, PDF, DOC, XLS, CSV, and ZIP.
 
 
 ***
@@ -130,7 +130,7 @@ Once case details are updated, you'll receive an email notification detailing th
 
 The cases dashboard displays comprehensive case information across your organization, including Status, Reference Number, Title, Priority, Case Type, Creation Date, and Last Updated Date. You can use the filters to quickly search for cases or collect data about your organization’s support trends.
 
-1. On the cases dashboard, enter the **Reference Number** into the Case Search box at the top of the page.
+1. On the cases dashboard, use the **Search by** dropdown at the top of the page.
 2. Use the **Status dropdown** at the top of the page to filter by case status or click the **calendar icon** to search using a date range.
 
 Use these filters to identify patterns, track product issues, and analyze support trends across your organization.
@@ -140,7 +140,7 @@ Use these filters to identify patterns, track product issues, and analyze suppor
 ### View Case Details <a href="#view-case-details" id="view-case-details"></a>
 
 1. Click the **Reference Number** of any case to open the case details page.
-2. Review the comprehensive overview including all activity, assigned agent, assigned queue, comments, and attachments.
+2. Review the comprehensive overview including the summary, description, activity, comments, and attachments.
 
 This allows you to understand user issues in depth and identify areas where users are experiencing difficulties with products.
 
@@ -239,7 +239,7 @@ The Case Type filter allows you to limit the export to cases of a specific type.
 Available case type options:
 
 * Bug Report
-* Feature Request
+* CxPortal Feature Request
 * Technical Support
 * Alarm
 * Account Issue
