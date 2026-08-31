@@ -6,7 +6,6 @@
 
 ## Common Pitfalls
 
-{% hint style="warning" %}
 "Live" does not always mean sub-second. Adherence-family metrics (Adherence %, Adherent Time, Non-Adherent Time, Scheduled Time) are 15-minute aggregates from GetMetricDataV2. Only agent status changes and agent/queue counts are sub-15-second. If a KPI tile shows "Live," check whether it also shows an "as of" timestamp.
 {% endhint %}
 
