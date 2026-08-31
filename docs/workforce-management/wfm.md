@@ -49,7 +49,7 @@ Use Workforce Management to:
 
 - Monitor live agent status and distribution → [Monitoring Live Agent Status](wfm-monitor-agent-status.md)
 - Compare scheduled vs. actual adherence for all agents on a timeline → [Reviewing Team Scorecards](wfm-team-scorecard.md)
-- Review a single agent's adherence and activity KPIs, and export the detail to CSV → [Reviewing Agent Scorecards](wfm-agent-scorecards.md)
+- Review a single agent's adherence and activity KPIs → [Reviewing Agent Scorecards](wfm-agent-scorecards.md)
 - Check today's demand forecast against the roster → [Checking Forecast, Capacity, and Scheduling](wfm-forcasting.md)
 - Monitor program-wide adherence and conformance → [Monitoring the Program Dashboard](wfm-program-dashboard.md)
 - Review Workforce Management reference materials → [Workforce Management Reference](wfm-reference.md)
