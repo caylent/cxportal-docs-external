@@ -114,6 +114,8 @@ nav:
           - Working with Cases as a General User: Cases/working-with-cases-as-a-general-user.md
           - Working with Cases as a Company Admin: Cases/working-with-cases-as-a-company-admin.md
           - Best Practices: Cases/cases-best-practices.md
+      - Troubleshooting: troubleshooting.md
+    
 
   - User & Access:
       - Access Management:
