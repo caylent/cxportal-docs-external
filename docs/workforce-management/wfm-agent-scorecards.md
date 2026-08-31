@@ -24,9 +24,8 @@ The **Agent Scorecard** page shows per-agent adherence and activity KPIs for a d
 3. In the Filters panel under **Range**, choose a date range: **Today**, **7d**, **30d**, or **Custom**. The Filters panel also offers a Routing Profile filter.
    - For **Custom**, click a start date in the calendar, then click an end date.
 
-{% hint style="info" %}
 You can also land on this page with an agent pre-selected by following a drill-in link.
-{% endhint %}
+
 
 ### Reading the KPI Cards
 
