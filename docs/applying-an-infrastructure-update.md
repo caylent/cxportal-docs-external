@@ -24,8 +24,7 @@ Apply the infrastructure update to each instance separately. The feature only be
 3. Promote to **staging** (if applicable), verify again.
 4. Apply to **production** when ready.
 
-!!! info ""
-    There's no fixed deadline for promoting from one environment to the next, you move at your own cadence. Until the update is applied to an instance, that instance simply doesn't have the new functionality yet; nothing breaks.
+There's no fixed deadline for promoting from one environment to the next, you move at your own cadence. Until the update is applied to an instance, that instance simply doesn't have the new functionality yet; nothing breaks.
 
 
 ***
