@@ -159,6 +159,16 @@ nav:
           - View Agent Assignments: proficiency-based-routing/view-agent-assignments.md
           - Change Management: proficiency-based-routing/pbr-change-management.md
           - Best Practices: proficiency-based-routing/pbr-best-practices.md
+      - Workforce Management:
+          - Overview: workforce-management/wfm.md
+          - Getting Started: workforce-management/wfm-getting-started.md
+          - Monitor Live Agent Status: workforce-management/monitor-agent-status.md
+          - Review Team Scorecards: workforce-management/wfm-team-scorecard.md
+          - Review Agent Scorecards: workforce-management/wfm-agent-scorecards.md
+          - Forecast, Capacity and Scheduling: workforce-management/wfm-forcasting.md
+          - Monitor Program Dashboard: workforce-management/wfm-program-dashboard.md
+          - Reference: workforce-management/wfm-reference.md
+          - Best Practices: workforce-management/wfm-best-practices.md
 
   - Contact Handling:
       - Dynamic Flow Configurator (DFC):
