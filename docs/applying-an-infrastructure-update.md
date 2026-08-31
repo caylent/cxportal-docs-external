@@ -6,7 +6,7 @@ When Caylent ships a Type 3 update, your deployment team needs to apply an infra
 
 For every Type 3 release, Caylent provides:
 
-* **Updated CloudFormation templates** — the infrastructure changes packaged and ready to deploy
+* **Updated CloudFormation templates** — the infrastructure changes packaged and ready to deploy 
 * **Deployment instructions** — what to apply, in what order, and any instance-specific considerations
 
 You'll receive this alongside the release notification.
