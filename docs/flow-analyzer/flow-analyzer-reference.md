@@ -65,8 +65,10 @@ The **Flow Logs** tab shows log data similar to CloudWatch in a searchable, easi
 
 Each log entry includes the contact flow name, block type, and the block identifier when one is configured in Amazon Connect. This makes it easy to connect individual log entries to the exact block in the flow.
 
-!!! info ""
-    **Tip:** You can search the logs for keywords such as "Lambda," "error," or specific attribute values, and quickly jump to the related flow block, AWS logs, or metrics when available.
+
+**Tip:** You can search the logs for keywords such as "Lambda," "error," or specific attribute values, and quickly jump to the related flow block, AWS logs, or metrics when available.
+
+**Note:** Clicking a block on the canvas to jump to its log entry works even if that entry is currently hidden by an active log search — Flow Analyzer clears the search automatically so the entry becomes visible and expands.
 
 
 ***
@@ -94,8 +96,7 @@ It shows key events such as:
 
 For flows that use `GetCustomerInput`, Flow Analyzer can also display Q in Connect (QiC) insights. These show how the customer interacted with the menu, including which option was selected, how long the response took, and whether retries or no-input events occurred.
 
-!!! info ""
-    **Info:** This tab is useful when you want a quick, high-level understanding of the interaction without reviewing each block on the visual canvas.
+**Info:** This tab is useful when you want a quick, high-level understanding of the interaction without reviewing each block on the visual canvas.
 
 
 ***
