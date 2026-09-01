@@ -4,6 +4,7 @@
 
 - You must have admin or campaign management permissions.
 - At least one campaign group must exist.
+- There's a 20-published-version limit for email templates. Draft versions do not count toward the limit.
 
 ## Overview
 
