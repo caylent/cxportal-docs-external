@@ -19,7 +19,7 @@ Keep the following in mind when working with the Campaigns Dashboard:
 * **Group-based visibility** — You'll only see the campaigns associated with the groups you're assigned to, so your view may differ from other users'.
 * **Fixed set of metrics** — The Performance Overview displays five metric cards: Active Campaigns, Send Attempts, Delivery Rate, Survey Responses, and Spam Rate. Each shows its current value alongside the percentage change from the previous equivalent period.
 * **Survey response counting** — Survey Responses are only counted when a survey is completed in full; partial responses are not included.
-* **Available time ranges** — Metrics can be viewed by last day, last week (the default), last month, or a custom date range, but only one range applies to the overview at a time.
+* **Available time ranges** — Metrics can be viewed by last day, last week (the default), last month, or a custom date range, but only one range applies to the overview at a time. There is a 35-day maximum for Dashboard custom date ranges and campaign start-to-expiration periods, including the relevant validation messages.
 * **Filter options** — The Dashboard can be filtered by Campaign Group, Type, and Status; filters must be applied to update the view and cleared to reset it.
 * **Post-campaign retention** — After a campaign ends, it remains visible on the Dashboard for two months. After that, its associated resources are removed from Amazon Connect, though the campaign metrics are retained.
 
@@ -46,25 +46,23 @@ The **Type filter** allows you to filter campaigns by their type. The available 
 * SMS Survey
 * Voice Notification
 * SMS Notification
+* Email Campaign
 
 The **Status filter** allows you to filter campaigns by their status. The available statuses are:
 
-* Initialized
 * Running
 * Scheduled
 * Completed
-* Paused
-* Stopped
 * Failed
-* Processing
+* Initialized
 
 Once you've made your filter selections, click **Apply Filters** to update the dashboard. To remove all active filters and reset the view, click **Clear Filters**.
 
 ***
 
-## Performance Overview
+## Overall Performance 
 
-The Performance Overview section of the Campaigns Dashboard displays high-level metrics for your campaigns. To change the period for the displayed metrics, click the time range dropdown in top-right corner. The time range defaults to Last week, but can be changed to Last day, Last month, or a custom range.
+The Overall Performance section of the Campaigns Dashboard displays high-level metrics for your campaigns. To change the period for the displayed metrics, click the time range dropdown in top-right corner. The time range defaults to Last week, but can be changed to Last day, Last month, or a custom range.
 
 ***
 
@@ -75,7 +73,7 @@ Clicking the time range button reveals a dropdown with four options:
 * **Last day** — Shows metrics from the past 24 hours
 * **Last week** — Shows metrics from the past 7 days (default)
 * **Last month** — Shows metrics from the past 30 days
-* **Custom range** — Opens a two-month calendar date picker so you can select a specific start and end date; click Apply to confirm your selection or Cancel to dismiss it
+* **Custom range** — Opens a two-month calendar date picker so you can select a specific start and end date; click Apply to confirm your selection or Cancel to dismiss it. There is a 35-day maximum for Dashboard custom date ranges and campaign start-to-expiration periods, including the relevant validation messages.
 
 ***
 
@@ -87,13 +85,13 @@ The Performance Overview displays five metric cards, each showing the current va
 
 **Active Campaigns** — The number of campaigns currently running
 
-**Send Attempts** — The total number of outreach attempts made
+**Messages Sent** — The total number of outreach attempts made
 
 **Delivery Rate** — The percentage of send attempts that were successfully delivered.
 
 **Survey Responses** — The number of survey responses received. Survey metrics are only counted if the survey is completed in full
 
-**Spam Rate** — The percentage of sends flagged as spam
+**Voicemails Detected** — The percentage of sends flagged as spam
 
 ***
 
@@ -141,6 +139,6 @@ If voicemail is enabled for that campaign, you can also see:
 For SMS campaigns, you can see metrics such as:
 
 * Delivery Attempts
-* Send Attempts
+* Messages Sent
 * Delivered Rate
-* Spam Rate
+* Voicemails Detected
