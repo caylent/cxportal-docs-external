@@ -66,9 +66,7 @@ On company-managed devices, your IT team may control this permission centrally. 
 
 3. Confirm your instance data now loads.
 
-{% hint style="success" %}
 Once allowed, the browser remembers your choice for CxPortal. You do not need to repeat these steps unless you clear your browser's site settings or switch profiles.
-{% endhint %}
 
 ### Still not working?
 
