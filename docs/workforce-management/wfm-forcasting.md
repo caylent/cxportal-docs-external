@@ -47,4 +47,4 @@ In the Filters panel's **Timezone** dropdown, choose a timezone. Charts and time
 
 ### Checking Data Freshness
 
-The page footer shows when the forecast was last updated (*Forecast data from Amazon Connect FCS via Athena · Last updated n min ago*). Treat figures as periodically refreshed, not live.
+The page footer shows when the forecast was last updated. Treat figures as periodically refreshed, not live.
