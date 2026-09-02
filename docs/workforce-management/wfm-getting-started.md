@@ -17,9 +17,7 @@
 4. In the left sidebar, click **Workforce Management** > **Agent Scorecard**.
 5. In the **Search agent** box, type the agent's name and select them from the results. The scorecard opens, showing their Adherence, Schedule Conformance, and Contacts Handled KPIs.
 
-{% hint style="info" %}
 Clicking an agent's name on Agent Status or Team Scorecard opens that agent's Agent 360 profile.
-{% endhint %}
 
 ## What to Do Next
 
