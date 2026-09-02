@@ -162,7 +162,7 @@ nav:
       - Workforce Management:
           - Overview: workforce-management/wfm.md
           - Getting Started: workforce-management/wfm-getting-started.md
-          - Monitor Live Agent Status: workforce-management/monitor-agent-status.md
+          - Monitor Live Agent Status: workforce-management/wfm-monitor-agent-status.md
           - Review Team Scorecards: workforce-management/wfm-team-scorecard.md
           - Review Agent Scorecards: workforce-management/wfm-agent-scorecards.md
           - Forecast, Capacity and Scheduling: workforce-management/wfm-forcasting.md
