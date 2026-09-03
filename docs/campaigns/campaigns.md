@@ -43,7 +43,7 @@ Finally, you review your messages, schedule, and contacts, and launch. Once the 
 
 ## Key Concepts  <a href="#key-terms" id="key-terms"></a>
 
-Campaigns is powerful outreach tool that lets your team engage contacts at scale across voice and SMS channels. You need to understand these terms before following the task pages.
+Campaigns is a powerful outreach tool that lets your team engage contacts at scale across voice and SMS channels. You need to understand these terms before following the task pages.
 
 | Term                   | Definition                                                                                                                                                             |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
