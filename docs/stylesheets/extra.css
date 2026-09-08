@@ -1,0 +1,35 @@
+/* ============================================================================
+ * Caylent brand overrides for MkDocs Material.
+ *
+ * Material's default palette is indigo (blue-purple) for the header, nav
+ * highlights, links, and accents. These variables replace that with the
+ * Caylent brand color, and pin the typeface to Roboto everywhere.
+ * ============================================================================ */
+
+:root {
+  --md-primary-fg-color: #97CA6F;
+  --md-primary-fg-color--light: #A9D488;
+  --md-primary-fg-color--dark: #7FB257;
+
+  --md-accent-fg-color: #7FB257;
+  --md-accent-fg-color--transparent: #7FB2571a;
+  --md-accent-bg-color: #fff;
+  --md-accent-bg-color--light: #ffffffb3;
+}
+
+.md-typeset a {
+  color: #7FB257;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: #6A9B47;
+}
+
+body,
+.md-typeset,
+.md-header,
+.md-nav,
+.md-tabs {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}

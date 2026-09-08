@@ -18,6 +18,9 @@ use_directory_urls: true
 theme:
   name: material
   language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
     - navigation.instant      # faster page loads (SPA-style)
     - navigation.tracking     # URL updates as you scroll
@@ -39,6 +42,12 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+
+# ---------------------------------------------------------------------------
+# Custom styling (Caylent brand color + font overrides)
+# ---------------------------------------------------------------------------
+extra_css:
+  - stylesheets/extra.css
 
 # ---------------------------------------------------------------------------
 # Built-in search (replaces GitBook search)
