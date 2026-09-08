@@ -2,7 +2,7 @@
 
 ### How CxCentral and CxPortal Fit Together
 
-**CxCentral  **          →            **CxPortal**
+**CxCentral**          →            **CxPortal**
 
 Your homepage              Where you work
 CxCentral is your homepage. CxPortal is where you work.
