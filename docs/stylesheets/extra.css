@@ -6,11 +6,23 @@
  * Caylent brand color, and pin the typeface to Roboto everywhere.
  * ============================================================================ */
 
-:root {
+/* mkdocs.yml sets palette primary/accent to "custom" (light and dark modes
+ * both) so these are the only rules defining these colors -- see the note
+ * next to `primary: custom` in mkdocs.yml for why a plain :root override
+ * doesn't win against Material's built-in named-color rules. */
+[data-md-color-primary="custom"] {
   --md-primary-fg-color: #97CA6F;
   --md-primary-fg-color--light: #A9D488;
   --md-primary-fg-color--dark: #7FB257;
 
+  /* Text/icon color drawn on top of the primary background (header, nav
+   * toggle icons). White fails contrast against this brand green, so use
+   * black instead. */
+  --md-primary-bg-color: #000000;
+  --md-primary-bg-color--light: #000000b3;
+}
+
+[data-md-color-accent="custom"] {
   --md-accent-fg-color: #7FB257;
   --md-accent-fg-color--transparent: #7FB2571a;
   --md-accent-bg-color: #fff;

@@ -31,14 +31,23 @@ theme:
     - content.code.copy       # copy button on code blocks
   palette:
     # Light mode
+    # primary/accent: custom -- ships with no built-in color rule, so our
+    # [data-md-color-primary=custom] / [data-md-color-accent=custom] rules
+    # in stylesheets/extra.css are the only thing setting these colors.
+    # (Naming a built-in color like "indigo" here would win over an :root
+    # override in extra.css, since Material's own rule is scoped to <body>.)
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
