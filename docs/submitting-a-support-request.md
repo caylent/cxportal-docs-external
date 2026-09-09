@@ -5,6 +5,7 @@
 **From** [**CxCentral**](https://portal.pronetx.com/)
 
 Click **Support** in the upper-right corner of the homepage.
+
 **From** [**CxPortal**](https://portal.pronetx.com/)
 
 Click **Support** in the upper-right corner of the homepage. The support icon is also available in the top navigation of each module and feature, so you can submit a request without leaving the page you're working on.
@@ -18,21 +19,24 @@ Click **Support** in the upper-right corner of the homepage. The support icon is
 
 ## Submitting a Request
 
-### Open the support form
+### 1. Open the support form
 
 Click **Support** in CxCentral or in the top navigation of CxPortal. The **Create case** page opens.
-### Complete the Case details
+
+### 2. Complete the Case details
 
 Fill in the required fields (marked with `*`) and any optional fields that apply. Each field is explained in **Case Details Fields** below.
 
 The form defaults to *Bug Report* as the case type and *Low* priority — change these if they don't match your situation.
-### Write a clear description
+### 3. Write a clear description
 
 Provide a detailed **Description** so our team can route your request to the right person on the first try. It's helpful to include what happened (with the exact error message), what you expected, steps to reproduce, who's affected, and when it started.
-### Add attachments
+
+### 4. Add attachments
 
 Add screenshots, recordings, logs, or other supporting files. You can add attachments when you submit a request, and at any time afterward by opening the case and using the **Attachments** box on the case details page.
-### Submit
+
+### 5. Submit
 
 Click **Create**. You'll receive a confirmation email, and the new case will appear in the **Support Cases** widget on the CxCentral homepage. Click the row to view the case, track progress, and reply to our team as it's worked.
 ***
