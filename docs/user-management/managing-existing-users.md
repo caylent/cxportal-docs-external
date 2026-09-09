@@ -15,8 +15,9 @@
 4. Click the **View Details** (eye) icon on the right of the user's row. This opens the user detail page.
 
 The user detail page shows:
-* **User Details** — the user's **EMAIL** and **LOGIN METHODS** (for example, "Password · Confirmed"), with the actions **Deactivate**, **Edit Profile**, and **Send Forgot Password Reminder**.
-* **Role and Instance Access** — the **ROLE NAME**, a **Change Role** button, and an **Instance Name** table listing the instances the user can access.
+
+- **User Details** — the user's **EMAIL** and **LOGIN METHODS** (for example, "Password · Confirmed"), with the actions **Deactivate**, **Edit Profile**, and **Send Forgot Password Reminder**.
+- **Role and Instance Access** — the **ROLE NAME**, a **Change Role** button, and an **Instance Name** table listing the instances the user can access.
 
 
 ***
