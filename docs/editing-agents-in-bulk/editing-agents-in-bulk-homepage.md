@@ -10,10 +10,10 @@ Amazon Connect requires agent changes one at a time by default, so this gives yo
 
 **Who this is for**
 
-**Business Admins** — Contact center administrators responsible for configuring agents in Amazon Connect.
+- **Business Admins** — Contact center administrators responsible for configuring agents in Amazon Connect.
 
-**Operations Teams** — Workforce management teams and operations managers who adjust agent settings during campaigns, peaks, and volume shifts.
-{% column width="50%" %}
+- **Operations Teams** — Workforce management teams and operations managers who adjust agent settings during campaigns, peaks, and volume shifts.
+
 **Where to find it**
 
 In CxPortal, expand **Bulk Edit** in the left navigation panel, then select **Agents**.
@@ -21,9 +21,7 @@ In CxPortal, expand **Bulk Edit** in the left navigation panel, then select **Ag
 
 ## Benefits at a Glance
 
-In large contact centers, or during campaigns, seasonal peaks, or sudden volume shifts, editing agents one at a time becomes slow and error-prone.
-
-Bulk Edit applies the same change to every selected agent in one action.
+In large contact centers, or during campaigns, seasonal peaks, or sudden volume shifts, editing agents one at a time becomes slow and error-prone. Bulk Edit applies the same change to every selected agent in one action.
 
 <img width="2000" height="1414" alt="bulk edit agents" src="https://github.com/user-attachments/assets/b8474f90-9d5b-4621-a078-3bd1f5ed8a65" />
 
