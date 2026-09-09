@@ -28,8 +28,8 @@ A release that goes live automatically with nothing for your team to do: no new 
 
 * Nothing. The feature is available automatically to anyone with access to the area it's in.
 
+
 > **Example**
->
 > New schedule and closure fields ship for DFC, requiring backend validation updates and interface changes. No changes to your AWS account — Pronetx deploys it and it's live immediately.
 
 ***
@@ -44,7 +44,7 @@ A release where an admin must assign a new permission to the appropriate roles b
 
 * An admin needs to assign the new permission to the required roles in user management before users can see or use the feature.
 
-> **Example**\
+> **Example**
 > A new Change Tracking dashboard page ships with its own permission. Pronetx deploys it; your admin grants access to the relevant roles.
 
 ***
@@ -60,12 +60,11 @@ A change that requires modifications inside your AWS account: extending an IAM r
 * **Deployment team:** Apply the infrastructure update to each instance. The feature only works in an instance once this is done. You control the pace: apply it to dev first, verify, then promote to production on your own cadence.
 * **Admin:** If a new permission ships alongside, assign it to the relevant roles in user management. This is independent of the deployment team work.
 
-{% hint style="info" %}
-Pronetx provides updated CloudFormation templates and deployment instructions. For customers who allow it, Pronetx can act as the deployment team and apply the templates directly.
-{% endhint %}
+!!! info ""
+    Pronetx provides updated CloudFormation templates and deployment instructions. For customers who allow it, Pronetx can act as the deployment team and apply the templates directly.
+
 
 > **Example**
->
 > An update to Global Change Management adds new DynamoDB tables and IAM role permissions. Your deployment team applies the CloudFormation update per instance before the feature becomes available there.
 
 ***
