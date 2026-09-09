@@ -51,7 +51,7 @@ Changes are created in other CxPortal modules (for example DFC entities and item
 1.  A change that requires approval appears on the **Change Requests** page with status **Pending**.
 2.  A reviewer approves or rejects the request. Approved requests change to **Approved**; a bulk request in which some records were rejected shows **Partially Rejected**.
 3.   A change set to run at a future date appears on the **Scheduled Changes** page until its scheduled date. It can be cancelled from there.
-4.   Executed changes are recorded on the **Audit Log** page, including changes that did not go through an approval step (these show **-** in the Approver column).
+4.   Executed changes are recorded on the **Audit Log** page, including changes that did not go through an approval step.
 5.   An executed change can be reverted from its audit log record.
 
 ## Related Modules
