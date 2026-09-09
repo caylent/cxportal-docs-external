@@ -6,7 +6,7 @@ Reverting rolls back a change that has already been executed. You revert from th
 
 ## Before You Begin
 
-- Find the audit log record for the change you want to roll back (see *Reviewing the Audit Log*)
+Find the audit log record for the change you want to roll back. See [Reviewing Audit Log](change-management-review-audit-log.md)
 
 ## Steps
 
@@ -17,7 +17,7 @@ Reverting rolls back a change that has already been executed. You revert from th
 5. Review the inline confirmation message to proceed.
     - On a bulk record, click **Revert Bulk** to revert the whole group, or click **View Individual Records** and use the per-record **Revert** button to revert a single record within the group.
 
-> **Note:** Bulk records with **Change Type** **Import** can't be reverted. **Revert** / **Revert Bulk** is disabled for them — both at the bulk level and for individual records within the group — with a tooltip explaining that bulk reversions on imports are disabled.
+> **Note:** Bulk records with **Change Type** **Import** can't be reverted. **Revert** / **Revert Bulk** is disabled — both at the bulk level and for individual records within the group.
 
 
 The **Status** filter on the Audit Log page includes **Reversion** and **Reverted** values for tracking reverted activity.
