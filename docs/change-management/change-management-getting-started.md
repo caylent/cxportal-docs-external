@@ -10,7 +10,7 @@ To access Change Management:
 
 ## Your First Task
 
-Try it: review a change in the audit log (read-only — this is safe to do on any record).
+Try it: review a change in the audit log: 
 1. In the left sidebar, click **Change Management** > **Audit Log**.
 1. In the table, find a record you want to inspect.
 1. At the right end of the row, click the row menu (**Open menu**).
@@ -20,6 +20,6 @@ Try it: review a change in the audit log (read-only — this is safe to do on an
 
 ## What to Do Next
 
-- Filter and search the log → *Reviewing the Audit Log*
-- Review pending requests → *Reviewing Change Requests*
-- See upcoming changes → *Managing Scheduled Changes*
+- Filter and search the log → [Review the Audit Log](change-management-review-audit-log.md)
+- Review pending requests → [Review Change Requests](change-management-review-requests.md)
+- See upcoming changes → [Manage Scheduled Changes](change-management-scheduled-changes.md)
