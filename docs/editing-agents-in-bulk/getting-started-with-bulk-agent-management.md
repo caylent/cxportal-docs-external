@@ -33,7 +33,7 @@ The simplest way to get comfortable with the page is to narrow the agent list wi
 
 <summary>Sorting the table</summary>
 
-The **Agent Name** and **Routing Profile** column headers are sortable — click a header to sort the table by that column.
+The Agent Name and Routing Profile column headers are sortable, click a header to sort the table by that column.
 
 </details>
 
@@ -83,9 +83,9 @@ When you apply a filter, the table pins any agents you've already selected to th
 
 <details>
 
-<summary><strong>Example:</strong></summary>
+<summary><strong>Example of Routing Profile filter:</strong></summary>
 
-You select five agents who have different Routing Profiles. You then apply a **Routing Profile** filter that only one of them matches.
+You select five agents who have different Routing Profiles. You then apply a Routing Profile filter that only one of them matches.
 
 The four agents who don't match the filter will still appear at the top of the table with their checkboxes checked, while the filtered results display below them.
 
