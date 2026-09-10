@@ -147,8 +147,6 @@ nav:
           - Getting Started: user-management/getting-started-with-user-management.md
           - Adding a User: user-management/adding-a-user.md
           - Managing Existing Users: user-management/managing-existing-users.md
-          - Create and Manage Roles: user-management/user-management-create-and-manage-roles.md
-          - Review Instance Permissions and Restrict Access: user-management/user-management-review-instance-permissions-and-restrict-access.md
           - Reference: user-management/user-management-reference.md
       - Change Management:
           - Overview: change-management/change-management.md
