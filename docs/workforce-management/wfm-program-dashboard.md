@@ -14,12 +14,13 @@ The **Program Dashboard** page shows program-wide adherence and conformance for 
 - Group Performance rolls up by one Group by dimension at a time
 - Schedule Conformance tiles and columns show as unavailable until conformance data exists for the range
 - Date ranges are bounded by the 90-day history retention
+- Not every dimension is offered on every instance — Routing Profile is absent from **+ Filter** and **Group by** on instances where routing profiles aren't used as a way of grouping the workforce. See [Filter Dimensions](wfm-reference.md#filter-dimensions).
 
 ## Step-by-Step Instructions
 
 ### Reading the Page
 
-- **KPI tiles** — Total Agents Active, Scheduled Adherence (with the count of agents in adherence), Schedule Conformance, and Agents Off Schedule, with status badges such as Below Target and Needs Attention.
+- **KPI tiles** — Total Agents Active, Scheduled Adherence (with the count of agents in adherence), Schedule Conformance, and Agents Off Schedule, with status badges such as Below Target and Needs Attention. **Total Agents Active** counts the agents who have a live status right now. Under that count, *N agents match the current filters* gives the full population the active filters select — live or not — so you can read a filter value's own count against it. The caption appears only when your instance reports that population.
 - **Trends** — Schedule Adherence Trend and Schedule Conformance Trend charts, each plotted against the target line (Target 92%).
 - **Group Performance** — A table grouped by the Group by dimension (LOB, Team (hierarchy), Region, Team (tag), or Routing Profile) with columns Group Name, Agents, Adherence %, In Adherence, Conformance %, In Conformance (agent-days), and Status. Status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%. Each row's Actions menu offers **View in Forecast, Capacity, and Scheduling** and **View agents**.
 - **Filters** — **+ Filter**, **Date Range** (Today, 7d, 30d, Custom), and a **Timezone** dropdown.

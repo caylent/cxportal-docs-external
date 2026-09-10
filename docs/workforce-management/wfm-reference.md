@@ -53,7 +53,7 @@ Stream health reports data freshness: time since the last event, how many agents
 
 ## Agent Scorecard Reference
 
-**Date ranges:** **Today** (hourly timeline, compared to last day) · **7d** (daily timeline, compared to last week) · **30d** · **Custom** (calendar start and end date), chosen in the Filters panel under Range. A Routing Profile filter is also available in the Filters panel.
+**Date ranges:** **Today** (hourly timeline, compared to last day) · **7d** (daily timeline, compared to last week) · **30d** · **Custom** (calendar start and end date), chosen in the Filters panel under Range. A Routing Profile filter is also available in the Filters panel, on instances that offer the Routing Profile dimension.
 
 **KPI cards**
 
@@ -88,6 +88,8 @@ The Filters panel's + Filter menu (under Group Filters) offers these dimensions 
 - Routing Profile
 - Staffing Group
 - Forecast Group
+
+**Routing Profile is subject to an instance-level setting.** On an instance where routing profiles are Amazon Connect routing configuration rather than a way of grouping the workforce, the dimension is withheld everywhere it would otherwise appear: the **+ Filter** menu, the Program Dashboard's **Group by** control, the Agent Status **By routing profile** breakdown, the Agent Scorecard **Routing Profile** filter, and the routing profile named in the Agent 360 header. Every other dimension is unaffected. [VERIFY: how a customer requests this setting be changed for their instance — the release sets it in code and there is no control for it in the UI.]
 
 ## Adherence Measurement
 

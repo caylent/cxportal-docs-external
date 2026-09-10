@@ -17,7 +17,7 @@
 The user detail page shows:
 
 - **User Details** — the user's **EMAIL** and **LOGIN METHODS** (for example, "Password · Confirmed"), with the actions **Deactivate**, **Edit Profile**, and **Send Forgot Password Reminder**.
-- **Role and Instance Access** — the **ROLE NAME**, a **Change Role** button, and an **Instance Name** table listing the instances the user can access.
+- **Role and Instance Access** — the **ROLE NAME**, a **Change Role** button, and an **Instance Name** table listing the instances the user can access, one row per instance, identified by the instance's alias rather than its instance ID.
 
 
 ***

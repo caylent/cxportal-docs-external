@@ -12,7 +12,7 @@ The **Agent Status** page shows live agent status, distribution, and schedule ad
 - The table shows 100 agents per page; use search, status chips, or Group Filters to narrow large populations rather than paging
 - Status chips appear only for statuses currently present in the population (for example, no Available chip when no one is Available)
 - The Out of adherence (today) column and Next (scheduled) show — for agents with no schedule data
-- The By routing profile breakdown appears only when routing profile data is available for the instance
+- The By routing profile breakdown appears only when routing profile data is available for the instance and the instance offers the Routing Profile dimension — where that dimension is withheld, the breakdown goes with it and Routing Profile is absent from **+ Filter**. See [Filter Dimensions](wfm-reference.md#filter-dimensions).
 - Filter dimensions depend on the grouping data configured for the instance — not every instance offers every dimension
 
 ## Step-by-Step Instructions

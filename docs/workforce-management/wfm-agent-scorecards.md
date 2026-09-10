@@ -21,7 +21,7 @@ The **Agent Scorecard** page shows per-agent adherence and activity KPIs for a d
 
 1. In the **Search agent** box, type the agent's name.
 2. Select the agent from the matching results.
-3. In the Filters panel under **Range**, choose a date range: **Today**, **7d**, **30d**, or **Custom**. The Filters panel also offers a Routing Profile filter.
+3. In the Filters panel under **Range**, choose a date range: **Today**, **7d**, **30d**, or **Custom**. The Filters panel also offers a Routing Profile filter, on instances that offer the Routing Profile dimension. See [Filter Dimensions](wfm-reference.md#filter-dimensions).
    - For **Custom**, click a start date in the calendar, then click an end date.
 
 You can also land on this page with an agent pre-selected by following a drill-in link.

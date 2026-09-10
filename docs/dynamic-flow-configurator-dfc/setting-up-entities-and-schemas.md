@@ -129,7 +129,8 @@ The **Amazon Connect Resource** type lets you select from the following resource
 
 • Contact Flow Module\
 • Prompt\
-• Phone Number
+• Phone Number\
+• Lambda Function
 
 </details>
 
