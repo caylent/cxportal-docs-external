@@ -6,11 +6,9 @@ DFC Permissions gives admins granular control over what each role can do inside 
 
 ## Before You Begin
 
-* Only users with the **Admin** DFC permission level can access the **Permissions** page. Users below\
-  Admin do not see this option in the navigation.
+* Only users with the **Admin** DFC permission level can access the **Permissions** page. Users below Admin do not see this option in the navigation.
 * Roles are created and managed in **CxCentral**. DFC admins cannot create roles from within DFC.
-* Setting up DFC permissions requires two steps: configure the role in CxCentral, then assign entity\
-  tags in DFC.
+* Setting up DFC permissions requires two steps: configure the role in CxCentral, then assign entity tags in DFC.
 
 ***
 
@@ -123,7 +121,6 @@ Only **Admin** and **None** are selectable here. The levels in between are shown
 
 To give a role a level between **None** and **Admin**, assign that role's entity tags in DFC Permissions instead of setting a level here.
 
-[VERIFY: the exact labels shown for the read-only, derived options in the Access Management row — they come from the module's permission list rather than from this release's code.]
 
 ***
 
@@ -153,7 +150,6 @@ Once a role exists in CxCentral, assign entity-level access from within DFC. Any
 
 The Permissions page lists the roles available for DFC configuration, each with its derived permission and its number of active tags. A role with no DFC access shows a **None** permission.
 
-[VERIFY: whether every company role is listed on this page, or only roles that already hold DFC access.]
 
 ***
 
