@@ -2,7 +2,7 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-**Campaigns** lets you create, manage, and track outbound email campaigns to your contacts. Use this module to build targeted email campaigns by defining sender identities, uploading recipient lists, designing email templates, and scheduling campaign delivery. Campaigns centralize your outbound communication workflows so you can monitor performance and optimize engagement across your contact center operations.
+**Campaigns** let you create, manage, and track outbound email campaigns to your contacts. Use this module to build targeted email campaigns by defining sender identities, uploading recipient lists, designing email templates, and scheduling campaign delivery. Campaigns centralize your outbound communication workflows so you can monitor performance and optimize engagement across your contact center operations.
 
 [Watch video](https://www.youtube.com/watch?index=5&list=PLpgcSwyApvJBEYmlf0pjnS2XvFjvR8X1Y&v=KoF-f8uwW84)
 
@@ -43,7 +43,7 @@ Finally, you review your messages, schedule, and contacts, and launch. Once the 
 
 ## Key Concepts  <a href="#key-terms" id="key-terms"></a>
 
-Campaigns is a powerful outreach tool that lets your team engage contacts at scale across voice and SMS channels. You need to understand these terms before following the task pages.
+Campaigns are a powerful outreach tool that lets your team engage contacts at scale across voice and SMS channels. You need to understand these terms before following the task pages.
 
 | Term                   | Definition                                                                                                                                                             |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -67,10 +67,7 @@ Campaigns is a powerful outreach tool that lets your team engage contacts at sca
 * AWS SES service must be put into production mode prior to using Campaigns.
 * You must have a registered domain in SES in order to create sender identities. 
 
-Campaigns are subject to role-based access. You must have a specific role designated by your organization to create campaigns. 
-
-An Admin role can perform all functions in Campaigns.  
-A User role can use campaigns but can’t manage users, enable or disable accounts, create accounts, or delete campaign groups.
+Campaigns are subject to role-based access. You must have a specific role designated by your organization to create campaigns. An Admin role can perform all functions in Campaigns. A User role can use campaigns but can’t manage users, enable or disable accounts, create accounts, or delete campaign groups.
 
 
 ***
@@ -102,11 +99,11 @@ The following scenarios highlight when Campaigns is commonly used.
 
 ??? note "Collect feedback"
 
-    Use a Voice Survey or SMS Survey campaign to gather structured responses from contacts through a series of up to 5 questions. Results are tracked automatically on the Dashboard, giving your team clear insight into response and delivery rates without manual follow-up.
+    Use Voice Survey or SMS Survey campaigns to gather structured responses from contacts through a series of up to 5 questions. Results are tracked automatically on the Dashboard, giving your team clear insight into response and delivery rates without manual follow-up.
 
 ??? note "Customize outbound notifications"
 
-    Customize Voice Notification or SMS Notification campaign to send important updates, reminders, or announcements to a large list of contacts at once. Messages can be scheduled in advance or launched immediately, making it easy to reach your audience at the right time.
+    Customize Voice Notification or SMS Notification campaigns to send important updates, reminders, or announcements to a large list of contacts at once. Messages can be scheduled in advance or launched immediately, making it easy to reach your audience at the right time.
 
 ***
 
