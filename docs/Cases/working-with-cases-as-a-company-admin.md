@@ -337,11 +337,11 @@ Below the summary cards, three side-by-side chart panels provide visual breakdow
 
 ### Cases by Status
 
-This panel displays a donut chart grouped by case status. The largest segment is shown prominently in the center of the chart with its count and label. A color-coded legend below the chart lists every status and its case count.
+This panel displays a chart grouped by case status. The largest segment is shown prominently in the center of the chart with its count and label. A color-coded legend below the chart lists every status and its case count.
 
 **Available Case Status**
 
-<table data-header-hidden="false" data-header-sticky><thead><tr><th>Status</th><th>Description</th></tr></thead><tbody><tr><td>Open</td><td>Case is open and awaiting action.</td></tr><tr><td>Pending</td><td>Case is pending further information or review.</td></tr><tr><td>Closed</td><td>Case has been resolved and closed.</td></tr><tr><td>In Progress</td><td>Case is actively being worked on by an agent.</td></tr><tr><td>Received</td><td>Case has been received but not yet assigned or started.</td></tr><tr><td>Waiting On Third Party</td><td>Case is waiting on a response from an external third party.</td></tr><tr><td>Waiting on Customer</td><td>Case is waiting on response form a customer.</td></tr></tbody></table>
+<table data-header-hidden="false" data-header-sticky><thead><tr><th>Status</th><th>Description</th></tr></thead><tbody><tr><td>Open</td><td>Case is open and awaiting action.</td></tr><tr><td>Pending</td><td>Case is pending further information or review.</td></tr><tr><td>Closed</td><td>Case has been resolved and closed.</td></tr><tr><td>In Progress</td><td>Case is actively being worked on by an agent.</td></tr><tr><td>Received</td><td>Case has been received but not yet assigned or started.</td></tr><tr><td>Waiting On Third Party</td><td>Case is waiting on a response from an external third party.</td></tr><tr><td>Waiting on Customer</td><td>Case is waiting on response from a customer.</td></tr></tbody></table>
 
 ### Cases by Priority
 
