@@ -61,7 +61,7 @@ Cases allow your organization to have a single, structured way to get support an
 
 ## Permissions
 
-Some cases functionality is subject to role-bases access. As a **general user**, you can submit cases and view your own support case history.
+Some cases functionality is subject to role-based access. As a **general user**, you can submit cases and view your own support case history.
 
 As a **company admin**, you can create cases, edit open cases, and view all cases across your organization. Select your role to see the full workflow:
 
