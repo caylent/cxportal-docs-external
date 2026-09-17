@@ -72,16 +72,16 @@ practices (these apply to [DFC Permissions](managing-dfc-permissions.md)):
 
     A large number of overlapping roles is difficult to maintain. Keep the role structure close to what the business actually requires.
 
-??? note "Use the permission ceiling intentionally."
+??? note "Tag for the minimum access the role needs."
 
-    Set the permission level to the minimum needed for the role's function. A role that only needs to view items should have Item Viewer, not Admin, even if a few entity tags are assigned.
+    The permission level is derived from the role's highest tag, so a role that only needs to read items should carry **View** tags, not **Admin** tags. Reserve the **Admin** access mode for roles that genuinely need every entity and item.
 
 ??? note "Configure and verify in a lower environment first."
 
     Set up role and tag configuration in Dev or a test instance before applying the same setup in production.
 
-??? note "Review the Preview panel before saving."
+??? note "Check the summary strip before saving."
 
-    The entity browser on the right reflects exactly what the role will see. Use it to confirm that the intended entities are visible and that no unintended access has been granted.
+    **Derived permission**, **Active Tags**, and **Approver access** at the top of the role's configuration page reflect the tags you've set. Confirm they match the access you intend before you click **Save Changes**.
 
 ***

@@ -45,3 +45,11 @@ You can edit existing roles to change permissions at any time. To edit a role:
 2. Click on the **Actions menu** on the right of the role you want to edit.
 3. Click **Edit permissions** and choose permission settings as needed.
 4. Click **Save Changes**.
+
+***
+
+### Set Dynamic Flow Configurator access
+
+The **Dynamic Flow Configurator** row behaves differently from the other modules. Select **Admin** or **None** for the role here; the levels in between are read-only, because DFC derives them from the entity tags configured in DFC Permissions. Hovering a read-only level explains where to change it.
+
+To give a role a level between **None** and **Admin**, assign that role's entity tags in DFC instead. See [Managing DFC Permissions](../dynamic-flow-configurator-dfc/managing-dfc-permissions.md).
