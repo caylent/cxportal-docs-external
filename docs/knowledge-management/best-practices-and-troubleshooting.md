@@ -13,66 +13,46 @@ Use the following best practices to optimize using Knowledge Management
 
 This section provides guidance for common issues you may encounter when working with Knowledge Management. If the steps below do not resolve your issue, [contact Caylent support](../submitting-a-support-request.md)
 
-<details>
+??? note "Article upload issues"
 
-<summary><strong>Article upload issues</strong></summary>
+    An upload may fail if the file exceeds the 1 MB size limit, uses an unsupported format, or if the Knowledge Base has reached its 5 GB capacity.
 
-An upload may fail if the file exceeds the 1 MB size limit, uses an unsupported format, or if the Knowledge Base has reached its 5 GB capacity.
+    * Verify the file is under 1 MB.
+    * Confirm the file format is one of the supported types: .txt, .html, .docx, or .pdf. Note that .md and .doc file types are not supported.
+    * Check that the Knowledge Base has not reached its 5 GB maximum size.
+    * If uploading multiple files, ensure each individual file meets the size and format requirements.
 
-* Verify the file is under 1 MB.
-* Confirm the file format is one of the supported types: .txt, .html, .docx, or .pdf. Note that .md and .doc file types are not supported.
-* Check that the Knowledge Base has not reached its 5 GB maximum size.
-* If uploading multiple files, ensure each individual file meets the size and format requirements.
+??? note "Knowledge Base creation issues"
 
-</details>
+    Each organization is limited to 10 Knowledge Bases. If you have reached this limit, you cannot create additional ones.
 
-<details>
+    * Review your existing Knowledge Bases and determine whether any can be consolidated or removed.
+    * Delete unused Knowledge Bases to free up a slot before creating a new one.
 
-<summary><strong>Knowledge Base creation issues</strong></summary>
+??? note "Knowledge Base addition issues"
 
-Each organization is limited to 10 Knowledge Bases. If you have reached this limit, you cannot create additional ones.
+    Each Knowledge Base supports a maximum of 5,000 articles.
 
-* Review your existing Knowledge Bases and determine whether any can be consolidated or removed.
-* Delete unused Knowledge Bases to free up a slot before creating a new one.
+    * Review the Knowledge Base for outdated or duplicate articles that can be removed.
+    * Consider distributing articles across multiple Knowledge Bases if you are approaching the limit.
 
-</details>
+??? note "Syncing issues"
 
-<details>
+    Both the “Sync Knowledge Bases” and “Sync Articles” operations import content from Connect Agents. Issues may arise if the source content in Connect Agents has changed or if there is a connectivity issue.
 
-<summary><strong>Knowledge Base addition issues</strong></summary>
+    * Review the confirmation warning that appears before syncing. The sync may overwrite existing content in CxPortal.
+    * Ensure you are selecting the correct sync operation for your intended scope. Use “Sync Knowledge Bases” to sync all Knowledge Bases, or “Sync Articles” to sync articles for a specific Knowledge Base.
+    * If the issue persists, [contact Caylent support](../submitting-a-support-request.md).
 
-Each Knowledge Base supports a maximum of 5,000 articles.
+??? note "Tagging issues"
 
-* Review the Knowledge Base for outdated or duplicate articles that can be removed.
-* Consider distributing articles across multiple Knowledge Bases if you are approaching the limit.
+    If tags are not saving or displaying correctly, check the tag formatting. Tags have specific formatting and character restrictions that must be followed.
 
-</details>
-
-<details>
-
-<summary><strong>Syncing issues</strong></summary>
-
-Both the “Sync Knowledge Bases” and “Sync Articles” operations import content from Connect Agents. Issues may arise if the source content in Connect Agents has changed or if there is a connectivity issue.
-
-* Review the confirmation warning that appears before syncing. The sync may overwrite existing content in CxPortal.
-* Ensure you are selecting the correct sync operation for your intended scope. Use “Sync Knowledge Bases” to sync all Knowledge Bases, or “Sync Articles” to sync articles for a specific Knowledge Base.
-* If the issue persists, [contact Caylent support](../submitting-a-support-request.md).
-
-</details>
-
-<details>
-
-<summary><strong>Tagging issues</strong> </summary>
-
-If tags are not saving or displaying correctly, check the tag formatting. Tags have specific formatting and character restrictions that must be followed.
-
-* Ensure tag keys do not exceed 128 Unicode characters and tag values do not exceed 256 Unicode characters.
-* Use only valid characters: a-z, A-Z, 0-9, space, and the following: \_ . : / = + - and @
-* Remember that tag keys and values are case sensitive. “Audience” and “audience” are treated as different tags.
-* Do not use “aws:” as a prefix for tag keys — this prefix is reserved for AWS use.
-* Confirm you have not exceeded the maximum of 50 tags per resource.
-
-</details>
+    * Ensure tag keys do not exceed 128 Unicode characters and tag values do not exceed 256 Unicode characters.
+    * Use only valid characters: a-z, A-Z, 0-9, space, and the following: \_ . : / = + - and @
+    * Remember that tag keys and values are case sensitive. “Audience” and “audience” are treated as different tags.
+    * Do not use “aws:” as a prefix for tag keys — this prefix is reserved for AWS use.
+    * Confirm you have not exceeded the maximum of 50 tags per resource.
 
 ***
 

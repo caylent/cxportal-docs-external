@@ -67,29 +67,17 @@ To work with Q in Connect, users need permissions to view and manage Prompts, AI
 
 The following scenarios highlight when Q in Connect is commonly used.
 
-<details>
+??? note "Automated issue resolution"
 
-<summary><strong>Automated issue resolution</strong></summary>
+    Deploy an AI Agent to fully resolve common multi-step requests, such as account updates or order status inquiries.
 
-Deploy an AI Agent to fully resolve common multi-step requests, such as account updates or order status inquiries.
+??? note "Intent detection and routing"
 
-</details>
+    Use Pre-Processing Prompts to identify customer intent and search the Knowledge Base before generating a response.
 
-<details>
+??? note "Agent assistance and self-service knowledge delivery"
 
-<summary><strong>Intent detection and routing</strong></summary>
-
-Use Pre-Processing Prompts to identify customer intent and search the Knowledge Base before generating a response.
-
-</details>
-
-<details>
-
-<summary><strong>Agent assistance and self-service knowledge delivery</strong></summary>
-
-Surface real-time answers and recommended actions to live agents during customer interactions and turn Knowledge Base content into accurate, conversational responses for customers.
-
-</details>
+    Surface real-time answers and recommended actions to live agents during customer interactions and turn Knowledge Base content into accurate, conversational responses for customers.
 
 ***
 

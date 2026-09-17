@@ -73,36 +73,20 @@ What you can do in this module:
 
 The following scenarios highlight when ACGR is commonly used.
 
-<details>
+??? note "Regional Outage"
 
-<summary><strong>Regional Outage</strong></summary>
+    Redirect traffic to a secondary Region to maintain service when the primary Region becomes unavailable.
 
-Redirect traffic to a secondary Region to maintain service when the primary Region becomes unavailable.
+??? note "Planned Testing"
 
-</details>
+    Run controlled failovers during off-hours to validate readiness and confirm traffic moves as expected.
 
-<details>
+??? note "Traffic Rebalancing"
 
-<summary><strong>Planned Testing</strong></summary>
+    Adjust how agents and phone numbers are distributed between Regions to support staffing or operational changes.
 
-Run controlled failovers during off-hours to validate readiness and confirm traffic moves as expected.
+??? note "Disaster Recovery Readiness"
 
-</details>
-
-<details>
-
-<summary><strong>Traffic Rebalancing</strong></summary>
-
-Adjust how agents and phone numbers are distributed between Regions to support staffing or operational changes.
-
-</details>
-
-<details>
-
-<summary><strong>Disaster Recovery Readiness</strong></summary>
-
-Monitor assignments and playbooks regularly to ensure resources are prepared before an incident occurs.
-
-</details>
+    Monitor assignments and playbooks regularly to ensure resources are prepared before an incident occurs.
 
 ***

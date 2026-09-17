@@ -91,37 +91,21 @@ See [Managing DFC Permissions](managing-dfc-permissions.md) for the full setup.
 
 The following scenarios highlight when DFC is commonly used.
 
-<details>
+??? note "Manage prompt content"
 
-<summary><strong>Manage prompt content</strong>  </summary>
+    Update prompt text or message variants in one place, then reuse them across multiple flows.
 
-Update prompt text or message variants in one place, then reuse them across multiple flows.
+??? note "Manage hours of operation"
 
-</details>
+    Store schedules centrally so routing and messaging follow the latest business hours.
 
-<details>
+??? note "Manage allow/block lists"
 
-<summary><strong>Manage hours of operation</strong> </summary>
+    Store lists such as blocked caller IDs or blocked destinations that flows check during execution.
 
-Store schedules centrally so routing and messaging follow the latest business hours.
+??? note "Manage transfer routing"
 
-</details>
-
-<details>
-
-<summary><strong>Manage allow/block lists</strong> </summary>
-
-Store lists such as blocked caller IDs or blocked destinations that flows check during execution.
-
-</details>
-
-<details>
-
-<summary><strong>Manage transfer routing</strong>  </summary>
-
-Define transfer points that control how contacts route to queues or external destinations. Contact flows query transfer data at runtime instead of relying on hard-coded routing logic.
-
-</details>
+    Define transfer points that control how contacts route to queues or external destinations. Contact flows query transfer data at runtime instead of relying on hard-coded routing logic.
 
 ***
 

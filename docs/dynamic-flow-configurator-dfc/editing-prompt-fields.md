@@ -27,9 +27,9 @@ A **Prompt** field stores the SSML (Speech Synthesis Markup Language) content Am
 1. Open the item containing the Prompt field.
 2. Click **Switch to Code View** to edit the raw SSML directly, or **Switch to Code View** / **Switch to Rich Editor View** to toggle back. The button's label always reflects the view you'll switch *to*.
 
-{% hint style="info" %}
-**Note:** In Rich Editor view, a helper note — "Root \<speak> tag applied automatically" — reminds you that the root tag is handled for you.
-{% endhint %}
+!!! note
+
+    In Rich Editor view, a helper note — "Root \<speak> tag applied automatically" — reminds you that the root tag is handled for you.
 
 ***
 
@@ -51,9 +51,9 @@ A **Prompt** field stores the SSML (Speech Synthesis Markup Language) content Am
 3. Less commonly used formats are grouped under **Less Frequently used**: **Word Role** (Verb, Past Tense, Noun), **Phoneme** (custom pronunciation), and **Substitute** (read a substitute value instead of the visible text).
 4. If you click a format without selecting any text, a message prompts: "Select some text to apply this formatting."
 
-{% hint style="info" %}
-**Note:** A footer hint under the toolbar reads: "Insert or highlight text to apply an above formatting style." Click the collapse icon to hide the toolbar and reclaim space.
-{% endhint %}
+!!! note
+
+    A footer hint under the toolbar reads: "Insert or highlight text to apply an above formatting style." Click the collapse icon to hide the toolbar and reclaim space.
 
 ***
 
@@ -86,9 +86,9 @@ Play is only available when the state is valid.
 2. Click **Play as** again to play; click it while playing to stop.
 3. If Amazon Polly rejects the synthesized speech (for example, an unsupported combination for a given voice), the message updates to "Couldn't play - " followed by the specific reason, and a toast notification also reports the error.
 
-{% hint style="info" %}
-**Note:** Playback here previews how the text sounds in your browser only — it doesn't affect what callers hear in Amazon Connect. To set up which voice plays for each language, see [Previewing Voice and Language with Local Speech Setting](https://docs.caylent.com/cxportal/dynamic-flow-configurator-dfc/getting-started-with-dfc/#previewing-voice-and-language-with-local-speech-setting).
-{% endhint %}
+!!! note
+
+    Playback here previews how the text sounds in your browser only — it doesn't affect what callers hear in Amazon Connect. To set up which voice plays for each language, see [Previewing Voice and Language with Local Speech Setting](https://docs.caylent.com/cxportal/dynamic-flow-configurator-dfc/getting-started-with-dfc/#previewing-voice-and-language-with-local-speech-setting).
 
 ***
 

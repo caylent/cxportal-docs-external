@@ -30,9 +30,9 @@ Before you can bulk edit or bulk delete:
 * Roles with the **Admin** permission level always have bulk editing — it's enabled automatically and can't be turned off.
 * You also need the item edit rights (for bulk edit) or delete rights (for bulk delete) on the entity. The bulk-editing capability doesn't add access beyond your existing item permissions.
 
-{% hint style="info" %}
-**Note:** Roles that existed before this feature default to bulk editing off. An administrator must turn it on per role.
-{% endhint %}
+!!! note
+
+    Roles that existed before this feature default to bulk editing off. An administrator must turn it on per role.
 
 ***
 
@@ -74,9 +74,9 @@ Apply the same field values to every selected item in one action.
 
 The batch is submitted as a single change request and appears in the approval queue.
 
-{% hint style="info" %}
-**Note:** The primary field, schedule (hours of operation) field, and closure field appear read-only with a short note — edit these on individual items instead. Reference fields in the confirmation summary display the referenced item's key name.
-{% endhint %}
+!!! note
+
+    The primary field, schedule (hours of operation) field, and closure field appear read-only with a short note — edit these on individual items instead. Reference fields in the confirmation summary display the referenced item's key name.
 
 ***
 
@@ -91,9 +91,9 @@ Remove every selected item in one action, behind its own confirmation.
 
 The deletion is submitted as a single change request. Items are permanently removed only after approval.
 
-{% hint style="warning" %}
-**Warning:** Bulk delete is a destructive action. If any selected item is still referenced by other items, the whole submission is blocked and nothing is deleted. The error message names the blocking items by their primary key so you can remove them from the selection and retry.
-{% endhint %}
+!!! warning
+
+    Bulk delete is a destructive action. If any selected item is still referenced by other items, the whole submission is blocked and nothing is deleted. The error message names the blocking items by their primary key so you can remove them from the selection and retry.
 
 ***
 
@@ -110,9 +110,9 @@ Approvers review the whole batch as one request and can act on it at either leve
 
 Only approved items are changed or deleted. Rejected items keep their previous values.
 
-{% hint style="info" %}
-**Note:** For bulk deletes, the individual record view shows the **Before State** of each item so you can review exactly what will be removed.
-{% endhint %}
+!!! note
+
+    For bulk deletes, the individual record view shows the **Before State** of each item so you can review exactly what will be removed.
 
 ***
 
@@ -130,29 +130,17 @@ Every item in an actioned batch is recorded in the audit history.
 
 The following scenarios highlight when bulk actions are commonly used.
 
-<details>
+??? note "Update a shared value across similar records"
 
-<summary><strong>Update a shared value across similar records</strong></summary>
+    Set the same queue, flag, or routing value on a whole set of items — for example regional holidays or agent skills — in one submission instead of editing each record.
 
-Set the same queue, flag, or routing value on a whole set of items — for example regional holidays or agent skills — in one submission instead of editing each record.
+??? note "Clean up an obsolete set of items"
 
-</details>
+    Select and delete a group of records that are no longer needed, with reference safety preventing you from removing anything that's still in use.
 
-<details>
+??? note "Keep records consistent across an entity"
 
-<summary><strong>Clean up an obsolete set of items</strong></summary>
-
-Select and delete a group of records that are no longer needed, with reference safety preventing you from removing anything that's still in use.
-
-</details>
-
-<details>
-
-<summary><strong>Keep records consistent across an entity</strong></summary>
-
-Correct a value that has drifted across many items so every record matches, reviewed by an approver as a single change.
-
-</details>
+    Correct a value that has drifted across many items so every record matches, reviewed by an approver as a single change.
 
 ***
 

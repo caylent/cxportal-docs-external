@@ -66,11 +66,11 @@ If a Contact Flow with the same name already exists, it is updated. Otherwise, a
 
 ### Limitations
 
-* <mark style="color:$primary;">**Push notifications**</mark> — Amazon Connect has no native push channel. PUSH activities are imported as `PutLambdaInvokeRequest` actions with a placeholder Lambda ARN. You must implement a Lambda bridge to SNS or Firebase to handle push delivery.
-* <mark style="color:$primary;">**Custom actions**</mark> — only the Lambda ARN is passed. Invocation attributes such as template names and message data cannot be included in the flow definition and must be handled within the Lambda function.
-* <mark style="color:$primary;">**WaitUntil**</mark> — absolute wait times are converted to a fixed duration at export time. The duration does not adjust at runtime.
-* <mark style="color:$primary;">**250 action limit**</mark> — Amazon Connect flows are limited to 250 actions. Large journeys that produce flows exceeding this limit must be split manually in Connect using `TransferToFlow`.
-* <mark style="color:$primary;">**5 condition limit**</mark> — Each Compare action in Amazon Connect supports a maximum of 5 conditions. A MultiCondition or ConditionalSplit activity with more than 5 event branches causes the journey to be skipped with a `JourneyCompatibilityError` during export.
-* <mark style="color:$primary;">**Segment entry**</mark> — Pinpoint's `SegmentStartCondition` is not encoded in the Contact Flow. Configure the segment source separately in the Connect campaign after import.
+* **Push notifications** — Amazon Connect has no native push channel. PUSH activities are imported as `PutLambdaInvokeRequest` actions with a placeholder Lambda ARN. You must implement a Lambda bridge to SNS or Firebase to handle push delivery.
+* **Custom actions** — only the Lambda ARN is passed. Invocation attributes such as template names and message data cannot be included in the flow definition and must be handled within the Lambda function.
+* **WaitUntil** — absolute wait times are converted to a fixed duration at export time. The duration does not adjust at runtime.
+* **250 action limit** — Amazon Connect flows are limited to 250 actions. Large journeys that produce flows exceeding this limit must be split manually in Connect using `TransferToFlow`.
+* **5 condition limit** — Each Compare action in Amazon Connect supports a maximum of 5 conditions. A MultiCondition or ConditionalSplit activity with more than 5 event branches causes the journey to be skipped with a `JourneyCompatibilityError` during export.
+* **Segment entry** — Pinpoint's `SegmentStartCondition` is not encoded in the Contact Flow. Configure the segment source separately in the Connect campaign after import.
 
 ***

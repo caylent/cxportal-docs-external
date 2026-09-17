@@ -35,48 +35,32 @@ node pinpoint-migration-tool.mjs preflight -r <region> -p <profile> [options]
 
 The preflight command performs the following checks:
 
-<details open>
+???+ note "Always performed"
 
-<summary><mark style="color:$primary;"><strong>Always performed</strong></mark></summary>
+    * Region is supported by both Pinpoint and Amazon Connect.
+    * AWS credentials in the specified profile are valid.
+    * Connect API is accessible.
+    * Pinpoint API is accessible.
+    * Pinpoint and Connect service quota comparison.
 
-* Region is supported by both Pinpoint and Amazon Connect.
-* AWS credentials in the specified profile are valid.
-* Connect API is accessible.
-* Pinpoint API is accessible.
-* Pinpoint and Connect service quota comparison.
+???+ note "When --connect-instance-id is provided"
 
-</details>
+    * Instance exists and is in ACTIVE status.
+    * Outbound calls are enabled.
+    * Outbound campaigns are enabled.
+    * Email and SMS channels are configured.
+    * CTR Kinesis streaming is enabled.
+    * Agent events streaming is enabled.
 
-<details open>
+???+ note "When --pinpoint-application-id is provided"
 
-<summary><mark style="color:$primary;"><strong>When --connect-instance-id is provided</strong></mark></summary>
+    * Application exists and is accessible.
+    * Journeys are available for the application.
 
-* Instance exists and is in ACTIVE status.
-* Outbound calls are enabled.
-* Outbound campaigns are enabled.
-* Email and SMS channels are configured.
-* CTR Kinesis streaming is enabled.
-* Agent events streaming is enabled.
+???+ note "When --journey-id is provided (requires --pinpoint-application-id)"
 
-</details>
-
-<details open>
-
-<summary><mark style="color:$primary;"><strong>When --pinpoint-application-id is provided</strong></mark></summary>
-
-* Application exists and is accessible.
-* Journeys are available for the application.
-
-</details>
-
-<details open>
-
-<summary><mark style="color:$primary;"><strong>When --journey-id is provided (requires --pinpoint-application-id)</strong></mark></summary>
-
-* Journey activity types are supported by the tool.
-* Journey size is within supported limits.
-
-</details>
+    * Journey activity types are supported by the tool.
+    * Journey size is within supported limits.
 
 ***
 

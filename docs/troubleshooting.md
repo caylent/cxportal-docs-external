@@ -44,9 +44,9 @@ If you do not see the permission in the list, go to `chrome://settings/content/l
 
 You can also manage this from **Settings** > **Cookies and site permissions** > **Local network access**.
 
-{% hint style="info" %}
-The permission is saved per browser profile. If you use CxPortal in an Incognito or InPrivate window, or in a different browser profile, you may need to allow it again there.
-{% endhint %}
+!!! note
+
+    The permission is saved per browser profile. If you use CxPortal in an Incognito or InPrivate window, or in a different browser profile, you may need to allow it again there.
 
 ### If the setting is grayed out or the prompt never appears
 

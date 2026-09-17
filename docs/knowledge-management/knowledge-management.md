@@ -79,29 +79,17 @@ Knowledge Management is subject to role-based access. You must have a specific r
 
 The following scenarios highlight when Knowledge Management is commonly used.
 
-<details>
+??? note "Customer Support"
 
-<summary><strong>Customer Support</strong></summary>
+    Equip AI agents with up-to-date troubleshooting guides so they can resolve common customer issues without human escalation.
 
-Equip AI agents with up-to-date troubleshooting guides so they can resolve common customer issues without human escalation.
+??? note "AI Agent Optimization"
 
-</details>
+    Tag articles with metadata so AI agents retrieve the most relevant content for specific customer queries and ensure responses reflect latest documentation without manual updates.
 
-<details>
+??? note "Documentation Management"
 
-<summary><strong>AI Agent Optimization</strong></summary>
-
-Tag articles with metadata so AI agents retrieve the most relevant content for specific customer queries and ensure responses reflect latest documentation without manual updates.
-
-</details>
-
-<details>
-
-<summary><strong>Documentation Management</strong></summary>
-
-Centralized access-controlled documentation system with version tracking, metadata tagging, and AI sync capabilities to keep organizational content accurate, discoverable, and up to date.
-
-</details>
+    Centralized access-controlled documentation system with version tracking, metadata tagging, and AI sync capabilities to keep organizational content accurate, discoverable, and up to date.
 
 ***
 

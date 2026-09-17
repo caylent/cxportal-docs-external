@@ -82,29 +82,17 @@ As a **company admin**, you can create cases, edit open cases, and view all case
 
 ## Common Use Cases
 
-<details>
+??? note "Reporting a product issue"
 
-<summary><strong>Reporting a product issue</strong></summary>
+    A general user runs into a problem with one of their products or a feature isn't working as expected. From the CxCentral homepage, they click **Support**, fill out the request form with a clear title, priority, and description, and attach a screenshot of the error. After submitting, they get a Reference Number and track the case from the My Cases page, responding through comments as the support agent investigates and resolves it.
 
-A general user runs into a problem with one of their products or a feature isn't working as expected. From the CxCentral homepage, they click **Support**, fill out the request form with a clear title, priority, and description, and attach a screenshot of the error. After submitting, they get a Reference Number and track the case from the My Cases page, responding through comments as the support agent investigates and resolves it.
+??? note "Managing support across the organization"
 
-</details>
+    A company admin oversees all support activity for their company. They open the cases dashboard to see every case in one view, filter by status to find what needs attention, and use date-range search to review recent activity. When several similar requests come in, they bulk-edit the statuses to keep the queue current and CC the relevant stakeholders so the right people stay informed as cases progress.
 
-<details>
+??? note "Spotting and escalating trends"
 
-<summary><strong>Managing support across the organization</strong></summary>
-
-A company admin oversees all support activity for their company. They open the cases dashboard to see every case in one view, filter by status to find what needs attention, and use date-range search to review recent activity. When several similar requests come in, they bulk-edit the statuses to keep the queue current and CC the relevant stakeholders so the right people stay informed as cases progress.
-
-</details>
-
-<details>
-
-<summary><strong>Spotting and escalating trends</strong></summary>
-
-A company admin notices repeat support requests and want to understand the bigger picture. Using the dashboard's filters and case types, they identify a pattern and escalate proactively to address the root cause, rather than handling each case in isolation.
-
-</details>
+    A company admin notices repeat support requests and want to understand the bigger picture. Using the dashboard's filters and case types, they identify a pattern and escalate proactively to address the root cause, rather than handling each case in isolation.
 
 ***
 

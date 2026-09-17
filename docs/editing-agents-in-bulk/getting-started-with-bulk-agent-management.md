@@ -29,13 +29,9 @@ The simplest way to get comfortable with the page is to narrow the agent list wi
     **Note**: To target many agents at once, copy a comma-separated string (for example, a list of Agent IDs or proficiencies) and paste it directly into the filter text box. Most filters also provide a **Paste from clipboard** button that pastes your clipboard contents into the filter in one click.
 
 
-<details open>
+???+ note "Sorting the table"
 
-<summary>Sorting the table</summary>
-
-The Agent Name and Routing Profile column headers are sortable, click a header to sort the table by that column.
-
-</details>
+    The Agent Name and Routing Profile column headers are sortable, click a header to sort the table by that column.
 
 ***
 
@@ -81,15 +77,11 @@ Applying or changing a filter does not clear agents you've already checked. Your
 
 When you apply a filter, the table pins any agents you've already selected to the top, even if those agents don't match the new filter criteria. This lets you build a selection across multiple filter passes without losing track of agents you've already chosen.
 
-<details>
+??? note "Example of Routing Profile filter:"
 
-<summary><strong>Example of Routing Profile filter:</strong></summary>
+    You select five agents who have different Routing Profiles. You then apply a Routing Profile filter that only one of them matches.
 
-You select five agents who have different Routing Profiles. You then apply a Routing Profile filter that only one of them matches.
-
-The four agents who don't match the filter will still appear at the top of the table with their checkboxes checked, while the filtered results display below them.
-
-</details>
+    The four agents who don't match the filter will still appear at the top of the table with their checkboxes checked, while the filtered results display below them.
 
 When you run a [**Bulk Change**](making-bulk-changes-to-agents.md) or[ **Export**](exporting-agent-data.md), all checked agents are included, regardless of which filter is currently active.
 

@@ -11,6 +11,6 @@ Access to the Agent Management page is restricted to users with the appropriate 
 
 ### Support
 
-For questions about your organization's change request configuration, access permissions, or unexpected behavior, contact your CxPortal administrator or visit the [<mark style="color:$primary;">**Support**</mark>](../submitting-a-support-request.md) page.
+For questions about your organization's change request configuration, access permissions, or unexpected behavior, contact your CxPortal administrator or visit the [**Support**](../submitting-a-support-request.md) page.
 
 ***

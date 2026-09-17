@@ -41,45 +41,25 @@ Flow Analyzer helps teams resolve issues faster, reduces the need to search acro
 
 The following use cases highlight common scenarios where Flow Analyzer helps teams investigate issues, validate changes, and understand customer interactions.
 
-<details>
+??? note "Troubleshooting Flow Failures"
 
-<summary><strong>Troubleshooting Flow Failures</strong>  </summary>
+    Customers experience long wait times, call drops, or unexpected behavior at a specific point in a contact flow.
 
-Customers experience long wait times, call drops, or unexpected behavior at a specific point in a contact flow.
+??? note "Analyze Flow Performance"
 
-</details>
+    The contact center is scaling and you need to reduce latency or improve customer experience.
 
-<details>
+??? note "Validating &#x26; Testing Flow Changes"
 
-<summary><strong>Analyze Flow Performance</strong> </summary>
+    New routing logic, integrations, or flow updates need to be verified before or after deployment.
 
-The contact center is scaling and you need to reduce latency or improve customer experience.
+??? note "Reviewing Customer Interactions"
 
-</details>
+    A customer reports transfer loops, long waits, or being routed to the wrong agent or queue.
 
-<details>
+??? note "Verifying Compliance Steps"
 
-<summary><strong>Validating &#x26; Testing Flow Changes</strong></summary>
-
-New routing logic, integrations, or flow updates need to be verified before or after deployment.
-
-</details>
-
-<details>
-
-<summary><strong>Reviewing Customer Interactions</strong> </summary>
-
-A customer reports transfer loops, long waits, or being routed to the wrong agent or queue.
-
-</details>
-
-<details>
-
-<summary><strong>Verifying Compliance Steps</strong> </summary>
-
-You need to confirm that required steps, such as disclosures or recording settings, were followed during an interaction.
-
-</details>
+    You need to confirm that required steps, such as disclosures or recording settings, were followed during an interaction.
 
 ***
 

@@ -70,29 +70,17 @@ You must have one of these permissions for the Admin menu to appear in CxPortal.
 
 ## **Common Use Cases**
 
-<details>
+??? note "Create and Manage Roles"
 
-<summary><strong>Create and Manage Roles</strong></summary>
+    Organizations can use Access Management to create roles and set permissions to control who has access to specific modules and features.
 
-Organizations can use Access Management to create roles and set permissions to control who has access to specific modules and features.
+??? note "Create and Manage Users"
 
-</details>
+    Organizations can use Access Management to invite users to access CxPortal, assign, and update their roles to control what information they can view.
 
-<details>
+??? note "Managing Existing Roles and Users"
 
-<summary><strong>Create and Manage Users</strong></summary>
-
-Organizations can use Access Management to invite users to access CxPortal, assign, and update their roles to control what information they can view.
-
-</details>
-
-<details>
-
-<summary><strong>Managing Existing Roles and Users</strong></summary>
-
-Administrators can use Access Management to update or modify existing roles and their permissions at any time. This keeps access levels accurate and ensures they reflect the current needs of the organization.
-
-</details>
+    Administrators can use Access Management to update or modify existing roles and their permissions at any time. This keeps access levels accurate and ensures they reflect the current needs of the organization.
 
 ***
 

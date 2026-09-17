@@ -8,8 +8,8 @@ Each migrated resource is reported with one of the following statuses.
 
 | **Status**                                              | **Description**                                                                                                                          |
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| <mark style="color:$primary;">**Fully Migrated**</mark> | The resource was migrated to Connect.                                                                                                    |
-| <mark style="color:$primary;">**Not Migrated**</mark>   | The resource contains unsupported configurations or failed validation. The report includes the specific reason and remediation guidance. |
+| **Fully Migrated** | The resource was migrated to Connect.                                                                                                    |
+| **Not Migrated**   | The resource contains unsupported configurations or failed validation. The report includes the specific reason and remediation guidance. |
 
 ***
 

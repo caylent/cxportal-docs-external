@@ -96,29 +96,17 @@ A User role can use campaigns but can’t manage users, enable or disable accoun
 
 The following scenarios highlight when Campaigns is commonly used.
 
-<details>
+??? note "Manage outreach"
 
-<summary><strong>Manage outreach</strong></summary>
+    Campaign Groups can organize campaigns by department or function, ensuring each team only sees and manages the campaigns relevant to them. The Dashboard's filtering tools make it easy to monitor performance across groups from one central view.
 
-Campaign Groups can organize campaigns by department or function, ensuring each team only sees and manages the campaigns relevant to them. The Dashboard's filtering tools make it easy to monitor performance across groups from one central view.
+??? note "Collect feedback"
 
-</details>
+    Use a Voice Survey or SMS Survey campaign to gather structured responses from contacts through a series of up to 5 questions. Results are tracked automatically on the Dashboard, giving your team clear insight into response and delivery rates without manual follow-up.
 
-<details>
+??? note "Customize outbound notifications"
 
-<summary><strong>Collect feedback</strong></summary>
-
-Use a Voice Survey or SMS Survey campaign to gather structured responses from contacts through a series of up to 5 questions. Results are tracked automatically on the Dashboard, giving your team clear insight into response and delivery rates without manual follow-up.
-
-</details>
-
-<details>
-
-<summary><strong>Customize outbound notifications</strong></summary>
-
-Customize Voice Notification or SMS Notification campaign to send important updates, reminders, or announcements to a large list of contacts at once. Messages can be scheduled in advance or launched immediately, making it easy to reach your audience at the right time.
-
-</details>
+    Customize Voice Notification or SMS Notification campaign to send important updates, reminders, or announcements to a large list of contacts at once. Messages can be scheduled in advance or launched immediately, making it easy to reach your audience at the right time.
 
 ***
 

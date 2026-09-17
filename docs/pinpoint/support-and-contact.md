@@ -1,6 +1,6 @@
 # Support and Contact
 
-The <mark style="color:$primary;">**Caylent Migration Tool for Amazon Pinpoint**</mark> is available at no cost through [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-zzpgnprbmmnj6?sr=0-7\&ref_=beagle\&applicationId=AWSMPContessa).
+The **Caylent Migration Tool for Amazon Pinpoint** is available at no cost through [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-zzpgnprbmmnj6?sr=0-7\&ref_=beagle\&applicationId=AWSMPContessa).
 
 For questions, technical issues, or feedback, contact the Caylent team at <pinpoint@pronetx.com>.
 
