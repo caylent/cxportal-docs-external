@@ -24,45 +24,25 @@ Your Pinpoint environment remains fully operational while you run the tool. You 
 
 ### What the tool does
 
-<details>
+??? note "Deploy bootstrap infrastructure"
 
-<summary>**Deploy bootstrap infrastructure**</summary>
+    Deploys a bootstrap stack that provisions the S3 bucket, IAM export role, Customer Profiles domain, and KMS key required by all subsequent commands.
 
-Deploys a bootstrap stack that provisions the S3 bucket, IAM export role, Customer Profiles domain, and KMS key required by all subsequent commands.
+??? note "Scan and inventory Pinpoint resources"
 
-</details>
+    Scans a specified Pinpoint application and inventories endpoints, templates, campaigns, segments, journeys, and channel configurations.
 
-<details>
+??? note "Evaluate migration eligibility"
 
-<summary><strong>Scan and inventory Pinpoint resources</strong></summary>
+    Evaluates each resource for migration eligibility and classifies it as Eligible, Eligible-with-Warnings, or Not-Eligible.
 
-Scans a specified Pinpoint application and inventories endpoints, templates, campaigns, segments, journeys, and channel configurations.
+??? note "Migrate supported resources"
 
-</details>
+    Migrates supported resources to Amazon Connect Outbound Campaigns, Amazon Connect Customer Profiles, and Amazon Connect message templates.
 
-<details>
+??? note "Generate migration reports"
 
-<summary><strong>Evaluate migration eligibility</strong></summary>
-
-Evaluates each resource for migration eligibility and classifies it as Eligible, Eligible-with-Warnings, or Not-Eligible.
-
-</details>
-
-<details>
-
-<summary><strong>Migrate supported resources</strong></summary>
-
-Migrates supported resources to Amazon Connect Outbound Campaigns, Amazon Connect Customer Profiles, and Amazon Connect message templates.
-
-</details>
-
-<details>
-
-<summary><strong>Generate migration reports</strong></summary>
-
-Generates detailed reports summarizing migration outcomes and required manual actions.
-
-</details>
+    Generates detailed reports summarizing migration outcomes and required manual actions.
 
 ***
 

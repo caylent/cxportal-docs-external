@@ -14,20 +14,16 @@ description: >-
   &#x20;completes.
 * Imports are always auto-approved — they don't route through the change-request approval flow. Every record an import creates is logged individually in the **Audit Log**.
 
-<details open>
+???+ note "Key behaviors"
 
-<summary><strong>Key behaviors</strong></summary>
-
-* Exported files preserve entity IDs and item IDs exactly as they exist in the source environment.
-* When imported into a second environment, those IDs are retained. This differs from manual
-  &#x20;entity creation, which generates a new unique ID.
-* Consistent IDs make it easier to reference entities and items in Amazon Connect contact flows,
-  &#x20;Lambda functions, or other integrations.
-*
-  Exported data uses the JSON Lines (JSONL) format. Each line in the file is a self-contained JSON
-  &#x20;object representing either an entity or an item record.
-
-</details>
+    * Exported files preserve entity IDs and item IDs exactly as they exist in the source environment.
+    * When imported into a second environment, those IDs are retained. This differs from manual
+    entity creation, which generates a new unique ID.
+    * Consistent IDs make it easier to reference entities and items in Amazon Connect contact flows,
+    Lambda functions, or other integrations.
+    *
+      Exported data uses the JSON Lines (JSONL) format. Each line in the file is a self-contained JSON
+    object representing either an entity or an item record.
 
 ***
 
@@ -41,9 +37,9 @@ Import and export live in the DFC sub-header.
 2. In the sub-header, click **Export** or **Import**. Hover the icons to see their tooltips.
 
 
-{% hint style="info" %}
-**Note:** The Export and Import buttons appear only if you have edit permission.
-{% endhint %}
+!!! note
+
+    The Export and Import buttons appear only if you have edit permission.
 
 ***
 
@@ -65,21 +61,19 @@ When exporting from a specific entity, only that entity and the items inside it 
 
 2\. In the **Export** dialog, click **Start export.**
 
-{% hint style="info" %}
-**Note:** The dialog's description tells you the scope of the export. From the sub-header, it explains that every entity in this instance, along with their children and all associated items, will be exported. From a specific entity's three-dot menu, it scopes the same description to that entity, its children, and all associated items.
-{% endhint %}
+!!! note
+
+    The dialog's description tells you the scope of the export. From the sub-header, it explains that every entity in this instance, along with their children and all associated items, will be exported. From a specific entity's three-dot menu, it scopes the same description to that entity, its children, and all associated items.
 
 3\. DFC prepares the JSON Lines file and downloads it to your computer automatically.
 
 4.Review the summary showing the number of entities and items exported. Click **Restart** to run another export.
 
-{% hint style="danger" %}
-**Danger:** Do not manually edit the exported JSONL file. Manual edits can cause import errors or
-\
-data corruption. If edits are required, use programmatic tools and validate the file structure before
-\
-importing.
-{% endhint %}
+!!! danger
+
+    Do not manually edit the exported JSONL file. Manual edits can cause import errors or
+    data corruption. If edits are required, use programmatic tools and validate the file structure before
+    importing.
 
 ***
 
@@ -91,29 +85,25 @@ importing.
 
 3\. In the import dialog, click **Select File** and choose the exported JSONL file.&#x20;
 
-4\. Click **Start Import**<mark style="color:$primary;">**.**</mark>&#x20;
+4\. Click **Start Import****.**&#x20;
 
 5\. DFC processes the file and displays a summary with the number of lines processed, entities imported, and items imported.&#x20;
 
 6\. The **DFC Browser** refreshes automatically after import completes.&#x20;
 
-{% hint style="success" %}
-**Success:** Allow the import process to complete fully. Do not navigate away while the loading indicator is active. Import time depends on file size — a 1 MB file typically completes in
-&#x20;approximately two minutes. If an error occurs, the loading indicator stops and an error message is
-&#x20;displayed. If no error is shown, the import is still processing.
-{% endhint %}
+!!! success
 
-{% hint style="info" %}
-**Note (Amazon Connect resources):** Amazon Connect resource(s) have their ARNs updated
-\
-automatically using the name of the resource. For example, a queue called "Basic Queue" has an ID
-\
-of 1111-11111-1111 in instance A but 2222-22222-2222 in instance B. When you import an item that
-\
-references this queue, DFC automatically reconstructs the ARN using the resource name in the target
-\
-environment.
-{% endhint %}
+    Allow the import process to complete fully. Do not navigate away while the loading indicator is active. Import time depends on file size — a 1 MB file typically completes in
+    approximately two minutes. If an error occurs, the loading indicator stops and an error message is
+    displayed. If no error is shown, the import is still processing.
+
+!!! note "Amazon Connect resources"
+
+    Amazon Connect resource(s) have their ARNs updated
+    automatically using the name of the resource. For example, a queue called "Basic Queue" has an ID
+    of 1111-11111-1111 in instance A but 2222-22222-2222 in instance B. When you import an item that
+    references this queue, DFC automatically reconstructs the ARN using the resource name in the target
+    environment.
 
 ***
 
@@ -137,9 +127,9 @@ Every record an import creates is logged individually so you can trace any recor
 * Each entry records the actor, the timestamp, the affected entity path or item primary key, the action, and that the change came from an import — visibly distinct from a manual edit, a scheduled change, or a just-in-time change.
 * An applied import can be reverted from change tracking. Reverting removes the records the import created, and the revert itself is reflected in change tracking.
 
-{% hint style="danger" %}
-**Warning (known limitation):** An import is modelled as a bulk create. If an import reuses an ID that already exists in the target environment, the import overwrites that record — logged as a create with no prior snapshot. Reverting the import deletes the record rather than restoring its previous values.
-{% endhint %}
+!!! danger "Known limitation"
+
+    An import is modelled as a bulk create. If an import reuses an ID that already exists in the target environment, the import overwrites that record — logged as a create with no prior snapshot. Reverting the import deletes the record rather than restoring its previous values.
 
 ***
 

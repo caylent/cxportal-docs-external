@@ -42,37 +42,21 @@
 
 ## Common Pitfalls
 
-<details>
+??? note "Avoid: Adopting active-active (a 50/50 split across two Regions) without preparing for the overhead."
 
-<summary><strong>Avoid:</strong> Adopting active-active (a 50/50 split across two Regions) without preparing for the overhead. </summary>
+    **Why:** A 50/50 split is supported but introduces real complexity in reporting, analytics, and workforce management. Reconciling contact data across two Regions requires additional tooling and process investment. Do not adopt this model without a clear plan for sustaining it day to day.
 
-**Why:** A 50/50 split is supported but introduces real complexity in reporting, analytics, and workforce management. Reconciling contact data across two Regions requires additional tooling and process investment. Do not adopt this model without a clear plan for sustaining it day to day.
+??? note "Avoid: Pulling agents back to the primary Region too early during failback."
 
-</details>
+    **Why:** Moving telephony first lets in-flight contacts in the secondary Region complete naturally and queues drain before agents are moved back. Pulling agents back too early abandons active interactions.
 
-<details>
+??? note "Avoid: Re-executing a Playbook because the Dashboard has not updated yet."
 
-<summary><strong>Avoid:</strong> Pulling agents back to the primary Region too early during failback.</summary>
+    **Why:** Changes are applied asynchronously after execution. The Dashboard may take a short time to reflect updated distributions and the new failover timestamp.
 
-**Why:** Moving telephony first lets in-flight contacts in the secondary Region complete naturally and queues drain before agents are moved back. Pulling agents back too early abandons active interactions.
+??? note "Avoid: Leaving agents or phone numbers unassigned."
 
-</details>
-
-<details>
-
-<summary><strong>Avoid:</strong> Re-executing a Playbook because the Dashboard has not updated yet. </summary>
-
-**Why:** Changes are applied asynchronously after execution. The Dashboard may take a short time to reflect updated distributions and the new failover timestamp.
-
-</details>
-
-<details>
-
-<summary><strong>Avoid:</strong> Leaving agents or phone numbers unassigned. </summary>
-
-**Why:** Unassigned resources are not subject to distribution rules and do not follow traffic during a failover, leaving inbound traffic uncovered.
-
-</details>
+    **Why:** Unassigned resources are not subject to distribution rules and do not follow traffic during a failover, leaving inbound traffic uncovered.
 
 ***
 

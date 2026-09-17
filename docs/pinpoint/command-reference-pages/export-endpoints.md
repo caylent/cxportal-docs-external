@@ -70,24 +70,16 @@ node ./pinpoint-migration-tool.mjs export-endpoints --region us-east-1 --profile
 
 ### Errors
 
-<details>
+??? note "`ExportJobIdMissingError`"
 
-<summary><code>ExportJobIdMissingError</code></summary>
+    **Cause:** The CreateExportJob API response is missing the job ID.
 
-**Cause:** The CreateExportJob API response is missing the job ID.
+    **Resolution:** Verify the Pinpoint API is accessible and retry.
 
-**Resolution:** Verify the Pinpoint API is accessible and retry.
+??? note "`ExportJobDataMissingError`"
 
-</details>
+    **Cause:** The GetExportJob API response is missing job data.
 
-<details>
-
-<summary><code>ExportJobDataMissingError</code></summary>
-
-**Cause:** The GetExportJob API response is missing job data.
-
-**Resolution:** Verify the export job ID is valid. Retry the export.
-
-</details>
+    **Resolution:** Verify the export job ID is valid. Retry the export.
 
 ***

@@ -49,9 +49,9 @@ The legend defines the ribbon colors: **Productive**, **Offline**, **Non-Product
 1. In the Filters panel's **Sort** dropdown, choose **Lowest adherence first**, **Name**, or **Most events**.
 2. In the Filters panel's **Timezone** dropdown, choose **Pacific (PT)**, **Mountain (MT)**, **Central (CT)**, **Eastern (ET)**, or **UTC**. The time axis displays in the selected timezone.
 
-{% hint style="info" %}
-The ribbon header shows the grace tolerance applied to adherence: ±5m grace.
-{% endhint %}
+!!! note
+
+    The ribbon header shows the grace tolerance applied to adherence: ±5m grace.
 
 ### Opening an Agent's Profile or Scorecard
 

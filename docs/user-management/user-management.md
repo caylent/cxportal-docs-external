@@ -49,28 +49,16 @@ What you can do in this module:
 
 ## Use Cases
 
-<details open>
+???+ note "Adding New Users"
 
-<summary><strong>Adding New Users</strong>  </summary>
+    Organizations can use User Management to add new users to the system and assign them the appropriate role. This ensures that users have access to the tools and features they need from the start.
 
-Organizations can use User Management to add new users to the system and assign them the appropriate role. This ensures that users have access to the tools and features they need from the start.
+???+ note "Managing Existing Users"
 
-</details>
+    Administrators can use User Management to update user information or roles at any time. This keeps user profiles accurate and ensures access levels reflect each user's current responsibilities within the organization.
 
-<details open>
+???+ note "Controlling User Access"
 
-<summary><strong>Managing Existing Users</strong>  </summary>
-
-Administrators can use User Management to update user information or roles at any time. This keeps user profiles accurate and ensures access levels reflect each user's current responsibilities within the organization.
-
-</details>
-
-<details open>
-
-<summary><strong>Controlling User Access</strong>  </summary>
-
-Organizations can use User Management to monitor and control who has access to the system. Administrators can deactivate users when needed, ensuring that only authorized individuals have access to the organization's tools and resources.
-
-</details>
+    Organizations can use User Management to monitor and control who has access to the system. Administrators can deactivate users when needed, ensuring that only authorized individuals have access to the organization's tools and resources.
 
 ***

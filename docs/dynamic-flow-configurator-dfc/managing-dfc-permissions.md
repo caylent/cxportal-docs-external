@@ -210,44 +210,24 @@ When configuring permissions, the current instance name is shown at the top of t
 
 ### Best Practices for DFC Permissions
 
-<details open>
+???+ note "Create roles based on business function, not individual users."
 
-<summary><strong>Create roles based on business function, not individual users.</strong></summary>
+    Name roles to reflect what they do, such as "Transfers Viewer" or "Prompts Editor." This makes it easier to manage access as teams change.
 
-Name roles to reflect what they do, such as "Transfers Viewer" or "Prompts Editor." This makes it easier to manage access as teams change.
+???+ note "Avoid creating too many roles."
 
-</details>
+    A large number of overlapping roles is difficult to maintain. Keep the role structure close to what the business actually requires.
 
-<details open>
+???+ note "Use the permission ceiling intentionally."
 
-<summary><strong>Avoid creating too many roles.</strong></summary>
+    Set the permission level to the minimum needed for the role's function. A role that only needs to view items should have Item Viewer, not Admin, even if only a few entity tags are assigned.
 
-A large number of overlapping roles is difficult to maintain. Keep the role structure close to what the business actually requires.
+???+ note "Configure and verify in a lower environment first."
 
-</details>
+    Set up role and tag configuration in Dev or a test instance before applying the same setup in production.
 
-<details open>
+???+ note "Review the Preview panel before saving."
 
-<summary><strong>Use the permission ceiling intentionally.</strong></summary>
-
-Set the permission level to the minimum needed for the role's function. A role that only needs to view items should have Item Viewer, not Admin, even if only a few entity tags are assigned.
-
-</details>
-
-<details open>
-
-<summary><strong>Configure and verify in a lower environment first.</strong></summary>
-
-Set up role and tag configuration in Dev or a test instance before applying the same setup in production.
-
-</details>
-
-<details open>
-
-<summary><strong>Review the Preview panel before saving.</strong></summary>
-
-The entity browser on the right reflects exactly what the role will see. Use it to confirm that the intended entities are visible and that no unintended access has been granted.
-
-</details>
+    The entity browser on the right reflects exactly what the role will see. Use it to confirm that the intended entities are visible and that no unintended access has been granted.
 
 ***

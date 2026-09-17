@@ -9,11 +9,11 @@ description: Create entities, sub-entities, and schemas, then add items to an en
 * You need a DFC permission level that allows creating entities and editing schemas (**Entity Editor** or **Admin**) to create entities, sub-entities, and define schemas. Adding items requires at least **Item Creator**. See [Managing DFC Permissions](managing-dfc-permissions.md).
 * Plan your schema before adding items. Once items populate a field with data, the field's name and type are locked and the field can't be deleted.
 
-{% hint style="warning" %}
-**Warning:** In most setups, schema changes are owned by admins and technical users. Fields\
-cannot be deleted or renamed while sub-entities or items exist inside the entity. Plan fields carefully\
-before adding items or sub-entities.
-{% endhint %}
+!!! warning
+
+    In most setups, schema changes are owned by admins and technical users. Fields\
+    cannot be deleted or renamed while sub-entities or items exist inside the entity. Plan fields carefully\
+    before adding items or sub-entities.
 
 ### Limits and Constraints
 
@@ -41,9 +41,9 @@ before adding items or sub-entities.
 
 After creation, the entity appears in the left panel. A confirmation message displays: "Entity has been created successfully."
 
-{% hint style="info" %}
-**Note:** Entities cannot be deleted until all sub-entities and items under them are removed first. Deleting an entity is permanent.
-{% endhint %}
+!!! note
+
+    Entities cannot be deleted until all sub-entities and items under them are removed first. Deleting an entity is permanent.
 
 ***
 
@@ -70,9 +70,9 @@ Delete an entity from its Entity Settings page once it's empty.
 3. Select **Delete Entity**.
 4. In the **Are you sure?** confirmation, confirm the deletion.
 
-{% hint style="danger" %}
-Deleting an entity is permanent. Delete Entity is disabled while the entity still has items or sub-entities — the menu explains why. Remove them first.
-{% endhint %}
+!!! danger
+
+    Deleting an entity is permanent. Delete Entity is disabled while the entity still has items or sub-entities — the menu explains why. Remove them first.
 
 ### Define the Schema
 
@@ -104,9 +104,9 @@ Before adding items, configure the entity's schema. Schema edits accumulate as a
 
 Once you make an edit, a "You have unsaved changes" indicator appears with a **Discard Changes** action that reverts every pending edit. After you submit, newly added fields stay visible in the list, marked as pending until the change request is approved.
 
-{% hint style="warning" %}
-Save Changes is disabled while a field has a validation error. The field's row flags the error, the affected input is outlined red, and the error message appears directly under that input.
-{% endhint %}
+!!! warning
+
+    Save Changes is disabled while a field has a validation error. The field's row flags the error, the affected input is outlined red, and the error message appears directly under that input.
 
 ***
 
@@ -114,32 +114,28 @@ Save Changes is disabled while a field has a validation error. The field's row f
 
 When you set a field's **Type** to **Reference**, specify the path to the referenced entity. The dropdown shows available items from that entity, and a preview displays the evaluated reference data. Only items (not entities) can be selected in reference fields.
 
-<details>
+??? note "Field types list"
 
-<summary><strong>Field types list</strong></summary>
+    Available field types: Amazon Connect Resource, Boolean, Closure, Date Time, Hours of Operation, JSON, Number, Pick List, Prompt, Reference, String, YAML.
 
-Available field types: Amazon Connect Resource, Boolean, Closure, Date Time, Hours of Operation, JSON, Number, Pick List, Prompt, Reference, String, YAML.
+    For editing a Prompt field's SSML content, see [Editing Prompt Fields](editing-prompt-fields.md).
 
-For editing a Prompt field's SSML content, see [Editing Prompt Fields](editing-prompt-fields.md).
+    The **Amazon Connect Resource** type lets you select from the following resource types:
 
-The **Amazon Connect Resource** type lets you select from the following resource types:
+    • Queue\
+    • Contact Flow \\
 
-• Queue\
-• Contact Flow \\
-
-• Contact Flow Module\
-• Prompt\
-• Phone Number
-
-</details>
+    • Contact Flow Module\
+    • Prompt\
+    • Phone Number
 
 **Setting defaults**: For each field, you can add a default value and mark it **Overridable** if items are allowed to override it.
 
-{% hint style="warning" %}
-**Warning**: Fields lock once items hold data. When existing items populate a field, the field's Name and Type are locked (shown with a lock icon and an explanation) and Delete Field is disabled with a tip explaining why.
+!!! warning
 
-This locking applies only to fields that were already saved before the current editing session. A field you add in the current session — even on an entity that already has items — stays fully editable, including its Name and Type, until you save. To rename or delete a previously saved field, remove the item data first. Since schemas are long-lived, design them carefully before use. Fields added during the current editing session can always be removed — use the field's Delete Field button, or Discard Changes to revert everything.
-{% endhint %}
+    **Warning**: Fields lock once items hold data. When existing items populate a field, the field's Name and Type are locked (shown with a lock icon and an explanation) and Delete Field is disabled with a tip explaining why.
+
+    This locking applies only to fields that were already saved before the current editing session. A field you add in the current session — even on an entity that already has items — stays fully editable, including its Name and Type, until you save. To rename or delete a previously saved field, remove the item data first. Since schemas are long-lived, design them carefully before use. Fields added during the current editing session can always be removed — use the field's Delete Field button, or Discard Changes to revert everything.
 
 ***
 
@@ -154,8 +150,8 @@ Once the schema is ready:
 
 Items appear in the table immediately. Opening an item's editing tray shows its Item ID next to the entity name — click it to copy the ID to your clipboard.
 
-{% hint style="warning" %}
-**Warning:** Item changes are submitted as change requests and take effect once approved. Avoid creating or deleting items in shared environments unless instructed.
-{% endhint %}
+!!! warning
+
+    Item changes are submitted as change requests and take effect once approved. Avoid creating or deleting items in shared environments unless instructed.
 
 ***

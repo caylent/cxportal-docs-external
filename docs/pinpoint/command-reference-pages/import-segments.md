@@ -49,36 +49,24 @@ Both segment types are imported:
 
 ***
 
-<details open>
+???+ note "Segment name sanitization"
 
-<summary><mark style="color:$primary;"><strong>Segment name sanitization</strong></mark></summary>
+    Customer Profiles requires segment names to match `^[a-zA-Z0-9_-]+$` with a maximum length of 64 characters. Names are sanitized automatically:
 
-Customer Profiles requires segment names to match `^[a-zA-Z0-9_-]+$` with a maximum length of 64 characters. Names are sanitized automatically:
+    * Whitespace is replaced with hyphens.
+    * Invalid characters are stripped.
+    * Names are truncated to 64 characters.
+    * Naming collisions receive a numeric suffix (for example, `-2`).
 
-* Whitespace is replaced with hyphens.
-* Invalid characters are stripped.
-* Names are truncated to 64 characters.
-* Naming collisions receive a numeric suffix (for example, `-2`).
+    A `NAME_SANITIZED` warning is emitted when a name is modified.
 
-A `NAME_SANITIZED` warning is emitted when a name is modified.
+???+ note "Dependency ordering"
 
-</details>
+    Segments that reference other segments via `SourceSegments` are created after their dependencies using topological sort. If a circular dependency is detected, the original export order is used as a fallback.
 
-<details open>
+???+ note "Idempotency"
 
-<summary><mark style="color:$primary;"><strong>Dependency ordering</strong></mark></summary>
-
-Segments that reference other segments via `SourceSegments` are created after their dependencies using topological sort. If a circular dependency is detected, the original export order is used as a fallback.
-
-</details>
-
-<details open>
-
-<summary><mark style="color:$primary;"><strong>Idempotency</strong></mark></summary>
-
-Re-running the import deletes and recreates existing segment definitions with the same name. The migration state is updated accordingly.
-
-</details>
+    Re-running the import deletes and recreates existing segment definitions with the same name. The migration state is updated accordingly.
 
 ***
 
@@ -124,8 +112,8 @@ Segment filters reference Pinpoint attribute paths. These are converted to Custo
 ### Limitations
 
 * `IMPORT` segment stubs: the `ImportedCampaignID = CHANGE_THIS` filter is a placeholder only. You must upload the original customer list via [Import from CSV](https://docs.aws.amazon.com/connect/latest/adminguide/customer-segments-imported-files.html) in Amazon Connect after migration.
-* <mark style="color:$primary;">**Multi-value arrays:**</mark> only the first index (`_0`) is checked. Endpoints with a matching value at a later index are not matched by the segment.
-* <mark style="color:$primary;">**Behavior dimensions:**</mark> recency-based segment filters have no Customer Profiles equivalent and are not migrated.
+* **Multi-value arrays:** only the first index (`_0`) is checked. Endpoints with a matching value at a later index are not matched by the segment.
+* **Behavior dimensions:** recency-based segment filters have no Customer Profiles equivalent and are not migrated.
 * `Demographic.Channel:` stored as a semicolon-separated string; set-based filtering does not apply.
 * `Demographic.DeviceType:` not imported by the endpoint pipeline.
 * `Location.GPSPoint:` Customer Profiles equivalent for geofencing.

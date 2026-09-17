@@ -6,8 +6,9 @@
 
 ## Common Pitfalls
 
-"Live" does not always mean sub-second. Adherence-family metrics (Adherence %, Adherent Time, Non-Adherent Time, Scheduled Time) are 15-minute aggregates from GetMetricDataV2. Only agent status changes and agent/queue counts are sub-15-second. If a KPI tile shows "Live," check whether it also shows an "as of" timestamp.
-{% endhint %}
+!!! warning
+
+    "Live" does not always mean sub-second. Adherence-family metrics (Adherence %, Adherent Time, Non-Adherent Time, Scheduled Time) are 15-minute aggregates from GetMetricDataV2. Only agent status changes and agent/queue counts are sub-15-second. If a KPI tile shows "Live," check whether it also shows an "as of" timestamp.
 
 **Avoid relying solely on adherence scores for real-time staffing decisions.** Adherence verdicts can lag 5–15 minutes. For immediate staffing awareness, use Agent Status (genuinely real-time) in combination with the Team Scorecard.
 

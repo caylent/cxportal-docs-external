@@ -34,54 +34,34 @@ node ./pinpoint-migration-tool.mjs express-setup -r <region> -p <profile>
 
 ### Errors
 
-<details>
+??? note "`InstanceResponseMissingError`"
 
-<summary><code>InstanceResponseMissingError</code></summary>
+    **Cause:** The CreateInstance API response is missing the instance ID or ARN.
 
-**Cause:** The CreateInstance API response is missing the instance ID or ARN.
+    **Resolution:** Verify Connect is available in your region and retry.
 
-**Resolution:** Verify Connect is available in your region and retry.
+??? note "`InstanceStatusFailedError`"
 
-</details>
+    **Cause:** The instance entered CREATION\_FAILED status.
 
-<details>
+    **Resolution:** Check the error message for the cause (often a service limit or naming conflict) and retry.
 
-<summary><code>InstanceStatusFailedError</code></summary>
+??? note "`InstanceActiveTimeoutError`"
 
-**Cause:** The instance entered CREATION\_FAILED status.
+    **Cause:** The instance did not reach ACTIVE status within the polling window.
 
-**Resolution:** Check the error message for the cause (often a service limit or naming conflict) and retry.
+    **Resolution:** Check the Connect console. The instance may still be provisioning. Retry if needed.
 
-</details>
+??? note "`KinesisStreamTimeoutError`"
 
-<details>
+    **Cause:** A Kinesis stream did not become ACTIVE in time.
 
-<summary><code>InstanceActiveTimeoutError</code></summary>
+    **Resolution:** Check the Kinesis console for stream status and retry.
 
-**Cause:** The instance did not reach ACTIVE status within the polling window.
+??? note "`BucketAlreadyExistsError`"
 
-**Resolution:** Check the Connect console. The instance may still be provisioning. Retry if needed.
+    **Cause:** The S3 bucket name is in use in another AWS account.
 
-</details>
-
-<details>
-
-<summary><code>KinesisStreamTimeoutError</code></summary>
-
-**Cause:** A Kinesis stream did not become ACTIVE in time.
-
-**Resolution:** Check the Kinesis console for stream status and retry.
-
-</details>
-
-<details>
-
-<summary><code>BucketAlreadyExistsError</code></summary>
-
-**Cause:** The S3 bucket name is in use in another AWS account.
-
-**Resolution:** Choose a different bucket name when prompted.
-
-</details>
+    **Resolution:** Choose a different bucket name when prompted.
 
 ***

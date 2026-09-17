@@ -101,29 +101,17 @@ PBR is subject to role-based access. You must have a specific role designated by
 
 The following scenarios highlight when PBR is commonly used.
 
-<details>
+??? note "Intelligent Contact Routing"
 
-<summary><strong>Intelligent Contact Routing</strong></summary>
+    Automatically match incoming contacts to the most qualified available agent based on defined skills and proficiency levels, ensuring customers reach the right person without manual intervention.
 
-Automatically match incoming contacts to the most qualified available agent based on defined skills and proficiency levels, ensuring customers reach the right person without manual intervention.
+??? note "Workforce and Skill Management"
 
-</details>
+    Build and maintain detailed agent skill profiles, adjust ratings as agents develop, and enable or disable skills on the fly to reflect your team's evolving capabilities.
 
-<details>
+??? note "Change Control"
 
-<summary><strong>Workforce and Skill Management</strong></summary>
-
-Build and maintain detailed agent skill profiles, adjust ratings as agents develop, and enable or disable skills on the fly to reflect your team's evolving capabilities.
-
-</details>
-
-<details>
-
-<summary><strong>Change Control</strong></summary>
-
-Track all routing configuration changes through audit logs, enforce approval workflows for sensitive updates, and schedule or roll back changes to maintain a controlled and compliant contact center environment.
-
-</details>
+    Track all routing configuration changes through audit logs, enforce approval workflows for sensitive updates, and schedule or roll back changes to maintain a controlled and compliant contact center environment.
 
 ***
 
