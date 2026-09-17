@@ -399,12 +399,3 @@ The bottom section of the Metrics Dashboard displays a table titled “Recent Ca
 
 ***
 
-## Global Header Controls
-
-The global header bar across the top of the page contains the application title “Cases” and three icon buttons in the upper-right corner:
-
-<table data-header-hidden="false" data-header-sticky><thead><tr><th>Icon</th><th>Function</th></tr></thead><tbody><tr><td>Headset</td><td>Opens the support or help interface.</td></tr><tr><td>User Account</td><td>Opens the user account or profile settings.</td></tr><tr><td>Logout</td><td>Signs the current user out of CxPortal.</td></tr></tbody></table>
-
-These controls are available globally across all pages within the Cases module and are not specific to the Metrics Dashboard.\ <br>
-
-<br>
