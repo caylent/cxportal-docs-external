@@ -26,7 +26,7 @@ Keep the following in mind when working with instance permissions and access res
 
 ### Review Instance Permissions
 
-For each instance of Amazon Connect that are connected to CX Portal, you can define which permissions each role should have when interacting with that instance. This allows you to give access to different modules in different instances or simply change the access to functionality within the module.
+For each instance of Amazon Connect that is connected to CxPortal, you can define which permissions each role should have when interacting with that instance. This allows you to give access to different modules in different instances or simply change the access to functionality within the module.
 
 ***
 
