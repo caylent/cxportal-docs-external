@@ -78,7 +78,7 @@ Delete an entity from its Entity Settings page once it's empty.
 
 Before adding items, configure the entity's schema. Schema edits accumulate as a draft on the Entity Settings page and are submitted together as one change request.
 
-1. Select the entity and click the **Settings** (gear) icon. The Entity Settings page opens with the DFC breadcrumb at the top, the entity's **Details** on the left, and the **Schema** field list on the right.
+1. Select the entity and click the **Settings** (gear) icon. The Entity Settings page opens with the DFC breadcrumb at the top, the entity's **Details** on the left, and the **Schema** field list on the right. The **Details** panel also lists the **Roles** tagged on this entity — see [Managing DFC Permissions](managing-dfc-permissions.md).
 2. Click **Add Field** — for the very first field on a new schema, this button instead reads **Add Primary Key**.
 3. Enter a **Name**. The **Add** button stays disabled until you do.
 4. Select a **Type** from the alphabetical list. For the first field, **Type** is locked to **String** — the popover explains that the primary key must be a required String and can't be changed later.

@@ -4,6 +4,7 @@
 
 * You need a DFC permission level (**Admin** or **User**) assigned to your account, the same as for browsing DFC. See [Managing DFC Permissions](managing-dfc-permissions.md).
 * Search covers the entities and items your account has access to; DFC still enforces your existing entity-tag and permission restrictions.
+* The search bar is available on the DFC entity pages. It isn't shown on the **Permissions** page, where the sub-header carries the permission export and import controls instead.
 
 ***
 
