@@ -122,15 +122,13 @@ When you set a field's **Type** to **Reference**, specify the path to the refere
 
     The **Amazon Connect Resource** type lets you select from the following resource types:
 
-    • Queue\
-    • Contact Flow \\
-
-    • Contact Flow Module\
-    • Prompt\
-    • Phone Number\
+    • Queue
+    • Contact Flow 
+    • Contact Flow Module
+    • Prompt
+    • Phone Number
     • Lex Bot
 
-    [GAP: this list also omits **Lambda Function**, which the resource-type dropdown offers. That option is pre-existing — it appears as unchanged context in PR #1258, not as a 2.19.7 change — so it is flagged here rather than added. Source needed: writer decision / SME]
 
 **Setting defaults**: For each field, you can add a default value and mark it **Overridable** if items are allowed to override it.
 
