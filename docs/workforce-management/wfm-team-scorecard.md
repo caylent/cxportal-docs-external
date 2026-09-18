@@ -14,6 +14,7 @@ The **Team Scorecard** page shows scheduled vs. actual adherence for all agents 
 - The ±5m grace tolerance is fixed and cannot be changed in the UI
 - Gaps in the event stream render as No data (gap) rather than as adherence verdicts
 - Historical days are limited by the 90-day event-history retention
+- A failed refresh does not clear the scorecard — the last successful load stays on screen behind a Refresh failed banner until the next reload succeeds
 
 ## Step-by-Step Instructions
 
@@ -21,13 +22,15 @@ The **Team Scorecard** page shows scheduled vs. actual adherence for all agents 
 
 **Team KPIs** across the top:
 
-- **Team Adherence Today** — The team-wide adherence percentage for the selected day (labeled Team Adherence for Range when viewing a past day)
-- **On Schedule Now** — How many agents are currently on schedule, as a fraction (for example 7 / 12)
+- **Team Adherence Today** — The team-wide adherence percentage for the selected day (labeled Team Adherence for Range when viewing a past day). The label carries an information icon that opens the metric's definition, a **How it's calculated** list, and its data **Source**.
+- **On Schedule Now** — How many agents are currently on schedule, as a fraction (for example 7 / 12). The label carries an information icon that opens the metric's definition.
 - **Out of Adherence** — Number of agents currently out of adherence
 - **Time Off** — Number of agents on time off
 - **Events Today** — Count of adherence events for the day (labeled Events for Range when viewing a past day)
 
 **Stream health** — Above the KPIs, a stream health indicator reports how fresh the underlying data is along with how many agents are reporting recently and how many have intervals in the selected range. The header also shows a freshness label — Live, Stream stale, or Historical — with Updated n ago · ±5m grace (or No stream data when no events have arrived).
+
+**Refresh failures** — A live range reloads about every 15 seconds. If a reload fails while data is already on screen, the page keeps the last successful load and shows a banner reading *Refresh failed — showing the last loaded data. Retrying automatically.* with the underlying error in brackets; the next successful reload clears it. Only a failure on the very first load replaces the page with an error. Switching the Amazon Connect instance clears the scorecard first, so a failure for the newly selected instance is never shown as a stale refresh of the previous one.
 
 **The ribbon** — Each agent row stacks three tracks, top to bottom: **Adherence/min**, **Scheduled**, and **Actual**. The time axis runs across the day (12A–11P) with a **NOW** marker at the current time. Each row ends with the agent's Today Adh percentage (Range Adh when viewing a past day) and, where present, an event count. The row header shows the agent's current status and time in status.
 
