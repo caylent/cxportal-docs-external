@@ -23,18 +23,14 @@ The **Forecast, Capacity, and Scheduling** page shows today's expected demand an
 - **Capacity Planning** — KPI tiles for Forecasted Agents (peak interval demand), Scheduled Agents (rostered for the shift), Forecast vs Scheduled (overstaffed or understaffed), Volume Forecast (projected contacts today), Occupancy, Available Agents, and Scheduled vs Available. The last two show *awaiting time-off data* until time-off data is available. A warning banner lists understaffed windows (for example 9:00 AM–7:15 PM (-30)) with a **View in Connect FCS** link.
 - **Volume Forecast** — A rolling 12-hour contact volume chart and a next 5-day contact volume chart.
 - **Agent Forecast** — A rolling 12-hour comparison of Agents Forecasted vs Agents Scheduled, plus a coverage heat-map.
-- **Filters** — **+ Filter** (Forecast Group / Queue / Staffing), a **Timezone** dropdown, and an **Agent** search box.
+- **Filters** — **+ Filter** (Forecast Group / Queue / Staffing) and a **Timezone** dropdown.
 
 ### Scoping the Forecast
 
 1. In the Filters panel, click **+ Filter** under **Forecast Group / Queue / Staffing**.
-2. Choose a dimension and select one or more values. The KPI tiles and charts recalculate for your selection.
-3. To reset, click **Clear Filters** at the top of the panel.
-
-### Focusing on a Single Agent
-
-1. In the Filters panel's **Agent** box, type an agent's name.
-2. Select the agent to scope the coverage view to their schedule.
+2. Choose a dimension and select one or more values. Every dimension the instance reports is offered; one it has no values for opens to **No values**. The KPI tiles and charts recalculate for your selection.
+3. Selected values appear as chips below **+ Filter**, each with an **✕** remove button for that value.
+4. To reset, click **Clear Filters** at the top of the panel.
 
 ### Reviewing Understaffed Windows
 

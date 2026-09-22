@@ -6,7 +6,8 @@
 
 | Tile | Description |
 | --- | --- |
-| **Status legend** | One legend entry per current status, with agent count and percentage |
+| **Current status** | Status donut with the total agent count in the center, over one legend entry per current status, with agent count and percentage |
+| **Adherence (today)** | Stacked bar of agents in adherence / out of adherence / no data, with the share in adherence and the counts behind it, plus a clickable legend (today only) |
 | **By routing profile** | Agent count per routing profile with a distribution bar |
 
 **Table columns**
@@ -14,14 +15,26 @@
 | Column | Description |
 | --- | --- |
 | **Agent** | Display name and username; clicking the name opens the agent's Agent 360 profile |
-| **Status** | Current status badge (with a contact count badge when the agent has contacts in progress) |
+| **Status** | Current status badge (with a contact count badge — for example 2 contacts — when the agent has contacts in progress) |
 | **In status** | Time in the current status |
 | **Next (scheduled)** | Next scheduled activity and time until it starts; — when no schedule data |
-| **Out of adherence (today)** | Miniature day bar with total time out of adherence; red = out of adherence |
+| **Adherence** | Time out of adherence today and its share of the day so far (for example 1h 07m out · 14% of day); In adherence when nothing was out of adherence; — when there is no adherence data |
 
 Sort options: **Time in status · Name · Status**
 
+Adherence chips: **Out of adherence · In adherence · No adherence data** (today only; they combine with the status chips)
+
 The table is paginated at 100 agents per page (Showing 1–100 of N agents · Prev / Next).
+
+**Previous day (Day summary)**
+
+| Panel or table | Description |
+| --- | --- |
+| **Time by status** | Roster-wide observed time per status for the day, as ranked bars with a duration and share each |
+| **How the day went** | Team adherence · Observed time · Agents with data (n of m) · Unobserved (only when some time was unobserved) |
+| Per-agent table | One row per agent, one column per status used that day, **Other** when statuses were folded into it, and **Adherence**; an agent with nothing recorded reads *No activity recorded for this day* |
+
+Day controls: **Previous day** / **Today** / **Pick a day** (last 90 days) / **Next day**. The previous-day view does not refresh itself and has no pager.
 
 ## Team Scorecard Reference
 
@@ -61,7 +74,8 @@ Stream health reports data freshness: time since the last event, how many agents
 | --- | --- |
 | **Adherence** | Adherence percentage for the range, change vs. the prior period, and time in / out of adherence |
 | **Schedule Conformance** | Conformance percentage; shows *awaiting data* until data is available |
-| **Contacts Handled** | Contacts handled in the range, with per-day values |
+
+Adherence and Schedule Conformance are the cards shown by default. Contacts Handled, Avg Handle Time, ACW, and Occupancy are still calculated but hidden unless they are switched on for the selected instance. [GAP: enabling the contact-timing cards is a per-instance configuration change today — there is no admin control in the UI to document]
 
 **Adherence detail table**
 
@@ -88,6 +102,8 @@ The Filters panel's + Filter menu (under Group Filters) offers these dimensions 
 - Routing Profile
 - Staffing Group
 - Forecast Group
+
+Each value shows the number of agents matching it when the instance reports counts (for example L1_KY (13)); a missing count shows the bare label. A dimension whose values have not arrived yet is held back from the menu (**Loading filters…**), a dimension the instance reports no values for is listed and opens to **No values**, and an instance with no grouping data at all shows **No filters available**. Selected values appear as chips labelled dimension: value below the + Filter button, each with an ✕ remove button.
 
 ## Adherence Measurement
 
