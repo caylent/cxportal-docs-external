@@ -7,7 +7,7 @@
 | Tile | Description |
 | --- | --- |
 | **Status legend** | One legend entry per current status, with agent count and percentage |
-| **By routing profile** | Agent count per routing profile with a distribution bar |
+| **By routing profile** | Agent count per routing profile with a distribution bar; shown only on instances that offer the Routing Profile dimension |
 
 **Table columns**
 
@@ -53,7 +53,7 @@ Stream health reports data freshness: time since the last event, how many agents
 
 ## Agent Scorecard Reference
 
-**Date ranges:** **Today** (hourly timeline, compared to last day) · **7d** (daily timeline, compared to last week) · **30d** · **Custom** (calendar start and end date), chosen in the Filters panel under Range. A Routing Profile filter is also available in the Filters panel.
+**Date ranges:** **Today** (hourly timeline, compared to last day) · **7d** (daily timeline, compared to last week) · **30d** · **Custom** (calendar start and end date), chosen in the Filters panel under Range. A Routing Profile filter is also available in the Filters panel on instances that offer the Routing Profile dimension.
 
 **KPI cards**
 
@@ -88,6 +88,10 @@ The Filters panel's + Filter menu (under Group Filters) offers these dimensions 
 - Routing Profile
 - Staffing Group
 - Forecast Group
+
+Whether **Routing Profile** is offered is set per Amazon Connect instance and can't be changed in the UI. Where routing profiles are queue-routing configuration rather than a grouping supervisors manage the workforce by, the instance withholds the dimension everywhere it would otherwise appear: the + Filter menu, the Program Dashboard's Group by control, the Agent Status **By routing profile** breakdown, the Agent Scorecard Routing Profile filter, and the agent's routing profile on the Agent 360 header. Every other dimension the instance discovers is unaffected.
+
+[GAP: how a customer requests a change to which dimensions an instance offers — Source needed: SME]
 
 ## Adherence Measurement
 

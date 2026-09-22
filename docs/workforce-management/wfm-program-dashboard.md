@@ -19,7 +19,7 @@ The **Program Dashboard** page shows program-wide adherence and conformance for 
 
 ### Reading the Page
 
-- **KPI tiles** — Total Agents Active, Scheduled Adherence (with the count of agents in adherence), Schedule Conformance, and Agents Off Schedule, with status badges such as Below Target and Needs Attention.
+- **KPI tiles** — Total Agents Active, Scheduled Adherence (with the count of agents in adherence), Schedule Conformance, and Agents Off Schedule, with status badges such as Below Target and Needs Attention. **Total Agents Active** counts the agents holding a live status right now; a caption under that value reports the wider population your current filters select — for example, *13 agents match the current filters*. The caption appears only where the underlying service reports that population; otherwise the tile shows the live count alone.
 - **Trends** — Schedule Adherence Trend and Schedule Conformance Trend charts, each plotted against the target line (Target 92%).
 - **Group Performance** — A table grouped by the Group by dimension (LOB, Team (hierarchy), Region, Team (tag), or Routing Profile) with columns Group Name, Agents, Adherence %, In Adherence, Conformance %, In Conformance (agent-days), and Status. Status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%. Each row's Actions menu offers **View in Forecast, Capacity, and Scheduling** and **View agents**.
 - **Filters** — **+ Filter**, **Date Range** (Today, 7d, 30d, Custom), and a **Timezone** dropdown.
@@ -37,5 +37,5 @@ Click **+ Filter** in the Filters panel to narrow the dashboard to specific grou
 ### Grouping the Performance Table
 
 1. In the Group Performance section, open the **Group by** dropdown.
-2. Choose **LOB**, **Team (hierarchy)**, **Region**, **Team (tag)**, or **Routing Profile**.
+2. Choose **LOB**, **Team (hierarchy)**, **Region**, **Team (tag)**, or **Routing Profile**. Which options appear depends on the instance — see [Filter Dimensions](wfm-reference.md#filter-dimensions).
 3. Read each row against the status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%.

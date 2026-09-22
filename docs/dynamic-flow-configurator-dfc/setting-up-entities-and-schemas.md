@@ -127,7 +127,8 @@ When you set a field's **Type** to **Reference**, specify the path to the refere
 
     • Contact Flow Module\
     • Prompt\
-    • Phone Number
+    • Phone Number\
+    • Lambda Function
 
 **Setting defaults**: For each field, you can add a default value and mark it **Overridable** if items are allowed to override it.
 
