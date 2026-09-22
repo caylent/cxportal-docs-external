@@ -35,6 +35,9 @@ You can edit existing user information or roles at any time. To edit a user:
    3. To send a password reminder, click **Send Forgotten Password Reminder**.
    4. To change roles, click **Change Role**.
 
+!!! info ""
+    **Edit Profile** is not shown for a user whose only login method is SSO and who has never signed in — their **LOGIN METHODS** reads "Single Sign-On (SSO) · Not logged in yet". Their name is supplied by your identity provider the first time they sign in, so there is no profile to edit yet. The button appears once the user has signed in with SSO, or if they also have a password login method. Every other action is unaffected.
+
 ***
 
 ### Deactivate a User

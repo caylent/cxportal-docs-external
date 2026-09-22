@@ -16,6 +16,7 @@ At the top of the panel, you find:
 * A search bar for entering a Contact ID
 * A **Live Contacts** checkbox to show only active interactions
 * An **Advanced** link to open detailed filtering options
+* An **AI API access** button (sparkle icon) for driving Flow Analyzer from an AI assistant — see [AI API Access](flow-analyzer-reference.md#ai-api-access)
 
 Below this, the panel shows a list of recent contacts. For each contact, you can see:
 

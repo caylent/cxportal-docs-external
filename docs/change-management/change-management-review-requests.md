@@ -7,14 +7,14 @@ The **Change Requests** page lists submitted requests and their current status. 
 
 1. In the left sidebar, click **Change Management** > **Change Requests**.
 2. Click the row menu (**Open menu**) on the request, then click **Review change**.
-3. The **Change Request Details** dialog shows **Change Type**, **Requester**, **Requester ID**, **Creation Date**, **Description**, **Status**, **Criticality**, and the **Before State** / **After State** diff.
+3. The **Change Request Details** dialog shows **Change Type**, **Requester**, **Requester ID**, **Creation Date**, **Item**, **Description**, **Status**, **Criticality**, and the **Before State** / **After State** diff. **Item** names the specific item the change applies to, such as a phone number, and shows a dash (**-**) when the request doesn't have one.
 4. Click **Approve** to accept the change, **Reject** to decline it, or **Close** to leave it pending.
 
 ## Reviewing a Bulk Request
 
 1. Click the row menu on a request with a **Bulk (n)** badge, then click **Review bulk change**.
 2. The dialog shows the request metadata and a **Change Summary** (e.g. "4 records affected") with the values being applied.
-3. Click **Approve Bulk** or **Reject Bulk** to act on the whole group, or click **View Individual Records** to step through each record before deciding.
+3. Click **Approve Bulk** or **Reject Bulk** to act on the whole group, or click **View Individual Records** to step through each record before deciding. **Item** is shown for each individual record, not for the bulk request as a whole.
 
 ## Approving or Rejecting Multiple Requests
 
