@@ -16,7 +16,8 @@ Change Management is the central place to review every configuration change made
 | **Change Request**         |  A change submitted from another CxPortal module that is waiting for review. A request can be approved or rejected, individually or in bulk.                        |
 | **Audit Log Record**      |  A record of a change, capturing who requested it, who approved it (if anyone), when it occurred, and the before/after state of the affected configuration.                 |
 | **Scheduled Change**    | An approved change that executes at a future date and time instead of immediately. Scheduled changes can be cancelled before they execute. |
-| **Bulk Change** |  A single request or record that groups multiple underlying records (shown with a **Bulk (n)** badge, where *n* is the number of records). Bulk entries can be reviewed as a group or record-by-record.|
+| **Bulk Change** |  A single request or record that groups multiple underlying records (shown with a **Bulk (n)** badge, where *n* is the number of records). Bulk entries can be reviewed as a group or record-by-record. An individual record found inside a bulk operation carries a **Bulk** badge that opens the bulk change it came from.|
+| **Target** | The item a change was made to, named in the **Target** column on all three pages. You can list one target's full history from the **Filters** panel. |
 | **Revert** | Rolling back a change that already executed, from its audit log record. |
 
 ***
@@ -33,6 +34,7 @@ Before you begin:
 - Review and approve or reject change requests → [Review Change Requests](change-management-review-requests.md)
 - Review and cancel scheduled changes → [Manage Scheduled Changes](change-management-scheduled-changes.md)
 - Search and filter the audit log → [Review the Audit Log](change-management-review-audit-log.md)
+- List everything that happened to one item → [Searching a Target's History](change-management-review-audit-log.md#searching-a-targets-history)
 - Revert an executed change → [Revert a Change](change-management-reverting-change.md)
 
 

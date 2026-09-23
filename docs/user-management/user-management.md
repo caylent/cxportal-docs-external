@@ -37,6 +37,7 @@ What you can do in this module:
 * Deactivate a user → [Managing Existing Users](managing-existing-users.md)
 * Send a password reminder → [Managing Existing Users](managing-existing-users.md)
 * Change a user's role → [Managing Existing Users](managing-existing-users.md)
+* Export the user list to a CSV → [Managing Existing Users](managing-existing-users.md)
 
 ***
 

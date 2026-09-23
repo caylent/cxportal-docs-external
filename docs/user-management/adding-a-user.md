@@ -23,4 +23,7 @@ To add a user:
 
 To close the dialog without creating the user, click **Cancel** or the **X**.
 
+!!! info ""
+    Users added with the **SSO** login method receive an invitation email, as password users do. Following the link in that email takes the user straight to your identity provider to sign in, rather than to the CxPortal login page. The dialog states this under the **LOGIN METHOD** options when **SSO** is selected.
+
 ***

@@ -5,11 +5,11 @@ The **Team Scorecard** page shows scheduled vs. actual adherence for all agents 
 ## Before You Begin
 
 - An Amazon Connect instance must be selected in the **Instance** selector
-- Adherence appears only for agents with scheduled activities for the selected day
+- An adherence percentage appears only where there are scored minutes to report; other rows show a reason instead (see [Rows With No Adherence Figure](#rows-with-no-adherence-figure))
 
 ## Limits and Constraints
 
-- Ribbon rows appear only for agents with scheduled activities on the selected day
+- Ribbon rows include agents with nothing scheduled on the selected day; those rows report a reason in place of a percentage. [VERIFY: the change that brings unscheduled agents into the ribbon is in the paired Workforce Management backend release (admin-module-wfm #185 / WFM backend 1.5.23), not in this front-end diff — confirm that backend is deployed before publishing. Against an older backend every row still carries a percentage.]
 - Schedule data refreshes from Connect FCS roughly every 15 minutes, so a just-published shift change may lag; check the stream-health indicator for freshness
 - The ±5m grace tolerance is fixed and cannot be changed in the UI
 - Gaps in the event stream render as No data (gap) rather than as adherence verdicts
@@ -29,7 +29,7 @@ The **Team Scorecard** page shows scheduled vs. actual adherence for all agents 
 
 **Stream health** — Above the KPIs, a stream health indicator reports how fresh the underlying data is along with how many agents are reporting recently and how many have intervals in the selected range. The header also shows a freshness label — Live, Stream stale, or Historical — with Updated n ago · ±5m grace (or No stream data when no events have arrived).
 
-**The ribbon** — Each agent row stacks three tracks, top to bottom: **Adherence/min**, **Scheduled**, and **Actual**. The time axis runs across the day (12A–11P) with a **NOW** marker at the current time. Each row ends with the agent's Today Adh percentage (Range Adh when viewing a past day) and, where present, an event count. The row header shows the agent's current status and time in status.
+**The ribbon** — Each agent row stacks three tracks, top to bottom: **Adherence/min**, **Scheduled**, and **Actual**. The time axis runs across the day (12A–11P) with a **NOW** marker at the current time. Each row ends with the agent's Today Adh percentage (Range Adh when viewing a past day) — or a reason when there is no percentage to show, see [Rows With No Adherence Figure](#rows-with-no-adherence-figure) — and, where present, an event count. The row header shows the agent's current status and time in status.
 
 The legend defines the ribbon colors: **Productive**, **Offline**, **Non-Productive**, **Not scheduled / Time Off**, **No data (gap)**, and **Out of adherence / min**.
 
@@ -40,18 +40,33 @@ The legend defines the ribbon colors: **Productive**, **Offline**, **Non-Product
 
 ### Filtering the Ribbon
 
-1. In the Filters panel, use the **Show** chips to limit which rows appear: **All**, **Scheduled**, **Out of adh.**, or **Time off**.
+1. In the Filters panel, use the **Show** chips to limit which rows appear: **All**, **Scheduled**, **Out of adherence**, or **Time off**. **Scheduled** includes agents whose shift starts later in the day, and **Time off** matches the **Time Off** KPI above the ribbon.
 2. In the Filters panel, click **+ Filter** under **Group Filters** and choose a dimension (for example LOB, Team (hierarchy), Region, Team (tag), or Routing Profile).
 3. In the search box, type an agent name to find a specific row.
 
 ### Changing View Options
 
-1. In the Filters panel's **Sort** dropdown, choose **Lowest adherence first**, **Name**, or **Most events**.
+1. In the Filters panel's **Sort** dropdown, choose **Lowest adherence first**, **Highest adherence first**, **Name**, or **Most events**. In both adherence sorts, rows with no adherence figure are listed last, so they do not crowd out the agents who need attention.
 2. In the Filters panel's **Timezone** dropdown, choose **Pacific (PT)**, **Mountain (MT)**, **Central (CT)**, **Eastern (ET)**, or **UTC**. The time axis displays in the selected timezone.
 
 !!! note
 
     The ribbon header shows the grace tolerance applied to adherence: ±5m grace.
+
+### Rows With No Adherence Figure
+
+Where there are no scored minutes for an agent, the end of the row reads a reason instead of a percentage. Hover the label for the explanation.
+
+| Label | What it means |
+| --- | --- |
+| **Not scheduled** | Nothing scheduled in this range, so there is no adherence figure to report |
+| **Not started** | The shift has not started yet, so there is nothing to score against it |
+| **Not tracked** | Every scheduled minute so far is on an activity Connect excludes from adherence, so there is no adherence figure yet |
+
+!!! info ""
+    These labels replace a 0.0% reading, which used to make an agent with nothing to score look like an agent who missed their whole shift. The same rule applies on the Agent Scorecard timeline, so one agent-day reads the same on both pages.
+
+[SCREENSHOT: a ribbon row reading **Not tracked** at the right-hand end, with its hover explanation open]
 
 ### Opening an Agent's Profile or Scorecard
 

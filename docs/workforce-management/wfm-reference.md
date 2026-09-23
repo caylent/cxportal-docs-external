@@ -41,8 +41,8 @@ The table is paginated at 100 agents per page (Showing 1–100 of N agents · Pr
 | --- | --- |
 | **Range (Filters panel)** | Today · Pick a day (calendar) · previous/next day arrows |
 | **Zoom** | Full range · 1 hour · 2 hours · 4 hours · 8 hours · Custom (drag) |
-| **Show** | All · Scheduled · Out of adh. · Time off |
-| **Sort (Filters panel)** | Lowest adherence first · Name · Most events |
+| **Show** | All · Scheduled · Out of adherence · Time off |
+| **Sort (Filters panel)** | Lowest adherence first · Highest adherence first · Name · Most events (rows with no adherence figure sort last in both adherence orders) |
 | **Timezone (Filters panel)** | Pacific (PT) · Mountain (MT) · Central (CT) · Eastern (ET) · UTC |
 
 **Ribbon legend:** Productive · Offline · Non-Productive · Not scheduled / Time Off · No data (gap) · Out of adherence / min
@@ -90,6 +90,14 @@ The Filters panel's + Filter menu (under Group Filters) offers these dimensions 
 - Forecast Group
 
 ## Adherence Measurement
+
+**No adherence figure** — where an agent has no scored minutes, the Team Scorecard row and the Agent Scorecard timeline header show a label with a hover explanation instead of a percentage:
+
+| Label | Meaning |
+| --- | --- |
+| **Not scheduled** | Nothing scheduled in the range |
+| **Not started** | The shift has not started yet |
+| **Not tracked** | Every scheduled minute so far is on an activity Connect excludes from adherence |
 
 - Adherence is tracked per minute (**Out of adherence / min** in the legends)
 - A grace tolerance of **±5 minutes** is applied (shown as **±5m grace**)
