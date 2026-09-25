@@ -14,14 +14,15 @@ The **Forecast, Capacity, and Scheduling** page shows today's expected demand an
 - Forecast data refreshes via Athena on a delay — check the "Last updated" footer rather than treating figures as live
 - Available Agents and Scheduled vs Available show awaiting time-off data until time-off data is connected
 - Charts cover a rolling 12-hour window and the next 5 days; the coverage heat-map requires a forecast for the current filter selection
+- The rolling 12-hour volume chart labels only its whole-hour points — the quarter-hour points between them are plotted but not labelled
 - The page is read-only — schedule changes are made in Amazon Connect FCS (use the **View in Connect FCS** link)
 
 ## Step-by-Step Instructions
 
 ### Reading the Page
 
-- **Capacity Planning** — KPI tiles for Forecasted Agents (peak interval demand), Scheduled Agents (rostered for the shift), Forecast vs Scheduled (overstaffed or understaffed), Volume Forecast (projected contacts today), Occupancy, Available Agents, and Scheduled vs Available. The last two show *awaiting time-off data* until time-off data is available. A warning banner lists understaffed windows (for example 9:00 AM–7:15 PM (-30)) with a **View in Connect FCS** link.
-- **Volume Forecast** — A rolling 12-hour contact volume chart and a next 5-day contact volume chart.
+- **Capacity Planning** — KPI tiles for Forecasted Agents (peak interval demand), Scheduled Agents (rostered for the shift), Forecast vs Scheduled (overstaffed or understaffed), Volume Forecast (projected contacts today), Occupancy, Available Agents, and Scheduled vs Available. The last two show *awaiting time-off data* until time-off data is available. A warning banner lists understaffed windows (for example 9:00 AM–7:15 PM (-30)) with a **View in Connect FCS** link. Each KPI tile label and the **Understaffed windows** banner label carry an information icon; click it to open a popover with the metric's definition, a **How it's calculated** list, and, where applicable, the data **Source**.
+- **Volume Forecast** — A rolling 12-hour contact volume chart, labelled at its whole-hour points only with the value printed above each labelled point, and a next 5-day contact volume chart.
 - **Agent Forecast** — A rolling 12-hour comparison of Agents Forecasted vs Agents Scheduled, plus a coverage heat-map.
 - **Filters** — **+ Filter** (Forecast Group / Queue / Staffing), a **Timezone** dropdown, and an **Agent** search box.
 
