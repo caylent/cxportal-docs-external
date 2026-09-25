@@ -12,6 +12,7 @@ The **Agent Scorecard** page shows per-agent adherence and activity KPIs for a d
 - The page shows one agent at a time — there is no side-by-side comparison; use Team Scorecard for cross-agent views
 - Schedule Conformance shows awaiting data until conformance data is available for the range
 - Change indicators apply to Today (vs. last day) and 7d (vs. last week) only
+- The contact-timing KPI cards (Contacts Handled, Avg Handle Time, ACW, Occupancy) are hidden by default and are switched on per instance
 - Custom ranges are bound by the 90-day history retention
 - Export CSV downloads the Adherence detail table only, not the KPI cards or timeline
 
@@ -29,9 +30,12 @@ You can also land on this page with an agent pre-selected by following a drill-i
 
 ### Reading the KPI Cards
 
+The scorecard shows the two schedule-quality cards by default:
+
 - **Adherence** — The agent's adherence percentage for the selected range, with a change indicator against the prior period (from last day for **Today**, from last week for **7d**) and the total time in and out of adherence (for example 8h 32m in / 46h out). A per-day chart shows the daily adherence values across the range.
 - **Schedule Conformance** — The agent's conformance percentage. Shows **—** with *awaiting data* until conformance data is available.
-- **Contacts Handled** — The number of contacts the agent handled in the range, with per-day values.
+
+Contacts Handled, Avg Handle Time, ACW, and Occupancy are still calculated for the range but are not shown unless they have been switched on for the selected instance. [GAP: enabling the contact-timing cards is a per-instance configuration change today — there is no admin control in the UI, so there is no procedure to document]
 
 ### Reading the Adherence Timeline
 

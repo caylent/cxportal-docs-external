@@ -7,8 +7,13 @@ You can switch between the Connect instances configured for your organization at
 1. In the left navigation menu, select **CxPortal**.
 2. Click **Change instance** to open the selection window.
 3. Select the instance you want to work with.
-4. Click **Select Instance**, then save your selection.
+4. Click **Select Instance**, then click **Save Changes**.
 5. When the window closes, you are working in the newly selected instance.
+
+!!! info ""
+    **Cancel** and **Save Changes** stay visible at the bottom of the window while the instance list scrolls, so you don't need to scroll back to confirm your choice.
+
+    **Save Changes** is unavailable until you select an instance other than the one you are already working in. The instance you are working in is labeled **Current Instance**.
 
 !!! info ""
     To return to a previous instance, repeat these steps.

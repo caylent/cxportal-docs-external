@@ -34,7 +34,7 @@ The target search counts as one active filter, and **Refresh data** reloads its 
 
 1. In the left sidebar, click **Change Management** > **Scheduled Changes**.
 2. Click the row menu (**Open menu**) on the change, then click **Review change**.
-3. The **Scheduled Change Details** shows **Change Type**, **Requester**, **Requester ID**, **Creation Date**, **Scheduled Date**, **Description**, and the **Before State** / **After State** diff.
+3. The **Scheduled Change Details** shows **Change Type**, **Item**, **Requester**, **Requester ID**, **Creation Date**, **Scheduled Date**, **Description**, and the **Before State** / **After State** diff. **Item** names the specific item the change applies to, such as a phone number, and shows a dash (**-**) when the change doesn't have one.
 4. Click **Cancel** to cancel the scheduled change, or **Close** to leave it scheduled.
 
 > **Warning:** Cancelling a scheduled change means it will not execute at its scheduled date.

@@ -12,10 +12,10 @@
 **Try it: find an agent and open their scorecard.**
 
 1. In the left sidebar, click **Workforce Management** > **Agent Status**.
-2. Review the status donut and summary panels at the top of the page — the total agent count, the status legend, and the By routing profile breakdown.
+2. Review the status donut and summary panels at the top of the page — the total agent count, the Status / Agents / Share status table, the Adherence · Today summary, and the By routing profile breakdown.
 3. In the search box, type an agent's name or ID to narrow the table.
 4. In the left sidebar, click **Workforce Management** > **Agent Scorecard**.
-5. In the **Search agent** box, type the agent's name and select them from the results. The scorecard opens, showing their Adherence, Schedule Conformance, and Contacts Handled KPIs.
+5. In the **Search agent** box, type the agent's name and select them from the results. The scorecard opens, showing their Adherence and Schedule Conformance KPIs.
 
 Clicking an agent's name on Agent Status or Team Scorecard opens that agent's Agent 360 profile.
 

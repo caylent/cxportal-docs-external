@@ -34,6 +34,7 @@ Flow Analyzer helps teams resolve issues faster, reduces the need to search acro
 * Investigate Flow Logs, Interaction Logs, and the Details panel → [Flow Analyzer Reference](flow-analyzer-reference.md?fallback=true)
 * Review AI conversations with the Queue Transcript and Assistant Logs → [Flow Analyzer Reference](flow-analyzer-reference.md?fallback=true)
 * Jump from a flagged block straight to the Amazon Connect flow editor with **Open in Connect** →  [Investigating a Contact](investigating-a-contact.md)
+* Let an AI assistant investigate a contact for you with **AI API access** → [Flow Analyzer Reference](flow-analyzer-reference.md?fallback=true)
 
 ***
 

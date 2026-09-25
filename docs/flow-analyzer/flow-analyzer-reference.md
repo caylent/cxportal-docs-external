@@ -112,3 +112,29 @@ The **Queue Transcript** displays the customer-facing conversation, showing what
 
 
 ***
+
+### AI API Access
+
+Flow Analyzer is also available as an API, so you can let an AI assistant debug a contact's flow execution for you instead of clicking through the UI.
+
+At the top of the contact list panel, click the sparkle icon (**AI API access**) to open the menu:
+
+| Option                            | What it does                                                                                                                                                          |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Copy full AI instructions**     | Copies a self-contained set of instructions to the clipboard — the available endpoints, the authentication headers, your current token, and your instance context. Paste it into your AI tool. |
+| **Copy current token**            | Copies only your current API token, which is useful for refreshing a session you have already set up.                                                                |
+| **How to use this**               | Opens the **How to use the Flow Analyzer API with AI** dialog.                                                                                                       |
+
+Any AI tool that makes API requests for you can drive the API — for example **Claude Code**, **Gemini**, or **ChatGPT**. Plain **Claude** (claude.ai) can't make HTTP requests on its own, so it can't drive the API; use Claude Code instead. Once the instructions are pasted in, ask the tool in plain language to find a contact and inspect its flow logs, interaction logs, transcript, or spans — whatever you would normally do here to work out what happened during a call.
+
+In the **How to use the Flow Analyzer API with AI** dialog, under **Try it out**, click **Copy instructions + test query** to copy the instructions with a starter prompt appended, so the assistant confirms the connection on its first request. Click **Close** to dismiss the dialog.
+
+!!! warning ""
+    **Warning:** The copied instructions include a secret API key. Handle them securely and avoid pasting them anywhere they could leak.
+
+
+!!! info ""
+    **Info:** Calls run with the same permissions you have in the portal. If your account can't do something through the UI, the matching API call fails too — that's expected.
+
+
+***

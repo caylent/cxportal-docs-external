@@ -4,9 +4,9 @@ The **Audit Log** page lists every recorded change for the selected instance ("A
 
 ## The Audit Log Table
 
-Columns: a selection checkbox, a **Bulk (n)** badge for bulk records, **Change Type**, **Target**, **Description**, **Requester**, **Approver**, **Date**, **Status**, and a row actions menu. Click a column header to sort. The table scrolls to load all records — there are no pagination controls.
+Columns: a selection checkbox, a **Bulk (n)** badge for bulk records, **Change Type**, **Item**, **Description**, **Requester**, **Approver**, **Date**, **Status**, and a row actions menu. Click a column header to sort. The table scrolls to load all records — there are no pagination controls.
 
-**Target** names the item the change was made to, and shows **-** when the record has no target. Hover a target to copy it, or to see the full value when it is too long for the column. A record that is one item inside a bulk operation carries a **Bulk** badge next to its target; click the badge to open the bulk change it came from.
+**Item** names the specific item the change applies to, such as a phone number. Records without an item show a dash (**-**), and those sort to the end of the list when you sort by **Item**. A long item name is shortened in the cell — hover over it to see the full value.
 
 ## Filtering and Searching
 
@@ -30,9 +30,9 @@ Columns: a selection checkbox, a **Bulk (n)** badge for bulk records, **Change T
 1. Click the row menu (**Open menu**) on a record.
 2. Click **Review change** (or **Review bulk change** on a record with a **Bulk (n)** badge).
 3. The **Audit Log Record Details** dialog shows:
-    - **Change Type**, **Status**, **Requester**, **Requester ID**, **Creation Date**, **Scheduled?**, **Connect Change**, and **Is Bulk Request?** (bulk records only)
+    - **Change Type**, **Status**, **Item**, **Requester**, **Requester ID**, **Creation Date**, **Scheduled?**, **Connect Change**, and **Is Bulk Request?** (bulk records only)
     - For single records: a **Before State** / **After State** diff. Added fields are marked **+**, changed fields **~**, deleted fields **-**, with summary badges (e.g. **+2 added**, **~1 changed**). 
-    - For bulk records: a **Change Summary** (e.g. "3 records affected") with counts per record type. Click **View Individual Records** to step through each underlying record's diff.
+    - For bulk records: a **Change Summary** (e.g. "3 records affected") with counts per record type. Click **View Individual Records** to step through each underlying record's diff. **Item** is shown for each individual record, not for the bulk record as a whole.
 4. Click **Close** when finished.
 
 A record that is an individual item inside a bulk operation is reviewed from its bulk change instead: its row menu offers only **View bulk change**, and it cannot be selected for export.
@@ -57,3 +57,5 @@ The target search counts as one active filter, and **Refresh data** reloads its 
 1. In the left sidebar, click **Change Management** > **Audit Log**.
 2. Select the checkbox on each record you want to export (or use the select-all checkbox in the header row).
 3. Click **Export Record Details** in the toolbar that appears.
+
+The exported file includes the columns **Change Type**, **Item**, **Description**, **Requester**, **Approver**, **Date**, and **Status**. Records without an item export a dash (**-**) in the **Item** column.
