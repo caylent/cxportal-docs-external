@@ -13,16 +13,17 @@ The **Program Dashboard** page shows program-wide adherence and conformance for 
 - The adherence and conformance target (92%) and the Adherence status thresholds (On Target ≥ 92% · At Risk 80–92% · Below Target < 80%) are fixed and cannot be configured in the UI
 - Group Performance rolls up by one Group by dimension at a time
 - Schedule Conformance tiles and columns show as unavailable until conformance data exists for the range
+- Schedule Conformance is uncapped — it can read above 100% when an agent works beyond their scheduled time, and the Schedule Conformance Trend axis extends past 100% instead of clipping those days
 - Date ranges are bounded by the 90-day history retention
 
 ## Step-by-Step Instructions
 
 ### Reading the Page
 
-- **KPI tiles** — Total Agents Active, Scheduled Adherence (with the count of agents in adherence), Schedule Conformance, and Agents Off Schedule, with status badges such as Below Target and Needs Attention.
-- **Trends** — Schedule Adherence Trend and Schedule Conformance Trend charts, each plotted against the target line (Target 92%).
-- **Group Performance** — A table grouped by the Group by dimension (LOB, Team (hierarchy), Region, Team (tag), or Routing Profile) with columns Group Name, Agents, Adherence %, In Adherence, Conformance %, In Conformance (agent-days), and Adherence status. The legend names the metric the bands apply to: Adherence: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%. Adherence status is classified from Adherence % alone, so a row can read Below Target beside a high Conformance %. Each row's Actions menu offers **View in Forecast, Capacity, and Scheduling** and **View agents**.
-- **Filters** — **+ Filter**, **Date Range** (Today, 7d, 30d, Custom), and a **Timezone** dropdown. Selected filter values appear as chips below **+ Filter**, each with an **✕** remove button.
+- **KPI tiles** — Total Agents Active, Scheduled Adherence (with the count of agents in adherence), Schedule Conformance, and Agents Off Schedule, with status badges such as Below Target and Needs Attention. The Total Agents Active, Scheduled Adherence and Schedule Conformance labels carry an information icon that opens the metric's definition, a **How it's calculated** list, and its data **Source**.
+- **Trends** — Schedule Adherence Trend and Schedule Conformance Trend charts, each plotted against the target line (Target 92%). The axis runs 0–100% and extends higher when a series reads above 100%, so a day worked beyond schedule is not clipped at the top.
+- **Group Performance** — A table grouped by the Group by dimension (LOB, Team (hierarchy), Region, Team (tag), or Routing Profile) with columns Group Name, Agents, Adherence %, In Adherence, Conformance %, In Conformance (agent-days), and Status. Status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%. Each row's Actions menu offers **View in Forecast, Capacity, and Scheduling** and **View agents**. The Adherence %, Conformance % and status column headings carry an information icon that opens the metric's definition. [VERIFY: this page names the last column **Status**, but the heading in PR #1281's diff reads **Adherence status**. That heading text was not changed by this release, so the name here is left as-is — confirm the live wording.]
+- **Filters** — **+ Filter**, **Date Range** (Today, 7d, 30d, Custom), and a **Timezone** dropdown.
 
 ### Choosing a Date Range
 

@@ -133,7 +133,7 @@ Once Caylent confirms that your user pool has been provisioned, they will send y
 Once Step 5 is complete, Caylent will notify you that SSO is ready to use. To verify:
 
 1. Navigate to the CxPortal login page.
-2. Select the **SSO sign-in** option.
+2. Click **Sign in with SSO**.
 3. You will be redirected to your organization's Entra sign-in page.
 4. Sign in with your corporate credentials.
 5. You should be redirected back to CxPortal and signed in successfully.

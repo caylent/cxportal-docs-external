@@ -11,8 +11,9 @@ The **Agent Status** page shows live agent status, distribution, and schedule ad
 
 - The table shows 100 agents per page; use search, status chips, or Group Filters to narrow large populations rather than paging
 - Status chips appear only for statuses currently present in the population (for example, no Available chip when no one is Available)
-- The Adherence column shows — for agents with no adherence data for the day; Next (scheduled) shows — for agents with no schedule data
-- The By routing profile breakdown appears only when routing profile data is available for the instance
+- The Out of adherence (today) column and Next (scheduled) show — for agents with no schedule data
+- The By routing profile breakdown appears only when at least one agent in view names a routing profile
+- The Adherence · Today summary appears only once at least one agent in scope has been measured
 - Filter dimensions depend on the grouping data configured for the instance — not every instance offers every dimension
 - The Adherence (today) panel and the Adherence chips appear on today's view only, and only once at least one agent has an adherence reading
 - Adherence filtering is applied across the whole roster rather than only the visible page
@@ -24,11 +25,13 @@ The **Agent Status** page shows live agent status, distribution, and schedule ad
 
 ### Reading the Status Summary
 
-On today's view the card at the top of the page is headed **Right now** and holds three panels:
+The top of the page shows the status mix, an adherence summary, and a By routing profile breakdown, separated by horizontal rules:
 
-- **Current status** — A status donut with the total agent count in the center, over a status legend with one entry per current status (for example Offline), each with an agent count and percentage. Click an entry to filter the table to that status.
-- **Adherence (today)** — A stacked bar of the agents in scope, with the share in adherence and the counts behind it (for example 82% in adherence (14/17)). Beneath it, a legend lists **In adherence**, **Out of adherence**, and **No data** with a count each; click an entry to filter the table to those agents. The panel appears only when at least one agent has an adherence reading.
+- **Current status** — A status donut with the total agent count in the center and the caption **Current status** beneath it, beside a status table that fills the rest of the row. The table has the columns **Status**, **Agents**, and **Share** — one row per current status (for example Offline). Click a row to filter the table to that status.
+- **Adherence · Today** — Adherence across the same agents, full width: a headline percentage reading *n% in adherence*, the count of evaluated agents beneath it (for example *3 of 8 evaluated agents*), a stacked bar, and a legend of **In adherence**, **Out of adherence**, and **No data** with the agent count for each. Click a legend entry to filter the table to those agents.
 - **By routing profile** — A breakdown of agents by routing profile, with a bar and agent count per profile.
+
+Metric labels in the summary and in the agent table carry an information icon. Click it to open a popover with the metric's definition, a **How it's calculated** list, and, where applicable, the data **Source** it reads from.
 
 ### Filtering and Sorting the Agent List
 
@@ -41,6 +44,10 @@ On today's view the card at the top of the page is headed **Right now** and hold
 4. In the search box, enter an agent name or ID to search the list.
 5. In the Filters panel's **Sort** dropdown, choose **Time in status**, **Name**, or **Status**.
 
+!!! info ""
+
+    Group Filters scope the donut, the status table, the Adherence · Today summary and the agent table to the same agents. While a filter's membership is still resolving, the page reports no agents rather than the whole instance. If the membership can't be resolved, the page shows: "The group filter could not be applied. Showing no agents rather than everyone."
+
 ### Reading the Agent Table
 
 The table shows 100 agents per page — use the **Prev** and **Next** controls below the table to move between pages. Each row has these columns:
@@ -50,20 +57,10 @@ The table shows 100 agents per page — use the **Prev** and **Next** controls b
 | **Agent** | The agent's display name and username. Click the name to open the agent's Agent 360 profile. |
 | **Status** | The agent's current status badge (for example Available, Offline). A contact count badge appears next to the status when the agent has contacts in progress (for example 1 contact, 2 contacts). |
 | **In status** | How long the agent has been in their current status. |
-| **Next (scheduled)** | The agent's next scheduled activity and when it starts (for example Break · in 26m). Shows — when no schedule data exists. |
-| **Adherence** | Today's reading: the time out of adherence and its share of the day so far (for example 1h 07m out · 14% of day), **In adherence** when nothing was out of adherence, or — when there is no adherence data for the agent. |
+| **Next (scheduled)** | The agent's next scheduled activity and when it starts (for example Break · in 26m). Shows — when no schedule data exists. The column heading carries an information icon that opens the metric's definition. |
+| **Out of adherence (today)** | A miniature bar of the agent's day with the total time out of adherence (for example 2h 16m out). Red segments mark time out of adherence. The column heading carries an information icon that opens the metric's definition. |
 
-### Reviewing a Previous Day
-
-1. In the summary card's header, click **Previous day** or **Next day** to step a day at a time, or click **Pick a day** and choose a date from the calendar (the calendar covers the last 90 days). **Today** returns to the live view.
-2. The card header changes from **Right now** to **Day summary** followed by the date (for example Day summary — Tue 8 Sep 2026) and shows two panels in place of the donut:
-   - **Time by status** — The roster's observed time per status for that day as ranked bars, each with its duration and share of observed time (for example 6h 12m (48%)).
-   - **How the day went** — **Team adherence** for the day, **Observed time**, **Agents with data** (for example 11 of 14), and **Unobserved** — time no interval covered, which is a pipeline gap rather than idle agents. Unobserved appears only when there was some.
-3. Below the filters, the live table is replaced by a table with one row per agent, a column for each status the roster used that day, an **Other** column when further statuses were folded into it, and an **Adherence** column. The search box and the status chips still filter this table — a status chip matches an agent who spent time in that status. An agent with nothing recorded reads *No activity recorded for this day* rather than a row of zeroes.
-
-!!! info ""
-
-    While Group Filters are active on a previous day, the page states that the grouping is as of today: *Group filters use today's membership — the historical endpoint cannot filter by group.* If the instance's backend cannot serve past days at all, the card reads *This Connect instance's backend does not serve historical agent activity yet.*
+[VERIFY: this page names the last column **Out of adherence (today)**, but the heading in PR #1281's diff reads **Adherence**. That heading text was not changed by this release, so the name here is left as-is — confirm the live wording.]
 
 ### Opening an Agent's Profile or Scorecard
 
