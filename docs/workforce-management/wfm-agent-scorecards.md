@@ -39,7 +39,9 @@ Contacts Handled, Avg Handle Time, ACW, and Occupancy are still calculated for t
 
 ### Reading the Adherence Timeline
 
-The **Adherence Timeline** shows the range's overall adherence percentage and one column per day (or per hour when viewing **Today**). Each column has two tracks — **Top: Scheduled · Bottom: Actual**:
+The **Adherence Timeline** shows the range's overall adherence percentage and one column per day (or per hour when viewing **Today**). Where there are no scored minutes in the range, the header reads **Not scheduled**, **Not started**, or **Not tracked** instead of a percentage; hover the label for the explanation. These are the same labels the Team Scorecard ribbon uses — see [Rows With No Adherence Figure](wfm-team-scorecard.md#rows-with-no-adherence-figure).
+
+Each column has two tracks — **Top: Scheduled · Bottom: Actual**:
 
 - The scheduled track shows the planned activities (for example **Work**, **Break**, **Lunch**)
 - The actual track shows what the agent actually did (for example **Available**, **Break**, **Lunch**, **Offline**)

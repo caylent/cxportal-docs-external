@@ -97,6 +97,21 @@ On the user detail page, click **Send Forgot Password Reminder**. For the detail
 
 ***
 
+### Export the User List
+
+You can download the users currently shown in the list as a CSV file.
+
+1. Open CxCentral and click **Admin**.
+2. In the left menu, under **Access management**, click **Users**.
+3. Narrow the list first if you only want part of it — the export contains exactly the rows the table is showing, including any **Search Users**, **Filter by role**, or login-method filtering you have applied.
+4. In the top right corner of the screen, click **Export Users**.
+5. The file downloads as `users-export-<company>-<YYYY-MM-DD>.csv`.
+
+!!! info ""
+    **Export Users** appears once the list has loaded, and is unavailable when no users match the current filters. For the file's columns, see [User Management Reference](user-management-reference.md).
+
+***
+
 ### Troubleshooting
 
 | Problem                                                                                                                                                        | Cause                                         | Solution                                                            |

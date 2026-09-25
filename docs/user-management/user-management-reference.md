@@ -21,7 +21,25 @@
 | **Login Methods** | Password and/or SSO, each with a status badge. |
 | **Role**          | The role assigned to the user.                 |
 
-Each row has a **View Details** (eye) control. The list header shows an **Add user** button and a subtitle with the user count, plus a **Search Users** box and a **Filter by role** dropdown.
+Each row has a **View Details** (eye) control. The list header shows **Export Users** and **Add user** buttons and a subtitle with the user count, plus a **Search Users** box and a **Filter by role** dropdown.
+
+***
+
+### Export Columns: Export Users
+
+**Export Users** downloads the rows the table is currently showing as `users-export-<company>-<YYYY-MM-DD>.csv`.
+
+| Column | Description |
+| ---------------- | ------------------------------------------------------------------------------------------------ |
+| **Name** | The user's name, or an em dash (—) when they have none. |
+| **Email** | The user's email address. |
+| **Company** | The company the user belongs to. |
+| **Login Methods** | One login method per line, each as method · status · invite date — for example `Password · Invite Expired · Aug 12, 2026`. Reads `No login configured` when the user has none. |
+| **Role** | The role assigned to the user. |
+
+The file lists the same users as the table, in the same order, and reflects the filters in effect when you export. It is not a fresh read of all users.
+
+[VERIFY: **Export Users** carries no permission gate in this release, unlike **Add user**, which requires a writer role — so anyone who can open the Users page can export it. Confirm this is intended before publishing.]
 
 ***
 
