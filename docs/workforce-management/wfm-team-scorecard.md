@@ -28,7 +28,7 @@ The **Team Scorecard** page shows scheduled vs. actual adherence for all agents 
 - **Time Off** — Number of agents on time off
 - **Events Today** — Count of adherence events for the day (labeled Events for Range when viewing a past day)
 
-**Stream health** — Above the KPIs, a stream health indicator reports how fresh the underlying data is along with how many agents are reporting recently and how many have intervals in the selected range. The header also shows a freshness label — Live, Stream stale, or Historical — with Updated n ago · ±5m grace (or No stream data when no events have arrived).
+**Stream health** — Above the KPIs, a stream health indicator reports how fresh the underlying data is along with how many agents are reporting recently and how many have intervals in the selected range. The header also shows a freshness label — Live, Stream stale, or Historical — with Updated n ago · ±5m grace. A banner appears when the stream is minutes or hours behind. A range with no agent events at all is not flagged on the page: off-hours and unstaffed windows are routinely empty, which says nothing about the health of the pipeline.
 
 **Refresh failures** — A live range reloads about every 15 seconds. If a reload fails while data is already on screen, the page keeps the last successful load and shows a banner reading *Refresh failed — showing the last loaded data. Retrying automatically.* with the underlying error in brackets; the next successful reload clears it. Only a failure on the very first load replaces the page with an error. Switching the Amazon Connect instance clears the scorecard first, so a failure for the newly selected instance is never shown as a stale refresh of the previous one.
 
@@ -44,7 +44,7 @@ The legend defines the ribbon colors: **Productive**, **Offline**, **Non-Product
 ### Filtering the Ribbon
 
 1. In the Filters panel, use the **Show** chips to limit which rows appear: **All**, **Scheduled**, **Out of adh.**, or **Time off**.
-2. In the Filters panel, click **+ Filter** under **Group Filters** and choose a dimension (for example LOB, Team (hierarchy), Region, Team (tag), or Routing Profile).
+2. In the Filters panel, click **+ Filter** under **Group Filters** and choose a dimension (for example LOB, Team (hierarchy), Region, Team (tag), or Routing Profile). Values show how many agents match them when the instance reports counts (for example L1_KY (13)), and a dimension the instance reports no values for opens to **No values**. Selected values appear as chips below **+ Filter**, each with an **✕** remove button; **Clear Filters** at the top of the panel clears them all.
 3. In the search box, type an agent name to find a specific row.
 
 ### Changing View Options
@@ -66,9 +66,11 @@ The Agent 360 page shows a single agent's profile, shift details, and time off f
 
 ### Reading the Page
 
-- **Shift Information** — Choose the day with **Today** or **Pick a day**, or step through days with the previous/next arrows.
+- **Shift Information** — Choose the day with **Today** or **Pick a day**, or step through days with the previous/next arrows. The chosen day is kept in the page address, so a link to the profile reopens on the same day.
 - **Staff Shifts** — The agent's shift for the day, with Start, End, Last Update, and Overtime.
 - **Scheduled Shift Activities** — One row per scheduled activity (for example Work, Break, Lunch) with Status (In Progress, Scheduled), Start, and End.
-- **Actual Activities** — The agent's recorded activity for the day. Shows *No recorded activity for this day.* when nothing has been recorded.
-- **Timeline** — The day's activities across a 12A–11P axis with a **NOW** marker.
+- **Actual Activities** — The agent's recorded activity for the day, one row per stretch with **Activity**, **Start**, **Duration**, and an **Adherence** chip — **Adherent** (✓), **Non-adherent** (✗), or **Unscheduled** (no glyph). Shows *No recorded activity for this day.* when nothing has been recorded.
+- **Now divider** — On today, both activity tables show a **Now** row where the current time falls, so the day reads as done above and still to come below.
+- **Activity summary** — Above the tables, two panels summarize the day. **Time by activity** totals the day's actual activity per status as ranked bars, each with its duration and share of observed time (for example 2h 30m (31%)). **Adherence stats** lists **Adherence**, **Conformance**, **Worked**, and **Scheduled**, plus **Out of adherence** and **Unscheduled** when there is any. Unscheduled is time with nothing scheduled over it and is excluded from the adherence score, and Conformance can read over 100% when the agent worked more than was rostered. While the day is still running, both panel labels end in **· intraday** (for example Adherence stats · intraday) because they score only the part of the day that has happened; a finished day carries no marker.
+- **Timeline** — Three stacked tracks for the day, mirroring the Team Scorecard ribbon: an **Adherence per minute** band that marks only out-of-adherence stretches in red, a **Scheduled** lane, and an **Actual** lane. Hovering a segment shows which track it belongs to, what it was, and its time range, and highlights the matching segment in the other lane. On today, a blue **NOW** rule marks the current time and the remainder of the Actual lane is dashed to show it has not happened yet. The axis is trimmed to the day's activity plus two hours either side rather than always spanning 12A–11P. Shows *Nothing to visualize for this day.* when both lanes are empty.
 - **Time Off** — PTO Balance as of the current date and Staff Time Off requests. A notice warns that time-off balance data may not reflect current accruals; verify in your HR system for payroll decisions.

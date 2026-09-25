@@ -10,7 +10,7 @@ The **Program Dashboard** page shows program-wide adherence and conformance for 
 
 ## Limits and Constraints
 
-- The adherence and conformance target (92%) and the status thresholds (On Target ≥ 92% · At Risk 80–92% · Below Target < 80%) are fixed and cannot be configured in the UI
+- The adherence and conformance target (92%) and the Adherence status thresholds (On Target ≥ 92% · At Risk 80–92% · Below Target < 80%) are fixed and cannot be configured in the UI
 - Group Performance rolls up by one Group by dimension at a time
 - Schedule Conformance tiles and columns show as unavailable until conformance data exists for the range
 - Schedule Conformance is uncapped — it can read above 100% when an agent works beyond their scheduled time, and the Schedule Conformance Trend axis extends past 100% instead of clipping those days
@@ -33,10 +33,14 @@ The **Program Dashboard** page shows program-wide adherence and conformance for 
 
 ### Filtering the Program
 
-Click **+ Filter** in the Filters panel to narrow the dashboard to specific groups. KPI tiles, trend charts, and the Group Performance table all reflect the active filters.
+Click **+ Filter** in the Filters panel to narrow the dashboard to specific groups. Every dimension the instance reports is offered, including one that currently has no values — that dimension opens to **No values** rather than being hidden. KPI tiles, trend charts, and the Group Performance table all reflect the active filters.
+
+!!! info ""
+
+    A selection whose agents all score zero is still a scored population: the dashboard renders, with zeroes. *No adherence data for this selection yet. Widen the date range or clear the filters.* appears only when nothing in the selection was scored at all.
 
 ### Grouping the Performance Table
 
 1. In the Group Performance section, open the **Group by** dropdown.
 2. Choose **LOB**, **Team (hierarchy)**, **Region**, **Team (tag)**, or **Routing Profile**.
-3. Read each row against the status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%.
+3. Read each row against the Adherence status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%.
