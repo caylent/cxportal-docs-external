@@ -4,25 +4,25 @@ description: >-
   Closure fields.
 ---
 
-# Managing Hours of Operation and Closures
+# Managing Schedules and Closures
 
-Entities can include **Hours of Operation** and **Closure** fields in their schema. You set their values per item from the item's editing tray: hours as weekly open/closed rules with time ranges, and _closures_ as dated periods — such as holidays — when normal hours don't apply.
+Entities can include **Schedules** and **Closure** fields in their schema. You set their values per item from the item's editing tray: hours as weekly open/closed rules with time ranges, and _closures_ as dated periods — such as holidays — when normal hours don't apply.
 
-* Each field's heading in the editing tray shows its field name (for example, "Chat hours" or "Holiday closures"), so entities with more than one Hours of Operation or Closure field are distinguishable at a glance. 
-* A field with no name falls back to a generic heading: "Hours of Operation," or a count-based heading such as "2 Closures."
+* Each field's heading in the editing tray shows its field name (for example, "Chat hours" or "Holiday closures"), so entities with more than one Schedule or Closure field are distinguishable at a glance. 
+* A field with no name falls back to a generic heading: "Schedule" or a count-based heading such as "2 Closures."
 
 ***
 
 ## Before You Begin
 
 * You need item edit permission on the entity. See Managing DFC Permissions.
-* The entity's schema must include an Hours of Operation or Closure field. See Setting Up Entities and Schemas.
+* The entity's schema must include a Schedule or Closure field. See Setting Up Entities and Schemas.
 * Changes are submitted as a change request and take effect once approved.
 * Times are entered and displayed in UTC.
 
 ***
 
-## Editing an Item's Hours of Operation
+## Editing an Item's Schedule
 
 The editing tray opens fully editable — there's no separate edit mode. The footer keeps **Cancel** and **Save** visible while you scroll, and **Save** enables as soon as you make a change.
 
