@@ -8,13 +8,16 @@ For optimal results, use Markdown written in .txt files for your articles. Markd
 
 On the articles page you can see all of the articles within your Knowledge Base and the following details:
 
-* **Article Title**: This column displays the title of the article.
+* **Article Title**: This column displays the title of the article. Articles brought in by a Q in Connect sync are named with their full folder path, and this column shows just the file name for them. A title you set yourself is shown as you typed it, even when it contains a `/`.
+* **Path**: This column displays the article's full path in storage, including its folders (for example `policies/hr/leave.pdf`). Long paths are shortened with an ellipsis — hover the cell to read the whole path.
 * **Knowledge Base**: This column displays the Knowledge Base where the article resides.
 * **Association**: This column displays the association of the content with Connect Contact Flows.
 * **Last Updated**: This column displays the date the article was last changed.
 * **Modified By**: This column displays the user who last updated the article.
 * **Tags**: This column displays the tags on the article.
 * **Summary:** This column displays the AI summary of the article contents.
+
+You can sort the list by **Article Title**, **Path**, **Knowledge Base**, **Association**, **Last Updated**, or **Modified By**.
 
 ***
 

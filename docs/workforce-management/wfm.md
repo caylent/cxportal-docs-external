@@ -34,6 +34,7 @@ Workforce Management gives supervisors real-time and historical visibility into 
 | **AUX Code** | An auxiliary status code in Amazon Connect representing non-call agent activity (e.g., Break, Training, Lunch). |
 | **FCS Data** | Forecasting, Capacity, and Scheduling data from the Amazon Connect Analytics Data Lake. Refreshed approximately every 15 minutes via Athena queries. |
 | **Agent Population** | A filtered set of agents defined by LOB, team (hierarchy), region, team (tag), routing profile, staffing group, or forecast group. |
+| **Demand Group** | A grouping an agent belongs to for demand planning. An agent can be assigned to one directly or inherit it from their staffing group. |
 
 ## Prerequisites and Permissions
 
@@ -52,6 +53,7 @@ Use Workforce Management to:
 - Review a single agent's adherence and activity KPIs → [Reviewing Agent Scorecards](wfm-agent-scorecards.md)
 - Check today's demand forecast against the roster → [Checking Forecast, Capacity, and Scheduling](wfm-forcasting.md)
 - Monitor program-wide adherence and conformance → [Monitoring the Program Dashboard](wfm-program-dashboard.md)
+- Check which agents are counted and which targets apply → [Reviewing Workforce Management Settings](wfm-settings.md)
 - Review Workforce Management reference materials → [Workforce Management Reference](wfm-reference.md)
 - Review Workforce Management best practices → [Workforce Management Best Practices](wfm-best-practices.md)
 

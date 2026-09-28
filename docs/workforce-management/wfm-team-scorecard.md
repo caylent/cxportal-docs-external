@@ -63,6 +63,7 @@ Where there are no scored minutes for an agent, the end of the row reads a reaso
 | Label | What it means |
 | --- | --- |
 | **Not scheduled** | Nothing scheduled in this range, so there is no adherence figure to report |
+| **Time off** | The agent is on leave for the whole range, so there is no adherence figure to report |
 | **Not started** | The shift has not started yet, so there is nothing to score against it |
 | **Not tracked** | Every scheduled minute so far is on an activity Connect excludes from adherence, so there is no adherence figure yet |
 
@@ -81,6 +82,7 @@ The Agent 360 page shows a single agent's profile, shift details, and time off f
 
 ### Reading the Page
 
+- **Profile card** — The agent's identity above a row of fields: **Time zone**, **Staffing group**, **Forecast group**, **Shift profile**, **Rotation**, **Demand group** (**Demand groups** when there is more than one), and **Username**. Each demand group is listed on its own line with how the agent came to be in it in brackets — *(assigned directly)* or *(inherited from staffing group)*. A group whose origin the data does not report is listed on its own, without a clause. Rotation and the demand groups appear only when the agent has them.
 - **Shift Information** — Choose the day with **Today** or **Pick a day**, or step through days with the previous/next arrows. The chosen day is kept in the page address, so a link to the profile reopens on the same day.
 - **Staff Shifts** — The agent's shift for the day, with Start, End, Last Update, and Overtime.
 - **Scheduled Shift Activities** — One row per scheduled activity (for example Work, Break, Lunch) with Status (In Progress, Scheduled), Start, and End.
@@ -89,3 +91,8 @@ The Agent 360 page shows a single agent's profile, shift details, and time off f
 - **Activity summary** — Above the tables, two panels summarize the day. **Time by activity** totals the day's actual activity per status as ranked bars, each with its duration and share of observed time (for example 2h 30m (31%)). **Adherence stats** lists **Adherence**, **Conformance**, **Worked**, and **Scheduled**, plus **Out of adherence** and **Unscheduled** when there is any. Unscheduled is time with nothing scheduled over it and is excluded from the adherence score, and Conformance can read over 100% when the agent worked more than was rostered. While the day is still running, both panel labels end in **· intraday** (for example Adherence stats · intraday) because they score only the part of the day that has happened; a finished day carries no marker.
 - **Timeline** — Three stacked tracks for the day, mirroring the Team Scorecard ribbon: an **Adherence per minute** band that marks only out-of-adherence stretches in red, a **Scheduled** lane, and an **Actual** lane. Hovering a segment shows which track it belongs to, what it was, and its time range, and highlights the matching segment in the other lane. On today, a blue **NOW** rule marks the current time and the remainder of the Actual lane is dashed to show it has not happened yet. The axis is trimmed to the day's activity plus two hours either side rather than always spanning 12A–11P. Shows *Nothing to visualize for this day.* when both lanes are empty.
 - **Time Off** — PTO Balance as of the current date and Staff Time Off requests. A notice warns that time-off balance data may not reflect current accruals; verify in your HR system for payroll decisions.
+- **Forecasted queues** — Below the shift and time-off sections, a card listing the queues whose volume is forecast for the agent's forecast group, as chips, with the total in a badge beside the title. Where the agent's forecast group is known, the card names it under the title — *From forecast group <name>*. A list longer than 12 shows the first 12 with a **+ N more queues** control; click it to expand, then **Show less** to collapse. An agent whose forecast group has no aligned queues reads *No queues aligned to this agent's forecast group.* A **Demand Groups** card sits alongside it, and is hidden when the agent has none.
+
+!!! info ""
+
+    The queues on the **Forecasted queues** card belong to the agent's forecast group, not to the agent — every agent in that forecast group sees the same list. The card names the group so you can tell where the list came from.

@@ -20,7 +20,7 @@
 | **Next (scheduled)** | Next scheduled activity and time until it starts; — when no schedule data |
 | **Adherence** | Time out of adherence today and its share of the day so far (for example 1h 07m out · 14% of day); In adherence when nothing was out of adherence; — when there is no adherence data |
 
-Sort options: **Time in status · Name · Status**
+Sort options: **Name · Status · Time in status · Adherence % · % of day completed** — Time in status, Adherence %, and % of day completed on today's view only. **Ascending** / **Descending** buttons set the direction, with a line naming what ascending means for the chosen column (A to Z · longest first · lowest first · least completed first). The **Agent**, **Status**, **In status**, **Adherence %**, and **% of day completed** column headings are buttons over the same setting, marked **▲** / **▼**. Rows with no figure sort last in both directions.
 
 Adherence chips: **Out of adherence · In adherence · No adherence data** (today only; they combine with the status chips)
 
@@ -66,7 +66,7 @@ Stream health reports data freshness: time since the last event, how many agents
 
 ## Agent Scorecard Reference
 
-**Date ranges:** **Today** (hourly timeline, compared to last day) · **7d** (daily timeline, compared to last week) · **30d** · **Custom** (calendar start and end date), chosen in the Filters panel under Range. A Routing Profile filter is also available in the Filters panel.
+**Date ranges:** **Today** (hourly timeline, compared to last day) · **7d** (daily timeline, compared to last week) · **30d** · **Custom** (calendar start and end date), chosen in the Filters panel under Range. A Routing Profile filter is also available in the Filters panel, as is a **Timezone** dropdown that appears alongside Range.
 
 **KPI cards**
 
@@ -90,6 +90,16 @@ Adherence and Schedule Conformance are the cards shown by default. Contacts Hand
 | **Exception Types** | Exception descriptions |
 
 The table exports via **Export CSV**.
+
+## Settings Reference
+
+The **Settings** page is read-only and is visible only to a Workforce Management admin. See [Reviewing Workforce Management Settings](wfm-settings.md).
+
+| Card | Contents |
+| --- | --- |
+| **Reporting population** | Headline *n of m agents counted*, then one row per security profile on the instance: **Security profile id** · **Agents** · **Status**, where Status is **Counted**, **Not counted**, or **Unknown** |
+| **Performance thresholds** | **Adherence** — Target % and At-risk floor %. **Conformance** — a Set a conformance target toggle, with Target % and At-risk floor % |
+| **Display defaults** | **Default time zone** and **Adherence grace minutes** |
 
 ## Metric Information Icons
 
@@ -116,6 +126,12 @@ The Filters panel's + Filter menu (under Group Filters) offers these dimensions 
 
 Each value shows the number of agents matching it when the instance reports counts (for example L1_KY (13)); a missing count shows the bare label. A dimension whose values have not arrived yet is held back from the menu (**Loading filters…**), a dimension the instance reports no values for is listed and opens to **No values**, and an instance with no grouping data at all shows **No filters available**. Selected values appear as chips labelled dimension: value below the + Filter button, each with an ✕ remove button.
 
+## Remembered View Preferences
+
+Agent Status, Team Scorecard, Agent Scorecard, Forecast, Capacity and Scheduling, and the Program Dashboard remember the time zone and group filters you last used, and Agent Status also remembers the ordering. Preferences are held per viewer, per Amazon Connect instance, and per page, so switching instance switches preferences with it.
+
+Where a page's address names a time zone, a filter, or a drill-in scope, the address wins over the remembered preference — a shared link shows its recipient what the sender saw. Pages that carry no preference yet open in the instance's default time zone, and in the browser's time zone where the instance names none.
+
 ## Adherence Measurement
 
 **No adherence figure** — where an agent has no scored minutes, the Team Scorecard row and the Agent Scorecard timeline header show a label with a hover explanation instead of a percentage:
@@ -123,6 +139,7 @@ Each value shows the number of agents matching it when the instance reports coun
 | Label | Meaning |
 | --- | --- |
 | **Not scheduled** | Nothing scheduled in the range |
+| **Time off** | The agent is on leave for the whole range |
 | **Not started** | The shift has not started yet |
 | **Not tracked** | Every scheduled minute so far is on an activity Connect excludes from adherence |
 

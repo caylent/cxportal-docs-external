@@ -15,6 +15,7 @@ The **Agent Scorecard** page shows per-agent adherence and activity KPIs for a d
 - The contact-timing KPI cards (Contacts Handled, Avg Handle Time, ACW, Occupancy) are hidden by default and are switched on per instance
 - Custom ranges are bound by the 90-day history retention
 - Export CSV downloads the Adherence detail table only, not the KPI cards or timeline
+- The **Timezone** dropdown appears only once the Range control does, which is after an agent is selected
 
 ## Step-by-Step Instructions
 
@@ -24,6 +25,7 @@ The **Agent Scorecard** page shows per-agent adherence and activity KPIs for a d
 2. Select the agent from the matching results.
 3. In the Filters panel under **Range**, choose a date range: **Today**, **7d**, **30d**, or **Custom**. The Filters panel also offers a Routing Profile filter.
    - For **Custom**, click a start date in the calendar, then click an end date.
+4. (Optional) In the Filters panel's **Timezone** dropdown, choose the time zone to read the day in. The scorecard opens in the Amazon Connect instance's time zone, and your choice is remembered for your next visit. The Adherence Timeline's hours, segment details, and event markers all follow it.
 
 You can also land on this page with an agent pre-selected by following a drill-in link.
 
@@ -39,7 +41,7 @@ Contacts Handled, Avg Handle Time, ACW, and Occupancy are still calculated for t
 
 ### Reading the Adherence Timeline
 
-The **Adherence Timeline** shows the range's overall adherence percentage and one column per day (or per hour when viewing **Today**). Where there are no scored minutes in the range, the header reads **Not scheduled**, **Not started**, or **Not tracked** instead of a percentage; hover the label for the explanation. These are the same labels the Team Scorecard ribbon uses — see [Rows With No Adherence Figure](wfm-team-scorecard.md#rows-with-no-adherence-figure).
+The **Adherence Timeline** shows the range's overall adherence percentage and one column per day (or per hour when viewing **Today**). Where there are no scored minutes in the range, the header reads **Not scheduled**, **Time off**, **Not started**, or **Not tracked** instead of a percentage; hover the label for the explanation. These are the same labels the Team Scorecard ribbon uses — see [Rows With No Adherence Figure](wfm-team-scorecard.md#rows-with-no-adherence-figure).
 
 Each column has two tracks — **Top: Scheduled · Bottom: Actual**:
 
