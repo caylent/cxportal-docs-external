@@ -21,7 +21,37 @@ When you open CxPortal you'll see the homepage; a summary view of your contact c
 
 ### Homepage Widgets
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><p>Shows your active instance and region.</p><p>If your organization has multiple environments, click <strong>Change instance</strong> to switch between them.</p></td><td><a href="/files/LN1Fppfddt0rPsDndT8p">/files/LN1Fppfddt0rPsDndT8p</a></td></tr><tr><td><p>Based on your role, this shows items waiting for your approval or requests you've submitted pending approval.</p><p>Each row shows the request type, name, submitter, date, and status. Click <strong>View All</strong> to see the full list.</p></td><td><a href="/files/rnN9VRraWBA3TsNxslPQ">/files/rnN9VRraWBA3TsNxslPQ</a></td></tr><tr><td><p>Shows recent configuration changes across your organization, grouped by type.</p><p>Use the <strong>All</strong> filter to narrow by category. Click <strong>View All</strong> to see the complete history.</p></td><td><a href="/files/gCmTPZL7HskXhmVJGDLb">/files/gCmTPZL7HskXhmVJGDLb</a></td></tr><tr><td><p>A timeline of actions taken by users in your organization: creating, updating, or deleting routing rules and entities.</p><p>Each entry shows the action, user, and time. Click <strong>View All</strong> to see the full log.</p></td><td><a href="/files/WQdSr4UUJxxfmmCMGQbz">/files/WQdSr4UUJxxfmmCMGQbz</a></td></tr></tbody></table>
+<div class="grid cards widget-cards" markdown>
+
+-   Current Instance
+    { .widget-cover .widget-cover--instance }
+
+    Shows your active instance and region.
+
+    If your organization has multiple environments, click **Change instance** to switch between them.
+
+-   Pending Approvals
+    { .widget-cover .widget-cover--approvals }
+
+    Based on your role, this shows items waiting for your approval or requests you've submitted pending approval.
+
+    Each row shows the request type, name, submitter, date, and status. Click **View All** to see the full list.
+
+-   Updates
+    { .widget-cover .widget-cover--updates }
+
+    Shows recent configuration changes across your organization, grouped by type.
+
+    Use the **All** filter to narrow by category. Click **View All** to see the complete history.
+
+-   Activity Feed
+    { .widget-cover .widget-cover--activity }
+
+    A timeline of actions taken by users in your organization: creating, updating, or deleting routing rules and entities.
+
+    Each entry shows the action, user, and time. Click **View All** to see the full log.
+
+</div>
 
 
 !!! info ""

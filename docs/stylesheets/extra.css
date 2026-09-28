@@ -45,3 +45,34 @@ body,
 .md-tabs {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
+
+/* ============================================================================
+ * Homepage widget cards (getting-started-with-cxportal.md)
+ *
+ * Replaces the GitBook "cards" table, whose cover images pointed at
+ * GitBook-hosted /files/<id> URLs that 404 after the migration. The colored
+ * cover tile is drawn in CSS, so there are no image files to host.
+ * Colors match the original GitBook cover images.
+ * ============================================================================ */
+.md-typeset .grid.cards.widget-cards > ul > li {
+  padding: 0 .8rem .8rem;
+  overflow: hidden;
+}
+
+.md-typeset .widget-cover {
+  margin: 0 -.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 9rem;
+  padding: 1rem;
+  font-size: 2rem;
+  line-height: 1.15;
+  text-align: center;
+  color: #fff;
+}
+
+.md-typeset .widget-cover--instance  { background-color: #16317A; }
+.md-typeset .widget-cover--approvals { background-color: #EBA93C; color: #1A1A1A; }
+.md-typeset .widget-cover--updates   { background-color: #4F74D6; }
+.md-typeset .widget-cover--activity  { background-color: #0E8A8A; }
