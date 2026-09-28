@@ -1,7 +1,7 @@
 # Developer Reference: Node.js Client
 
 !!! info ""
-    **Note:** This page is intended for developers integrating DFC data into Amazon Connect contact flows or Lambda functions.
+    **Note:** This page is intended for developers integrating DFC data into Amazon Connect contact flows or Lambda functions. DFC only supports Node.js Client, no other languages. 
 
 
 ## Overview
