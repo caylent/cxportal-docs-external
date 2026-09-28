@@ -67,8 +67,7 @@ DFC works by defining structured data once and reusing it everywhere. You need t
 
 Before you begin:
 
-* You must have a role with a DFC permission level (**Admin** or **User**) assigned to your account in CxCentral before you can access DFC.
-* With the **User** level, you also need entity tags assigned in DFC before you can view any entities. Without tags, you can see the DFC module but cannot view any entities.
+* You must have an admin permission or tag based permission assigned to your account in CxCentral before you can access DFC.
 * Creating or deleting top-level entities and modifying schemas requires a higher permission level (**Entity Editor** or **Admin**). If certain actions are not visible in the UI, your role may not include those permissions.
 
 See [Managing DFC Permissions](managing-dfc-permissions.md) for the full setup.
