@@ -1,6 +1,6 @@
 # Managing DFC Permissions
 
-DFC Permissions gives admins granular control over what each role can do inside DFC. Instead of a single all-or-nothing DFC Admin permission, you choose an access mode for a role and, in **Tag Level** mode, tag the individual entities that role can reach. DFC then derives the role's permission level from the highest tag you assign.
+DFC Permissions gives admins granular control over what each role can do inside DFC. Instead of a single all-or-nothing DFC Admin permission, you choose an access mode for a role and, in **Tag Level** mode, tag the individual entities that role can reach. DFC then derives the role's permission level from the highest tag you assign. Permissions can be configured on sub-entities up to five levels deep.
 
 ***
 
