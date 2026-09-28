@@ -31,7 +31,7 @@ description: >-
 
 ### Accessing Import/Export
 
-Import and export live in the DFC sub-header.
+Import and export live in the DFC sub-header. You can export data to CSV format.
 
 1. Open the **DFC Browser**.
 2. In the sub-header, click **Export** or **Import**. Hover the icons to see their tooltips.
@@ -125,7 +125,6 @@ Every record an import creates is logged individually so you can trace any recor
 
 * The **Audit Log** contains a separate entry for every entity and item the import created — not a single "import ran" line.
 * Each entry records the actor, the timestamp, the affected entity path or item primary key, the action, and that the change came from an import — visibly distinct from a manual edit, a scheduled change, or a just-in-time change.
-* An applied import can be reverted from change tracking. Reverting removes the records the import created, and the revert itself is reflected in change tracking.
 
 !!! danger "Known limitation"
 
