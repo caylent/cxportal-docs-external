@@ -33,7 +33,20 @@ description: Create entities, sub-entities, and schemas, then add items to an en
 ## Step-by-Step Instructions
 
 ### Create an Entity
+An entity is a top-level container for a category of data. Each entity has a name and description, a defined schema, one or more items, and can include sub-entities.
+Common examples of entities include:
+* Closure — Ad-hoc / emergency closures (unplanned).
+* Schedule — Weekly operating hours (hours of operation).
+* Prompts — A named set of message slots (welcome, first question, out-of-hours). 
+* Language — A supported language: locale, Polly voice, and language-specific settings. A managed lookup, not a hardcoded list.
+* AI Agent Config — AI / self-service configuration: assistant, agent, and Lex bot ARNs, plus a Knowledge Base reference.
+* Holidays — Closures known in advance (Christmas, New Year, national holidays).
+* Experience Config — The reusable bundle of behaviour for a contact (language, prompts, hours, routing, AI). The hub of the model.
+* Contact Source — A channel entry point (phone number, chat widget, email address) mapped to an Experience Config.
+* Routing Destination — Where a contact is sent: a queue, external number, voicemail, contact flow, or disconnect.
+* Knowledge Base — A knowledge base pointer (id, region). The simplest entity — fields only, no references.
 
+To create an entity:
 1. In the left panel, select **Home** (root).
 2. Click **+ Entity.**
 3. Enter an **entity name** and **entity description.**
