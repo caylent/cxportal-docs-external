@@ -1,8 +1,8 @@
-# Cases
+# CxCases
 
 ## Overview <a href="#overview" id="overview"></a>
 
-**Cases powered by Amazon Connect** lets you view, track, and manage support requests within CxCentral. CxCentral is your unified workspace from Caylent. This central hub gives you access to all your products and lets you submit, view, and manage support cases.
+**CxCases** lets you view, track, and manage support requests within CxCentral. CxCentral is your unified workspace from Caylent. This central hub gives you access to all your products and lets you submit, view, and manage support cases.
 
 What you can do in Cases depends on your role:
 
