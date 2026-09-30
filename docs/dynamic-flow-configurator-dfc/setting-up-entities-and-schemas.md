@@ -48,6 +48,7 @@ Common examples of entities include:
 * Knowledge Base — A knowledge base pointer (id, region). The simplest entity — fields only, no references.
 
 To create an entity:
+
 1. In the left panel, select **Home** (root).
 2. Click **+ Entity.**
 3. Enter an **entity name** and **entity description.**
