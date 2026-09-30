@@ -35,6 +35,7 @@ description: Create entities, sub-entities, and schemas, then add items to an en
 ### Create an Entity
 An entity is a top-level container for a category of data. Each entity has a name and description, a defined schema, one or more items, and can include sub-entities.
 Common examples of entities include:
+
 * Closure — Ad-hoc / emergency closures (unplanned).
 * Schedule — Weekly operating hours (hours of operation).
 * Prompts — A named set of message slots (welcome, first question, out-of-hours). 
