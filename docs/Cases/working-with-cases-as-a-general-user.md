@@ -31,7 +31,7 @@ Keep the following limits in mind when using Cases:
 
 1. Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
 2. Sign in with the credentials your organization provides.
-3. Click **Support** in the top right corner of the screen.
+3. Click **Request Support** in the top right corner of the screen.
 4. Enter a **Case Title**, select a **Case Type**, then choose a **Priority**. Priority stays disabled until you've chosen a Case Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
 5. Select a **Product** and a **Module** to classify what the case is about — the Module options depend on the Product you pick.
 6. Add a **Summary** and attach files or add CC recipients as needed. A summary has a 3,000-character limit.
