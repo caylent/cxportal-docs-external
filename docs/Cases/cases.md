@@ -84,7 +84,7 @@ As a **company admin**, you can create cases, edit open cases, and view all case
 
 ??? note "Reporting a product issue"
 
-    A general user runs into a problem with one of their products or a feature isn't working as expected. From the CxCentral homepage, they click **Support**, fill out the request form with a clear title, priority, and description, and attach a screenshot of the error. After submitting, they get a Reference Number and track the case from the My Cases page, responding through comments as the support agent investigates and resolves it.
+    A general user runs into a problem with one of their products or a feature isn't working as expected. From the CxCentral homepage, they click **Request Support**, fill out the request form with a clear title, priority, and description, and attach a screenshot of the error. After submitting, they get a Reference Number and track the case from the My Cases page, responding through comments as the support agent investigates and resolves it.
 
 ??? note "Managing support across the organization"
 
