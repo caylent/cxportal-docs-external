@@ -168,7 +168,7 @@ nav:
           - Exporting Agent Data: editing-agents-in-bulk/exporting-agent-data.md
           - Permissions & Support: editing-agents-in-bulk/permissions-and-support.md
           - Best Practices: editing-agents-in-bulk/best-practices-for-editing-agents-in-bulk.md
-      - Proficiency-Based Routing:
+      - Proficiency Routing:
           - Overview: proficiency-based-routing/proficiency-based-routing.md
           - Getting Started: proficiency-based-routing/getting-started-with-pbr.md
           - Add & Customize Predefined Attributes: proficiency-based-routing/add-and-customize-predefined-attributes.md
