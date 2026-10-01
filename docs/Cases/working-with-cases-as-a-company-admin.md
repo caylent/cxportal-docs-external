@@ -34,7 +34,7 @@ Keep the following limits in mind when using Cases:
 
 1. Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
 2. Sign in with the credentials your organization provides.
-3. Click **Support** in the top right corner of the screen. This takes you to the Create a Case page.
+3. Click **Request Support** in the top right corner of the screen. This takes you to the Create a Case page.
 4. Enter a **Title**. The **Company** and **Reported By** fields are pre-filled with your own company and profile — both stay editable if you're filing the case on behalf of someone else.
 5. Select a **Case Type**, then choose a **Priority**. Priority stays disabled until you've chosen a Case Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
 6. Select a **Product** and a **Module** to classify what the case is about. The Module options depend on the Product you pick.
@@ -78,7 +78,7 @@ Keep the following limits in mind when using Cases:
 You can view your case history and all cases submitted across your organization. This provides information on case trends, product issues, and user profiles.
 
 1. Log in to CxCentral.
-2. Go to the menu on the left side and expand **Cases**.
+2. Go to the menu on the left side and expand **CxCases**.
 3. Click **View all Cases**.
 
 ***
@@ -150,7 +150,7 @@ This allows you to understand user issues in depth and identify areas where user
 
 Profiles allow you to easily view and manage contacts and information associated with your organization.
 
-1. Go to the menu on the left side and expand **Cases**.
+1. Go to the menu on the left side and expand **CxCases**.
 2. Click **Contacts**.
 3. On the Contacts Management page, click **Add Contact**.
 4. Enter the information for the profile. **Note:** A name and email address are required. All other information is optional.
