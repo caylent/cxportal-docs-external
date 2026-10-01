@@ -4,7 +4,7 @@
 
 1. Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
 2. Sign in with the credentials your organization provides.
-3. In the left menu, click **Cases**.
+3. In the left menu, click **CxCases**.
 
 ***
 
@@ -14,7 +14,7 @@
 
 1. Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
 2. Sign in with the credentials your organization provides.
-3. Click **Support** in the top right corner of the screen.
+3. Click **Request Support** in the top right corner of the screen.
 4. Fill out the support request form and add attachments.
 5. Click **Submit**.
 
