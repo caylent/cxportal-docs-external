@@ -77,3 +77,25 @@ If instance data still does not load after allowing the permission:
 - Try a full browser restart, since some permission changes only take effect in new sessions
 
 - [Submit a support request](../submitting-a-support-request/) and include your browser name and version, whether your device is company-managed, and a screenshot of the error
+
+## A Page in CxPortal Reads "Page not found"
+
+**Applies to:** all CxPortal users
+
+**Symptom:** A link, a name, or a bookmark opens a page headed **Page not found**, reading *That address does not match anything in the portal. If you followed a link from inside the app, let us know what you clicked — the address has been recorded.* A **Go to home page** button is shown beneath it.
+
+### Cause
+
+The address does not match any page in CxPortal. This is usually a mistyped, truncated, or out-of-date link — for example a bookmark to a page that has since moved.
+
+### What to do
+
+1. Click **Go to home page**, then reach the page from the left sidebar instead of the link.
+
+2. If the link came from inside CxPortal, reload the page you started from and try it again.
+
+3. If the same link keeps landing here, [submit a support request](../submitting-a-support-request/) and say which link you clicked and where you clicked it. The address is recorded automatically, so naming the link is enough for support to trace it.
+
+!!! info ""
+
+    This page replaces a blank screen. If CxPortal used to show you nothing at all after clicking a link, you are now told what happened instead.

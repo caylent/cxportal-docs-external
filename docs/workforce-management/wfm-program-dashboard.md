@@ -10,7 +10,7 @@ The **Program Dashboard** page shows program-wide adherence and conformance for 
 
 ## Limits and Constraints
 
-- The adherence and conformance target (92%) and the Adherence status thresholds (On Target ≥ 92% · At Risk 80–92% · Below Target < 80%) are fixed and cannot be configured in the UI
+- The adherence and conformance target (92%) and the Adherence status thresholds (On Target ≥ 92% · At Risk 80–92% · Below Target < 80%) cannot be changed in the UI; the instance's configured thresholds are shown read-only on the Workforce Management [Settings](wfm-settings.md) page
 - Group Performance rolls up by one Group by dimension at a time
 - Schedule Conformance tiles and columns show as unavailable until conformance data exists for the range
 - Schedule Conformance is uncapped — it can read above 100% when an agent works beyond their scheduled time, and the Schedule Conformance Trend axis extends past 100% instead of clipping those days
@@ -23,7 +23,7 @@ The **Program Dashboard** page shows program-wide adherence and conformance for 
 - **KPI tiles** — Total Agents Active, Scheduled Adherence (with the count of agents in adherence), Schedule Conformance, and Agents Off Schedule, with status badges such as Below Target and Needs Attention. The Total Agents Active, Scheduled Adherence and Schedule Conformance labels carry an information icon that opens the metric's definition, a **How it's calculated** list, and its data **Source**.
 - **Trends** — Schedule Adherence Trend and Schedule Conformance Trend charts, each plotted against the target line (Target 92%). The axis runs 0–100% and extends higher when a series reads above 100%, so a day worked beyond schedule is not clipped at the top.
 - **Group Performance** — A table grouped by the Group by dimension (LOB, Team (hierarchy), Region, Team (tag), or Routing Profile) with columns Group Name, Agents, Adherence %, In Adherence, Conformance %, In Conformance (agent-days), and Status. Status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%. Each row's Actions menu offers **View in Forecast, Capacity, and Scheduling** and **View agents**. The Adherence %, Conformance % and status column headings carry an information icon that opens the metric's definition. [VERIFY: this page names the last column **Status**, but the heading in PR #1281's diff reads **Adherence status**. That heading text was not changed by this release, so the name here is left as-is — confirm the live wording.]
-- **Filters** — **+ Filter**, **Date Range** (Today, 7d, 30d, Custom), and a **Timezone** dropdown.
+- **Filters** — **+ Filter**, **Date Range** (Today, 7d, 30d, Custom), and a **Timezone** dropdown. The dashboard opens in the instance's time zone, and the time zone and filters you last used are remembered for your next visit.
 
 ### Choosing a Date Range
 
@@ -44,3 +44,8 @@ Click **+ Filter** in the Filters panel to narrow the dashboard to specific grou
 1. In the Group Performance section, open the **Group by** dropdown.
 2. Choose **LOB**, **Team (hierarchy)**, **Region**, **Team (tag)**, or **Routing Profile**.
 3. Read each row against the Adherence status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%.
+4. (Optional) In a row's Actions menu, click **View agents** to list the group's agents, then click an agent to open their Agent 360 profile.
+
+!!! info ""
+
+    Where an agent's profile cannot be opened, the panel says why rather than doing nothing — *This agent has no identifier yet, so their profile cannot be opened. Try refreshing the page.* or *The Connect instance is still loading. Try again in a moment.*

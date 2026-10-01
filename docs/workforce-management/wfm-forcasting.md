@@ -42,6 +42,8 @@ The **Forecast, Capacity, and Scheduling** page shows today's expected demand an
 
 In the Filters panel's **Timezone** dropdown, choose a timezone. Charts and time ranges display in the selected timezone.
 
+The page opens in the Amazon Connect instance's time zone. Your choice replaces it and, along with your filter selections, is remembered for your next visit. A drill-in link from the Program Dashboard carries its own scope, which wins over what was remembered.
+
 ### Checking Data Freshness
 
 The page footer shows when the forecast was last updated. Treat figures as periodically refreshed, not live.

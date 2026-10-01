@@ -5,7 +5,7 @@
 1. Log in to CxPortal.
 2. Confirm the correct Amazon Connect instance is selected in the **Instance** selector at the top of the page.
 3. In the left sidebar, click **Workforce Management**.
-4. The module expands to show the module's pages: Agent Status, Team Scorecard, and Agent Scorecard — plus Forecast, Capacity, and Scheduling and Program Dashboard for instances with FCS data.
+4. The module expands to show the module's pages: Agent Status, Team Scorecard, and Agent Scorecard — plus Forecast, Capacity, and Scheduling and Program Dashboard for instances with FCS data. A **Settings** entry also appears if your role carries the Workforce Management admin permission.
 
 ## Your First Task
 
