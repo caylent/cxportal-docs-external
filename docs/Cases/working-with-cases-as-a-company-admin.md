@@ -152,7 +152,7 @@ Profiles allow you to easily view and manage contacts and information associated
 
 1. Go to the menu on the left side and expand **CxCases**.
 2. Click **Contacts**.
-3. On the Contacts Management page, click **Add Contact**.
+3. On the Contacts Management page, click **Add Profile**.
 4. Enter the information for the profile. **Note:** A name and email address are required. All other information is optional.
 5. Click **Save Profile**.
 
@@ -160,7 +160,7 @@ Profiles allow you to easily view and manage contacts and information associated
 
 ### View Profiles <a href="#view-profiles" id="view-profiles"></a>
 
-1. Go to the menu on the left side and expand **Cases**.
+1. Go to the menu on the left side and expand **CxCases**.
 2. Click **Contacts**.
 
 The Contacts Management page shows the total number of profiles and cases and lists the profiles in your company.
