@@ -4,8 +4,7 @@
 
 1. Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
 2. Sign in with the credentials your organization provides.
-3. In the left menu, click **CxPortal**.
-4. In the left menu, click **Knowledge Management**.
+3. In the left menu, click **Knowledge Management**.
 
 !!! info ""
     Note: If certain actions are not visible in the UI, your role may not include those permissions.
