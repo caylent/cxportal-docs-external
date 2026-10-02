@@ -19,7 +19,7 @@ Click **Request Support** in the upper-right corner of the homepage. The support
 
 ### 1. Open the support form
 
-Click **Request Support** in CxCentral or in the top navigation of CxPortal. The **Create case** page opens.
+Click **Request Support** in CxCentral or in the top navigation of CxPortal. The **Create Case** page opens.
 
 ### 2. Complete the Case details
 
