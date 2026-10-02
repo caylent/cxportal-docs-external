@@ -34,7 +34,7 @@ Keep the following limitations in mind when managing predefined attributes:
 1. Open **CxPortal**.
 2. On the left menu, expand **Proficiency Routing** and then click **Predefined Attributes**.
 3. Enter a name and description.
-4. Click **+Add Predefined attributes**.
+4. Click **Add Predefined Attribute**.
 
 ***
 
