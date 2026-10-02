@@ -27,10 +27,11 @@ This is the primary way to control environment rollout for Type 2 updates (and f
 
 ## Assigning a Permission
 
-1. Open **CxPortal** and go to **User Management**.
-2. Select the role you want to update.
-3. Find the new permission in the permission list and enable it.
-4. **Save** your changes. Users with that role will now see the new functionality.
+1. Open **CxPortal** and click the **Admin** gear at the bottom of the page.
+2. Under Access Management, click **Roles**.
+3. Select the role you want to update and click the **pencil icon**.
+4. Find the new permission in the permission list and enable it.
+5. **Save** your changes. Users with that role will now see the new functionality.
 
 Repeat for each instance where you want to enable access.
 
