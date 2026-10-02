@@ -2,7 +2,7 @@
 
 ## How to Access Campaigns
 
-1. Log in to CxPortal at your organization’s portal URL.
+1. Go to https://portal.pronetx.com.
 2. In the left sidebar, click **Campaigns**.
 3. The module expands to show five sub-pages: Dashboard, Sender Identities, Recipient Lists, Email Templates, and Account Management.
 4. Click **Dashboard** to begin.
