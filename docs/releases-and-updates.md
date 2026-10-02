@@ -2,7 +2,7 @@
 
 ## How Updates are Delivered
 
-When Pronetx ships an update to CxPortal, what happens next depends on what changed. Some updates are live the moment they're deployed. Others require your deployment team to apply a change to your AWS account before the feature works.
+When Caylent ships an update to CxPortal, what happens next depends on what changed. Some updates are live the moment they're deployed. Others require your deployment team to apply a change to your AWS account before the feature works.
 
 This page explains the three types of updates, what each one means for your team, and what action (if any) you need to take.
 
@@ -22,7 +22,7 @@ A new permission can be added as part of a Type 2 or Type 3 release — never Ty
 
 A release that goes live automatically with nothing for your team to do: no new permission to assign, no infrastructure to update.
 
-**Pronetx handles everything.** The update goes live across all instances the moment it's deployed.
+**Caylent handles everything.** The update goes live across all instances the moment it's deployed.
 
 **What you need to do**
 
@@ -38,14 +38,14 @@ A release that goes live automatically with nothing for your team to do: no new 
 
 A release where an admin must assign a new permission to the appropriate roles before users can access the feature. The underlying change goes live automatically — the permission assignment is what actually turns the feature on for your team.
 
-**Pronetx handles everything technically**, including any database migrations and the accompanying interface changes. The update goes live across all instances the moment it's deployed; only the permission assignment is on you.
+**Caylent handles everything technically**, including any database migrations and the accompanying interface changes. The update goes live across all instances the moment it's deployed; only the permission assignment is on you.
 
 **What you need to do**
 
 * An admin needs to assign the new permission to the required roles in user management before users can see or use the feature.
 
 > **Example**
-> A new Change Tracking dashboard page ships with its own permission. Pronetx deploys it; your admin grants access to the relevant roles.
+> A new Change Tracking dashboard page ships with its own permission. Caylent deploys it; your admin grants access to the relevant roles.
 
 ***
 
@@ -53,7 +53,7 @@ A release where an admin must assign a new permission to the appropriate roles b
 
 A change that requires modifications inside your AWS account: extending an IAM role, adding a DynamoDB table or index, adding an S3 bucket, or similar. These features also require the accompanying frontend and backend changes that depend on that new infrastructure.
 
-**Pronetx builds the frontend and backend changes and provides the infrastructure update.** Your deployment team applies it to each instance.
+**Caylent builds the frontend and backend changes and provides the infrastructure update.** Your deployment team applies it to each instance.
 
 **What you need to do**
 
@@ -61,7 +61,7 @@ A change that requires modifications inside your AWS account: extending an IAM r
 * **Admin:** If a new permission ships alongside, assign it to the relevant roles in user management. This is independent of the deployment team work.
 
 !!! info ""
-    Pronetx provides updated CloudFormation templates and deployment instructions. For customers who allow it, Pronetx can act as the deployment team and apply the templates directly.
+    Caylent provides updated CloudFormation templates and deployment instructions. For customers who allow it, Caylent can act as the deployment team and apply the templates directly.
 
 
 > **Example**
@@ -71,7 +71,7 @@ A change that requires modifications inside your AWS account: extending an IAM r
 
 ## Release Types at a Glance
 
-| Update Type            | What It Means                                                             | Pronetx Handles | Your Action                                                                          |
+| Update Type            | What It Means                                                             | Caylent Handles | Your Action                                                                          |
 | ---------------------- | -------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------- |
 | **1 — No Action**      | Live automatically — no new permission, no infrastructure change         | Entirely        | None                                                                                 |
 | **2 — Permission**     | Live automatically, gated behind a new permission                        | Entirely        | Assign the new permission to the required roles                                     |
