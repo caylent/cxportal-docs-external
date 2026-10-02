@@ -2,7 +2,7 @@
 
 ## Best Practices
 
-Proficiency-Based Routing works best when it's planned as a connected system rather than configured page by page. Because predefined attributes, values, agent ratings, and routing rules all build on one another, decisions you make early shape what's possible later. The practices below will help you set up a configuration that's accurate, maintainable, and easy to adjust as your team changes.
+Proficiency Routing works best when it's planned as a connected system rather than configured page by page. Because predefined attributes, values, agent ratings, and routing rules all build on one another, decisions you make early shape what's possible later. The practices below will help you set up a configuration that's accurate, maintainable, and easy to adjust as your team changes.
 
 ### **Plan before you build**
 
