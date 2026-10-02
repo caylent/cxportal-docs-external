@@ -15,7 +15,7 @@ Make sure the following are in place before creating or managing support cases a
 
 ## Limits and Constraints
 
-Keep the following limits in mind when using Cases:
+Keep the following limits in mind when using CxCases:
 
 * **Closed cases can't be edited.** To make changes to a closed case, you must reopen it first.
 * **Attachment size.** Each file must be 10 MB or smaller.
@@ -34,7 +34,7 @@ Keep the following limits in mind when using Cases:
 
 1. Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
 2. Sign in with the credentials your organization provides.
-3. Click **Request Support** in the top right corner of the screen. This takes you to the Create a Case page.
+3. Click **Request Support** in the top right corner of the screen. This takes you to the Create Case page.
 4. Enter a **Title**. The **Company** and **Reported By** fields are pre-filled with your own company and profile — both stay editable if you're filing the case on behalf of someone else.
 5. Select a **Case Type**, then choose a **Priority**. Priority stays disabled until you've chosen a Case Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
 6. Select a **Product** and a **Module** to classify what the case is about. The Module options depend on the Product you pick.
@@ -42,7 +42,7 @@ Keep the following limits in mind when using Cases:
 8. Click **Save**.
 
 
-**Note:** If you open **Create a Case** from the support icon while viewing a specific module (for example, ACGR or Access Management), Product and Module are pre-filled to match what you were viewing. You can still change them before saving.
+**Note:** If you click the Support Request icon while viewing a specific module (for example, ACGR or Access Management), Product and Module are pre-filled to match what you were viewing. You can still change them before saving.
 
 
 #### Module and Feature options
@@ -114,7 +114,7 @@ Once case details are updated, you'll receive an email notification detailing th
 
 1. Click the **Reference Number** of a case to open the case details page.
 2. Under case detail, scroll down to the Comments box.
-3. Enter your comment in the text box and click **Submit Comment**. The Comments section shows all conversation and notes for the case.
+4. Enter your comment in the text box and click **Submit Note**. The Comments section shows all conversation and notes for the case.
 
 ***
 
