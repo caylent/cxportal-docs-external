@@ -35,7 +35,7 @@ Keep the following limits in mind when using Cases:
 4. Enter a **Case Title**, select a **Case Type**, then choose a **Priority**. Priority stays disabled until you've chosen a Case Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
 5. Select a **Product** and a **Module** to classify what the case is about — the Module options depend on the Product you pick.
 6. Add a **Summary** and attach files or add CC recipients as needed. A summary has a 3,000-character limit.
-7. Click **Submit**
+7. Click **Create**
 
 A success message appears upon submission. You can navigate to the cases dashboard to view your case details.
 
@@ -49,8 +49,8 @@ If you can't access CxCentral, you can submit a support case using the support e
 ### View Your Case <a href="#view-your-case" id="view-your-case"></a>
 
 1. Log in to CxCentral.
-2. The CxCentral home page displays the 7 most recent cases associated with your email address. To view all of your cases, click **View all Cases** or click **Cases** in the left navigation menu.
-3. On the My Cases page, view your case Status, Reference Number, Title, Priority, Case Type, Creation Date, and Last Updated Date.
+2. The CxCentral home page displays the 7 most recent cases associated with your email address. To view all of your cases, click **View all Cases** or click **CxCases** in the left navigation menu.
+3. On the All CxCases page, view your case Status, Reference Number, Title, Priority, Case Type, Creation Date, and Last Updated Date.
 4. To view specific case details, click the case **Reference Number** or click the **ellipses** at the end of the row, and then **View**.
 
 ***
@@ -67,8 +67,8 @@ The case details page shows a comprehensive overview and activity for your case.
 2. Under the case details, upload images and files in the attachments box. You can drag and drop files or click the attachments box to select files from your computer.
 3. Once attachments are added, you can preview the file in the attachment box. If a preview is not available, click the **Download button** to open the file on your computer.
 
-!!! info ""
-    **Note:** Some file types (PDF, CSV, and DOC) cannot be previewed in the attachment box but can be downloaded and opened on your computer. The maximum file size is 10 MB per file. Supported file types include JPG, PNG, PDF, DOC, XLS, CSV, and ZIP.
+
+**Note:** Some file types (PDF, CSV, and DOC) cannot be previewed in the attachment box but can be downloaded and opened on your computer. The maximum file size is 10 MB per file. Supported file types include JPG, PNG, PDF, DOC, XLS, CSV, and ZIP.
 
 
 ***
@@ -77,7 +77,7 @@ The case details page shows a comprehensive overview and activity for your case.
 
 1. Click the **Reference Number** of a case to open the case details page.
 2. Under case detail, scroll down to the Comments box.
-3. Enter your comment in the text box and click **Submit Comment**. The Comments section shows all conversation and notes for the case.
+3. Enter your comment in the text box and click **Submit Note**. The comments section shows all conversation and notes for the case.
 
 ***
 
