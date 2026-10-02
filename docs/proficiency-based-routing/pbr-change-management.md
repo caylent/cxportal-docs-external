@@ -1,6 +1,6 @@
 # PBR Change Management
 
-The Change Management module captures changes made within the PBR configuration. PBR changes follow the same audit, change request, and scheduling workflows as other modules. Any PBR update that requires approval will generate a change request, and all committed PBR changes are logged in the Audit Log.
+Change Management is a global change management module that captures changes made within the PBR configuration. PBR changes follow the same audit, change request, and scheduling workflows as other modules. Any PBR update that requires approval will generate a change request, and all committed PBR changes are logged in the Audit Log.
 
 ***
 
@@ -14,14 +14,15 @@ The Audit Log module in the CxPortal provides a centralized record of changes ma
 
 The Audit Log records all committed changes made within the CxPortal, across every module. Each entry captures who made the change, what was changed, and relevant details about the affected entity. Each audit log entry includes:
 
-| **Field**       | **Description**                                                                        |
-| --------------- | -------------------------------------------------------------------------------------- |
-| User            | The user who performed the action.                                                     |
-| Action          | The type of change (e.g., Created, Updated, Deleted).                                  |
-| Entity / Module | The item or module that was changed.                                                   |
-| Details         | Additional context about the change (e.g., entity name, field values, region, bucket). |
-| Timestamp       | When the change was committed.                                                         |
-
+| Field | Description |
+|---|---|
+| Change Type | The type of change (e.g., Created, Updated, Deleted). |
+| Target | The target for the change. |
+| Description | Additional context about the change (e.g., entity name, field values, region, bucket). |
+| Requester | The person who requested the change. |
+| Approver | The person who approved the change. |
+| Date | When the change was committed. |
+| Status | The status of the change. |
 ***
 
 ## Change Requests
