@@ -16,7 +16,7 @@
 2. Sign in with the credentials your organization provides.
 3. Click **Request Support** in the top right corner of the screen.
 4. Fill out the support request form and add attachments.
-5. Click **Submit**.
+5. Click **Create**.
 
 A success message appears upon submission. You can navigate to the cases dashboard to view your case details.
 
