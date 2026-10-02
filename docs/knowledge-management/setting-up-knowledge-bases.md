@@ -20,13 +20,12 @@ A **Knowledge Base** is a collection of articles that AI Agents reference to pro
 
 ### Add Knowledge Base <a href="#add-knowledge-base" id="add-knowledge-base"></a>
 
-1. Go to **CxPortal**.
-2. In the left menu, expand **Knowledge Management**.
-3. Click **Knowledge Bases**. The Knowledge Base list page shows your Knowledge Bases, their Type, and Connection.
-4. In the upper right corner of the screen, click **Actions**.
-5. Click **Add New Knowledge Base**.
-6. Enter Knowledge Base name and S3 bucket.
-7. Click **Create Knowledge Base**.
+1. In the left menu, expand **Knowledge Management**.
+2. Click **Knowledge Bases**. The Knowledge Base list page shows your Knowledge Bases, their Type, and Connection.
+3. In the upper right corner of the screen, click **Actions**.
+4. Click **Add New Knowledge Base**.
+5. Enter Knowledge Base name and S3 bucket.
+6. Click **Create Knowledge Base**.
 
 !!! info ""
     **Note**: You can only have 10 Knowledge Bases at one time. The maximum total size per Knowledge Base is 5 GB.
