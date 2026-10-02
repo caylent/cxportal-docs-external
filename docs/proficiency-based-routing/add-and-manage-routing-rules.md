@@ -31,7 +31,7 @@ Keep the following limitations in mind when building routing rules:
 ### Add Routing Rules
 
 1. Open **CxPortal**.
-2. On the left menu, expand **Value Routing** and then click **Routing Rules**.
+2. On the left menu, expand **Proficiency Routing** and then click **Routing Rules**.
 3. Click **Add Rule**.
 4. Enter a rule name and description.
 5. Enter your rule criteria.
