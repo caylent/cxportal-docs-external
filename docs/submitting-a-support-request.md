@@ -41,17 +41,21 @@ Click **Create**. You'll receive a confirmation email, and the new case will app
 
 ### Case Details Fields
 
-The fields below appear in the **Case details** section of the form. Required fields are marked with an asterisk (`*`).
+The fields below appear in the **Case details** section of the form. 
 
-| Field                       | What to enter                                                                                                                          |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **Title** **`*`**           | A short, specific summary. *Example: "Outbound calls failing for Sales team since 9 AM EST."*                                          |
-| **Email**                   | Where case notifications are sent. Usually pre-filled with your account email.                                                         |
-| **On behalf of** `*`        | The user this case is for — yourself, or a colleague (Company Admins only).                                                            |
-| **Case Type** `*`           | The type of request — Bug Report, Feature Request, How-To, Access Management, Technical Support, or Billing. *Defaults to Bug Report.* |
-| **Priority** `*`            | The urgency level. See *Case Priorities* below. *Defaults to Low.*                                                                     |
-| **Recipients** *(optional)* | Teammates to CC. They'll get email updates on all case activity.                                                                       |
-| **Description**             | Details of the issue or request.                                                                                                       |
+| Field | Required | What to enter |
+|---|---|---|
+| Title | Yes | A short, specific summary of the problem. Example: "Outbound calls failing for Sales team since 9 AM EST." |
+| Email | No | The address where case notifications are sent. Usually pre-filled with your account email. |
+| Company | Yes | The company this case is associated with. |
+| Reported By | Yes | The user this case is for. This can be yourself or a colleague (colleague option is for Company Admins only). |
+| Product | Yes | The product this case relates to. |
+| Module | Yes | The module this case relates to. |
+| Case Type | Yes | The type of request: Bug Report, Feature Request, How-To, Access Management, Technical Support, or Billing. Defaults to Bug Report. |
+| Priority | Yes | The urgency level. See Case Priorities below. Defaults to Low. |
+| Recipients | No | Teammates to CC. They will receive email updates on all case activity. |
+| Description | No | Details of the issue or request. |
+                                                                                      
 
 !!! warning ""
     **Setting Priority to High or Urgent?** You'll be asked to provide a brief business justification — including any relevant timing constraints. This helps our team understand the business impact and respond appropriately.
