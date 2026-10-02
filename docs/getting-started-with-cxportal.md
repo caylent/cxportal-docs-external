@@ -14,7 +14,8 @@
 
 When you open CxPortal you'll see the homepage; a summary view of your contact center.
 
-<img width="1900" height="910" alt="cxportal-home_sanitized" src="https://github.com/user-attachments/assets/922faf8d-515d-4e99-9ea4-a9e93a9c481d" />
+<img width="1629" height="966" alt="CxPortal-home-synthetic" src="https://github.com/user-attachments/assets/dcc172ad-33c8-4268-be5a-866d2d664870" />
+
 
 
 ***
