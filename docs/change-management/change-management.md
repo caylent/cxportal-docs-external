@@ -59,5 +59,5 @@ Changes are created in other CxPortal modules (for example DFC entities and item
 
 ## Related Modules
 
-- **DFC**, **Proficiency Based Routing**, **Bulk Edit, and Knowledge Management** — changes made in these modules appear in Change Management (see the change types in the Reference section)
+- **DFC**, **Proficiency Routing**, **Bulk Edit, and Knowledge Management** — changes made in these modules appear in Change Management (see the change types in the Reference section)
 - **Centene Framework** — has its own separate **Change Requests** and **Audit Log** pages in the sidebar; those are not part of this module
