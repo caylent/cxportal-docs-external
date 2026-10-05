@@ -14,7 +14,7 @@ The **DFC Browser** is the main workspace for viewing and managing all configure
 
 ***
 
-Understanding the DFC Browser Layout
+## Understanding the DFC Browser Layout
 
 The DFC Browser is split into a sub-header and two panels:
 
