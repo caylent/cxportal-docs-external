@@ -30,7 +30,7 @@ Keep the following in mind when managing agent assignments:
 
 1. Open **CxPortal**.
 2. On the left menu, expand **Proficiency Routing** and then click **Agent Assignments**.
-3. Enter the Agent name in the search box or use the Hierarchy Groups, Proficiency Level, and Routing Profiles filters to quickly find a specific agent.
+3. Enter the Agent name in the search box or use the hierarchy group, routing profile, and predefined attribute filters to quickly find a specific agent.
 
 ***
 
