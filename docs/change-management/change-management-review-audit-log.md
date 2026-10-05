@@ -4,7 +4,7 @@ The **Audit Log** page lists every recorded change for the selected instance ("A
 
 ## The Audit Log Table
 
-Columns: a selection checkbox, a **Bulk (n)** badge for bulk records, **Change Type**, **Item**, **Description**, **Requester**, **Approver**, **Date**, **Status**, and a row actions menu. Click a column header to sort. The table scrolls to load all records — there are no pagination controls.
+Columns: a selection checkbox, a **Bulk (n)** badge for bulk records, **Change Type**, **Target**, **Description**, **Requester**, **Approver**, **Date**, **Status**, and a row actions menu. Click a column header to sort. The table scrolls to load all records — there are no pagination controls.
 
 **Item** names the specific item the change applies to, such as a phone number. Records without an item show a dash (**-**), and those sort to the end of the list when you sort by **Item**. A long item name is shortened in the cell — hover over it to see the full value.
 
