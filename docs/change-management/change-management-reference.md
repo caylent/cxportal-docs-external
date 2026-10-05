@@ -8,7 +8,7 @@
 |---|---|
 | (Bulk badge) | **Bulk (n)** marks a record that groups *n* underlying records |
 | Change Type | The operation performed (see Change Types below) |
-| Item | The specific item the change applies to, such as a phone number; **-** when the record has no item. Long values are shortened — hover to see the full value. Sortable; records with no item sort to the end |
+| Target | The exact name of one item, to list that item's history   |
 | Description | Optional, user-editable note on the record; **-** when empty |
 | Requester | Email of the user who made or requested the change |
 | Approver | Email of the approving user; **-** when the change had no approver |
@@ -21,7 +21,7 @@
 |---|---|
 | (Bulk badge) | **Bulk (n)** marks a request covering *n* records |
 | Change Type | The operation requested |
-| Item | The specific item the change applies to, such as a phone number; **-** when the request has no item. Long values are shortened — hover to see the full value. Sortable; requests with no item sort to the end |
+| Target | The exact name of one item, to list that item's history  |
 | Description | Optional, user-editable note on the request; **-** when empty |
 | Requester | Email of the user who submitted the request |
 | Criticality | **Urgent** or **Normal**; urgent requests are listed first |
@@ -34,7 +34,7 @@
 |---|---|
 | (Bulk badge) | **Bulk (n)** marks a scheduled change covering *n* records |
 | Change Type | The operation that will be performed |
-| Item | The specific item the change applies to, such as a phone number; **-** when the change has no item. Long values are shortened — hover to see the full value. Sortable; changes with no item sort to the end |
+| Target | The exact name of one item, to list that item's history  |
 | Description | Optional, user-editable note; **-** when empty |
 | Requester | Email of the user who submitted the change |
 | Approver | Email of the approving user; **-** when none |
