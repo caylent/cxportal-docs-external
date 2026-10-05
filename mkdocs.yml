@@ -160,7 +160,7 @@ nav:
       - Enabling New Features with Permissions: enabling-new-features-with-permissions.md
 
   - Agents & Routing:
-      - Bulk Edit:
+      - Bulk Agent Management:
           - Overview: editing-agents-in-bulk/editing-agents-in-bulk-homepage.md
           - Getting Started: editing-agents-in-bulk/getting-started-with-bulk-agent-management.md
           - Making Bulk Changes to Agents: editing-agents-in-bulk/making-bulk-changes-to-agents.md
