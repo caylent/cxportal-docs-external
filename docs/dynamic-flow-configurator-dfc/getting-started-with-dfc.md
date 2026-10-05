@@ -19,7 +19,7 @@ The **DFC Browser** is the main workspace for viewing and managing all configure
 The DFC Browser is split into a sub-header and two panels:
 
 * **Sub-header** — Icon buttons for **Export**, **Import**, **Path Tester**, and **Local Speech Setting**. Hover an icon to see its tooltip. Export and Import appear only if you have edit permission.
-* **Left panel** — The entity tree, starting at **Home** (the root). View and navigate top-level entities and sub-entities here.
+* **Left panel** — The entity tree, starting at the root. View and navigate top-level entities and sub-entities here.
 * **Right panel** — The items table for the selected entity or sub-entity. This displays the records stored within the selected entity. The header shows the item count, for example "12 Items in Prompts."
 
 At the root level (Home), you can view your top-level entities and create new ones with the **+ Entity** button. Inside an entity, the same button reads **+ Sub-Entity**.
