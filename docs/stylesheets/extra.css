@@ -72,7 +72,8 @@ body,
   color: #fff;
 }
 
-.md-typeset .widget-cover--instance  { background-color: #16317A; }
-.md-typeset .widget-cover--approvals { background-color: #EBA93C; color: #1A1A1A; }
-.md-typeset .widget-cover--updates   { background-color: #4F74D6; }
-.md-typeset .widget-cover--activity  { background-color: #0E8A8A; }
+.md-typeset .widget-cover--instance        { background-color: #16317A; }
+.md-typeset .widget-cover--change-requests { background-color: #EBA93C; color: #1A1A1A; }
+.md-typeset .widget-cover--release-notes   { background-color: #4F74D6; }
+.md-typeset .widget-cover--support-cases   { background-color: #7FB257; color: #1A1A1A; }
+.md-typeset .widget-cover--activity        { background-color: #0E8A8A; }
