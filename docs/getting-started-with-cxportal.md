@@ -27,30 +27,37 @@ When you open CxPortal you'll see the homepage; a summary view of your contact c
 -   Current Instance
     { .widget-cover .widget-cover--instance }
 
-    Shows your active instance and region.
+    Shows your active instance and its region.
 
-    If your organization has multiple environments, click **Change instance** to switch between them.
+    If your organization has multiple environments, click **Switch Instance** to move between them.
 
--   Pending Approvals
-    { .widget-cover .widget-cover--approvals }
+-   Change Requests
+    { .widget-cover .widget-cover--change-requests }
 
-    Based on your role, this shows items waiting for your approval or requests you've submitted pending approval.
+    Shows recent change requests submitted for your instance.
 
-    Each row shows the request type, name, submitter, date, and status. Click **View All** to see the full list.
+    Each entry shows the request name, type (for example, *Update Entity*), status (such as *Pending*), submitter, and date. Click an entry to open it, or click **All** to see the full list.
 
--   Updates
-    { .widget-cover .widget-cover--updates }
+-   Release Notes
+    { .widget-cover .widget-cover--release-notes }
 
-    Shows recent configuration changes across your organization, grouped by type.
+    Shows the latest CX Portal releases, newest first.
 
-    Use the **All** filter to narrow by category. Click **View All** to see the complete history.
+    Each entry shows the release title, date, a **Type** badge, and a short summary. The badge tells you whether you need to do anything. For example, **Type 1: No Action Required** means the release needs nothing from your team. Scroll to see earlier releases, or click an entry to read the full notes.
+
+-   Support Cases
+    { .widget-cover .widget-cover--support-cases }
+
+    Shows your recent support cases.
+
+    Each entry shows the case title, reference number, submitter, date, and status (such as *Closed* or *Waiting on customer*). Click **Get Support** to open a new case, or **All** to see every case.
 
 -   Activity Feed
     { .widget-cover .widget-cover--activity }
 
-    A timeline of actions taken by users in your organization: creating, updating, or deleting routing rules and entities.
+    A timeline of actions taken in your instance, such as creating or updating items and connection changes.
 
-    Each entry shows the action, user, and time. Click **View All** to see the full log.
+    Scroll to browse recent activity, or click **All** to see the full log.
 
 </div>
 
