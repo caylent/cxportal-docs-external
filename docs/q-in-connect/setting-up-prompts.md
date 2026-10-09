@@ -17,6 +17,8 @@ Keep the following in mind when working with Prompts:
 
 * **Version limit** — You can have up to 50 versions of a Prompt at one time.
 * **Template dependency** — Creating a Prompt requires selecting a Prompt Template as a starting point, which then populates the Prompt Template box for editing.
+* **Templates must be YAML** — The Prompt Template has to be valid YAML. If it isn't, the Prompt won't save and the Prompt Template box shows: "The prompt template must be in YAML format. Start from a blueprint to see the expected structure." Starting from a Prompt Template gives you the expected structure. [VERIFY: the message says "blueprint" while this page calls the starting point a Prompt Template — confirm the term used in the UI.]
+* **Supported models only** — The Model dropdown lists only the models Q in Connect currently accepts. If a Prompt is still on a model that has since been retired, the Model dropdown reads "\[model] (retired) - select a model" and the Prompt can't be saved until you choose a supported model.
 
 ***
 
@@ -31,7 +33,7 @@ Keep the following in mind when working with Prompts:
 5. Choose the Prompt Type, API, and Model.
 6. Choose a Prompt Template. The template automatically populates in the Prompt Template box.
 7. Edit the Prompt to match the needed functionality.
-8. Click **Save Prompt** to apply your changes.
+8. Click **Save Prompt** to apply your changes. The new Prompt is created and you return to the Prompt list.
 
 ***
 
@@ -41,8 +43,9 @@ Keep the following in mind when working with Prompts:
 2. Click **Prompts**.
 3. On the Prompt list, click the **Pencil icon** in the Actions column.
 4. Edit the text in the Prompt Template box as needed.
-5. Click **Save Prompt** to apply your changes.
-6. (Optional) Click the prompt version dropdown at the top of the page to see all versions of the Prompt.
+5. Select the **Model** you want the Prompt to use. A Model is required, so if the Prompt is on a retired model you have to choose a supported one before the Prompt will save.
+6. Click **Save Prompt** to apply your changes.
+7. (Optional) Click the prompt version dropdown at the top of the page to see all versions of the Prompt.
    1. Click **Manage Versions** to compare versions and see inline differences. Lines highlighted in red are removed, and lines highlighted in green are added or modified. **Note:** You can have up to 50 versions of a Prompt at one time.
 
 ***

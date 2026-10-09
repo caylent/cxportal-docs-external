@@ -166,6 +166,10 @@ Once the schema is ready:
 
 Items appear in the table immediately. Opening an item's editing tray shows its Item ID next to the entity name — click it to copy the ID to your clipboard.
 
+!!! info ""
+
+    A **Pick List** field that allows multiple selections starts with nothing selected. If that field isn't required, you can leave it empty and still save the item — the item is saved with no value for the field. A required Pick List still needs at least one option selected before you can save.
+
 !!! warning
 
     Item changes are submitted as change requests and take effect once approved. Avoid creating or deleting items in shared environments unless instructed.
