@@ -68,7 +68,7 @@ Each log entry includes the contact flow name, block type, and the block identif
 
 **Tip:** You can search the logs for keywords such as "Lambda," "error," or specific attribute values, and quickly jump to the related flow block, AWS logs, or metrics when available.
 
-**Note:** Clicking a block on the canvas to jump to its log entry works even if that entry is currently hidden by an active log search — Flow Analyzer clears the search automatically so the entry becomes visible and expands.
+**Note:** Navigation between the canvas and Flow Logs works in both directions, even when the log list is searched or filtered. Clicking a block on the canvas jumps to its log entry: if an active search is hiding that entry, Flow Analyzer clears the search automatically so the entry becomes visible and expands. Clicking a log entry’s title focuses the matching block on the canvas, regardless of how the list is currently filtered.
 
 
 ***
