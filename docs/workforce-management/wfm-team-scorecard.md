@@ -9,7 +9,7 @@ The **Team Scorecard** page shows scheduled vs. actual adherence for all agents 
 
 ## Limits and Constraints
 
-- Ribbon rows include agents with nothing scheduled on the selected day; those rows report a reason in place of a percentage. [VERIFY: the change that brings unscheduled agents into the ribbon is in the paired Workforce Management backend release (admin-module-wfm #185 / WFM backend 1.5.23), not in this front-end diff — confirm that backend is deployed before publishing. Against an older backend every row still carries a percentage.]
+- Ribbon rows include agents with nothing scheduled on the selected day; those rows report a reason in place of a percentage. 
 - Schedule data refreshes from Connect FCS roughly every 15 minutes, so a just-published shift change may lag; check the stream-health indicator for freshness
 - The ±5m grace tolerance is fixed and cannot be changed in the UI
 - Gaps in the event stream render as No data (gap) rather than as adherence verdicts
@@ -70,7 +70,6 @@ Where there are no scored minutes for an agent, the end of the row reads a reaso
 !!! info ""
     These labels replace a 0.0% reading, which used to make an agent with nothing to score look like an agent who missed their whole shift. The same rule applies on the Agent Scorecard timeline, so one agent-day reads the same on both pages.
 
-[SCREENSHOT: a ribbon row reading **Not tracked** at the right-hand end, with its hover explanation open]
 
 ### Opening an Agent's Profile or Scorecard
 
