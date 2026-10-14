@@ -17,7 +17,7 @@ Keep the following in mind when working with Prompts:
 
 * **Version limit** — You can have up to 50 versions of a Prompt at one time.
 * **Template dependency** — Creating a Prompt requires selecting a Prompt Template as a starting point, which then populates the Prompt Template box for editing.
-* **Templates must be YAML** — The Prompt Template has to be valid YAML. If it isn't, the Prompt won't save and the Prompt Template box shows: "The prompt template must be in YAML format. Start from a blueprint to see the expected structure." Starting from a Prompt Template gives you the expected structure. [VERIFY: the message says "blueprint" while this page calls the starting point a Prompt Template — confirm the term used in the UI.]
+* **Templates must be YAML** — The Prompt Template has to be valid YAML. If it isn't, the Prompt won't save. 
 * **Supported models only** — The Model dropdown lists only the models Q in Connect currently accepts. If a Prompt is still on a model that has since been retired, the Model dropdown reads "\[model] (retired) - select a model" and the Prompt can't be saved until you choose a supported model.
 
 ***
