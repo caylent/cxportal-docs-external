@@ -92,7 +92,7 @@ You can sync articles directly from Connect Agents to your Knowledge Bases.
 1. Open **CxPortal**.
 2. On the left menu, expand **Knowledge Management** and then click **Articles**.
 3. The articles list page shows all your articles and their associated Knowledge Base. Select the article title of the content you want to view.
-4. On the right side of the screen, select the versions you want to compare.
+4. On the right side of the screen, the **Versions** card lists every version of the article and shows the total in its heading — for example, **Versions (7)**. Scroll the card to reach older versions, then select the versions you want to compare.
 5. Click **Compare Versions**.
 6. Review the side-by-side comparison.
 

@@ -63,7 +63,7 @@ When you open CxPortal you'll see the homepage; a summary view of your contact c
 
 
 !!! info ""
-    The widgets you see on your homepage may vary depending on your role and permissions. For example, Pending Approvals is only visible to users with an approver or submitter role.
+    The widgets you see on your homepage may vary depending on your role and permissions. For example, Pending Approvals is only visible to users with an approver or submitter role. A widget with nothing to show — because it has no entries yet, or because its data couldn't be loaded — displays **No data to display**.
 
 ***
 
