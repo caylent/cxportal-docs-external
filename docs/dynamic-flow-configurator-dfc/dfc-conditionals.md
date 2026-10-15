@@ -6,7 +6,7 @@ Conditionals let a contact flow change where a call goes, or what the caller hea
 
 ## Before You Begin
 
-- You need item edit permission on the entity. See Managing DFC Permissions.
+- You need item edit permission on the entity. See [Managing DFC Permissions](managing-dfc-permissions.md).
 - Adding new prompt variants requires at least the **Item Creator** permission level.
 - Changes are submitted as a change request and take effect once approved.
 
