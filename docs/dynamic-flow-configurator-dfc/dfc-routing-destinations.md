@@ -55,7 +55,7 @@ Your instance's exact entity name and fields are set by its schema.
 
 ### Verifying a Destination
 
-Use **Path Tester** in the DFC Browser sub-header to preview exactly what a contact flow receives when it queries the destination, for example /Queue/Basic Queue. See Getting Started with DFC.
+Use **Path Tester** in the DFC Browser sub-header to preview exactly what a contact flow receives when it queries the destination.
 
 ### Reviewing and Submitting Your Changes
 
