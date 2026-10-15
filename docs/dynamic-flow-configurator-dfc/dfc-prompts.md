@@ -6,7 +6,7 @@ Prompts are fields that store the SSML text Amazon Connect speaks to callers. Yo
 
 ## Before You Begin
 
-- You need item edit permission on the entity. See [Managing DFC Permissions](managing-dfc-permissions.md).
+- You need item edit permission on the entity. See [Managing DFC Permissions](managing-dfc-permissions.md). 
 - Adding new prompt variants requires at least the **Item Creator** permission level.
 - Changes are submitted as a change request and take effect once approved.
 - Prompt fields are edited with DFC's SSML editor. For the full editor reference, including the formatting toolbar, Code View, validation, and audio preview, see [Editing Prompt Fields](editing-prompt-fields).
