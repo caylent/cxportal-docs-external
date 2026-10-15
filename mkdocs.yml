@@ -189,12 +189,16 @@ nav:
           - Best Practices: workforce-management/wfm-best-practices.md
 
   - Contact Handling:
-      - Dynamic Flow Configurator (DFC):
+      -  Dynamic Flow Configurator (DFC):
           - Overview: dynamic-flow-configurator-dfc/dynamic-flow-configurator-dfc-homepage.md
           - Getting Started: dynamic-flow-configurator-dfc/getting-started-with-dfc.md
           - Searching DFC: dynamic-flow-configurator-dfc/searching-dfc.md
           - Setting Up Entities & Schemas: dynamic-flow-configurator-dfc/setting-up-entities-and-schemas.md
           - Managing Schedules & Closures: dynamic-flow-configurator-dfc/managing-hours-of-operation-and-closures.md
+              - Setup Example:Prompts: dynamic-flow-configurator-dfc/dfc-prompts.md
+              - Setup Example Conditionals: dynamic-flow-configurator-dfc/dfc-conditionals.md
+              - Setup Example Transfers: dynamic-flow-configurator-dfc/dfc-transfers.md
+              - Setup Example Routing Destinations: dynamic-flow-configurator-dfc/dfc-routing-destinations.md
           - Editing Prompt Fields: dynamic-flow-configurator-dfc/editing-prompt-fields.md
           - Bulk Editing & Deleting Items: dynamic-flow-configurator-dfc/bulk-editing-and-deleting-items.md
           - Importing & Exporting Data: dynamic-flow-configurator-dfc/importing-and-exporting-data.md
