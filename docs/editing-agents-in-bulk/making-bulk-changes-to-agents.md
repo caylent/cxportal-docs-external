@@ -41,7 +41,7 @@ Reassign multiple agents to a new Routing Profile in one action.
 1. With agents selected, click **Routing Profile** in the **Bulk Actions** toolbar.
 2. The **Bulk Routing Profile Change** panel opens. The left side lists your selected agents and their current Routing Profile.
 3. Open the **Select a Routing Profile** dropdown on the right and choose the new profile.
-4. Review the **Routing Profile Summary** to confirm how many agents you're changing and from which current profiles. *(Observed in the live UI.)*
+4. Review the **Routing Profile Summary** to confirm how many agents you're changing and from which current profiles. 
 5. Click **Apply Changes**.
 6. In the **Change Request Details** window, fill in the optional **Description** and set the **Criticality**:
 7. a. **Normal** — No immediate business impact. b. **Urgent** — Critical business need or active outage.
