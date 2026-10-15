@@ -16,8 +16,8 @@
 
 The user detail page shows:
 
-- **User Details** — the user's **EMAIL** and **LOGIN METHODS** (for example, "Password · Confirmed"), with the actions **Deactivate**, **Edit Profile**, and **Send Forgot Password Reminder**.
-- **Role and Instance Access** — the **ROLE NAME**, a **Change Role** button, and an **Instance Name** table listing the instances the user can access.
+- **User Details** — the user's **Email** and **Login Methods** (for example, "Password · Confirmed"), with the actions **Deactivate**, **Edit Profile**, and **Send Forgot Password Reminder**.
+- **Role and Instance Access** — the **Role Name**, a **Change Role** button, and an **Instance Name** table listing the instances the user can access.
 
 
 ***
@@ -36,7 +36,7 @@ You can edit existing user information or roles at any time. To edit a user:
    4. To change roles, click **Change Role**.
 
 !!! info ""
-    **Edit Profile** is not shown for a user whose only login method is SSO and who has never signed in — their **LOGIN METHODS** reads "Single Sign-On (SSO) · Not logged in yet". Their name is supplied by your identity provider the first time they sign in, so there is no profile to edit yet. The button appears once the user has signed in with SSO, or if they also have a password login method. Every other action is unaffected.
+    **Edit Profile** is not shown for a user whose only login method is SSO and who has never signed in — their **Login Methods** reads "Single Sign-On (SSO) · Not logged in yet". Their name is supplied by your identity provider the first time they sign in, so there is no profile to edit yet. The button appears once the user has signed in with SSO, or if they also have a password login method. Every other action is unaffected.
 
 ***
 
