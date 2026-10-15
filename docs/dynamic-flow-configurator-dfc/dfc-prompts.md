@@ -6,10 +6,10 @@ Prompts are fields that store the SSML text Amazon Connect speaks to callers. Yo
 
 ## Before You Begin
 
-- You need item edit permission on the entity. See Managing DFC Permissions.
+- You need item edit permission on the entity. See [Managing DFC Permissions](managing-dfc-permissions.md).
 - Adding new prompt variants requires at least the **Item Creator** permission level.
 - Changes are submitted as a change request and take effect once approved.
-- Prompt fields are edited with DFC's SSML editor. For the full editor reference, including the formatting toolbar, Code View, validation, and audio preview, see Editing Prompt Fields.
+- Prompt fields are edited with DFC's SSML editor. For the full editor reference, including the formatting toolbar, Code View, validation, and audio preview, see [Editing Prompt Fields](editing-prompt-fields).
 
 ## Step-by-Step Instructions
 
@@ -29,7 +29,7 @@ Prompts are fields that store the SSML text Amazon Connect speaks to callers. Yo
 
 - Open the item from the items table. The editing tray opens and is fully editable.
 - Edit the prompt details.
-- If a field is a Prompt field, it opens the SSML editor. Use the **SSML Formatting** toolbar to insert pauses or control rate, volume, pitch, pronunciation, and language. The root <speak> tag is applied automatically. Click **Switch to Code View** to edit the raw SSML directly. For more information, see Editing Prompt Fields.
+- If a field is a Prompt field, it opens the SSML editor. Use the **SSML Formatting** toolbar to insert pauses or control rate, volume, pitch, pronunciation, and language. The root <speak> tag is applied automatically. Click **Switch to Code View** to edit the raw SSML directly. For more information, see [Editing Prompt Fields](editing-prompt-fields).
 - Click **Save Changes**.
 
 ### Verifying What a Flow Receives
