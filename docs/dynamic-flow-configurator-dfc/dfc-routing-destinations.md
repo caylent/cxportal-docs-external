@@ -16,7 +16,7 @@ Your instance's exact entity name and fields are set by its schema.
 
 ## Before You Begin
 
-- You need item edit permission on the entity. See [Managing DFC Permissions](managing-dfc-permissions.md)
+- You need item edit permission on the entity. See [Managing DFC Permissions](managing-dfc-permissions.md).
 - Adding new destinations requires at least the **Item Creator** permission level.
 - Changes are submitted as a change request and take effect once approved.
 - The Amazon Connect resources you point at (queues, flows, prompts, phone numbers) are created and managed in Amazon Connect, not in DFC. DFC stores which resource a destination uses.
