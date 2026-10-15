@@ -39,7 +39,6 @@ Each row has a **View Details** (eye) control. The list header shows **Export Us
 
 The file lists the same users as the table, in the same order, and reflects the filters in effect when you export. It is not a fresh read of all users.
 
-[VERIFY: **Export Users** carries no permission gate in this release, unlike **Add user**, which requires a writer role — so anyone who can open the Users page can export it. Confirm this is intended before publishing.]
 
 ***
 
