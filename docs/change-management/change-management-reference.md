@@ -58,7 +58,6 @@ Target search behaviour:
 - An active target search counts as one filter in the panel's count, is cleared by **Clear Filters**, and is reloaded by **Refresh data**
 - Starting a target search, or changing it, clears any row selection
 
-[GAP: what the Target value holds for each change type — for example a DFC entity name, a Proficiency Routing attribute, or an agent's username — Source needed: product owner, or one worked example per change type]
 
 ## Status Definitions
 
