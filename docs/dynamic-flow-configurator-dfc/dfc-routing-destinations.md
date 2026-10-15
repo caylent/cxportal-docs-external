@@ -45,7 +45,7 @@ Your instance's exact entity name and fields are set by its schema.
 3. To review the chosen schedule, click the open icon next to the field. It takes you to the referenced item.
 4. Click **Save** and review your changes.
 
-**Note:** To change the hours themselves, edit the schedule item instead. Because the data is linked, every destination that references the schedule picks up the update automatically. See Managing Schedules and Closures for more information.
+**Note:** To change the hours themselves, edit the schedule item instead. Because the data is linked, every destination that references the schedule picks up the update automatically. 
 
 ### Adding a Routing Destination
 
