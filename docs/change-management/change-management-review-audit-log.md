@@ -47,7 +47,6 @@ The **Target** field in the Filters panel lists every record for one item, rathe
 
 The target search counts as one active filter, and **Refresh data** reloads its results.
 
-[SCREENSHOT: the Filters panel with a target entered, and the Target column showing a value with its copy control and a **Bulk** badge]
 
 !!! info ""
     The target must be an exact match. When nothing matches, the table shows *No audit log records found* with the hint *Target must be an exact match.*
