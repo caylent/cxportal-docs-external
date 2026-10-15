@@ -19,7 +19,7 @@ The **Agent Status** page shows live agent status, distribution, and schedule ad
 - Adherence filtering is applied across the whole roster rather than only the visible page
 - The **Adherence %** and **% of day completed** columns, and the sort options for them, appear on today's view only
 - **Adherence %** is blank for an agent the adherence data does not cover, and names the reason instead of a percentage where the agent's window scored nothing
-- **% of day completed** is blank when nothing is rostered for the agent, when the whole day is time off, or when the roster total needed to work it out is not in the response [VERIFY: the roster total is an optional field, so an instance whose Workforce Management backend does not return it leaves the column blank for every agent — confirm which instances are affected]
+- **% of day completed** is blank when nothing is rostered for the agent, when the whole day is time off, or when the roster total needed to work it out is not in the response 
 - Ordering by **Agent**, **Adherence %**, or **% of day completed** is applied across the whole roster rather than only the visible page
 - Agents with no figure sort to the bottom in both directions, so neither end of the table is filled with absences
 - The time zone, group filters, and chosen ordering are remembered per page, per instance, and per user; a link that names a time zone, filter, or sort wins over what was remembered
@@ -70,7 +70,6 @@ The table shows 100 agents per page — use the **Prev** and **Next** controls b
 | **Adherence %** | The agent's adherence for today. Where nothing was scored, the cell names the reason instead of a percentage — **Not scheduled**, **Time off**, **Not started**, or **Not tracked** — and hovering the label explains it. These are the same labels the Team Scorecard ribbon uses, so one agent-day reads the same on both pages. Shows — for an agent the adherence data does not cover. |
 | **% of day completed** | How much of the agent's rostered day has already elapsed, as a percentage. Shows — when nothing is rostered, when the whole day is time off, or when the figure cannot be worked out. |
 
-[VERIFY: this page names the last column **Out of adherence (today)**, but the heading in PR #1281's diff reads **Adherence**. That heading text was not changed by this release, so the name here is left as-is — confirm the live wording.]
 
 ### Opening an Agent's Profile or Scorecard
 
