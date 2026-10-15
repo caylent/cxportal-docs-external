@@ -52,9 +52,6 @@ Metric labels in the summary and in the agent table carry an information icon. C
 6. Below the dropdown, click **Ascending** or **Descending** to set the direction. A line beneath the buttons says what ascending means for the column you chose — *Ascending is A to Z.*, *longest first*, *lowest first*, or *least completed first*. Choosing a new column starts it ascending again.
 7. You can also sort from the table: **Agent**, **Status**, **In status**, **Adherence %**, and **% of day completed** are buttons in their column headings. Click one to order by it, and click the column already in effect to flip the direction. The heading carries **▲** or **▼** to show which is which. The dropdown and the headings drive the same setting, so they always agree.
 
-!!! info ""
-
-    Group Filters scope the donut, the status table, the Adherence · Today summary and the agent table to the same agents. While a filter's membership is still resolving, the page reports no agents rather than the whole instance. If the membership can't be resolved, the page shows: "The group filter could not be applied. Showing no agents rather than everyone."
 
 ### Reading the Agent Table
 
