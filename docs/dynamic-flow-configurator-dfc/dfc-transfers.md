@@ -14,10 +14,10 @@ Your instance's exact entity name and fields are set by its schema.
 
 ## Before You Begin
 
-- You need item edit permission on the entity. See Managing DFC Permissions.
+- You need item edit permission on the entity. See [Managing DFC Permissions](managing-dfc-permissions.md).
 - Adding new transfers requires at least the **Item Creator** permission level.
 - Changes are submitted as a change request and take effect once approved.
-- The destinations a transfer can point at must already exist as items in the entity. For more information, see Managing Routing Destinations.
+- The destinations a transfer can point at must already exist as items in the entity. 
 
 ## Step-by-Step Instructions
 
