@@ -15,15 +15,15 @@ To add a user:
 1. Open CxCentral and click **Admin**.
 2. In the left menu, under Access management, click **Users**.
 3. In the top right corner of the screen, click **Add user**.
-4. In the Add User dialog, enter an **EMAIL ADDRESS** (required).
-5. (Optional) Enter a **NAME** and a **USER ID**.
-6. Select a **LOGIN METHOD**: **Password** (default) or **SSO**.
-7. In the **ROLE** dropdown, select a role.
+4. In the Add User dialog, enter an **Email Address** (required).
+5. (Optional) Enter a **Name** and a **User ID**.
+6. Select a **Login Method**: **Password** (default) or **SSO**.
+7. In the **Role** dropdown, select a role.
 8. Click **Add User**.
 
 To close the dialog without creating the user, click **Cancel** or the **X**.
 
 !!! info ""
-    Users added with the **SSO** login method receive an invitation email, as password users do. Following the link in that email takes the user straight to your identity provider to sign in, rather than to the CxPortal login page. The dialog states this under the **LOGIN METHOD** options when **SSO** is selected.
+    Users added with the **SSO** login method receive an invitation email, as password users do. Following the link in that email takes the user straight to your identity provider to sign in, rather than to the CxPortal login page. The dialog states this under the **Login Method** options when **SSO** is selected.
 
 ***
