@@ -17,7 +17,6 @@ Columns: a selection checkbox, a **Bulk (n)** badge for bulk requests, **Change 
 2. Type in the **Search by keyword...** box above the table to filter the requests currently in the table.
 3. Click **Clear Filters** to remove all filter selections and the target search, or **Hide filters** to collapse the panel.
 
-[SCREENSHOT: the Change Requests Filters panel, which is new on this page — Target, Change type, Requester, Status, and Criticality]
 
 ### Searching a Target's History
 
