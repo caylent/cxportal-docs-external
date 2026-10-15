@@ -41,7 +41,7 @@ Metric labels in the summary and in the agent table carry an information icon. C
 
 ### Filtering and Sorting the Agent List
 
-1. Use the status chips — **All** plus one chip per current status (for example **Available**, **Offline**) — to filter the table by current status.
+1. Use the status chips — All plus one chip per current status (for example **Available**, **Offline**) — to filter the table by current status.
 2. Use the **Adherence** chips beside the status chips — **Out of adherence**, **In adherence**, or **No adherence data** — to filter by today's adherence reading. The two filters combine, so you can ask for agents who are Available *and* out of adherence. The selected chip carries an **✕** — click it, click the chip body again, or click **Clear all**, to drop it.
 3. In the Filters panel, click **+ Filter** under **Group Filters** to filter by other dimensions:
    1. Choose a dimension, for example **LOB**, **Team (hierarchy)**, **Region**, **Team (tag)**, or **Routing Profile**. The dimensions offered depend on the instance's grouping data. A dimension whose values have not arrived yet shows **Loading filters…**, one the instance reports no values for opens to **No values**, and an instance with no grouping data at all shows **No filters available**.
