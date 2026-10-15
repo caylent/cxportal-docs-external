@@ -58,7 +58,7 @@ Day controls: **Previous day** / **Today** / **Pick a day** (last 90 days) / **N
 | **Sort (Filters panel)** | Lowest adherence first · Highest adherence first · Name · Most events (rows with no adherence figure sort last in both adherence orders) |
 | **Timezone (Filters panel)** | Pacific (PT) · Mountain (MT) · Central (CT) · Eastern (ET) · UTC |
 
-**Ribbon legend:** Productive · Offline · Non-Productive · Not scheduled / Time Off · No data (gap) · Out of adherence / min
+**Ribbon legend:** Productive · Offline · Non-Productive · Not scheduled / Time Off · Out of adherence / min
 
 Each ribbon row, top to bottom: **Adherence/min · Scheduled · Actual**.
 
@@ -75,7 +75,7 @@ Stream health reports data freshness: time since the last event, how many agents
 | **Adherence** | Adherence percentage for the range, change vs. the prior period, and time in / out of adherence |
 | **Schedule Conformance** | Conformance percentage; shows *awaiting data* until data is available |
 
-Adherence and Schedule Conformance are the cards shown by default. Contacts Handled, Avg Handle Time, ACW, and Occupancy are still calculated but hidden unless they are switched on for the selected instance. [GAP: enabling the contact-timing cards is a per-instance configuration change today — there is no admin control in the UI to document]
+Adherence and Schedule Conformance are the cards shown by default. Contacts Handled, Avg Handle Time, ACW, and Occupancy are still calculated but hidden unless they are switched on for the selected instance. 
 
 **Adherence detail table**
 
