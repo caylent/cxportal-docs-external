@@ -37,7 +37,7 @@ The scorecard shows the two schedule-quality cards by default:
 - **Adherence** — The agent's adherence percentage for the selected range, with a change indicator against the prior period (from last day for **Today**, from last week for **7d**) and the total time in and out of adherence (for example 8h 32m in / 46h out). A per-day chart shows the daily adherence values across the range.
 - **Schedule Conformance** — The agent's conformance percentage. Shows **—** with *awaiting data* until conformance data is available.
 
-Contacts Handled, Avg Handle Time, ACW, and Occupancy are still calculated for the range but are not shown unless they have been switched on for the selected instance. [GAP: enabling the contact-timing cards is a per-instance configuration change today — there is no admin control in the UI, so there is no procedure to document]
+Contacts Handled, Avg Handle Time, ACW, and Occupancy are still calculated for the range but are not shown unless they have been switched on for the selected instance. 
 
 ### Reading the Adherence Timeline
 
