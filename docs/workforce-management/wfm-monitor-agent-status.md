@@ -78,7 +78,7 @@ The table shows 100 agents per page — use the **Prev** and **Next** controls b
 
 Agent names are clickable on a previous day as well as today: the day summary's per-agent table opens the same Agent 360 profile, including for an agent whose row records no activity.
 
-When the profile cannot be opened, the page says why rather than doing nothing:
+The following messages may appear when the profile can't be opened:
 
 | Message | What it means |
 | --- | --- |
