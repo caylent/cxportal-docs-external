@@ -14,7 +14,7 @@ The first thing you see is the contact list panel on the left.
 At the top of the panel, you find:
 
 * A search bar for entering a Contact ID
-* A **Live Contacts** checkbox to show only active interactions
+* A **Show Pending** checkbox that includes contacts still in progress alongside completed ones. It is selected by default — clear it to list completed contacts only. [VERIFY: the label reads **Show Pending** in the current UI code; this page previously called it "Live Contacts". The default-on change is from this release; the label correction is not — confirm against the live UI]
 * An **Advanced** link to open detailed filtering options
 * An **AI API access** button (sparkle icon) for driving Flow Analyzer from an AI assistant — see [AI API Access](flow-analyzer-reference.md#ai-api-access)
 

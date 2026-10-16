@@ -43,7 +43,7 @@ When you open CxPortal you'll see the homepage; a summary view of your contact c
 
     Shows the latest CX Portal releases, newest first.
 
-    Each entry shows the release title, date, a **Type** badge, and a short summary. The badge tells you whether you need to do anything. For example, **Type 1: No Action Required** means the release needs nothing from your team. Scroll to see earlier releases, or click an entry to read the full notes.
+    Each entry shows the release title, date, a **Type** badge, and a short summary. The badge tells you whether you need to do anything. For example, **Type 1: No Action Required** means the release needs nothing from your team. Click an entry to open the full release note, or click **All** to browse every release — see [Viewing Release Notes](https://docs.caylent.com/cxportal/viewing-release-notes/).
 
 -   Support Cases
     { .widget-cover .widget-cover--support-cases }

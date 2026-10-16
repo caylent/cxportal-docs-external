@@ -81,6 +81,7 @@ A change that requires modifications inside your AWS account: extending an IAM r
 
 ## Next Steps
 
+* **Everyone:** [Viewing Release Notes →](https://docs.caylent.com/cxportal/viewing-release-notes/) — find the release notes for every published release in CxPortal
 * **Admins:** [Enabling New Features with Permissions →](https://docs.caylent.com/cxportal/enabling-new-features-with-permissions/)
 * **Deployment teams:** [Applying an Infrastructure Update →](https://docs.caylent.com/cxportal/applying-an-infrastructure-update/)
 
