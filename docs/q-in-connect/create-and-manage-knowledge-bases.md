@@ -27,7 +27,7 @@ Keep the following in mind when working with Knowledge Bases:
 ### Create Knowledge Base
 
 1. In the left menu, expand **Q in Connect**.
-2. Click **Knowledge Base**.
+2. Click **Knowledge Bases**.
 3. Click **Create Knowledge Base**.
 4. Complete the form:
    * **Name** (required) — 255 characters or fewer, starting with a letter, number, space, or one of `_ . , -`.
@@ -36,9 +36,7 @@ Keep the following in mind when working with Knowledge Bases:
    * **KMS Key** (required) — A customer managed KMS key in the same region as the bucket, for example `arn:aws:kms:region:account-id:key/key-id`.
 5. Click **Create**.
 
-!!! info ""
-
-    Values that break the rules above are flagged under the field and **Create** does nothing until they are fixed. If the service itself rejects the knowledge base, the error notification shows the reason it returned rather than a generic failure message.
+**Note**: Values that break the rules above are flagged under the field and **Create** does nothing until they are fixed. If the service itself rejects the knowledge base, the error notification shows the reason it returned rather than a generic failure message.
 
 ***
 
