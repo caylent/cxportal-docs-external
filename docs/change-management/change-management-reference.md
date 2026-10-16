@@ -6,8 +6,8 @@
 
 | **Column** | **Description** |
 |---|---|
-| (Bulk badge) | **Bulk (n)** marks a record that groups *n* underlying records |
 | Change Type | The operation performed (see Change Types below) |
+| Bulk | **Bulk (n)** marks a record that groups *n* underlying records |
 | Target | The exact name of one item, to list that item's history   |
 | Description | Optional, user-editable note on the record; **-** when empty |
 | Requester | Email of the user who made or requested the change |
@@ -19,8 +19,8 @@
 
 | **Column** | **Description** |
 |---|---|
-| (Bulk badge) | **Bulk (n)** marks a request covering *n* records |
 | Change Type | The operation requested |
+| Bulk | **Bulk (n)** marks a request covering *n* records |
 | Target | The exact name of one item, to list that item's history  |
 | Description | Optional, user-editable note on the request; **-** when empty |
 | Requester | Email of the user who submitted the request |
@@ -32,8 +32,8 @@
 
 | **Column** | **Description** |
 |---|---|
-| (Bulk badge) | **Bulk (n)** marks a scheduled change covering *n* records |
 | Change Type | The operation that will be performed |
+| Bulk | **Bulk (n)** marks a scheduled change covering *n* records |
 | Target | The exact name of one item, to list that item's history  |
 | Description | Optional, user-editable note; **-** when empty |
 | Requester | Email of the user who submitted the change |

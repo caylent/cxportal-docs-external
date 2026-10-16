@@ -7,6 +7,7 @@ DFC Permissions gives admins granular control over what each role can do inside 
 ## Before You Begin
 
 * Only users with the **Admin** DFC permission level can access the **Permissions** page. Users below Admin do not see this option in the navigation.
+* Working with DFC roles also requires the global **Access Management Admin** permission alongside the **Admin** DFC permission level. Without both, DFC does not load role data, so the **Permission Roles** list and an entity's **Roles** section stay empty.
 * Roles are created and managed in **CxCentral**. DFC admins cannot create roles from within DFC.
 * Setting up DFC permissions requires two steps: configure the role in CxCentral, then assign entity tags in DFC.
 
@@ -250,7 +251,7 @@ When you click a role, its configuration page opens. A breadcrumb at the top lin
 
 Below the strip:
 
-* **Permission Level** section: the **None**, **Tag Level**, and **Admin** access modes, plus the **Bulk Editing** toggle.
+* **Permission Level** section: the **None**, **Tag Level**, and **Admin** access modes, plus the **Bulk Editing** toggle. The **Permission Level** heading stays visible with a caret beside it — click the caret to collapse the section and give the entity rows more room, or to expand it again. In **Tag Level** mode the section also collapses on its own as you scroll the entity list down, and reopens when you scroll back to the top.
 * **Entity Tags** section: one row per top-level entity, each with an action level selector (**None**, **View**, **Edit**, **Create**, **Admin**) and an **Approver** toggle. Only the rows scroll — the section heading, search box, **Filter by** list, and **Set all Entities** row stay in place. When a filter excludes everything, the list reads **No entities match the current filter**.
 
 In the **Admin** and **None** modes the entity rows are replaced by a message explaining that tags don't apply. Switching from **Admin** back to **Tag Level** keeps the tags the role already had; switching to **None** clears them.

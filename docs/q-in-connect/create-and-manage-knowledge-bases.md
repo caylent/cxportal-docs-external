@@ -16,6 +16,9 @@ Keep the following in mind when working with Knowledge Bases:
 
 * **Content format affects accuracy** — Unsupported content (formats with complex or mixed structure, or embedded images) can lead to inaccurate interpretation by the model. Markdown and .txt are recommended.
 * **Association ID is system-generated** — Each Knowledge Base has an association ID shown on the Knowledge Bases page, used to link it to Q in Connect.
+* **Name and description length** — Each must be 255 characters or fewer and must start with a letter, number, space, or one of `_ . , -`. The description is optional.
+* **Source URI must be an S3 URI** — Enter the source as `s3://my-bucket`, optionally followed by a path. An S3 ARN is rejected with "Must be an S3 URI, such as s3://my-bucket".
+* **Customer managed KMS key** — The KMS key must be a customer managed key in the same region as the bucket. AWS managed keys are not supported.
 
 ***
 
@@ -26,8 +29,16 @@ Keep the following in mind when working with Knowledge Bases:
 1. In the left menu, expand **Q in Connect**.
 2. Click **Knowledge Base**.
 3. Click **Create Knowledge Base**.
-4. Enter the Knowledge Base Name, Description, Source URI, and Knowledge Management System Key.
+4. Complete the form:
+   * **Name** (required) — 255 characters or fewer, starting with a letter, number, space, or one of `_ . , -`.
+   * **Description** (optional) — Same length and starting-character rules as the name.
+   * **Source URI** (required) — The S3 bucket holding the knowledge base content, as an S3 URI, for example `s3://my-bucket`.
+   * **KMS Key** (required) — A customer managed KMS key in the same region as the bucket, for example `arn:aws:kms:region:account-id:key/key-id`.
 5. Click **Create**.
+
+!!! info ""
+
+    Values that break the rules above are flagged under the field and **Create** does nothing until they are fixed. If the service itself rejects the knowledge base, the error notification shows the reason it returned rather than a generic failure message.
 
 ***
 

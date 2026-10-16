@@ -2,7 +2,7 @@
 
 The **Scheduled Changes** page lists approved changes that have not executed yet.
 
-Columns: a **Bulk (n)** badge for bulk changes, **Change Type**, **Target**, **Description**, **Requester**, **Approver**, **Scheduled Date**, and a row actions menu. **Target** names the item the change applies to; hover it to copy it or to see the full value. A change that is one record inside a bulk operation carries a **Bulk** badge beside its target, and its row menu offers only **View bulk change**.
+Columns: **Change Type**, **Bulk** (a **Bulk (n)** badge on bulk changes), **Target**, **Description**, **Requester**, **Approver**, **Scheduled Date**, and a row actions menu. **Target** names the item the change applies to; hover it to copy it or to see the full value. A change that is one record inside a bulk operation carries a **Bulk** badge beside its target, and its row menu offers only **View bulk change**.
 
 ## Filtering and Searching
 
