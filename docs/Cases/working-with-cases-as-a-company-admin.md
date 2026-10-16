@@ -114,8 +114,8 @@ Once case details are updated, you'll receive an email notification detailing th
 
 1. Click the **Reference Number** of a case to open the case details page.
 2. Under case detail, scroll down to the Comments box.
-3. Write your comment in the text box. The toolbar above it formats the comment in Markdown: headings, bold, italic, strikethrough, links, inline code and code blocks, bulleted, numbered and task lists, tables, and quotes. Use the preview button to see how the comment will look before you post it.
-4. Click **Submit Note**. The Comments section shows all conversation and notes for the case.
+3. Write your comment in the text box. The toolbar above it formats the comment in Markdown using headings, bold, italic, strikethrough, links, inline code and code blocks, bulleted, numbered and task lists, tables, and quotes. Use the preview code button to see how the comment will look before you post it.
+4. Click **Submit Comment**. The Comments section shows all conversation and notes for the case.
 
 !!! info ""
 
