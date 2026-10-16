@@ -114,7 +114,10 @@ Once case details are updated, you'll receive an email notification detailing th
 
 1. Click the **Reference Number** of a case to open the case details page.
 2. Under case detail, scroll down to the Comments box.
-4. Enter your comment in the text box and click **Submit Note**. The Comments section shows all conversation and notes for the case.
+3. Write your comment in the text box. The toolbar above it formats the comment in Markdown using headings, bold, italic, strikethrough, links, inline code and code blocks, bulleted, numbered and task lists, tables, and quotes. Use the preview code button to see how the comment will look before you post it.
+4. Click **Submit Comment**. The Comments section shows all conversation and notes for the case.
+
+**Note**: Every link needs a full web address starting with https://, http://, mailto:, or tel:. Anything else is refused when you submit and the message names the address to change. Links in a posted comment open in a new tab. Images are never displayed in a comment. An image shows as its alt text in the preview, in the posted comment, and in the email the customer receives.
 
 ***
 
