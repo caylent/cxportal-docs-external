@@ -77,14 +77,10 @@ The case details page shows a comprehensive overview and activity for your case.
 
 1. Click the **Reference Number** of a case to open the case details page.
 2. Under case detail, scroll down to the Comments box.
-3. Write your comment in the text box. The toolbar above it formats the comment in Markdown: headings, bold, italic, strikethrough, links, inline code and code blocks, bulleted, numbered and task lists, tables, and quotes. Use the preview button to see how the comment will look before you post it.
-4. Click **Submit Note**. The comments section shows all conversation and notes for the case.
+3. Write your comment in the text box. The toolbar above it formats the comment in Markdown using headings, bold, italic, strikethrough, links, inline code and code blocks, bulleted, numbered and task lists, tables, and quotes. Use the preview code button to see how the comment will look before you post it.
+4. Click **Submit Comment**. The comments section shows all conversation and notes for the case.
 
-!!! info ""
-
-    Every link needs a full web address starting with `https://`, `http://`, `mailto:` or `tel:`. Anything else is refused when you submit, and the message names the address to change. Links in a posted comment open in a new tab.
-
-    Images are never displayed in a comment — an image shows as its alt text instead, in the preview, in the posted comment, and in the email the customer receives.
+**Note**: Every link needs a full web address starting with https://, http://, mailto:, or tel:. Anything else is refused when you submit and the message names the address to change. Links in a posted comment open in a new tab. Images are never displayed in a comment. An image shows as its alt text in the preview, in the posted comment, and in the email the customer receives.
 
 ***
 
