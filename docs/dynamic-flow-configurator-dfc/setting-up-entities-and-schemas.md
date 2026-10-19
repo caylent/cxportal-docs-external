@@ -101,7 +101,7 @@ Before adding items, configure the entity's schema. Schema edits accumulate as a
 
 | **Name**        | The field name.                                                                                                                                        |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Type**        | String, Number, Boolean, Reference, Datetime, JSON, YAML, Amazon Connect Resource, Pick List, or Prompt.                                               |
+| **Type**        | String, Number, Boolean, Reference, Datetime, JSON, YAML, Amazon Connect Resource, Agentic CX Application, Pick List, or Prompt.                       |
 | **Required**    | Whether the field must be set for every item.                                                                                                          |
 | **Primary**     | Used as the item's unique identifier (required for at least one field).                                                                                |
 | **Overridable** | Whether items or sub-entities can override the default value.                                                                                          |
@@ -129,9 +129,24 @@ Once you make an edit, a "You have unsaved changes" indicator appears with a **D
 
 When you set a field's **Type** to **Reference**, specify the path to the referenced entity. The dropdown shows available items from that entity, and a preview displays the evaluated reference data. Only items (not entities) can be selected in reference fields.
 
+#### **Configuring an Agentic CX Application Field**
+
+An **Agentic CX Application** field stores the three IDs an Agentic CX flow block routes to: a **Workspace ID**, an **Application ID**, and an **Alias ID**. The type needs no extra configuration — its constraints panel only describes what the field stores. Copy the IDs from the Agentic CX flow block's application settings.
+
+* **Workspace ID** and **Application ID** must each be a UUID, for example `67898477-f36f-4b06-bdca-0d9a1f2eb9cc`. Enter the ID, not an ARN — a value beginning with `arn:` is rejected with "must be an ID, not an ARN".
+* **Alias ID** must be 256 characters or fewer and cannot contain spaces.
+
+All three IDs are needed once any one of them is filled in. Clearing all three empties the field, which saves only if the field isn't required. Each ID gets a copy button once it holds a value.
+
+!!! warning ""
+
+    You're responsible for these IDs being correct. DFC only checks their format, and a wrong ID sends contacts down the Agentic CX flow block's Error branch. The same warning is available in the UI from the information icon beside the field's help text.
+
+In the items table the field shows the application and alias IDs separated by a slash, falling back to the workspace ID. A CSV export writes all three on separate lines, labeled `Workspace:`, `Application:`, and `Alias:`.
+
 ??? note "Field types list"
 
-    Available field types: Amazon Connect Resource, Boolean, Closure, Date Time, Hours of Operation, JSON, Number, Pick List, Prompt, Reference, String, YAML.
+    Available field types: Agentic CX Application, Amazon Connect Resource, Boolean, Closure, Date Time, Hours of Operation, JSON, Number, Pick List, Prompt, Reference, String, YAML.
 
     For editing a Prompt field's SSML content, see [Editing Prompt Fields](editing-prompt-fields.md).
 

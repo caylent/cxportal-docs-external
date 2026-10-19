@@ -68,7 +68,7 @@ Apply the same field values to every selected item in one action.
 1. In the bulk-action toolbar, click **Bulk Edit**.
 2. The **Bulk Edit** modal opens. It lists the selected items — click the **x** next to any item to remove it from the batch — and shows every field blank.
 3. Set a value on each field you want to change. Any field you set is applied to every selected item; fields you leave untouched are unchanged on each item.
-4. Click **Review changes**.
+4. Click **Review changes**. Each value you set is checked against its field's rules before the confirmation step opens. If a value is invalid, the modal stays on this step and the message appears under the field — correct it and click **Review changes** again.
 5. The confirmation step lists the change for each selected item. Enter an optional **Description**, set the **Criticality** (**Normal** or **Urgent**), and optionally set **Schedule For** to schedule the change.
 6. Click **Yes, Submit Changes**.
 
@@ -152,5 +152,6 @@ The following scenarios highlight when bulk actions are commonly used.
 | **Bulk delete fails with "Cannot delete: item(s) still referenced by other items"** | One or more selected items have inbound references                                                | The error names the blocking items by primary key. Remove them from the selection (or remove the references) and retry. |
 | **A field in the Bulk Edit modal is read-only**                                     | Primary, schedule (hours of operation), and closure fields can't be bulk edited                   | Edit these fields on individual items.                                                                                  |
 | **Submission is rejected for batch size**                                           | The selection exceeds 500 items                                                                   | Split the work into batches of 500 items or fewer.                                                                      |
+| **Review changes doesn't open the confirmation step**                               | A value you set doesn't meet its field's validation rules                                         | The message appears under the affected field. Fix the value and click **Review changes** again.                         |
 
 ***

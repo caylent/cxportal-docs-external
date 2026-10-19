@@ -2,7 +2,7 @@
 
 The **Change Requests** page lists submitted requests and their current status. The heading shows the total count. Urgent requests are listed before normal ones.
 
-Columns: a selection checkbox, a **Bulk (n)** badge for bulk requests, **Change Type**, **Target**, **Description**, **Requester**, **Criticality**, **Date**, **Status**, and a row actions menu. **Target** names the item the request applies to; hover it to copy it or to see the full value.
+Columns: a selection checkbox, **Change Type**, **Bulk** (a **Bulk (n)** badge on bulk requests), **Target**, **Description**, **Requester**, **Criticality**, **Date**, **Status**, and a row actions menu. **Target** names the item the request applies to; hover it to copy it or to see the full value.
 
 ## Filtering and Searching
 

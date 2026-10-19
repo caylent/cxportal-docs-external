@@ -6,38 +6,38 @@
 
 | **Column** | **Description** |
 |---|---|
-| (Bulk badge) | **Bulk (n)** marks a record that groups *n* underlying records |
 | Change Type | The operation performed (see Change Types below) |
+| Bulk | Bulk marks a record that groups underlying records |
 | Target | The exact name of one item, to list that item's history   |
-| Description | Optional, user-editable note on the record; **-** when empty |
+| Description | Optional, user-editable note on the record|
 | Requester | Email of the user who made or requested the change |
-| Approver | Email of the approving user; **-** when the change had no approver |
+| Approver | Email of the approving user |
 | Date | Date and time of the record (e.g. 07/27/2026, 05:23:44) |
-| Status | **Original**, **Pending**, **Reversion**, or **Reverted** |
+| Status | Original, Pending, Reversion, or Reverted |
 
 ### Change Requests
 
 | **Column** | **Description** |
 |---|---|
-| (Bulk badge) | **Bulk (n)** marks a request covering *n* records |
 | Change Type | The operation requested |
+| Bulk | Bulk marks a request covering records |
 | Target | The exact name of one item, to list that item's history  |
-| Description | Optional, user-editable note on the request; **-** when empty |
+| Description | Optional, user-editable note on the request |
 | Requester | Email of the user who submitted the request |
-| Criticality | **Urgent** or **Normal**; urgent requests are listed first |
+| Criticality | Urgent or Normal. Urgent requests are listed first |
 | Date | Date and time the request was created |
-| Status | **Pending**, **Approved**, **Rejected**, **Partially Approved**, or **Partially Rejected** |
+| Status | Pending, Approved, Rejected, Partially Approved, or Partially Rejected |
 
 ### Scheduled Changes
 
 | **Column** | **Description** |
 |---|---|
-| (Bulk badge) | **Bulk (n)** marks a scheduled change covering *n* records |
 | Change Type | The operation that will be performed |
+| Bulk | Bulk marks a scheduled change covering records |
 | Target | The exact name of one item, to list that item's history  |
-| Description | Optional, user-editable note; **-** when empty |
+| Description | Optional, user-editable note |
 | Requester | Email of the user who submitted the change |
-| Approver | Email of the approving user; **-** when none |
+| Approver | Email of the approving user |
 | Scheduled Date | Date and time the change will execute |
 
 ## Filters Panel Reference
@@ -46,9 +46,9 @@ Each page has a **Filters** panel with a **Target** field above its multi-select
 
 | Page | Multi-select filters | Target date range |
 |---|---|---|
-| Audit Log | Change type · Requester · Approver · Status | Uses the page's own date range button above the table (default **Last 14 days**) |
-| Change Requests | Change type · Requester · Status · Criticality | Its own date range below the **Target** box, **All time** until you apply one |
-| Scheduled Changes | Change type · Requester · Approver | Its own date range below the **Target** box, **All time** until you apply one |
+| Audit Log | Change type · Requester · Approver · Status | Uses the page's own date range button above the table (default Last 14 days) |
+| Change Requests | Change type · Requester · Status · Criticality | Its own date range below the Target box (All time until you apply one) |
+| Scheduled Changes | Change type · Requester · Approver | Its own date range below the Target box, (All time** until you apply one) |
 
 Target search behaviour:
 
@@ -69,9 +69,9 @@ Audit Log statuses (from the Status filter): **Original**, **Pending**, **Revers
 
 | **Marker** | **Meaning** |
 |---|---|
-| **+** / green badge (e.g. **+2 added**) | Field or value added |
-| **~** / badge (e.g. **~1 changed**) | Field or value changed |
-| **-** / badge (e.g. **-5 deleted**) | Field or value deleted |
+| **+** / green badge (e.g. +2 added) | Field or value added |
+| **~** / badge (e.g. ~1 changed) | Field or value changed |
+| **-** / badge (e.g. -5 deleted) | Field or value deleted |
 
 Nested sections in the diff can be opened with **Expand** and closed with **Collapse**. "No data available" in Before State means the object did not exist before the change (a create); in After State it means the object no longer exists (a delete).
 
