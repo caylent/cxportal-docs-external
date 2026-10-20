@@ -30,4 +30,6 @@ For the complete workflow, see [Create and Manage Roles](create-and-manage-roles
 Now that you've created a role, here's what to do next:
 
 * View instance permissions and restrict access → ​[Review Instance Permissions and Restrict Access ​](review-instance-permissions-and-restrict-access.md)
+* Manage user email addresses and roles → [Manage Users](manage-users.md)
+* Configure change request rules → [Configure Change Requests](configure-change-requests.md)
 * Review best practices → [Access Management Best Practices​](access-management-best-practices.md)
