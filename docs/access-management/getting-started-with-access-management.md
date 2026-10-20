@@ -2,12 +2,11 @@
 
 ## Navigate to Access Management
 
-1. Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
-2. Sign in with the credentials your organization provides.
-3. In the left menu, click the **Admin button** on the bottom left side of the screen.
+1. Open [CxPortal](https://portal.pronetx.com/).
+2. Click the **Admin gear** on the bottom left side of the screen.
+3. Click **Access management** on the left panel to expand the Roles, Users, and Change Requests options. 
 
-!!! info ""
-    Note: If certain actions are not visible in the UI, your role may not include those permissions.
+**Note**: If certain actions are not visible in the UI, your role may not include those permissions.
 
 
 ***
@@ -16,13 +15,12 @@
 
 **Try it. Create your first role:**
 
-1. Open CxCentral and click **Admin**.
-2. Under Roles, click **Create Role**.
-3. Enter a role name and description.
+1. Expand **Access management**, and then click **Roles**.
+2. On the Roles page, click **Add New Role**.
+3. Enter a Role Name and Description.
 4. Click **Create Role**.
 
-!!! info ""
-    For the complete workflow, see [Create and Manage Roles](create-and-manage-roles.md)
+For the complete workflow, see [Create and Manage Roles](create-and-manage-roles.md)
 
 
 ***
