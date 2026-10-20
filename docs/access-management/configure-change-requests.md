@@ -6,6 +6,8 @@ The Change Request Management page lets you configure rules for change requests 
 
 Change Request Management is subject to role-based access. You must have a specific role designated by your organization.
 
+## Step-by-Step Instructions
+
 ### Access the Change Request Management page
 
 1. Open CxPortal.
