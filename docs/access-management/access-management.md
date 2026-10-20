@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Access Management** lets users control roles and permissions. Authorized team members can create roles and assign permissions per instance. You can set permissions, create roles, or restrict access.
+**Access Management** lets users manage both user and change request permissions. Authorized team members can manage user information, create roles, assign permissions, or restrict access per instance. 
 
 ***
 
@@ -86,8 +86,7 @@ You must have one of these permissions for the Admin menu to appear in CxPortal.
 
 ## Related Modules
 
-* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center. CxPortal sits on top of your Amazon Connect environment and is accessed through CxCentral, your unified Caylent workspace. Together they give your organization a single place to manage your contact center and get support.
-* **CxCentral** — Your unified Caylent workspace — the hub you land on when you first log in, giving you access to CxPortal and all other Caylent products, support, and resources.
+* **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center.
 * **User Management** — User management allows you to manage your users and their assigned roles within your organization. Within user management, you can see name, user ID, status, and role, as well as add users and edit or disable existing ones.
 
 <br>
