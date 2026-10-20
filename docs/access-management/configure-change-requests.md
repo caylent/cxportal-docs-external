@@ -10,7 +10,7 @@ Change Request Management is subject to role-based access. You must have a speci
 
 ### Access the Change Request Management page
 
-1. Open CxPortal.
+1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Change Requests**.
 4. Select the instance you want to configure change request rules for. Choose **All Instances** for a company-wide configuration or use the search bar to search and select a specific instance.
@@ -29,7 +29,7 @@ If you check all the permissions in a row, every user will need to submit a chan
 
 ### Configure Change Request Rules
 
-1. Open CxPortal.
+1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Change Requests**.
 4. Select the instance you want to configure change request rules for. Choose **All Instances** for a company-wide configuration or use the search bar to search and select a specific instance.
