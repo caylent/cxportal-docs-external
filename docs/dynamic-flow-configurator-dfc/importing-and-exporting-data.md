@@ -15,21 +15,14 @@ description: >-
 * Import does not place records into the entity you have selected. Every record goes to the entity ID recorded in the file. Selecting a different entity before importing changes nothing about where the data lands.
 * Imports are always auto-approved — they don't route through the change-request approval flow. Imports are always auto-approved — they don't route through the change-request approval flow.
 
-  ???+ note "Key behaviors"
+!!! note "Key behaviors"
 
     * Exported files preserve entity IDs and item IDs exactly as they exist in the source environment.
-    * When imported into a second environment, those IDs are retained. This differs from manual
-      entity creation, which generates a new unique ID.
-    * Consistent IDs make it easier to reference entities and items in Amazon Connect contact flows,
-      Lambda functions, or other integrations.
-    * Items are imported into the entity whose ID they carry in the file, not into the entity you have
-      open. If that entity does not exist in the target environment, the items are written but have no
-      entity to appear under.
-    * Import cannot copy items from one entity to another. Because IDs are preserved, importing an
-      entity's export back into the same instance rewrites that same entity — it does not duplicate it
-      elsewhere. There is currently no supported way to copy items between entities or sub-entities.
-    * Exported data uses the JSON Lines (JSONL) format. Each line in the file is a self-contained JSON
-      object representing either an entity or an item record.
+    * When imported into a second environment, those IDs are retained. This differs from manual entity creation, which generates a new unique ID.
+    * Consistent IDs make it easier to reference entities and items in Amazon Connect contact flows, Lambda functions, or other integrations.
+    * Items are imported into the entity whose ID they carry in the file, not into the entity you have open. If that entity does not exist in the target environment, the items are written but have no entity to appear under.
+    * Import cannot copy items from one entity to another. Because IDs are preserved, importing an entity's export back into the same instance rewrites that same entity — it does not duplicate it elsewhere. There is currently no supported way to copy items between entities or sub-entities.
+    * Exported data uses the JSON Lines (JSONL) format. Each line in the file is a self-contained JSON object representing either an entity or an item record.
 
 ***
 
@@ -115,10 +108,10 @@ At the root, export covers every entity in the instance. Inside an entity, it co
 
 DFC validates the import file at submission time. If validation fails, nothing is written and no change request is raised.
 
-`IMPORT_UNRESOLVED_REFERENCES` — the file references records that don't exist in the target environment.
-`IMPORT_DUPLICATE_RECORDS` — the file contains duplicate entity or item keys.
-`IMPORT_PATH_CONFLICTS` — one or more entities in the file collide on path with an existing entity in the target environment, or with another entity in the same file. The rejection lists each colliding path and its cause: "already exists in this environment" or "appears more than once in this file."
-`IMPORT_DUPLICATE_PRIMARY_KEYS` — two or more items in the file share a primary key within the same entity. Unlike the other validation errors, the dialog shows only a message and does not list the offending items. Check the file for repeated primary-key values inside a single entity, remove the duplicates, and resubmit.
+* `IMPORT_UNRESOLVED_REFERENCES` — the file references records that don't exist in the target environment.
+* `IMPORT_DUPLICATE_RECORDS` — the file contains duplicate entity or item keys.
+* `IMPORT_PATH_CONFLICTS` — one or more entities in the file collide on path with an existing entity in the target environment, or with another entity in the same file. The rejection lists each colliding path and its cause: "already exists in this environment" or "appears more than once in this file."
+* `IMPORT_DUPLICATE_PRIMARY_KEYS` — two or more items in the file share a primary key within the same entity. Unlike the other validation errors, the dialog shows only a message and does not list the offending items. Check the file for repeated primary-key values inside a single entity, remove the duplicates, and resubmit.
 
 Fix the file and submit the import again. You don't need to reopen the dialog to do this — selecting a new file from the same **Import** dialog clears the previous error and lets you retry immediately.
 
