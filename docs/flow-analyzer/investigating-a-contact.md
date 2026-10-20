@@ -36,14 +36,9 @@ When you don't have a specific Contact ID:
 
 1. Click **Advanced** under the search bar.
 2. Refine your search by timeline, agent, queue, channel, or contact attributes. See Advanced Filters for each filter category.
-3. Apply the filters to update the contact list.
+3. Apply the filters to update the contact list. Every customer interaction in CxPortal is a contact.
 
-!!! info ""
-    **Info:** Every customer interaction in CxPortal is a contact.
-
-
-!!! info ""
-    **Note:** When your filters match only a few contacts per page, Flow Analyzer keeps loading pages until the list fills the panel, so a narrow filter no longer looks empty while there are still matches to come. If several pages in a row add nothing, loading pauses and a **Load more** button appears at the bottom of the list — click it to keep searching. **No Contacts** appears only once there are no further pages to check.
+**Note:** When your filters match only a few contacts per page, Flow Analyzer keeps loading pages until the list fills the panel. If several pages in a row add nothing, loading pauses and a **Load more** button appears at the bottom of the list — click it to keep searching. **No Contacts** appears only once there are no further pages to check.
 
 
 ***
