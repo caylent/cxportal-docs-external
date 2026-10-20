@@ -64,6 +64,8 @@ You must have one of these permissions for the Admin menu to appear in CxPortal.
 * Access the Access Management Browser → [Getting Started with Access Management](getting-started-with-access-management.md)
 * Create roles → ​[Create and Manage Roles](create-and-manage-roles.md)
 * View instance permissions and restrict access → ​[Review Instance Permissions and Restrict Access ​](review-instance-permissions-and-restrict-access.md)
+* Manage user email addresses and roles → [Manage Users](manage-users.md)
+* Configure change request rules → [Configure Change Requests](configure-change-requests.md)
 * Review best practices → [Access Management Best Practices​](access-management-best-practices.md)
 
 ***
@@ -87,6 +89,5 @@ You must have one of these permissions for the Admin menu to appear in CxPortal.
 ## Related Modules
 
 * **CxPortal** — CxPortal is a web-based portal built by Caylent that simplifies the management and configuration of your Amazon Connect contact center.
-* **User Management** — User management allows you to manage your users and their assigned roles within your organization. Within user management, you can see name, user ID, status, and role, as well as add users and edit or disable existing ones.
 
 <br>
