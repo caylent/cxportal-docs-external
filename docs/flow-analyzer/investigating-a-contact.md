@@ -16,7 +16,7 @@ Investigate an issue end-to-end using Flow Analyzer. For additional information 
 #### Step 1: Open Flow Analyzer
 
 1. Go to **CxPortal** > **Flow Insights** > **Flow Analyzer**.
-2. Review the contact list panel on the left. It contains the Contact ID search bar, the **Live Contacts** checkbox, the **Advanced** link, and a list of recent contacts.
+2. Review the contact list panel on the left. It contains the Contact ID search bar, the **Show Pending** checkbox (selected by default, so contacts still in progress are listed alongside completed ones), the **Advanced** link, and a list of recent contacts.
 
 ***
 
@@ -36,10 +36,9 @@ When you don't have a specific Contact ID:
 
 1. Click **Advanced** under the search bar.
 2. Refine your search by timeline, agent, queue, channel, or contact attributes. See Advanced Filters for each filter category.
-3. Apply the filters to update the contact list.
+3. Apply the filters to update the contact list. Every customer interaction in CxPortal is a contact.
 
-!!! info ""
-    **Info:** Every customer interaction in CxPortal is a contact.
+**Note:** When your filters match only a few contacts per page, Flow Analyzer keeps loading pages until the list fills the panel. If several pages in a row add nothing, loading pauses and a **Load more** button appears at the bottom of the list — click it to keep searching. **No Contacts** appears only once there are no further pages to check.
 
 
 ***
