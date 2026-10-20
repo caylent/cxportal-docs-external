@@ -11,7 +11,7 @@ The Users page lets you manage your users and their assigned roles within your o
 
 ### Adding a User
 
-1. Open CxPortal.
+1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
 4. In the top right corner of the screen, click **Add New User**.
@@ -23,7 +23,7 @@ The Users page lets you manage your users and their assigned roles within your o
 
 ### Export the Users List
 
-1. Open CxPortal.
+1.  Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
 4. Narrow the list first if you only want part of it — the export contains exactly the rows the table is showing, including any Search Users or Filters you have applied.
@@ -34,7 +34,7 @@ The Users page lets you manage your users and their assigned roles within your o
 
 ### View User Details
 
-1. Open CxPortal.
+1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
 4. Use the search bar at the top of the page to search for a user by Name, Email, Role, or Login Method. Additionally, you can use the **Login Method** and **Role** filters on the left side of the screen to filter search results.
@@ -47,7 +47,7 @@ The user detail page shows:
 
 ### Change a Role
 
-1. Open CxPortal.
+1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
 4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
@@ -57,7 +57,7 @@ The user detail page shows:
 
 ### Edit a User Profile
 
-1. Open CxPortal.
+1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
 4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
@@ -69,7 +69,7 @@ The user detail page shows:
 
 ### Reset a Password
 
-1. Open CxPortal.
+1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
 4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
@@ -81,7 +81,7 @@ The user detail page shows:
 
 Deactivating a user prevents them from logging into the system but retains their data, with the option to reactivate.
 
-1. Open CxPortal.
+1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
 4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
@@ -93,7 +93,7 @@ Deactivating a user prevents them from logging into the system but retains their
 
 You can reactivate a user that has been previously deactivated.
 
-1. Open CxPortal.
+1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
 4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
@@ -104,7 +104,7 @@ You can reactivate a user that has been previously deactivated.
 
 Deleting a user removes their data and access to the system. **This is irreversible.**
 
-1. Open CxPortal.
+1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
 4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
