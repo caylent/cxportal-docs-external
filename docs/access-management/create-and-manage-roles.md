@@ -28,12 +28,15 @@ Keep the following in mind when working with roles:
 
 You can create new roles and customize access and permissions for each feature. To create a role:
 
-1. Open CxCentral and click **Admin**.
-2. Under Roles, click **Create Role**.
-3. Enter a role name and description.
-4. Click **Create Role**.
+1. Open [CxPortal](https://portal.pronetx.com/).
+2. Click the **Admin gear** on the bottom left side of the screen.
+3. Expand **Access management**, and then click **Roles**.
+4. On the Roles page, click **Add New Role**.
+5. Enter a Role Name and Description.
+6. Click **Create Role**.
 
 Once your role is created, you can set global permissions and instance level permissions.
+
 
 ***
 
@@ -41,10 +44,14 @@ Once your role is created, you can set global permissions and instance level per
 
 You can edit existing roles to change permissions at any time. To edit a role:
 
-1. Open CxCentral and click **Admin**.
-2. Click on the **Actions menu** on the right of the role you want to edit.
-3. Click **Edit permissions** and choose permission settings as needed.
-4. Click **Save Changes**.
+1. Open [CxPortal](https://portal.pronetx.com/).
+2. Click the **Admin gear** on the bottom left side of the screen.
+3. Expand **Access management**, and then click **Roles**.
+4. On the Roles page, click the **three dot action menu** on the right side of the role you want to edit.
+5. Click **Edit Permissions** and choose permission settings as needed.
+6. (Optional) to view the Permissions Key, click the **hamburger menu** on the right side of the Save Changes button. This pulls up a list of all of the permissions and their descriptions.
+7. Click **Save Changes**.
+
 
 ***
 
