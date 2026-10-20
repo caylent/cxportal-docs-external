@@ -135,19 +135,15 @@ nav:
       - Troubleshooting: troubleshooting.md
     
 
-  - User & Access:
+  - Users & Access:
       - Access Management:
           - Overview: access-management/access-management.md
           - Getting Started: access-management/getting-started-with-access-management.md
           - Create & Manage Roles: access-management/create-and-manage-roles.md
           - Review Permissions & Restrict Access: access-management/review-instance-permissions-and-restrict-access.md
+          - Manage Users: access-management/manage-users.md
+          - Configure Change Requests: access-management/configure-change-requests.md
           - Best Practices: access-management/access-management-best-practices.md
-      - User Management:
-          - Overview: user-management/user-management.md
-          - Getting Started: user-management/getting-started-with-user-management.md
-          - Adding a User: user-management/adding-a-user.md
-          - Managing Existing Users: user-management/managing-existing-users.md
-          - Reference: user-management/user-management-reference.md
       - Change Management:
           - Overview: change-management/change-management.md
           - Getting Started: change-management/change-management-getting-started.md
