@@ -12,7 +12,7 @@
 1. Open CxCentral and click **Admin**.
 2. In the left menu, under **Access management**, click **Users**.
 3. Find the user with the **Search Users** box or the **Filter by role** dropdown.
-4. Click the **View Details** (eye) icon on the right of the user's row. This opens the user detail page.
+4. Click the user's name, or anywhere on the user's row. This opens the user detail page.
 
 The user detail page shows:
 
@@ -28,8 +28,8 @@ You can edit existing user information or roles at any time. To edit a user:
 
 1. Open CxCentral and click **Admin**.
 2. In the left menu, click **Users**.
-3. Click on the **Actions menu** on the right of the user you want to edit.
-4. Click **View Details**. This opens the user detail page where you can choose to edit the user profile, send a forgotten password reminder, change roles, or deactivate the user.
+3. Click the name of the user you want to edit, or anywhere on their row.
+4. This opens the user detail page where you can choose to edit the user profile, send a forgotten password reminder, change roles, or deactivate the user.
    1. To edit a profile, click **Edit Profile**.
    2. To deactivate a user, click **Deactivate**.
    3. To send a password reminder, click **Send Forgotten Password Reminder**.
@@ -50,7 +50,7 @@ You can deactivate a user at any time. To deactivate:
 
 1. Open CxCentral and click **Admin**.
 2. In the left menu, click **Users**.
-3. Click **View Details** on the right of the user you want to edit.
+3. Click the name of the user you want to edit, or anywhere on their row.
 4. Click **Deactivate**.
 5. Review the confirmation message and click **Deactivate**.
 
@@ -62,7 +62,7 @@ You can reactivate a user that has been previously deactivated:
 
 1. Open CxCentral and click **Admin**.
 2. In the left menu, click **Users**.
-3. Click **View Details** on the right of the user you want to edit.
+3. Click the name of the user you want to edit, or anywhere on their row.
 4. Click **Activate**.
 
 ***
@@ -76,7 +76,7 @@ You can delete a user at any time. To delete:
 
 1. Open CxCentral and click **Admin**.
 2. In the left menu, click **Users**.
-3. Click **View Details** on the right of the user you want to edit.
+3. Click the name of the user you want to edit, or anywhere on their row.
 4. Click **Delete**.
 5. Review the confirmation message and click **Delete**.
 

@@ -25,7 +25,7 @@ To access User Management:
 Try it: look up a user and view their details.
 
 1. In the **Search Users** box, enter the user's email, or select a role in **Filter by role**.
-2. Click the **View Details** (eye) icon on the user's row.
+2. Click the user's name, or anywhere on the user's row.
 3. The user detail page opens, showing **User Details** (email and login methods) and **Role and Instance Access** (the user's role and the instances they can access).
 
 ***

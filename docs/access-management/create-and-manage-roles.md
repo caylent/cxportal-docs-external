@@ -47,8 +47,8 @@ You can edit existing roles to change permissions at any time. To edit a role:
 1. Open [CxPortal](https://portal.pronetx.com/).
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Roles**.
-4. On the Roles page, click the **three dot action menu** on the right side of the role you want to edit.
-5. Click **Edit Permissions** and choose permission settings as needed.
+4. On the Roles page, click the name of the role you want to edit, or anywhere on its row. This opens the role's permissions.
+5. Choose permission settings as needed.
 6. (Optional) to view the Permissions Key, click the **hamburger menu** on the right side of the Save Changes button. This pulls up a list of all of the permissions and their descriptions.
 7. Click **Save Changes**.
 

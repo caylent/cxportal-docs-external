@@ -42,7 +42,7 @@ Keep the following limitations in mind when managing predefined attributes:
 
 1. Open **CxPortal**.
 2. On the left menu, expand **Proficiency Routing** and then click **Predefined Attributes**.
-3. Navigate to the predefined attributes list and click the **pencil icon** next to the one you want to edit.
+3. Navigate to the predefined attributes list and click the **pencil icon** next to the one you want to edit. To find it quickly, type in the **Search predefined attributes...** box. The search matches attribute names and descriptions and is not case-sensitive.
 4. Edit the predefined attributes content and click **Update** to apply your changes.
 
 ***
