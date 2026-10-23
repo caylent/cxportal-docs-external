@@ -40,7 +40,7 @@ Workforce Management gives supervisors real-time and historical visibility into 
 
 Before you begin:
 
-- **Permissions** — Your CxPortal account must have the **Workforce Management permission** assigned to your role.
+- **Permissions** — Your CxPortal account must have the **Workforce Management permission** assigned to your role. The Time Off page has its own permission, separate from Agent Status — see [Reviewing Team Time Off](wfm-time-off.md).
 - **Amazon Connect Instance** — At least one Amazon Connect instance must be configured in CxPortal with the Workforce Management add-on (Forecasting, Capacity Planning & Scheduling) licensed.
 - **Data Pipeline** — The Kinesis agent event stream and all tables must be provisioned and connected to CxPortal for your instance.
 
@@ -53,6 +53,8 @@ Use Workforce Management to:
 - Review a single agent's adherence and activity KPIs → [Reviewing Agent Scorecards](wfm-agent-scorecards.md)
 - Check today's demand forecast against the roster → [Checking Forecast, Capacity, and Scheduling](wfm-forcasting.md)
 - Monitor program-wide adherence and conformance → [Monitoring the Program Dashboard](wfm-program-dashboard.md)
+- See who is out and which time-off requests are waiting on a decision → [Reviewing Team Time Off](wfm-time-off.md)
+- Export a page's main table to CSV, or the page to PDF → [Exporting Workforce Management Data](wfm-reference.md#exporting-workforce-management-data)
 - Check which agents are counted and which targets apply → [Reviewing Workforce Management Settings](wfm-settings.md)
 - Review Workforce Management reference materials → [Workforce Management Reference](wfm-reference.md)
 - Review Workforce Management best practices → [Workforce Management Best Practices](wfm-best-practices.md)

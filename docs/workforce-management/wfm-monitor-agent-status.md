@@ -81,3 +81,12 @@ The following messages may appear when the profile can't be opened:
 | --- | --- |
 | *This agent has no identifier yet, so their profile cannot be opened. Try refreshing the page.* | The row reached the page without an agent identifier. |
 | *The Connect instance is still loading. Try again in a moment.* | The instance selection had not finished loading when you clicked. Wait a moment and click again. |
+
+### Exporting Agent Status
+
+In the page header:
+
+- Click **Export CSV** to download the agent table. On today's view the file holds every agent under the current filters, search, and sort — the whole roster, not only the 100 agents on screen. On a previous day it holds the day summary's per-agent table.
+- Click **Export PDF** to download the page as a PDF. The first page lists the day, the agent population, and the active filters, search, and sort.
+
+See [Exporting Workforce Management Data](wfm-reference.md#exporting-workforce-management-data).
