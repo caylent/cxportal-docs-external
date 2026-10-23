@@ -48,8 +48,8 @@ If you can't access CxCentral, you can submit a support case using the support e
 
 ### View Your Case <a href="#view-your-case" id="view-your-case"></a>
 
-1. Log in to CxCentral.
-2. The CxCentral home page displays the 7 most recent cases associated with your email address. To view all of your cases, click **View all CxCases** or click **CxCases** in the left navigation menu. [VERIFY: **View all CxCases** is the CxCases left-menu item; confirm the link label on the CxCentral home page's Support Cases widget (its code was not changed in this release)]
+1. Log in to CxPortal.
+2. The CxPortal home page displays the 7 most recent cases associated with your email address. To view all of your cases, click **CxCases** and then **View all CxCases**.
 3. On the All CxCases page, view your case Status, Reference Number, Title, Priority, Case Type, Creation Date, and Last Updated Date.
 4. To view specific case details, click the case **Reference Number** or click the **ellipses** at the end of the row, and then **View**.
 
