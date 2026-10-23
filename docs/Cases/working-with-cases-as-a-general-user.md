@@ -4,10 +4,10 @@
 
 Make sure the following are in place before submitting a support case as a General User:
 
-* **CxCentral access.** You'll need a CxCentral account with credentials provided by your organization.
-* **No access? Use email instead.** If you can't get into CxCentral, you can still submit a case using the support email address your organization provides. It enters the same support system.
+* **CxPortal access.** You'll need a CxPortal account with credentials provided by your organization.
+* **No access? Use email instead.** If you can't get into CxPortal, you can still submit a case using the support email address your organization provides. It enters the same support system.
 * **Know your role.** As a General User, you can submit cases and view your own case history. Creating cases on behalf of others, editing across the organization, and managing contacts are admin functions—if you need those, contact your company admin.
-* **Gather your details ahead of time.** Have your title, case type, priority, product, module, and a clear description ready, along with any files that help explain the issue, so you can complete the support form in one pass. Priority can't be selected until you've chosen a Case Type, and Product/Module are both required.
+* **Gather your details ahead of time.** Have your title, case type, priority, product, module, and a clear description ready, along with any files that help explain the issue, so you can complete the support form in one pass. Priority can't be selected until you've chosen a CxCase Type, and Product/Module are both required.
 * **Check your attachments.** Confirm each file is within the size and format limits below before you upload.
 
 ***
@@ -19,7 +19,7 @@ Keep the following limits in mind when using Cases:
 * **Attachment size.** Each file must be 10 MB or smaller.
 * **Supported file types.** Only JPG, PNG, PDF, DOC, XLS, CSV, and ZIP files can be attached.
 * **Preview limitations.** PDF, CSV, and DOC files can't be previewed in the attachment box—you'll need to download them to open them on your computer.
-* **Recent cases on the home screen.** The CxCentral home page shows only your 7 most recent cases. To see your full history, click **View all Cases** to open the My Cases page.
+* **Recent cases on the home screen.** The CxPortal home page shows only your 7 most recent cases. To see your full history, click **View all CxCases** to open the My Cases page.
 * **Your own cases only.** You can view and track the cases tied to your email address. Visibility into all cases across the organization is limited to company admins.
 * **Closed cases are locked.** A closed case can't be edited. Reopening it requires the appropriate role, so reach out to your company admin if a closed case needs changes.
 
@@ -32,7 +32,7 @@ Keep the following limits in mind when using Cases:
 1. Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
 2. Sign in with the credentials your organization provides.
 3. Click **Request Support** in the top right corner of the screen.
-4. Enter a **Case Title**, select a **Case Type**, then choose a **Priority**. Priority stays disabled until you've chosen a Case Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
+4. Enter a **CxCase Title**, select a **CxCase Type**, then choose a **Priority**. Priority stays disabled until you've chosen a CxCase Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
 5. Select a **Product** and a **Module** to classify what the case is about — the Module options depend on the Product you pick.
 6. Add a **Summary** and attach files or add CC recipients as needed. A summary has a 3,000-character limit.
 7. Click **Create**
@@ -41,15 +41,15 @@ A success message appears upon submission. You can navigate to the cases dashboa
 
 If you open the support form while viewing a specific module (for example, ACGR or Access Management), Product and Module are pre-filled to match what you were viewing. You can still change them before submitting.
 
-If you can't access CxCentral, you can submit a support case using the support email address your organization provides.
+If you can't access CxPortal, you can submit a support case using the support email address your organization provides.
 
 
 ***
 
 ### View Your Case <a href="#view-your-case" id="view-your-case"></a>
 
-1. Log in to CxCentral.
-2. The CxCentral home page displays the 7 most recent cases associated with your email address. To view all of your cases, click **View all Cases** or click **CxCases** in the left navigation menu.
+1. Log in to CxPortal.
+2. The CxPortal home page displays the 7 most recent cases associated with your email address. To view all of your cases, click **CxCases** and then **View all CxCases**.
 3. On the All CxCases page, view your case Status, Reference Number, Title, Priority, Case Type, Creation Date, and Last Updated Date.
 4. To view specific case details, click the case **Reference Number** or click the **ellipses** at the end of the row, and then **View**.
 

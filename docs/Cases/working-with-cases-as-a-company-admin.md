@@ -2,11 +2,11 @@
 
 ## Before You Begin
 
-Make sure the following are in place before creating or managing support cases as a Company Admin:
+Make sure the following are in place before creating or managing support cases as a Company Admin: 
 
-* **CxCentral access with admin privileges.** You'll need a CxCentral account with company admin permissions, using credentials provided by your organization.
+* **CxPortal access with admin privileges.** You'll need a CxPortal account with company admin permissions, using credentials provided by your organization.
 * **Understand your reach.** As a company admin, you can create cases, edit open cases, view all cases across your organization, manage contact profiles, and bulk-edit case statuses. This is broader than a General User, who can only submit and view their own cases.
-* **Gather case details ahead of time.** Have the title, case type, priority, product, module, and a clear description ready, plus any attachments, so you can complete the Create a Case form in one pass. Priority can't be selected until you've chosen a Case Type.
+* **Gather case details ahead of time.** Have the title, case type, priority, product, module, and a clear description ready, plus any attachments, so you can complete the Create CxCase form in one pass. Priority can't be selected until you've chosen a CxCase Type.
 * **Line up your CC recipients.** Decide who should be kept in the loop before you create the case. CC'd recipients receive email notifications for any case activity, so confirm their addresses up front.
 * **Set up contact profiles.** If you're managing contacts, have each person's name and email ready (both required); all other details are optional. Profiles let you tie cases back to the right people in your organization.
 * **Check your attachments.** Confirm each file is within the size and format limits below before uploading.
@@ -34,9 +34,9 @@ Keep the following limits in mind when using CxCases:
 
 1. Go to [https://portal.pronetx.com](https://portal.pronetx.com/).
 2. Sign in with the credentials your organization provides.
-3. Click **Request Support** in the top right corner of the screen. This takes you to the Create Case page.
+3. Click **Request Support** in the top right corner of the screen. This takes you to the Create CxCase page.
 4. Enter a **Title**. The **Company** and **Reported By** fields are pre-filled with your own company and profile — both stay editable if you're filing the case on behalf of someone else.
-5. Select a **Case Type**, then choose a **Priority**. Priority stays disabled until you've chosen a Case Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
+5. Select a **CxCase Type**, then choose a **Priority**. Priority stays disabled until you've chosen a CxCase Type, and each Priority option shows a short description of when to use it (for example, Urgent means no access to the platform).
 6. Select a **Product** and a **Module** to classify what the case is about. The Module options depend on the Product you pick.
 7. Add a **Description**, and attach files or add CC recipients as needed. All CC'd recipients will get email notifications for any case activity. Descriptions have a 3,000-character limit.
 8. Click **Save**.
@@ -55,16 +55,12 @@ Keep the following limits in mind when using CxCases:
   </thead>
   <tbody>
     <tr>
-      <td>Cases</td>
+      <td>CxCases</td>
       <td>n/a (auto-selected)</td>
     </tr>
     <tr>
-      <td>CxCentral</td>
-      <td>Admin: Access Management, Admin: Module Deployments, Admin: Notifications, Admin: Release Notes, Admin: Superadmin, CxCentral home</td>
-    </tr>
-    <tr>
       <td>CxPortal</td>
-      <td>ACGR, Agent Management, Analytics &amp; Dashboards, Bulk Edit, Campaigns, Change Management, CxPortal home, DFC, Flow Insights, Knowledge Management, Proficiency Routing, Q in Connect</td>
+      <td> Admin: Access Management, Admin: Module Deployments, Admin: Notifications, Admin: Release Notes, Admin: Superadmin,ACGR, Agent Management, Analytics &amp; Dashboards, Bulk Edit, Campaigns, Change Management, CxPortal home, DFC, Flow Insights, Knowledge Management, Proficiency Routing, Q in Connect</td>
     </tr>
   </tbody>
 </table>
@@ -77,17 +73,17 @@ Keep the following limits in mind when using CxCases:
 
 You can view your case history and all cases submitted across your organization. This provides information on case trends, product issues, and user profiles.
 
-1. Log in to CxCentral.
+1. Log in to CxPortal.
 2. Go to the menu on the left side and expand **CxCases**.
-3. Click **View all Cases**.
+3. Click **View all CxCases**.
 
 ***
 
 ### Edit a Case
 
 1. On the cases dashboard, click the **Reference Number** for the case you want to edit. This opens the Case Details page.
-2. On the Case Details page, click **Edit Case**.
-3. Edit the case details — including **Case Type**, **Priority**, **Product**, and **Module** — and add attachments or comments to the case.
+2. On the Case Details page, click **Edit CxCase**.
+3. Edit the case details — including **CxCase Type**, **Priority**, **Product**, and **Module** — and add attachments or comments to the case.
 4. Click **Update** to apply your changes.
 
 Once case details are updated, you'll receive an email notification detailing the changes.
@@ -188,13 +184,13 @@ The Contacts Management page shows the total number of profiles and cases and li
 
 ## Export Cases
 
-The Export Cases feature in CxCentral allows you to download case data from the Cases module as a CSV (Comma-Separated Values) file. You can apply filters within the Export dialog to control which cases are included in the exported file. This is useful for reporting, auditing, and offline analysis of your case data.
+The Export Cases feature in CxPortal allows you to download case data from the Cases module as a CSV (Comma-Separated Values) file. You can apply filters within the Export dialog to control which cases are included in the exported file. This is useful for reporting, auditing, and offline analysis of your case data.
 
 **Key Points:**
 
 * The export generates a CSV file that can be opened in spreadsheet applications such as Microsoft Excel or Google Sheets.
 * Filters applied in the Export dialog are independent of the filters on the main Cases table. Changing filters in the Export dialog does not affect the table view.
-* You can filter by Status, Priority, Case Type, and Date Range before exporting.
+* You can filter by Status, Priority, CxCase Type, and Date Range before exporting.
 
 ### How to Export Cases
 
@@ -204,7 +200,7 @@ The Export Cases feature in CxCentral allows you to download case data from the 
 
 ### Export Filters
 
-The Export Cases dialog provides the following filter options to narrow down which cases are included in the CSV export. Each filter is described below.
+The Export CxCases dialog provides the following filter options to narrow down which cases are included in the CSV export. Each filter is described below.
 
 #### Search
 
@@ -235,9 +231,9 @@ Available priority options:
 * High
 * Urgent
 
-#### Case Type
+#### CxCase Type
 
-The Case Type filter allows you to limit the export to cases of a specific type. By default, it is set to "All case types", which includes cases of every type.
+The CxCase Type filter allows you to limit the export to cases of a specific type. By default, it is set to "All CxCase types", which includes cases of every type.
 
 Available case type options:
 
@@ -267,7 +263,7 @@ To set a date range:
 
 After configuring your desired filters:
 
-1. Review your selected filters in the Export Cases dialog to confirm they match the data you want to export.
+1. Review your selected filters in the Export CxCases dialog to confirm they match the data you want to export.
 2. Click the **Export button** at the bottom-right of the dialog.
 3. A CSV file will be generated and downloaded to your browser’s default download location.
 4. To cancel the export without downloading, click **Cancel** or the **X icon** in the upper-right corner of the dialog.
@@ -285,7 +281,7 @@ To access the Metrics Dashboard, navigate through the left sidebar menu:
 1. Click **Cases** in the left sidebar to expand the Cases submenu.
 2. Click **Metrics Dashboard**.
 
-<table data-header-hidden="false" data-header-sticky><thead><tr><th>Menu Item</th><th>Description</th></tr></thead><tbody><tr><td><strong>View all Cases</strong></td><td>Opens the full list of all cases with search and filtering capabilities.</td></tr><tr><td><strong>Metrics Dashboard</strong></td><td>Displays aggregated case metrics, charts, and recent activity (current page).</td></tr><tr><td><strong>Contacts</strong></td><td>Manages contact records associated with cases.</td></tr></tbody></table>
+<table data-header-hidden="false" data-header-sticky><thead><tr><th>Menu Item</th><th>Description</th></tr></thead><tbody><tr><td><strong>View all CxCases</strong></td><td>Opens the full list of all cases with search and filtering capabilities.</td></tr><tr><td><strong>Metrics Dashboard</strong></td><td>Displays aggregated case metrics, charts, and recent activity (current page).</td></tr><tr><td><strong>Contacts</strong></td><td>Manages contact records associated with cases.</td></tr></tbody></table>
 
 ***
 
@@ -328,7 +324,7 @@ The date filter also provides the following preset time ranges for quick selecti
 
 At the top of the dashboard, six key performance indicator (KPI) cards provide an at-a-glance summary of case activity. Each card displays an icon, a descriptive label, and a large numeric value.
 
-<table data-header-hidden="false" data-header-sticky><thead><tr><th>Card</th><th>Description</th></tr></thead><tbody><tr><td>Total Cases</td><td>The total count of all cases in the system, regardless of status.</td></tr><tr><td>Open Cases</td><td>The number of cases currently in an Open status.</td></tr><tr><td>Closed Cases</td><td>The number of cases that have been resolved and marked as Closed.</td></tr><tr><td>Waiting on Customer</td><td>The number of cases that are pending a response or action from the customer.</td></tr><tr><td>Avg. Resolution Time</td><td>The average amount of time taken to resolve a case, displayed in minutes.</td></tr><tr><td>Case Created Today</td><td>The number of new cases submitted on the current calendar day.</td></tr></tbody></table>
+<table data-header-hidden="false" data-header-sticky><thead><tr><th>Card</th><th>Description</th></tr></thead><tbody><tr><td>Total CxCases</td><td>The total count of all cases in the system, regardless of status.</td></tr><tr><td>Open CxCases</td><td>The number of cases currently in an Open status.</td></tr><tr><td>Closed CxCases</td><td>The number of cases that have been resolved and marked as Closed.</td></tr><tr><td>Waiting on Customer</td><td>The number of cases that are pending a response or action from the customer.</td></tr><tr><td>Avg. Resolution Time</td><td>The average amount of time taken to resolve a case, displayed in minutes.</td></tr><tr><td>CxCase Created Today</td><td>The number of new cases submitted on the current calendar day.</td></tr></tbody></table>
 
 These cards update dynamically based on the active Company and Date filters.
 
@@ -338,7 +334,7 @@ These cards update dynamically based on the active Company and Date filters.
 
 Below the summary cards, three side-by-side chart panels provide visual breakdowns of case data by status, priority, and type.
 
-### Cases by Status
+### CxCases by Status
 
 This panel displays a chart grouped by case status. The largest segment is shown prominently in the center of the chart with its count and label. A color-coded legend below the chart lists every status and its case count.
 
@@ -346,15 +342,15 @@ This panel displays a chart grouped by case status. The largest segment is shown
 
 <table data-header-hidden="false" data-header-sticky><thead><tr><th>Status</th><th>Description</th></tr></thead><tbody><tr><td>Open</td><td>Case is open and awaiting action.</td></tr><tr><td>Pending</td><td>Case is pending further information or review.</td></tr><tr><td>Closed</td><td>Case has been resolved and closed.</td></tr><tr><td>In Progress</td><td>Case is actively being worked on by an agent.</td></tr><tr><td>Received</td><td>Case has been received but not yet assigned or started.</td></tr><tr><td>Waiting On Third Party</td><td>Case is waiting on a response from an external third party.</td></tr><tr><td>Waiting on Customer</td><td>Case is waiting on response from a customer.</td></tr></tbody></table>
 
-### Cases by Priority
+### CxCases by Priority
 
-This panel displays a donut chart grouped by case priority. The visual style is the same as the Cases by Status chart. A color-coded legend lists all priority levels with their respective case counts.
+This panel displays a donut chart grouped by case priority. The visual style is the same as the CxCases by Status chart. A color-coded legend lists all priority levels with their respective case counts.
 
 **Available Priority Levels**
 
 <table data-header-hidden="false" data-header-sticky><thead><tr><th>Priority</th><th>Description</th></tr></thead><tbody><tr><td>Low</td><td>Non-urgent issue with minimal impact.</td></tr><tr><td>Medium</td><td>Moderate impact requiring timely attention.</td></tr><tr><td>High</td><td>Significant impact requiring prompt resolution.</td></tr><tr><td>Urgent</td><td>High-impact issue requiring immediate attention.</td></tr></tbody></table>
 
-### Cases by Type
+### CxCases by Type
 
 This panel shows the distribution of cases across different categories. It features a horizontal stacked bar at the top for a visual proportion overview, followed by a categorized list. Each entry displays an icon, the type name, a count (in parentheses), and a percentage of total cases.
 
@@ -362,7 +358,7 @@ This panel shows the distribution of cases across different categories. It featu
 
 <table data-header-hidden="false" data-header-sticky><thead><tr><th>Case Type</th><th>Description</th></tr></thead><tbody><tr><td>Bug Report</td><td>A report of a software defect or unexpected behavior.</td></tr><tr><td>Feature Request</td><td>A request for new functionality or an enhancement.</td></tr><tr><td>Technical Support</td><td>A request for technical assistance or troubleshooting.</td></tr><tr><td>Alarm</td><td>A critical issue that requires immediate attention</td></tr><tr><td>Account Issue</td><td>An issue related to user accounts, access, or permissions.</td></tr><tr><td>Other</td><td>Cases that do not fit into a predefined category.</td></tr></tbody></table>
 
-A “Total cases by type” summary is displayed at the bottom of this panel.
+A “Total CxCases by type” summary is displayed at the bottom of this panel.
 
 ***
 
@@ -370,7 +366,7 @@ A “Total cases by type” summary is displayed at the bottom of this panel.
 
 Below the Metrics Breakdowns section, two additional panels provide insights into case distribution by queue and case creation trends over time.
 
-### Cases by Queue
+### CxCases by Queue
 
 This panel displays a horizontal bar chart showing how cases are distributed across the available support queues. Each queue entry includes:
 
@@ -378,9 +374,9 @@ This panel displays a horizontal bar chart showing how cases are distributed acr
 * The queue name.
 * The case count and percentage of total cases.
 * A proportional horizontal bar representing the relative volume.
-* A “Total cases in queues” summary count is displayed at the bottom of this panel.
+* A “Total CxCases in queues” summary count is displayed at the bottom of this panel.
 
-### Cases by Date
+### CxCases by Date
 
 This panel displays a vertical bar chart showing the number of cases created per day. Key features:
 
@@ -392,9 +388,9 @@ This panel displays a vertical bar chart showing the number of cases created per
 
 ***
 
-## Recent Cases
+## Recent CxCases
 
-The bottom section of the Metrics Dashboard displays a table titled “Recent Cases” with the subtitle “Latest case submissions.” This table shows the 10 most recently updated cases. A “View all cases” link in the upper-right corner of this section navigates to the full case list.
+The bottom section of the Metrics Dashboard displays a table titled “Recent CxCases” with the subtitle “Latest CxCase submissions.” This table shows the 10 most recently updated cases. A “View all CxCases” link in the upper-right corner of this section navigates to the full case list.
 
 **Table Columns**
 

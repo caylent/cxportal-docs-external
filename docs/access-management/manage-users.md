@@ -38,7 +38,7 @@ The Users page lets you manage your users and their assigned roles within your o
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
 4. Use the search bar at the top of the page to search for a user by Name, Email, Role, or Login Method. Additionally, you can use the **Login Method** and **Role** filters on the left side of the screen to filter search results.
-5. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
+5. On the Users table, click a **User's Name**, or anywhere on the user's row, to view their details.
 
 The user detail page shows:
 
@@ -50,7 +50,7 @@ The user detail page shows:
 1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
-4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
+4. On the Users table, click a **User's Name**, or anywhere on the user's row, to view their details.
 5. On the top right side of the screen, click **Change Role**.
 6. Choose a new Role from the role dropdown menu.
 7. Click **Save Changes**.
@@ -60,7 +60,7 @@ The user detail page shows:
 1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
-4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
+4. On the Users table, click a **User's Name**, or anywhere on the user's row, to view their details.
 5. On the top right side of the screen, click the **Edit Profile icon**.
 6. Update the user's Email Address and Full Name.
 7. Click **Update Profile**.
@@ -72,7 +72,7 @@ The user detail page shows:
 1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
-4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
+4. On the Users table, click a **User's Name**, or anywhere on the user's row, to view their details.
 5. On the top right side of the screen, click the **Reset Password icon**.
 6. Review the confirmation message and click **Reset Password**.
 7. The user will get an email with instructions to set a new password.
@@ -84,7 +84,7 @@ Deactivating a user prevents them from logging into the system but retains their
 1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
-4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
+4. On the Users table, click a **User's Name**, or anywhere on the user's row, to view their details.
 5. On the top right side of the screen, click the **Deactivate User icon**.
 6. Review the confirmation message and click **Deactivate**.
 7. The user will lose access until the account is reactivated.
@@ -96,7 +96,7 @@ You can reactivate a user that has been previously deactivated.
 1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
-4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
+4. On the Users table, click a **User's Name**, or anywhere on the user's row, to view their details.
 5. On the top right side of the screen, click the **Activate icon**.
 6. Review the confirmation message and click **Activate**.
 
@@ -107,7 +107,7 @@ Deleting a user removes their data and access to the system. **This is irreversi
 1. Open [CxPortal](https://portal.pronetx.com/)
 2. Click the **Admin gear** on the bottom left side of the screen.
 3. Expand **Access management**, and then click **Users**.
-4. On the Users table, click a **User's Name** to view their details or click the **three-dot action menu** on the right side of the row and then **View Details**.
+4. On the Users table, click a **User's Name**, or anywhere on the user's row, to view their details.
 5. On the top right side of the screen, click the **Delete User icon**.
 6. **Review the confirmation message. This permanently removes access, and this action cannot be reversed.**
 7. Click **Delete**.

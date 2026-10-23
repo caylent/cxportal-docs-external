@@ -2,15 +2,11 @@
 
 ## Accessing Support
 
-**From** [**CxCentral**](https://portal.pronetx.com/)
-
-Click **Request Support** in the upper-right corner of the homepage.
-
 **From** [**CxPortal**](https://portal.pronetx.com/)
 
 Click **Request Support** in the upper-right corner of the homepage. The support icon is also available in the top navigation of each module and feature, so you can submit a request without leaving the page you're working on.
 
- **Note:** If you're unable to sign in to CxCentral or CxPortal, you can submit a support request using the support email address your organization provides.
+ **Note:** If you're unable to sign in to CxPortal, you can submit a support request using the support email address your organization provides.
 
 
 ***
@@ -19,7 +15,7 @@ Click **Request Support** in the upper-right corner of the homepage. The support
 
 ### 1. Open the support form
 
-Click **Request Support** in CxCentral or in the top navigation of CxPortal. The **Create Case** page opens.
+Click **Request Support** in the top navigation of CxPortal. The **Create CxCase** page opens.
 
 ### 2. Complete the Case details
 
@@ -41,7 +37,7 @@ Click **Create**. You'll receive a confirmation email, and the new case will app
 
 ### Case Details Fields
 
-The fields below appear in the **Case details** section of the form. 
+The fields below appear in the **CxCase details** section of the form. 
 
 | Field | Required | What to enter |
 |---|---|---|
@@ -51,7 +47,7 @@ The fields below appear in the **Case details** section of the form.
 | Reported By | Yes | The user this case is for. This can be yourself or a colleague (colleague option is for Company Admins only). |
 | Product | Yes | The product this case relates to. |
 | Module | Yes | The module this case relates to. |
-| Case Type | Yes | The type of request: Bug Report, Feature Request, How-To, Access Management, Technical Support, or Billing. Defaults to Bug Report. |
+| CxCase Type | Yes | The type of request: Bug Report, Feature Request, How-To, Access Management, Technical Support, or Billing. Defaults to Bug Report. |
 | Priority | Yes | The urgency level. See Case Priorities below. Defaults to Low. |
 | Recipients | No | Teammates to CC. They will receive email updates on all case activity. |
 | Description | No | Details of the issue or request. |
