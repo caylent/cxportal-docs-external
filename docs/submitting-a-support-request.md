@@ -2,15 +2,11 @@
 
 ## Accessing Support
 
-**From** [**CxCentral**](https://portal.pronetx.com/)
-
-Click **Request Support** in the upper-right corner of the homepage.
-
 **From** [**CxPortal**](https://portal.pronetx.com/)
 
 Click **Request Support** in the upper-right corner of the homepage. The support icon is also available in the top navigation of each module and feature, so you can submit a request without leaving the page you're working on.
 
- **Note:** If you're unable to sign in to CxCentral or CxPortal, you can submit a support request using the support email address your organization provides.
+ **Note:** If you're unable to sign in to CxPortal, you can submit a support request using the support email address your organization provides.
 
 
 ***
@@ -19,7 +15,7 @@ Click **Request Support** in the upper-right corner of the homepage. The support
 
 ### 1. Open the support form
 
-Click **Request Support** in CxCentral or in the top navigation of CxPortal. The **Create CxCase** page opens. [VERIFY: users without Cases admin access get the **Open a CxCase** form instead of the Create CxCase page]
+Click **Request Support** in the top navigation of CxPortal. The **Create CxCase** page opens.
 
 ### 2. Complete the Case details
 
