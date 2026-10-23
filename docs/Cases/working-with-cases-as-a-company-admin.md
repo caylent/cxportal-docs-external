@@ -4,7 +4,7 @@
 
 Make sure the following are in place before creating or managing support cases as a Company Admin:
 
-* **CxCentral access with admin privileges.** You'll need a CxCentral account with company admin permissions, using credentials provided by your organization.
+* **CxPortal access with admin privileges.** You'll need a CxPortal account with company admin permissions, using credentials provided by your organization.
 * **Understand your reach.** As a company admin, you can create cases, edit open cases, view all cases across your organization, manage contact profiles, and bulk-edit case statuses. This is broader than a General User, who can only submit and view their own cases.
 * **Gather case details ahead of time.** Have the title, case type, priority, product, module, and a clear description ready, plus any attachments, so you can complete the Create CxCase form in one pass. Priority can't be selected until you've chosen a CxCase Type.
 * **Line up your CC recipients.** Decide who should be kept in the loop before you create the case. CC'd recipients receive email notifications for any case activity, so confirm their addresses up front.
@@ -55,16 +55,12 @@ Keep the following limits in mind when using CxCases:
   </thead>
   <tbody>
     <tr>
-      <td>Cases</td>
+      <td>CxCases</td>
       <td>n/a (auto-selected)</td>
     </tr>
     <tr>
-      <td>CxCentral</td>
-      <td>Admin: Access Management, Admin: Module Deployments, Admin: Notifications, Admin: Release Notes, Admin: Superadmin, CxCentral home</td>
-    </tr>
-    <tr>
       <td>CxPortal</td>
-      <td>ACGR, Agent Management, Analytics &amp; Dashboards, Bulk Edit, Campaigns, Change Management, CxPortal home, DFC, Flow Insights, Knowledge Management, Proficiency Routing, Q in Connect</td>
+      <td> Admin: Access Management, Admin: Module Deployments, Admin: Notifications, Admin: Release Notes, Admin: Superadmin,ACGR, Agent Management, Analytics &amp; Dashboards, Bulk Edit, Campaigns, Change Management, CxPortal home, DFC, Flow Insights, Knowledge Management, Proficiency Routing, Q in Connect</td>
     </tr>
   </tbody>
 </table>
@@ -77,7 +73,7 @@ Keep the following limits in mind when using CxCases:
 
 You can view your case history and all cases submitted across your organization. This provides information on case trends, product issues, and user profiles.
 
-1. Log in to CxCentral.
+1. Log in to CxPortal.
 2. Go to the menu on the left side and expand **CxCases**.
 3. Click **View all CxCases**.
 
@@ -188,7 +184,7 @@ The Contacts Management page shows the total number of profiles and cases and li
 
 ## Export Cases
 
-The Export Cases feature in CxCentral allows you to download case data from the Cases module as a CSV (Comma-Separated Values) file. You can apply filters within the Export dialog to control which cases are included in the exported file. This is useful for reporting, auditing, and offline analysis of your case data.
+The Export Cases feature in CxPortal allows you to download case data from the Cases module as a CSV (Comma-Separated Values) file. You can apply filters within the Export dialog to control which cases are included in the exported file. This is useful for reporting, auditing, and offline analysis of your case data.
 
 **Key Points:**
 
