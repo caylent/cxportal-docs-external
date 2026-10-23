@@ -5,7 +5,7 @@
 1. Log in to CxPortal.
 2. Confirm the correct Amazon Connect instance is selected in the **Instance** selector at the top of the page.
 3. In the left sidebar, click **Workforce Management**.
-4. The module expands to show the module's pages: Agent Status, Team Scorecard, and Agent Scorecard — plus Forecast, Capacity, and Scheduling and Program Dashboard for instances with FCS data. A **Settings** entry also appears if your role carries the Workforce Management admin permission.
+4. The module expands to show the module's pages, broadest view first: Program Dashboard, Forecast & Capacity, Time Off, Team Scorecard, Agent Status, and Agent Scorecard. Forecast, Capacity, and Scheduling and Program Dashboard appear for instances with FCS data, and Time Off appears only when your role carries the Time Off permission. A **Settings** entry also appears last if your role carries the Workforce Management admin permission.
 
 ## Your First Task
 
@@ -17,7 +17,7 @@
 4. In the left sidebar, click **Workforce Management** > **Agent Scorecard**.
 5. In the **Search agent** box, type the agent's name and select them from the results. The scorecard opens, showing their Adherence and Schedule Conformance KPIs.
 
-Clicking an agent's name on Agent Status or Team Scorecard opens that agent's Agent 360 profile.
+Clicking an agent's name on Agent Status, Team Scorecard, or Time Off opens that agent's Agent 360 profile.
 
 ## What to Do Next
 

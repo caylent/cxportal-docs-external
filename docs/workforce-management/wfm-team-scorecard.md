@@ -75,9 +75,13 @@ Where there are no scored minutes for an agent, the end of the row reads a reaso
 
 Click an agent's name to open their Agent 360 profile. To open a scorecard, use the **Search agent** box on the Agent Scorecard page. See [Viewing an Agent's Profile (Agent 360)](#viewing-an-agents-profile-agent-360) and [Reviewing Agent Scorecards](wfm-agent-scorecards.md).
 
+### Exporting the Team Scorecard
+
+In the page header, click **Export CSV** to download one row per agent the ribbon lists, in its order, or click **Export PDF** to download the page as a PDF. See [Exporting Workforce Management Data](wfm-reference.md#exporting-workforce-management-data).
+
 ## Viewing an Agent's Profile (Agent 360)
 
-The Agent 360 page shows a single agent's profile, shift details, and time off for a chosen day. Open it by clicking an agent's name on Agent Status or Team Scorecard.
+The Agent 360 page shows a single agent's profile, shift details, and time off for a chosen day. Open it by clicking an agent's name on Agent Status, Team Scorecard, or Time Off.
 
 ### Reading the Page
 
@@ -88,8 +92,8 @@ The Agent 360 page shows a single agent's profile, shift details, and time off f
 - **Actual Activities** — The agent's recorded activity for the day, one row per stretch with **Activity**, **Start**, **Duration**, and an **Adherence** chip — **Adherent** (✓), **Non-adherent** (✗), or **Unscheduled** (no glyph). Shows *No recorded activity for this day.* when nothing has been recorded.
 - **Now divider** — On today, both activity tables show a **Now** row where the current time falls, so the day reads as done above and still to come below.
 - **Activity summary** — Above the tables, two panels summarize the day. **Time by activity** totals the day's actual activity per status as ranked bars, each with its duration and share of observed time (for example 2h 30m (31%)). **Adherence stats** lists **Adherence**, **Conformance**, **Worked**, and **Scheduled**, plus **Out of adherence** and **Unscheduled** when there is any. Unscheduled is time with nothing scheduled over it and is excluded from the adherence score, and Conformance can read over 100% when the agent worked more than was rostered. While the day is still running, both panel labels end in **· intraday** (for example Adherence stats · intraday) because they score only the part of the day that has happened; a finished day carries no marker.
-- **Timeline** — Three stacked tracks for the day, mirroring the Team Scorecard ribbon: an **Adherence per minute** band that marks only out-of-adherence stretches in red, a **Scheduled** lane, and an **Actual** lane. Hovering a segment shows which track it belongs to, what it was, and its time range, and highlights the matching segment in the other lane. On today, a blue **NOW** rule marks the current time and the remainder of the Actual lane is dashed to show it has not happened yet. The axis is trimmed to the day's activity plus two hours either side rather than always spanning 12A–11P. Shows *Nothing to visualize for this day.* when both lanes are empty.
-- **Time Off** — PTO Balance as of the current date and Staff Time Off requests. A notice warns that time-off balance data may not reflect current accruals; verify in your HR system for payroll decisions.
+- **Timeline** — Three stacked tracks for the day, mirroring the Team Scorecard ribbon: an **Adherence per minute** band that marks only out-of-adherence stretches, in light blue, a **Scheduled** lane, and an **Actual** lane. Hovering a segment shows which track it belongs to, what it was, and its time range, and highlights the matching segment in the other lane. On today, a blue **NOW** rule marks the current time and the remainder of the Actual lane is dashed to show it has not happened yet. The axis is trimmed to the day's activity plus two hours either side rather than always spanning 12A–11P. Shows *Nothing to visualize for this day.* when both lanes are empty.
+- **Time Off** — PTO Balance as of the current date and Staff Time Off requests. The balance, hours used, and each request's **Duration** read in hours and minutes (for example 8h 30m); an overdrawn balance keeps its minus sign. A notice warns that time-off balance data may not reflect current accruals; verify in your HR system for payroll decisions.
 - **Forecasted queues** — Below the shift and time-off sections, a card listing the queues whose volume is forecast for the agent's forecast group, as chips, with the total in a badge beside the title. Where the agent's forecast group is known, the card names it under the title — *From forecast group <name>*. A list longer than 12 shows the first 12 with a **+ N more queues** control; click it to expand, then **Show less** to collapse. An agent whose forecast group has no aligned queues reads *No queues aligned to this agent's forecast group.* A **Demand Groups** card sits alongside it, and is hidden when the agent has none.
 
 !!! info ""

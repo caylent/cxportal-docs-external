@@ -47,3 +47,12 @@ The page opens in the Amazon Connect instance's time zone. Your choice replaces 
 ### Checking Data Freshness
 
 The page footer shows when the forecast was last updated. Treat figures as periodically refreshed, not live.
+
+### Exporting the Forecast
+
+In the page header:
+
+- Click **Export CSV** to download the rolling 12-hour plan, one row per 15-minute interval, with forecast contacts, forecast agents, scheduled agents, and whether the interval falls in an understaffed window. The coverage heat-map is not included.
+- Click **Export PDF** to download the page as a PDF.
+
+See [Exporting Workforce Management Data](wfm-reference.md#exporting-workforce-management-data).

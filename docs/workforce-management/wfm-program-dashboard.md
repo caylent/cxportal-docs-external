@@ -22,7 +22,7 @@ The **Program Dashboard** page shows program-wide adherence and conformance for 
 
 - **KPI tiles** — Total Agents Active, Scheduled Adherence (with the count of agents in adherence), Schedule Conformance, and Agents Off Schedule, with status badges such as Below Target and Needs Attention. The Total Agents Active, Scheduled Adherence and Schedule Conformance labels carry an information icon that opens the metric's definition, a **How it's calculated** list, and its data **Source**.
 - **Trends** — Schedule Adherence Trend and Schedule Conformance Trend charts, each plotted against the target line (Target 92%). The axis runs 0–100% and extends higher when a series reads above 100%, so a day worked beyond schedule is not clipped at the top.
-- **Group Performance** — A table grouped by the Group by dimension (LOB, Team (hierarchy), Region, Team (tag), or Routing Profile) with columns Group Name, Agents, Adherence %, In Adherence, Conformance %, In Conformance (agent-days), and Status. Status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%. Each row's Actions menu offers **View in Forecast, Capacity, and Scheduling** and **View agents**. The Adherence %, Conformance % and status column headings carry an information icon that opens the metric's definition.
+- **Group Performance** — A table grouped by the Group by dimension (LOB, Team (hierarchy), Region, Team (tag), or Routing Profile) with columns Group Name, Agents, Adherence %, In Adherence, Conformance %, In Conformance (agent-days), and Status. Status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%. A group with no measured agent-days shows — for its percentages and **Not measured** in Status instead of failing the target. A final **All groups** row totals the agents and recomputes adherence and conformance from the summed counts, rather than averaging the groups' percentages. Each row's Actions menu offers **View in Forecast, Capacity, and Scheduling** and **View agents**. The Adherence %, Conformance % and status column headings carry an information icon that opens the metric's definition.
 - **Filters** — **+ Filter**, **Date Range** (Today, 7d, 30d, Custom), and a **Timezone** dropdown. The dashboard opens in the instance's time zone, and the time zone and filters you last used are remembered for your next visit.
 
 ### Choosing a Date Range
@@ -49,3 +49,7 @@ Click **+ Filter** in the Filters panel to narrow the dashboard to specific grou
 !!! info ""
 
     Where an agent's profile cannot be opened, the panel says why rather than doing nothing — *This agent has no identifier yet, so their profile cannot be opened. Try refreshing the page.* or *The Connect instance is still loading. Try again in a moment.*
+
+### Exporting the Program Dashboard
+
+In the page header, click **Export CSV** to download the Group Performance table, one row per group in the table's order, or click **Export PDF** to download the dashboard as a PDF. See [Exporting Workforce Management Data](wfm-reference.md#exporting-workforce-management-data).

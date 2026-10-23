@@ -89,7 +89,39 @@ Adherence and Schedule Conformance are the cards shown by default. Contacts Hand
 | **Exception Count** | Number of exceptions |
 | **Exception Types** | Exception descriptions |
 
-The table exports via **Export CSV**.
+The table exports via **Export CSV** in the page header.
+
+## Time Off Reference
+
+**Summary tiles:** **Out today** · **Out in range** (agents on approved leave, with hours) · **Pending** (All dates) · **Approved** · **Denied** · **Cancelled** (In selected range). In **Decided on** mode only Approved, Denied, and Cancelled show, subtitled Decided that day. The status tiles filter the table.
+
+**Table columns:** **Agent** · **Category** · **Dates** · **Duration** · **Status** · **Requested** (shown when the table has room) · **Decided** · **Last changed**. Every column sorts both ways; **Default order** groups Pending, Approved, Denied, then Cancelled, soonest start first.
+
+**Statuses:** **Pending** · **Approved** · **Denied** · **Cancelled** (shown in neutral grey — a withdrawn request is not a refusal)
+
+**Filters panel:** **Date range** (Today · Next 7d · Next 30d · Custom) · **Decided on** (Today · Pick a day, up to 89 days back) · **Group Filters** · **Agents** · **Status** · **Category**
+
+**Per-day chart:** **Forecasted coverage per day** where the forecast reaches the range, otherwise **Agents off per day**. Clicking a day filters the table to it.
+
+See [Reviewing Team Time Off](wfm-time-off.md).
+
+## Exporting Workforce Management Data
+
+Agent Status, Team Scorecard, Agent Scorecard, Forecast, Capacity, and Scheduling, Program Dashboard, and Time Off each carry **Export CSV** and **Export PDF** in the page header.
+
+| Page | Export CSV contents |
+| --- | --- |
+| **Agent Status** | One row per agent under the current filters and sort, across the whole roster (today), or the day summary's per-agent table (previous day) |
+| **Team Scorecard** | One row per agent the ribbon lists |
+| **Agent Scorecard** | One row per day of the Adherence detail table |
+| **Forecast, Capacity, and Scheduling** | One row per 15-minute interval of the rolling 12-hour plan; the coverage heat-map is not exported |
+| **Program Dashboard** | One row per Group Performance group |
+| **Time Off** | One row per request under the current filters, in the table's order |
+
+- Each CSV holds every row under the current filters and sort, not only the rows on screen. **Export CSV** is unavailable while the page is loading or after a failed load.
+- In the CSV, times carry the page's time-zone offset alongside a UTC column, durations are numbers of minutes, and percentages are plain numbers. An agent with no reading gets an empty cell, not a zero.
+- **Export PDF** produces a US Letter, portrait report. Every page carries a CxPortal header naming the module and view, and a footer with when it was generated and *Page n of N*. Filter controls are left out of the capture; in their place, page one lists what the report shows — such as instance, period, time zone, agent population, and active filters.
+- While an export runs, the buttons read **Exporting...** or **Generating...**. A failed CSV export shows *The CSV could not be exported. Try again.*
 
 ## Settings Reference
 
@@ -111,10 +143,11 @@ Metric labels across Workforce Management carry an information icon. Clicking it
 | **Team Scorecard** | Team Adherence Today (Team Adherence for Range) · On Schedule Now |
 | **Forecast, Capacity, and Scheduling** | Forecasted Agents · Scheduled Agents · Forecast vs Scheduled · Volume Forecast · Occupancy · Available Agents · Scheduled vs Available · Understaffed windows (banner) |
 | **Program Dashboard** | Total Agents Active · Scheduled Adherence · Schedule Conformance · Adherence % · Conformance % · the Group Performance status column |
+| **Time Off** | Out today · Out in range (how the hours are counted) |
 
 ## Filter Dimensions
 
-The Filters panel's + Filter menu (under Group Filters) offers these dimensions on Agent Status and Team Scorecard, with values populated from the selected instance's grouping data. You can select multiple values per dimension, and the dimensions offered vary by instance. The same dimensions drive the Program Dashboard's Group by control:
+The Filters panel's + Filter menu (under Group Filters) offers these dimensions on Agent Status, Team Scorecard, and Time Off, with values populated from the selected instance's grouping data. You can select multiple values per dimension, and the dimensions offered vary by instance. The same dimensions drive the Program Dashboard's Group by control:
 
 - LOB
 - Team (hierarchy)
@@ -128,7 +161,7 @@ Each value shows the number of agents matching it when the instance reports coun
 
 ## Remembered View Preferences
 
-Agent Status, Team Scorecard, Agent Scorecard, Forecast, Capacity and Scheduling, and the Program Dashboard remember the time zone and group filters you last used, and Agent Status also remembers the ordering. Preferences are held per viewer, per Amazon Connect instance, and per page, so switching instance switches preferences with it.
+Agent Status, Team Scorecard, Agent Scorecard, Forecast, Capacity and Scheduling, and the Program Dashboard remember the time zone and group filters you last used, and Agent Status also remembers the ordering. Time Off remembers the group filters, leave categories, and table ordering. Preferences are held per viewer, per Amazon Connect instance, and per page, so switching instance switches preferences with it.
 
 Where a page's address names a time zone, a filter, or a drill-in scope, the address wins over the remembered preference — a shared link shows its recipient what the sender saw. Pages that carry no preference yet open in the instance's default time zone, and in the browser's time zone where the instance names none.
 

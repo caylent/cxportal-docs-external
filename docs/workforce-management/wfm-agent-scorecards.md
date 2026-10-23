@@ -14,7 +14,7 @@ The **Agent Scorecard** page shows per-agent adherence and activity KPIs for a d
 - Change indicators apply to Today (vs. last day) and 7d (vs. last week) only
 - The contact-timing KPI cards (Contacts Handled, Avg Handle Time, ACW, Occupancy) are hidden by default and are switched on per instance
 - Custom ranges are bound by the 90-day history retention
-- Export CSV downloads the Adherence detail table only, not the KPI cards or timeline
+- **Export CSV** downloads the Adherence detail table only, not the KPI cards or timeline; use **Export PDF** for the whole page
 - The **Timezone** dropdown appears only once the Range control does, which is after an agent is selected
 
 ## Step-by-Step Instructions
@@ -54,4 +54,5 @@ The legend defines the colors: **Productive**, **Non-productive**, **Offline**, 
 
 1. Review the Adherence detail table below the timeline — it lists each day in the range.
 2. Review the columns: **Date**, **Scheduled Hours**, **Actual Hours**, **Adherence %**, **Conformance %**, **Exception Count**, and **Exception Types**.
-3. Click **Export CSV** to download the table.
+3. In the page header, click **Export CSV** to download the table, one row per day in the range.
+4. (Optional) In the page header, click **Export PDF** to download the scorecard as a PDF. See [Exporting Workforce Management Data](wfm-reference.md#exporting-workforce-management-data).
