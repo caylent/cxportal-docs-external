@@ -2,7 +2,7 @@
 
 ## Before You Begin
 
-Make sure the following are in place before creating or managing support cases as a Company Admin:
+Make sure the following are in place before creating or managing support cases as a Company Admin: 
 
 * **CxPortal access with admin privileges.** You'll need a CxPortal account with company admin permissions, using credentials provided by your organization.
 * **Understand your reach.** As a company admin, you can create cases, edit open cases, view all cases across your organization, manage contact profiles, and bulk-edit case statuses. This is broader than a General User, who can only submit and view their own cases.
