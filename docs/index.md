@@ -24,13 +24,6 @@ or jump straight to a module below.
 
     [Open :octicons-arrow-right-24:](access-management/access-management.md)
 
--   **User Management**
-
-    ---
-
-    Add, manage, and reference the users in your CxPortal instance.
-
-    [Open :octicons-arrow-right-24:](user-management/user-management.md)
 
 -   **Campaigns**
 
