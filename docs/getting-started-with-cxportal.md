@@ -76,6 +76,30 @@ CxPortal is built around a set of modules — each one covering a specific area 
 
 ***
 
+### Getting Help Inside a Module
+
+Each module in CxPortal, including Access Management and CxCases, can carry its own built-in help. You open it from the **Product Documentation** icon in the upper right corner of the top bar.
+
+* **If the module has built-in help:** Click the icon to open the help panel at the top of the page. The panel pushes the page content down instead of covering it. When you hover over the icon, the tooltip shows the panel's title. Click the icon again, or click the close button on the panel, to close it. The panel also closes when you leave the module.
+* **If the module has no built-in help:** Click the icon to open this documentation site in a new browser tab.
+
+The help panel shows only the sections that have content for the module you're in:
+
+* **Video Tutorials** — a list of **Help videos**. Click a video in the list, or click its preview, to play it in a larger player.
+* **Documentation** — a list of **Help articles**. Each link opens in a new browser tab.
+* **Interactive Demos** — a list of **Help Demos**. Each link opens in a new browser tab.
+
+When the **Documentation** or **Interactive Demos** list has more than four links, it splits into pages. Use the dots below the list to move between pages.
+
+#### Welcome to a Module
+
+The first time you open a module that has built-in help, a welcome window introduces the module, and it may play a short video. Click **Let's Go** to close the welcome. The help panel stays open behind it so you can keep exploring. The welcome appears once per module, so you won't see it again for that module after you close it.
+
+!!! info ""
+    Built-in help appears only on pages you have permission to open. The videos, articles, and demos in each module's help are provided by Caylent and can change between releases. [VERIFY: which modules have built-in help published at release — the content is managed separately and is not part of the release code]
+
+***
+
 ### Need Help?
 
 !!! info ""
