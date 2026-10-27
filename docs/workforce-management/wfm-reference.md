@@ -93,7 +93,7 @@ The table exports via **Export CSV** in the page header.
 
 ## Time Off Reference
 
-**Summary tiles:** **Out today** · **Out in range** (agents on approved leave, with hours) · **Pending** (All dates) · **Approved** · **Denied** · **Cancelled** (In selected range). In **Decided on** mode only Approved, Denied, and Cancelled show, subtitled Decided that day. The status tiles filter the table.
+**Summary tiles:** **Out today** · **Out in range** (agents on approved leave, with hours) · **Pending** (All dates) · **Approved** · **Denied** · **Cancelled** (In selected range). The status tiles filter the table.
 
 **Table columns:** **Agent** · **Category** · **Dates** · **Duration** · **Status** · **Requested** (shown when the table has room) · **Decided** · **Last changed**. Every column sorts both ways; **Default order** groups Pending, Approved, Denied, then Cancelled, soonest start first.
 
