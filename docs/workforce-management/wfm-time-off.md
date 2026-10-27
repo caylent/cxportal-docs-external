@@ -5,7 +5,7 @@ The **Time Off** page shows who is out, and which time-off requests are waiting 
 ## Before You Begin
 
 - An Amazon Connect instance must be selected in the **Instance** selector
-- Your role must carry the Time Off permission. It is separate from the Agent Status permission: access to Agent Status, even at admin level, does not open Time Off. [VERIFY: the name this permission shows in Access Management — the code family is wfm-time-off-read / wfm-time-off-write / wfm-time-off-admin]
+- Your role must carry the Time Off permission. It is separate from the Agent Status permission: access to Agent Status, even at admin level, does not open Time Off.
 
 ## Limits and Constraints
 
@@ -50,9 +50,9 @@ To narrow the table to one day, click its bar. The table reads *Showing requests
 In the Filters panel:
 
 1. Under **Date range**, click **Today**, **Next 7d**, or **Next 30d**, or click **Custom** and pick a start and an end date.
-2. Under **Group Filters**, click **+ Filter** to narrow to a team or other group. Selected values appear as chips, each with an **✕** remove button.
+2. Under **Group Filters**, click **+ Filter** to narrow to a team or other group. 
 3. Under **Agents**, type in **Search agents…** and select one or more agents.
-4. In the **Status** dropdown, select one or more statuses. The status tiles drive the same filter.
+4. In the **Status** dropdown, select one or more statuses. 
 5. In the **Category** dropdown, select one or more leave categories. The list is searchable and always offers every category in the range.
 6. To reset every filter, click **Clear Filters** at the top of the panel.
 
