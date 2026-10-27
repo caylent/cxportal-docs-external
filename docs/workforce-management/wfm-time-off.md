@@ -5,7 +5,7 @@ The **Time Off** page shows who is out, and which time-off requests are waiting 
 ## Before You Begin
 
 - An Amazon Connect instance must be selected in the **Instance** selector
-- Your role must carry the Time Off permission. It is separate from the Agent Status permission: access to Agent Status, even at admin level, does not open Time Off.
+- Your role must carry the Time Off permission. It is separate from the Agent Status permission and access to Agent Status, even at admin level, does not open Time Off.
 
 ## Limits and Constraints
 
