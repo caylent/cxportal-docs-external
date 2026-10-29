@@ -148,9 +148,9 @@ The Browser tells you what to do next whenever a level is empty.
 
 Now that you have created an entity, here is what to do next:
 
-• Define the entity's schema and add items → [Setting Up Entities and Schemas](setting-up-entities-and-schemas.md)\
-• Move configuration between environments → [Importing and Exporting Data](importing-and-exporting-data.md)\
-• Set up roles and entity-level access → [Managing DFC Permissions](managing-dfc-permissions.md)\
-• Look up field types, limits, and the developer client → [DFC Reference](developer-reference-node.js-client.md)
+* Define the entity's schema and add items → [Setting Up Entities and Schemas](setting-up-entities-and-schemas.md)
+* Move configuration between environments → [Importing and Exporting Data](importing-and-exporting-data.md)
+* Set up roles and entity-level access → [Managing DFC Permissions](managing-dfc-permissions.md)
+* Look up field types, limits, and the developer client → [DFC Reference](developer-reference-node.js-client.md)
 
 ***
