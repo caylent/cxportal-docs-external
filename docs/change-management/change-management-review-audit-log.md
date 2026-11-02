@@ -17,7 +17,6 @@ Columns: a selection checkbox, **Change Type**, **Bulk** (a Bulk (n) badge on bu
     - **Approver** — the user who approved it
     - **Status** — **Original**, **Pending**, **Reversion**, or **Reverted**
     - **Change type**, **Requester**, **Approver**, and **Status** are searchable multi-selects. **Target** is a text field you submit with **Enter**.
-    - 
 2. Click **Clear Filters** to remove all filter selections and the target search, or **Hide filters** to collapse the panel.
 3. Use the date range button above the table (default **Last 14 days**) to change the time window:
 4. Choose a preset: **Today**, **Yesterday**, **Last 7 days**, **Last 14 days**, **Last 30 days**, **This Week**, **Last Week**, **This Month**, or **Last Month**. Alternatively, select a custom range on the two-month calendar.
