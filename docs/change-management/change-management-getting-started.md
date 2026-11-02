@@ -3,6 +3,7 @@
 ## How to Access This Module
 
 To access Change Management:
+
 1. Log in to CxPortal.
 1. Confirm the correct Amazon Connect instance is selected (shown in the header as **Instance:**).
 1. In the left sidebar, click **Change Management**.
@@ -11,6 +12,7 @@ To access Change Management:
 ## Your First Task
 
 Try it: review a change in the audit log: 
+
 1. In the left sidebar, click **Change Management** > **Audit Log**.
 1. In the table, find a record you want to inspect.
 1. At the right end of the row, click the row menu (**Open menu**).
