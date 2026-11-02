@@ -12,8 +12,7 @@ Columns: a selection checkbox, **Change Type**, **Bulk** (a **Bulk (n)** badge o
     - **Requester** — the user who submitted the request
     - **Status** — the request's current status
     - **Criticality** — **Urgent** or **Normal**
-
-    **Change type**, **Requester**, **Status**, and **Criticality** are searchable multi-selects, and each lists only the values present in the loaded requests. Selecting several values in one filter matches any of them; selections in different filters must all match.
+    - **Change type**, **Requester**, **Status**, and **Criticality** are searchable multi-selects, and each lists only the values present in the loaded requests. Selecting several values in one filter matches any of them; selections in different filters must all match.
 2. Type in the **Search by keyword...** box above the table to filter the requests currently in the table.
 3. Click **Clear Filters** to remove all filter selections and the target search, or **Hide filters** to collapse the panel.
 
