@@ -42,6 +42,7 @@ The target search counts as one active filter, and **Refresh data** reloads its 
 # Updating a Record's Description
 
 Records on all three pages have an editable description.
+
 1. Click the row menu (**Open menu**) on the record.
 2. Click **Update description**.
 3. The **Update Description** dialog opens ("Add or edit the description for this entry.").
