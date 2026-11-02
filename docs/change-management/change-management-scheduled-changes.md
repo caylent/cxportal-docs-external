@@ -11,8 +11,7 @@ Columns: **Change Type**, **Bulk** (a **Bulk (n)** badge on bulk changes), **Tar
     - **Change type** — the operation that will be performed
     - **Requester** — the user who submitted the change
     - **Approver** — the user who approved it
-
-    **Change type**, **Requester**, and **Approver** are searchable multi-selects, and each lists only the values present in the loaded changes. Selecting several values in one filter matches any of them; selections in different filters must all match.
+    - **Change type**, **Requester**, and **Approver** are searchable multi-selects, and each lists only the values present in the loaded changes. Selecting several values in one filter matches any of them; selections in different filters must all match.
 2. Type in the **Search by keyword...** box above the table to filter the changes currently in the table.
 3. Click **Clear Filters** to remove all filter selections and the target search, or **Hide filters** to collapse the panel.
 
