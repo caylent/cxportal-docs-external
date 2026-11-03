@@ -194,7 +194,7 @@ nav:
           - Searching DFC: dynamic-flow-configurator-dfc/searching-dfc.md
           - Setting Up Entities & Schemas: dynamic-flow-configurator-dfc/setting-up-entities-and-schemas.md
           - Managing Schedules & Closures: dynamic-flow-configurator-dfc/managing-hours-of-operation-and-closures/index.md
-              - "Setup Example: Routing Destinations": dynamic-flow-configurator-dfc/managing-hours-of-operation-and-closures/dfc-routing-destinations.md
+              - "Setup Example: Routing Destinations": dynamic-flow-configurator-dfc/managing-hours-of-operation-and-closures/dfc-routing-destinations.md 
               - "Setup Example: Transfers": dynamic-flow-configurator-dfc/managing-hours-of-operation-and-closures/dfc-transfers.md
               - "Setup Example: Prompts": dynamic-flow-configurator-dfc/managing-hours-of-operation-and-closures/dfc-prompts.md
               - "Setup Example: Conditionals": dynamic-flow-configurator-dfc/managing-hours-of-operation-and-closures/dfc-conditionals.md
