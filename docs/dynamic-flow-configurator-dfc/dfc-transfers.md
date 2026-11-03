@@ -23,28 +23,28 @@ Your instance's exact entity name and fields are set by its schema.
 
 ### Reviewing Your Transfers
 
-- In the DFC Browser, select the transfer entity in the left panel.
-- Review the table of items and their details.
-- The **Defaults** panel above the table holds the entity's default property values and the fallback a flow receives when it queries the entity without naming a specific transfer.
+1. In the DFC Browser, select the transfer entity in the left panel.
+2. Review the table of items and their details.
+3. The **Defaults** panel above the table holds the entity's default property values and the fallback a flow receives when it queries the entity without naming a specific transfer.
 
 ### Changing a Transfer's Destination
 
-- Open the item from the items table. The editing tray opens and is fully editable.
-- Click the **routing destination dropdown** and select an item from the entity.
-- To review what the transfer currently points at, click the open icon next to the field. It takes you to the referenced item.
-- Click **Save** and review your changes.
+1. Open the item from the items table. The editing tray opens and is fully editable.
+2. Click the **routing destination dropdown** and select an item from the entity.
+3. To review what the transfer currently points at, click the open icon next to the field. It takes you to the referenced item.
+4. Click **Save** and review your changes.
 
 ### Editing the Transfer Message
 
-- Open the item from the items table.
-- Edit the transfer message field. If the field is a **Prompt** field, the SSML editor opens.
-- Click **Save** and review your changes.
+1. Open the item from the items table.
+2. Edit the transfer message field. If the field is a **Prompt** field, the SSML editor opens.
+3. Click **Save** and review your changes.
 
 ### Adding a Transfer
 
-- In the entity view, click **+ Item**.
-- Fill in the fields according to the schema: at minimum the primary key and the required routing destination.
-- Click **Save**.
+1. In the entity view, click **+ Item**.
+2. Fill in the fields according to the schema: at minimum the primary key and the required routing destination.
+3. Click **Save**.
 
 ### Verifying a Transfer
 
@@ -52,10 +52,10 @@ Use **Path Tester** in the DFC Browser sub-header to preview exactly what a cont
 
 ### Reviewing and Submitting Your Changes
 
-- Click **Save**. The **Are you sure?** dialog lists every pending change.
-- (Optional) Enter a **Change Request Description**.
-- Set the **Change Request Criticality**. The default is **Normal**.
-- (Optional) Set **Schedule For Later** to schedule the change.
-- Click **Yes, Submit Changes**.
+1. Click **Save**. The **Are you sure?** dialog lists every pending change.
+2. (Optional) Enter a **Change Request Description**.
+3. Set the **Change Request Criticality**. The default is **Normal**.
+4. (Optional) Set **Schedule For Later** to schedule the change.
+5. Click **Yes, Submit Changes**.
 
 A change request is created and routed through the standard DFC approval flow. Your changes apply once they are approved.
