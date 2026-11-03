@@ -14,21 +14,21 @@ Conditionals let a contact flow change where a call goes, or what the caller hea
 
 ### Reviewing Your Conditionals
 
-- In the DFC Browser, select the conditionals entity in the left panel.
-- Click the conditionals sub-entities to view their items.
-- Review the item table and click an item to see details.
+1. In the DFC Browser, select the conditionals entity in the left panel.
+2. Click the conditionals sub-entities to view their items.
+3. Review the item table and click an item to see details.
 
 ### Editing a Conditional
 
-- Open the item from the items table. The editing tray opens and is fully editable.
-- Review and edit the conditionals options using the dropdowns. Use the open icon to view selection details.
-- Click **Save** and review your changes.
+1. Open the item from the items table. The editing tray opens and is fully editable.
+2. Review and edit the conditionals options using the dropdowns. Use the open icon to view selection details.
+3. Click **Save** and review your changes.
 
 ### Adding a Conditional
 
-- In the entity view, click **+ Item**.
-- Set the condition key (the primary field) and fill in the conditional content.
-- Click **Save**.
+1. In the entity view, click **+ Item**.
+2. Set the condition key (the primary field) and fill in the conditional content.
+3. Click **Save**.
 
 ### Verifying What a Flow Receives
 
@@ -36,10 +36,10 @@ Use **Path Tester** in the DFC Browser sub-header to query the entity and previe
 
 ### Reviewing and Submitting Your Changes
 
-- Click **Save**. The **Are you sure?** dialog lists every pending change.
-- (Optional) Enter a **Change Request Description**.
-- Set the **Change Request Criticality**. The default is **Normal**.
-- (Optional) Set **Schedule For Later** to schedule the change.
-- Click **Yes, Submit Changes**.
+1. Click **Save**. The **Are you sure?** dialog lists every pending change.
+2. (Optional) Enter a **Change Request Description**.
+3. Set the **Change Request Criticality**. The default is **Normal**.
+4. (Optional) Set **Schedule For Later** to schedule the change.
+5. Click **Yes, Submit Changes**.
 
 A change request is created and routed through the standard DFC approval flow. Your changes apply once they are approved.
