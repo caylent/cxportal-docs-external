@@ -1,5 +1,7 @@
 # Setup Example: Transfers
 
+**DFC is highly customizable, so your setup may differ from this example. The steps below show how to configure transfers.**
+
 **Transfers** define where a transfer sends a contact. Each transfer item maps a transfer identifier to a destination, typically pointing at a routing destination or queue item, plus the message played when the transfer happens. Contact flows query the transfer data at runtime instead of relying on hard-coded routing logic, so retargeting a transfer is a data change, not a flow change.
 
 A typical transfer item includes:
