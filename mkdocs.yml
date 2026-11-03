@@ -26,6 +26,7 @@ theme:
     - navigation.tracking     # URL updates as you scroll
     - navigation.top          # "back to top" button
     - navigation.sections     # group nav items into sections
+    - navigation.indexes      # section's first page (index.md) becomes the section's own 
     - search.suggest          # autocomplete in the search box
     - search.highlight        # highlight matches on the page
     - content.code.copy       # copy button on code blocks
