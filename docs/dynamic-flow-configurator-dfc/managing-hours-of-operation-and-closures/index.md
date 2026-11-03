@@ -15,8 +15,8 @@ Entities can include **Schedules** and **Closure** fields in their schema. You s
 
 ## Before You Begin
 
-* You need item edit permission on the entity. See Managing DFC Permissions.
-* The entity's schema must include a Schedule or Closure field. See Setting Up Entities and Schemas.
+* You need item edit permission on the entity. See [Managing DFC Permissions](../managing-dfc-permissions.md).
+* The entity's schema must include a Schedule or Closure field. See [Setting Up Entities and Schemas](../setting-up-entities-and-schemas.md).
 * Changes are submitted as a change request and take effect once approved.
 * Times are entered and displayed in UTC.
 
@@ -30,7 +30,7 @@ The editing tray opens fully editable — there's no separate edit mode. The foo
 2. Toggle a day on to set its hours. Editable start and end times appear.
 3. Toggle a day off to mark it **Closed**.
 4. (Optional) Add more time ranges to a day: a. Click the **+** next to the day. The **Edit Hours of Operation** modal opens with a weekly calendar view. b. Add or adjust ranges in the calendar. c. Save the modal. Additional ranges appear nested under their day, where you can edit them directly.
-5. Click **Save** and review your changes (see Reviewing and Submitting Your Changes below).
+5. Click **Save** and review your changes.
 
 
 !!! info ""
@@ -45,7 +45,7 @@ The editing tray opens fully editable — there's no separate edit mode. The foo
 2. Click **+ Closure**.
 3. Enter the closure's title, start, and end, and an optional description.
 4. To remove an existing closure, click its delete button.
-5. Click **Save** and review your changes (see Reviewing and Submitting Your Changes below).
+5. Click **Save** and review your changes.
 
 
 !!! info ""
@@ -88,7 +88,7 @@ Your instance's exact entity name and fields are set by its schema.
 
 ### Before You Begin ###
 
-- You need item edit permission on the entity. See [Managing DFC Permissions](managing-dfc-permissions.md).
+- You need item edit permission on the entity. See [Managing DFC Permissions](../managing-dfc-permissions.md).
 - Adding new destinations requires at least the **Item Creator** permission level.
 - Changes are submitted as a change request and take effect once approved.
 - The Amazon Connect resources you point at (queues, flows, prompts, phone numbers) are created and managed in Amazon Connect, not in DFC. DFC stores which resource a destination uses.
@@ -145,7 +145,7 @@ Your instance's exact entity name and fields are set by its schema.
 
 ### Before You Begin
 
-- You need item edit permission on the entity. See [Managing DFC Permissions](managing-dfc-permissions.md).
+- You need item edit permission on the entity. See [Managing DFC Permissions](../managing-dfc-permissions.md).
 - Adding new transfers requires at least the **Item Creator** permission level.
 - Changes are submitted as a change request and take effect once approved.
 - The destinations a transfer can point at must already exist as items in the entity. 
@@ -186,7 +186,7 @@ Conditionals let a contact flow change where a call goes, or what the caller hea
 
 ### Before You Begin
 
-- You need item edit permission on the entity. See [Managing DFC Permissions](managing-dfc-permissions.md).
+- You need item edit permission on the entity. See [Managing DFC Permissions](../managing-dfc-permissions.md).
 - Adding new prompt variants requires at least the **Item Creator** permission level.
 - Changes are submitted as a change request and take effect once approved.
 
@@ -218,10 +218,10 @@ Use **Path Tester** in the DFC Browser sub-header to query the entity and previe
 Prompts are fields that store the SSML text Amazon Connect speaks to callers. You edit it in a rich text editor that adds pauses, emphasis and pronunciation, or in Code View for raw SSML.
 
 ### Before You Begin
-- You need item edit permission on the entity. See [Managing DFC Permissions](managing-dfc-permissions.md). 
+- You need item edit permission on the entity. See [Managing DFC Permissions](../managing-dfc-permissions.md). 
 - Adding new prompt variants requires at least the **Item Creator** permission level.
 - Changes are submitted as a change request and take effect once approved.
-- Prompt fields are edited with DFC's SSML editor. For the full editor reference, including the formatting toolbar, Code View, validation, and audio preview, see [Editing Prompt Fields](editing-prompt-fields).
+- Prompt fields are edited with DFC's SSML editor. For the full editor reference, including the formatting toolbar, Code View, validation, and audio preview, see [Editing Prompt Fields](../editing-prompt-fields).
 
 ### Step-by-Step Instructions
 
@@ -241,7 +241,7 @@ Prompts are fields that store the SSML text Amazon Connect speaks to callers. Yo
 
 1. Open the item from the items table. The editing tray opens and is fully editable.
 2. Edit the prompt details.
-3. If a field is a Prompt field, it opens the SSML editor. Use the **SSML Formatting** toolbar to insert pauses or control rate, volume, pitch, pronunciation, and language. The root <speak> tag is applied automatically. Click **Switch to Code View** to edit the raw SSML directly. For more information, see [Editing Prompt Fields](editing-prompt-fields).
+3. If a field is a Prompt field, it opens the SSML editor. Use the **SSML Formatting** toolbar to insert pauses or control rate, volume, pitch, pronunciation, and language. The root <speak> tag is applied automatically. Click **Switch to Code View** to edit the raw SSML directly. For more information, see [Editing Prompt Fields](../editing-prompt-fields).
 4. Click **Save Changes**.
 
 ### Verifying What a Flow Receives
