@@ -1,7 +1,7 @@
 ---
 description: >-
   Set weekly hours and closure periods on items with Hours of Operation and
-  Closure fields.
+  Closure fields. 
 ---
 
 # Managing Schedules and Closures
