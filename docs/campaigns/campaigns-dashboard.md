@@ -54,7 +54,9 @@ The **Status filter** allows you to filter campaigns by their status. The availa
 * Scheduled
 * Completed
 * Failed
-* Initialized
+* Initializing
+* Stopping
+* Stopped
 
 Once you've made your filter selections, click **Apply Filters** to update the dashboard. To remove all active filters and reset the view, click **Clear Filters**.
 
@@ -142,3 +144,20 @@ For SMS campaigns, you can see metrics such as:
 * Messages Sent
 * Delivered Rate
 * Voicemails Detected
+
+***
+
+### Stop a Campaign
+
+You can stop a campaign before its scheduled end from its details page. **Stop Campaign** appears next to **Return to Dashboard** when the campaign is Running, Paused, Scheduled, or Initialized, and only for users with write access to Campaigns. [VERIFY: the customer-facing name of the role or permission that grants Campaigns write access]
+
+1. On the Campaigns Dashboard, click the campaign name to open its details page.
+2. Click **Stop Campaign**.
+3. In the **Stop Campaign** confirmation, click **Stop Campaign** to confirm.
+
+!!! warning ""
+    A stopped campaign can't be restarted. Voice campaigns place no new calls, SMS campaigns send no new messages, and email campaigns send no new emails.
+
+After you confirm, the campaign stops sending straight away and its status changes to **Stopping**. While it is Stopping, the details page shows **This campaign is stopping** and explains when final metrics will be available — normally within about 10 minutes, or shortly after the originally scheduled end if the cleanup can't run sooner. Once final metrics are ready, the status changes to **Stopped**.
+
+For a stopped campaign, the schedule shows the originally planned **End Date** and a **Stopped** date showing when the campaign was stopped.

@@ -60,7 +60,7 @@ Keep the following limits in mind when using CxCases:
     </tr>
     <tr>
       <td>CxPortal</td>
-      <td> Admin: Access Management, Admin: Module Deployments, Admin: Notifications, Admin: Release Notes, Admin: Superadmin,ACGR, Agent Management, Analytics &amp; Dashboards, Bulk Edit, Campaigns, Change Management, CxPortal home, DFC, Flow Insights, Knowledge Management, Proficiency Routing, Q in Connect</td>
+      <td> Admin: Access Management, Admin: Module Deployments, Admin: Notifications, Admin: Release Notes, Admin: Superadmin,ACGR, Agent Management, Analytics &amp; Dashboards, Bulk Edit, Campaigns, Change Management, CxPortal home, DFC, Flow Insights, Knowledge Management, Proficiency Routing, Q in Connect, Workforce Management</td>
     </tr>
   </tbody>
 </table>
@@ -102,6 +102,10 @@ Once case details are updated, you'll receive an email notification detailing th
 
 
 **Note:** Some file types (PDF, CSV, and DOC) cannot be previewed in the attachment box but can be downloaded and opened on your computer. The maximum file size is 10 MB per file. Supported file types include JPG, PNG, PDF, DOC, XLS, CSV, and ZIP.
+
+
+!!! info ""
+    If you add a small JPG image (under 400,000 pixels), the **Check this image is readable** dialog shows it at actual size. Check that the text or detail you want support to see is readable, then click **Use this image** to keep it or **Remove this image** to take it off the case. You can't save or upload until you've answered for each flagged image. If you're attaching a screenshot, use the original file — copies saved from elsewhere are often too small to read.
 
 
 ***
