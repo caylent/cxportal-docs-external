@@ -40,7 +40,7 @@ Workforce Management gives supervisors real-time and historical visibility into 
 
 Before you begin:
 
-- **Permissions** — Your CxPortal account must have the **Workforce Management permission** assigned to your role. The Time Off page has its own permission, separate from Agent Status — see [Reviewing Team Time Off](wfm-time-off.md).
+- **Permissions** — Workforce Management is subject to role-based access. Your CxPortal account must have the appropriate permissions assigned to your role, as each page has its own permissions.
 - **Amazon Connect Instance** — At least one Amazon Connect instance must be configured in CxPortal with the Workforce Management add-on (Forecasting, Capacity Planning & Scheduling) licensed.
 - **Data Pipeline** — The Kinesis agent event stream and all tables must be provisioned and connected to CxPortal for your instance.
 
