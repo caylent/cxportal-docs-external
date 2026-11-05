@@ -27,7 +27,7 @@ This section provides guidance for common issues you may encounter when working 
     If the list of Knowledge Bases can't be loaded, the Knowledge Bases and Articles pages show an error in place of the list.
 
     * If the error reads "We couldn’t retrieve the list of knowledge bases for this instance. Refresh the page to try again.", refresh the page.
-    * If your instance's knowledge base store isn't set up yet, the error explains why the Knowledge Bases can't load instead. If you need help resolving it, [contact Caylent support](../submitting-a-support-request.md). [VERIFY: exact error wording, which comes from the backend — PR title cites a missing Connect Cache as the cause]
+    * If your instance's knowledge base store isn't set up yet, the error explains why the Knowledge Bases can't load instead. If you need help resolving it, [contact Caylent support](../submitting-a-support-request.md). 
 
 ??? note "Knowledge Base creation issues"
 
