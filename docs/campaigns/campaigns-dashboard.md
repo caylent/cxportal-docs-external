@@ -149,7 +149,7 @@ For SMS campaigns, you can see metrics such as:
 
 ### Stop a Campaign
 
-You can stop a campaign before its scheduled end from its details page. **Stop Campaign** appears next to **Return to Dashboard** when the campaign is Running, Paused, Scheduled, or Initialized, and only for users with write access to Campaigns. [VERIFY: the customer-facing name of the role or permission that grants Campaigns write access]
+You can stop a campaign before its scheduled end from its details page. **Stop Campaign** appears next to **Return to Dashboard** when the campaign is Running, Paused, Scheduled, or Initialized, and only for users with write access to Campaigns. 
 
 1. On the Campaigns Dashboard, click the campaign name to open its details page.
 2. Click **Stop Campaign**.
