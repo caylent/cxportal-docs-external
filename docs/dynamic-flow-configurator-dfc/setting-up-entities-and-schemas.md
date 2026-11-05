@@ -51,10 +51,19 @@ To create an entity:
 
 1. In the left panel, select **Home** (root).
 2. Click **+ Entity.**
-3. Enter an **entity name** and **entity description.**
-4. Click **Create Entity.**
+3. Choose a starting point:
+    * **Start from scratch** — an empty entity. You add its fields yourself in Settings.
+    * A template — an entity with its fields already set up. Each template card shows its name, description, and number of fields.
+4. Click **Continue.**
+5. Enter an **entity name** and **entity description.** If you chose a template, its description is filled in for you, and the fields the template adds are listed below.
+6. Click **Create Entity.**
 
-After creation, the entity appears in the left panel. A confirmation message displays: "Entity has been created successfully."
+After creation, the entity appears in the left panel and, if the change was applied straight away (not scheduled or sent for approval), DFC opens it. A confirmation message displays: "Entity has been created successfully."
+
+Entity names must be unique at their level. If an entity with the same name already exists, the form shows "An entity with this name already exists here." and you can't create the entity until you change the name.
+
+!!! info ""
+    Some template fields reference other entities. DFC links each one to your existing top-level entity of the same name, and the form lists which entities it linked to. If there's no matching entity yet, that field is left out — create the missing entity first, or add the field later in Settings. If templates can't be loaded, you can still start from scratch.
 
 !!! note
 
@@ -71,6 +80,8 @@ After creation, the entity appears in the left panel. A confirmation message dis
 3\. Enter a **entity name** and **entity description.**
 
 4\. Click **Create Sub-Entity.**
+
+Sub-entity names must be unique under the same parent. If the name is already in use, the form shows "A sub-entity with this name already exists here."
 
 The sub-entity inherits the parent entity's schema automatically. Inherited fields cannot be modified at the sub-entity level, but you can add additional fields to the child entity.
 
@@ -107,7 +118,7 @@ Before adding items, configure the entity's schema. Schema edits accumulate as a
 | **Overridable** | Whether items or sub-entities can override the default value.                                                                                          |
 | **Hidden**      | Show or hide the field in API responses.                                                                                                               |
 | **Presentable** | Show or hide the field in the UI as a column.                                                                                                          |
-| **Constraints** | <p>Type-specific constraints such as minimum and maximum length for strings.</p><p>Set a minimum length of at least 1 character for string fields.</p> |
+| **Constraints** | <p>Type-specific constraints such as minimum and maximum length for strings.</p><p>For string fields, the maximum length must be at least 1 and greater than or equal to the minimum. Required string fields need a minimum length of at least 1; optional string fields can use a minimum length of 0.</p> |
 | **Conditions**  | Conditional display rules based on pick list values.                                                                                                   |
 
 6. Repeat steps 2–5 for each field. Edits apply to your draft automatically — there's no per-field save.

@@ -7,6 +7,9 @@
 
 The first thing you see is the contact list panel on the left.
 
+!!! info ""
+    If Insights isn't configured for your instance, Flow Analyzer shows **Insights isn't set up for this instance yet** instead of the contact list. Ask your CxPortal admin to configure Insights for the instance. If the configuration can't be loaded, Flow Analyzer shows **Couldn't load Insights configuration** with the error details — click **Retry** to try again.
+
 ***
 
 ### The Contact List Panel

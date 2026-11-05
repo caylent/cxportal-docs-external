@@ -117,10 +117,11 @@ To remove a single filter, click the **x** on its chip. To remove every filter, 
 
 1. In the left panel, select **Home** (root).
 2. Click **+ Entity**.
-3. Enter an **entity name** and an **entity description**.
-4. Click **Create Entity**.
+3. Select **Start from scratch**, or select a template to start with its fields already set up, and click **Continue**.
+4. Enter an **entity name** and an **entity description**.
+5. Click **Create Entity**.
 
-Your new entity appears in the left panel, and a confirmation message displays: "Entity has been created successfully."
+Your new entity appears in the left panel and opens, and a confirmation message displays: "Entity has been created successfully."
 
 !!! info ""
     **Note:** **Create Entity** stays disabled until you enter both a name and a description.
