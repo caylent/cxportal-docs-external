@@ -158,13 +158,14 @@ nav:
       - Enabling New Features with Permissions: enabling-new-features-with-permissions.md
 
   - Agents & Routing:
-      - Bulk Agent Management:
+      - Agent Batch Editor:
           - Overview: editing-agents-in-bulk/editing-agents-in-bulk-homepage.md
           - Getting Started: editing-agents-in-bulk/getting-started-with-bulk-agent-management.md
           - Making Bulk Changes to Agents: editing-agents-in-bulk/making-bulk-changes-to-agents.md
           - Change Requests & Timing: editing-agents-in-bulk/change-requests-and-timing.md
           - Exporting Agent Data: editing-agents-in-bulk/exporting-agent-data.md
           - Permissions & Support: editing-agents-in-bulk/permissions-and-support.md
+          - Reference: editing-agents-in-bulk/agent-batch-editor-reference.md
           - Best Practices: editing-agents-in-bulk/best-practices-for-editing-agents-in-bulk.md
       - Proficiency Routing:
           - Overview: proficiency-based-routing/proficiency-based-routing.md

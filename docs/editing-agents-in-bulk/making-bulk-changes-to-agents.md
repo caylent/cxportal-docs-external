@@ -6,7 +6,7 @@ Once you've selected the agents you want to update, use the **Bulk Actions** too
 
 ## Before You Begin
 
-* You need an administrative role with access to the **Bulk Edit** section. Submitting a bulk change may require Change Management approval, depending on your organization's role and instance configuration. See [Change Requests and Timing.](change-requests-and-timing.md)
+* You need an administrative role with access to **Agent Batch Editor**. Submitting a bulk change may require Change Management approval, depending on your organization's role and instance configuration. See [Change Requests and Timing.](change-requests-and-timing.md)
 * Find the agents you want to update first. See [Filtering Agents](https://docs.caylent.com/cxportal/editing-agents-in-bulk/getting-started-with-bulk-agent-management/#filtering-agents).
 
 ***

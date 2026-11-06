@@ -60,7 +60,7 @@ Keep the following limits in mind when using CxCases:
     </tr>
     <tr>
       <td>CxPortal</td>
-      <td> Admin: Access Management, Admin: Module Deployments, Admin: Notifications, Admin: Release Notes, Admin: Superadmin,ACGR, Agent Management, Analytics &amp; Dashboards, Bulk Edit, Campaigns, Change Management, CxPortal home, DFC, Flow Insights, Knowledge Management, Proficiency Routing, Q in Connect, Workforce Management</td>
+      <td> ACGR, Admin: Access Management, Admin: Module Deployments, Admin: Notifications, Admin: Release Notes, Admin: Superadmin, Agent Batch Editor, Analytics &amp; Dashboards, Campaigns, Change Management, CxPortal home, DFC, Flow Insights, Knowledge Management, Proficiency Routing, Q in Connect, Workforce Management</td>
     </tr>
   </tbody>
 </table>

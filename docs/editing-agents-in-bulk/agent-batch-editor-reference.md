@@ -1,4 +1,4 @@
-# Reference: Bulk Edit Agents
+# Reference: Agent Batch Editor
 
 ### Field Reference Table
 

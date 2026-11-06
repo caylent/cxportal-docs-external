@@ -35,7 +35,7 @@ To schedule a bulk change for the future instead of applying it immediately, set
 
 ### Required Roles
 
-* Access to the **Bulk Edit** section requires the appropriate administrative role in CxPortal.
+* Access to **Agent Batch Editor** requires the appropriate administrative role in CxPortal.
 * Submitting a bulk change may require Change Management approval, depending on your organization's role and instance configuration.
 
 ***
