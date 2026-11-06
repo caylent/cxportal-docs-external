@@ -49,7 +49,7 @@ Before you begin:
 
 ## How it Works
 
-Changes are created in other CxPortal modules (for example DFC entities and items, Proficiency Routing attributes and routing rules, or Bulk Edit agent updates) and flow through Change Management:
+Changes are created in other CxPortal modules (for example DFC entities and items, Proficiency Routing attributes and routing rules, or Agent Batch Editor updates) and flow through Change Management:
 
 * A change that requires approval appears on the **Change Requests** page with status **Pending**.
 * A reviewer approves or rejects the request. Approved requests change to **Approved**; a bulk request in which some records were rejected shows **Partially Rejected**.
@@ -59,5 +59,5 @@ Changes are created in other CxPortal modules (for example DFC entities and item
 
 ## Related Modules
 
-- **DFC**, **Proficiency Routing**, **Bulk Edit, and Knowledge Management** — changes made in these modules appear in Change Management (see the change types in the Reference section)
+- **DFC**, **Proficiency Routing**, **Agent Batch Editor**, and **Knowledge Management** — changes made in these modules appear in Change Management (see the change types in the Reference section)
 

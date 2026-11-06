@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Agent Management** page lets you view, filter, and update agent configurations across your entire agent population without touching each record individually. You can change **Routing Profile**, **Auto Accept Calls**, and **ACW Time Limit** for as many agents as you need in a single workflow.
+The **Agent Batch Editor** page lets you view, filter, and update agent configurations across your entire agent population without touching each record individually. You can change **Routing Profile**, **Auto Accept Calls**, and **ACW Time Limit** for as many agents as you need in a single workflow.
 
 Amazon Connect requires agent changes one at a time by default, so this gives you a structured, centralized way to manage agent configurations at scale.
 
@@ -16,12 +16,12 @@ Amazon Connect requires agent changes one at a time by default, so this gives yo
 
 **Where to find it**
 
-In CxPortal, expand **Bulk Edit** in the left navigation panel, then select **Agents**.
+In CxPortal, select **Agent Batch Editor** in the left navigation panel.
 ***
 
 ## Benefits at a Glance
 
-In large contact centers, or during campaigns, seasonal peaks, or sudden volume shifts, editing agents one at a time becomes slow and error-prone. Bulk Edit applies the same change to every selected agent in one action.
+In large contact centers, or during campaigns, seasonal peaks, or sudden volume shifts, editing agents one at a time becomes slow and error-prone. Agent Batch Editor applies the same change to every selected agent in one action.
 
 <img width="2000" height="1414" alt="bulk edit agents" src="https://github.com/user-attachments/assets/b8474f90-9d5b-4621-a078-3bd1f5ed8a65" />
 
@@ -45,8 +45,8 @@ In large contact centers, or during campaigns, seasonal peaks, or sudden volume 
 
 **Before you begin:**
 
-* Access to the **Agent Management** page is restricted to users with the appropriate administrative role in CxPortal. If you don't see **Bulk Edit** in the left navigation panel, contact your CxPortal administrator to request access.
-* Viewing the agent table does not require any special permissions beyond access to the **Bulk Edit** section.
+* Access to the **Agent Batch Editor** page is restricted to users with the appropriate administrative role in CxPortal. If you don't see **Agent Batch Editor** in the left navigation panel, contact your CxPortal administrator to request access.
+* Viewing the agent table does not require any special permissions beyond access to **Agent Batch Editor**.
 * Submitting a bulk change may require Change Management approval, depending on your organization's role and instance configuration.
 
 ***

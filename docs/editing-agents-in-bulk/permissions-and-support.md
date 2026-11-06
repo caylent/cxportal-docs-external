@@ -2,9 +2,9 @@
 
 ### Permissions
 
-Access to the Agent Management page is restricted to users with the appropriate administrative role in CxPortal. If you don't see the Bulk Edit option in the left navigation panel, contact your CxPortal administrator to request access.
+Access to the Agent Batch Editor page is restricted to users with the appropriate administrative role in CxPortal. If you don't see Agent Batch Editor in the left navigation panel, contact your CxPortal administrator to request access.
 
-* Viewing the agent table does not require any special permissions beyond access to the Bulk Edit section.
+* Viewing the agent table does not require any special permissions beyond access to Agent Batch Editor.
 * Submitting a bulk change may require Change Management approval depending on your organization's role and instance configuration.
 
 ***

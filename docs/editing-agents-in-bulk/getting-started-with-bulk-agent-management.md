@@ -1,12 +1,11 @@
-# Getting Started with Bulk Agent Management
+# Getting Started with Agent Batch Editor
 
 ## How to Access This Module
 
-To open the Agent Management page:
+To open the Agent Batch Editor page:
 
 1. Log in to CxPortal.
-2. In the left navigation panel, expand **Bulk Edit**.
-3. Click **Agents**.
+2. In the left navigation panel, select **Agent Batch Editor**.
 
 The page opens to your full agent roster in a filterable, sortable table. The header shows an **Export All** button and a **Filter Agents** panel.
 
