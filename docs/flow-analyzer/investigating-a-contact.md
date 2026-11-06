@@ -54,6 +54,8 @@ When you don't have a specific Contact ID:
 
     Flow Analyzer captures the execution time of each block. This makes it easier to identify delays, long-running Lambda functions, or blocks that consistently take longer than expected.
 
+    A Set contact attributes block that writes several attributes appears as one block, with each attribute's key and value stacked inside it and the number of attributes (for example *5 attributes*) beside its timestamp.
+
     If the contact moved through more than one flow, each flow and the transitions between them are clearly displayed.
 
 
