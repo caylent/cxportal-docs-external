@@ -112,7 +112,7 @@ Before adding items, configure the entity's schema. Schema edits accumulate as a
 
 | **Name**        | The field name.                                                                                                                                        |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Type**        | String, Number, Boolean, Reference, Datetime, JSON, YAML, Amazon Connect Resource, Agentic CX Application, Pick List, or Prompt.                       |
+| **Type**        | String, Number, Boolean, Reference, Multi-Reference, Datetime, JSON, YAML, Amazon Connect Resource, Agentic CX Application, Pick List, or Prompt.      |
 | **Required**    | Whether the field must be set for every item.                                                                                                          |
 | **Primary**     | Used as the item's unique identifier (required for at least one field).                                                                                |
 | **Overridable** | Whether items or sub-entities can override the default value.                                                                                          |
@@ -140,6 +140,24 @@ Once you make an edit, a "You have unsaved changes" indicator appears with a **D
 
 When you set a field's **Type** to **Reference**, specify the path to the referenced entity. The dropdown shows available items from that entity, and a preview displays the evaluated reference data. Only items (not entities) can be selected in reference fields.
 
+#### **Configuring a Multi-Reference Field**
+
+A **Multi-Reference** field works like a Reference field, but one item can link to several items instead of one. When you set a field's **Type** to **Multi-Reference**, select the base Entity in the **Multi-Reference** constraints panel. Any item under the selected Entity (or its children) can be referenced, and an item can reference several of them.
+
+To fill in a Multi-Reference field on an item:
+
+1. Click the field's dropdown. Until you pick something, it reads **Select**, the field's name, and an ellipsis. [VERIFY: the placeholder is built from the field's key, which may differ from its display label.] After that, it shows how many items are selected (for example, **3 selected**).
+2. On the **All** tab, check the items you want. Click a sub-entity under **Sub-Entities** to browse its items, and use the back button at the top of the list to return to the parent.
+3. (Optional) Open the **Selected (N)** tab to review your picks, and uncheck any you don't want. The search box filters whichever tab is open. Click **Clear all** to remove every selection.
+
+The selected items appear as chips below the field. Click a chip's name to open that item in a new tab, so you don't lose your in-progress edit, or click its **x** to remove it.
+
+!!! info ""
+
+    A Multi-Reference field holds at most 100 items. Once 100 are selected, the remaining items can't be checked and the dropdown shows *The maximum of 100 items is selected.* The same item can't be selected twice, and a required Multi-Reference field needs at least one item before you can save.
+
+In the items table, a Multi-Reference column lists the referenced items' primary keys, separated by commas. A CSV export writes the same comma-separated list. Multi-Reference fields can be filtered, sorted, and bulk edited like other fields.
+
 #### **Configuring an Agentic CX Application Field**
 
 An **Agentic CX Application** field stores the three IDs an Agentic CX flow block routes to: a **Workspace ID**, an **Application ID**, and an **Alias ID**. The type needs no extra configuration — its constraints panel only describes what the field stores. Copy the IDs from the Agentic CX flow block's application settings.
@@ -157,7 +175,7 @@ In the items table the field shows the application and alias IDs separated by a 
 
 ??? note "Field types list"
 
-    Available field types: Agentic CX Application, Amazon Connect Resource, Boolean, Closure, Date Time, Hours of Operation, JSON, Number, Pick List, Prompt, Reference, String, YAML.
+    Available field types: Agentic CX Application, Amazon Connect Resource, Boolean, Closure, Date Time, Hours of Operation, JSON, Multi-Reference, Number, Pick List, Prompt, Reference, String, YAML.
 
     For editing a Prompt field's SSML content, see [Editing Prompt Fields](editing-prompt-fields.md).
 
