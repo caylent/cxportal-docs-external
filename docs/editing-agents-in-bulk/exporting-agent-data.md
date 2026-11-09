@@ -2,7 +2,7 @@
 
 ## Before You Begin
 
-* You need access to the **Bulk Edit** section. Exporting does not submit a change and does not require Change Management approval.
+* You need access to **Agent Batch Editor**. Exporting does not submit a change and does not require Change Management approval.
 
 ***
 
