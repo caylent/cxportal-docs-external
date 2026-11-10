@@ -146,7 +146,7 @@ A **Multi-Reference** field works like a Reference field, but one item can link 
 
 To fill in a Multi-Reference field on an item:
 
-1. Click the field's dropdown. Until you pick something, it reads **Select**, the field's name, and an ellipsis. [VERIFY: the placeholder is built from the field's key, which may differ from its display label.] After that, it shows how many items are selected (for example, **3 selected**).
+1. Click the field's dropdown. Until you pick something, it reads **Select**, the field's name, and an ellipsis. After that, it shows how many items are selected (for example, **3 selected**).
 2. On the **All** tab, check the items you want. Click a sub-entity under **Sub-Entities** to browse its items, and use the back button at the top of the list to return to the parent.
 3. (Optional) Open the **Selected (N)** tab to review your picks, and uncheck any you don't want. The search box filters whichever tab is open. Click **Clear all** to remove every selection.
 
