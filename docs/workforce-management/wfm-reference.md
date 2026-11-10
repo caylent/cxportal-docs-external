@@ -129,7 +129,7 @@ The **Settings** page is read-only and is visible only to a Workforce Management
 
 | Card | Contents |
 | --- | --- |
-| **Reporting population** | Headline *n of m agents counted*, then one row per security profile on the instance: **Security profile id** · **Agents** · **Status**, where Status is **Counted**, **Not counted**, or **Unknown** |
+| **Reporting population** | Headline *n of m agents counted*, then one row per security profile on the instance: **Security profile id** · **Agents** · **Status**, where Status is **Counted**, **Not counted**, or **Unknown**. When no counted security profiles are configured for the instance, every agent is counted and the card reads *No counted security profiles are configured for this instance, so every agent is counted.* |
 | **Performance thresholds** | **Adherence** — Target % and At-risk floor %. **Conformance** — a Set a conformance target toggle, with Target % and At-risk floor % |
 | **Display defaults** | **Default time zone** and **Adherence grace minutes** |
 

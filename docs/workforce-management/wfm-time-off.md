@@ -12,6 +12,7 @@ The **Time Off** page shows who is out, and which time-off requests are waiting 
 - The page opens on the next 30 days. Date ranges look ahead: **Today**, **Next 7d**, **Next 30d**, or a custom range on the calendar
 - **Pending** counts every pending request, whatever its dates; the date range limits which leave you see, not which decisions are waiting
 - Hours on the **Out today** and **Out in range** tiles count approved leave only, and are an estimate for requests that run past the window: Connect reports one total per request, so each request is split in proportion to how much of it falls inside
+- Connect publishes a request's hours only once the request is approved, so a request awaiting a decision, or denied before approval, has no hours. When an approved request counted on the **Out today** or **Out in range** tile has no published hours, the tile reads *Hours not published yet* instead of a total
 - Dates and times are shown in the time zone the page's data is reported in (the instance's time zone)
 - Connect does not publish who approved or denied a request, so the page does not show it
 - The forecasted coverage chart reaches about a week ahead; requests after the last forecast day are in the table only
@@ -27,8 +28,8 @@ The tiles across the top of the page summarize the selected range:
 
 | Tile | What it shows |
 | --- | --- |
-| **Out today** | Agents on approved leave today, with their hours of leave beneath (or *No leave today*). The information icon explains how the hours are counted. |
-| **Out in range** | Agents on approved leave across the selected range, with their hours (or *No leave in range*). |
+| **Out today** | Agents on approved leave today, with their hours of leave beneath (or *No leave today*, or *Hours not published yet*). The information icon explains how the hours are counted. |
+| **Out in range** | Agents on approved leave across the selected range, with their hours (or *No leave in range*, or *Hours not published yet*). |
 | **Pending** | Requests waiting on a decision, subtitled **All dates**. |
 | **Approved**, **Denied**, **Cancelled** | Requests in each outcome, subtitled **In selected range**. |
 
@@ -73,19 +74,19 @@ The table lists one row per request. By default, pending requests come first, th
 | **Agent** | The agent's name, with their Connect username beneath when available. Click the name to open the agent's Agent 360 profile. |
 | **Category** | The leave category from Connect. |
 | **Dates** | The days the request covers. The year is left out for the current year. |
-| **Duration** | The request's length in hours and minutes (for example 8h 30m). |
+| **Duration** | The request's length in hours and minutes (for example 8h 30m). Shows — when Connect has not published the request's hours, as for a request awaiting a decision. |
 | **Status** | **Pending**, **Approved**, **Denied**, or **Cancelled**. |
 | **Requested** | When the request was made. Appears only when the table has room for it. |
 | **Decided** | When the request reached its current decision. Shows — while the request is pending or when Connect does not have the time. |
 | **Last changed** | When the request last changed in Connect. |
 
-Click a column heading to sort by it, and click it again to reverse the order. Requests with no time in the sorted column are listed last. To return to the default order, click **Default order** above the table.
+Click a column heading to sort by it, and click it again to reverse the order. Requests with no value in the sorted column, such as no time or no published duration, are listed last whichever way the column is sorted. To return to the default order, click **Default order** above the table.
 
 ### Exporting Time Off
 
 In the page header:
 
-- Click **Export CSV** to download every request under the current filters, in the table's order.
+- Click **Export CSV** to download every request under the current filters, in the table's order. A request without published hours has an empty duration cell.
 - Click **Export PDF** to download the tiles, chart, and table as a PDF. The first page lists the date range (or the decided-on day), time zone, request count, and active filters.
 
 See [Exporting Workforce Management Data](wfm-reference.md#exporting-workforce-management-data).
