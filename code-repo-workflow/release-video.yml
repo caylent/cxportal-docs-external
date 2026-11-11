@@ -1,0 +1,337 @@
+# Lives in the CODE repo at .github/workflows/release-video.yml — NOT in the
+# docs repo. Staged here under code-repo-workflow/ for review only.
+#
+# Auto-draft CxPortal GTM assets (video, demo, one-pager) after a release-docs
+# PR merges. Receives a docs-merged repository_dispatch from the docs repo's
+# notify-video.yml and never merges or publishes anything — a human reviews
+# every draft in the #automated-gtm-assets Slack channel.
+#
+# Gating is two-layered:
+#   1. Deterministic pre-check (scripts/classify-release-changes.sh) decides
+#      generate / no_asset / ambiguous from the docs diff introduced by the
+#      merge and the code diff between the previous release tag and this one.
+#   2. For "generate" and "ambiguous", the release-docs skill runs and emits
+#      its own final decision (result.json). For "no_asset", the workflow
+#      posts the no-asset report to Slack and stops.
+#
+# Both outcomes always post to Slack. Silence never means "it worked."
+#
+# Required repo configuration (code repo):
+#   - vars.DOCS_REPO             = <owner>/<docs-repo> (e.g. caylent/cxportal-docs-external)
+#   - vars.BEDROCK_ROLE_ARN      = the shared Bedrock role ARN
+#   - vars.AWS_REGION            = e.g. us-east-1
+#   - vars.SLACK_CHANNEL_ID      = Slack channel ID for #automated-gtm-assets (not name)
+#   - vars.SKILLS_REPO           = <owner>/<skills-repo> (e.g. pronetx/skills)
+#   - secrets.DOCS_READ_TOKEN    = token with Contents: read on the docs repo
+#   - secrets.SKILLS_READ_TOKEN  = token with Contents: read on the skills repo
+#   - secrets.SLACK_BOT_TOKEN    = Slack bot token with chat:write + files:write
+#
+# AWS trust policy: repository_dispatch and workflow_dispatch run on the code
+# repo's default branch (NOT a tag ref). The Bedrock role's trust policy must
+# include an exact-match entry for:
+#   repo:<owner>/<code-repo>:ref:refs/heads/<default-branch>
+# or role assumption fails silently with no tokens.
+
+name: Release video (draft)
+
+on:
+  repository_dispatch:
+    types: [docs-merged]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to (re)process, e.g. 2.22.3"
+        required: true
+      docs_sha:
+        description: "Specific docs merge commit to read. Default: tag ref on the docs repo's main."
+        required: false
+        default: ""
+      force:
+        description: "Skip the significance gate (ad-hoc request, critical education need)."
+        required: false
+        default: "false"
+
+permissions:
+  contents: read
+  id-token: write
+  pull-requests: read
+
+concurrency:
+  group: release-video-${{ github.event.client_payload.tag || github.event.inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      tag: ${{ steps.inputs.outputs.tag }}
+      docs_sha: ${{ steps.inputs.outputs.docs_sha }}
+      docs_pr: ${{ steps.inputs.outputs.docs_pr }}
+      prev_tag: ${{ steps.prev.outputs.prev_tag }}
+      decision: ${{ steps.decide.outputs.decision }}
+      criterion: ${{ steps.decide.outputs.criterion }}
+      evidence: ${{ steps.decide.outputs.evidence }}
+    steps:
+      - name: Validate and normalize inputs
+        id: inputs
+        env:
+          DISPATCH_TAG: ${{ github.event.client_payload.tag }}
+          DISPATCH_SHA: ${{ github.event.client_payload.docs_sha }}
+          DISPATCH_PR: ${{ github.event.client_payload.docs_pr }}
+          MANUAL_TAG: ${{ github.event.inputs.tag }}
+          MANUAL_SHA: ${{ github.event.inputs.docs_sha }}
+        run: |
+          set -euo pipefail
+          TAG="${DISPATCH_TAG:-$MANUAL_TAG}"
+          SHA="${DISPATCH_SHA:-$MANUAL_SHA}"
+          PR="${DISPATCH_PR:-}"
+          TAG_RE='^v?[0-9]+\.[0-9]+\.[0-9]+$'
+          SHA_RE='^[0-9a-f]{7,40}$'
+          [[ "$TAG" =~ $TAG_RE ]] || { echo "::error::Invalid tag from untrusted payload: '$TAG'"; exit 1; }
+          if [ -n "$SHA" ]; then
+            [[ "$SHA" =~ $SHA_RE ]] || { echo "::error::Invalid docs_sha from untrusted payload: '$SHA'"; exit 1; }
+          fi
+          BARE_TAG="${TAG#v}"
+          {
+            echo "tag=$BARE_TAG"
+            echo "docs_sha=$SHA"
+            echo "docs_pr=$PR"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Checkout code repo (for previous-tag resolution and front-end diff)
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Resolve previous release tag
+        id: prev
+        env:
+          TAG: ${{ steps.inputs.outputs.tag }}
+        run: |
+          set -euo pipefail
+          PREV="$(
+            git tag --list 'v*.*.*' '[0-9]*.[0-9]*.[0-9]*' \
+              | sed 's/^v//' \
+              | sort -V \
+              | awk -v cur="$TAG" '$0 == cur {print prev; exit} {prev=$0}'
+          )"
+          echo "prev_tag=${PREV:-}" >> "$GITHUB_OUTPUT"
+          echo "Previous release: ${PREV:-<none>}"
+
+      - name: Checkout docs repo at docs_sha (or tag fallback)
+        uses: actions/checkout@v7.0.1
+        with:
+          repository: ${{ vars.DOCS_REPO }}
+          ref: ${{ steps.inputs.outputs.docs_sha != '' && steps.inputs.outputs.docs_sha || steps.inputs.outputs.tag }}
+          path: docs-repo
+          fetch-depth: 0
+          token: ${{ secrets.DOCS_READ_TOKEN }}
+
+      - name: Classify or force
+        id: decide
+        env:
+          FORCE: ${{ github.event.inputs.force }}
+          TAG: ${{ steps.inputs.outputs.tag }}
+          PREV: ${{ steps.prev.outputs.prev_tag }}
+          DOCS_SHA: ${{ steps.inputs.outputs.docs_sha }}
+        run: |
+          set -euo pipefail
+          if [ "$FORCE" = "true" ]; then
+            {
+              echo "decision=generate"
+              echo "criterion=manual_override"
+              echo "evidence=workflow_dispatch:force=true"
+            } >> "$GITHUB_OUTPUT"
+            echo "Forced generate (manual override)."
+            exit 0
+          fi
+          ./.github/workflows/scripts/classify-release-changes.sh \
+            --tag "$TAG" \
+            --prev "$PREV" \
+            --docs-dir docs-repo \
+            --docs-sha "$DOCS_SHA" \
+            --code-dir . \
+            | tee -a "$GITHUB_OUTPUT"
+
+      - name: Summarize classification
+        env:
+          DECISION: ${{ steps.decide.outputs.decision }}
+          CRITERION: ${{ steps.decide.outputs.criterion }}
+          EVIDENCE: ${{ steps.decide.outputs.evidence }}
+          TAG: ${{ steps.inputs.outputs.tag }}
+          PREV: ${{ steps.prev.outputs.prev_tag }}
+          DOCS_SHA: ${{ steps.inputs.outputs.docs_sha }}
+          DOCS_PR: ${{ steps.inputs.outputs.docs_pr }}
+        run: |
+          {
+            echo "### Release $TAG classification"
+            echo ""
+            echo "- Decision: \`$DECISION\`"
+            echo "- Criterion: \`$CRITERION\`"
+            echo "- Evidence: $EVIDENCE"
+            echo "- Previous release: \`${PREV:-<none>}\`"
+            echo "- Docs SHA: \`${DOCS_SHA:-<tag fallback>}\`"
+            echo "- Docs PR: ${DOCS_PR:+#}$DOCS_PR"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  generate:
+    needs: classify
+    if: needs.classify.outputs.decision == 'generate' || needs.classify.outputs.decision == 'ambiguous'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout code repo
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Checkout docs repo at docs_sha (or tag fallback)
+        uses: actions/checkout@v7.0.1
+        with:
+          repository: ${{ vars.DOCS_REPO }}
+          ref: ${{ needs.classify.outputs.docs_sha != '' && needs.classify.outputs.docs_sha || needs.classify.outputs.tag }}
+          path: docs-repo
+          fetch-depth: 0
+          token: ${{ secrets.DOCS_READ_TOKEN }}
+
+      - name: Checkout skills repo
+        uses: actions/checkout@v7.0.1
+        with:
+          repository: ${{ vars.SKILLS_REPO }}
+          path: skills
+          token: ${{ secrets.SKILLS_READ_TOKEN }}
+
+      - name: Configure AWS credentials for Bedrock
+        uses: aws-actions/configure-aws-credentials@v6.2.3
+        with:
+          role-to-assume: ${{ vars.BEDROCK_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Run release-docs skill (video / demo / one-pager)
+        id: skill
+        env:
+          TAG: ${{ needs.classify.outputs.tag }}
+          PREV_TAG: ${{ needs.classify.outputs.prev_tag }}
+          DOCS_SHA: ${{ needs.classify.outputs.docs_sha }}
+          DOCS_PR: ${{ needs.classify.outputs.docs_pr }}
+          CRITERION: ${{ needs.classify.outputs.criterion }}
+          EVIDENCE: ${{ needs.classify.outputs.evidence }}
+          AWS_REGION: ${{ vars.AWS_REGION }}
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          # The skill is expected to write:
+          #   out/result.json          { "decision": "generate" | "no_asset",
+          #                              "criterion": "...", "evidence": "...",
+          #                              "affected_assets": ["..."] }
+          #   out/assets/*             the generated media files (if generate)
+          #   out/report.md            the human-readable change report
+          #
+          # Invocation path is skill-specific. Wire your runner here, e.g.:
+          #   ./skills/release-docs/run.sh \
+          #     --tag "$TAG" --prev "$PREV_TAG" \
+          #     --docs-dir docs-repo --docs-sha "$DOCS_SHA" \
+          #     --code-dir . \
+          #     --criterion "$CRITERION" --evidence "$EVIDENCE" \
+          #     --out out
+          ./skills/release-docs/run.sh \
+            --tag "$TAG" \
+            --prev "$PREV_TAG" \
+            --docs-dir docs-repo \
+            --docs-sha "$DOCS_SHA" \
+            --code-dir . \
+            --criterion "$CRITERION" \
+            --evidence "$EVIDENCE" \
+            --out out
+          SKILL_DECISION="$(jq -r '.decision' out/result.json)"
+          SKILL_CRITERION="$(jq -r '.criterion // empty' out/result.json)"
+          SKILL_EVIDENCE="$(jq -r '.evidence // empty' out/result.json | tr '\n' ' ')"
+          {
+            echo "skill_decision=$SKILL_DECISION"
+            echo "skill_criterion=$SKILL_CRITERION"
+            echo "skill_evidence=$SKILL_EVIDENCE"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Upload artifacts for reviewer download
+        if: always() && hashFiles('out/**') != ''
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: release-${{ needs.classify.outputs.tag }}-assets
+          path: out/
+          if-no-files-found: ignore
+
+      - name: Post draft to Slack
+        if: steps.skill.outputs.skill_decision == 'generate'
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ vars.SLACK_CHANNEL_ID }}
+          TAG: ${{ needs.classify.outputs.tag }}
+          DOCS_PR: ${{ needs.classify.outputs.docs_pr }}
+          GATE_CRITERION: ${{ needs.classify.outputs.criterion }}
+          GATE_EVIDENCE: ${{ needs.classify.outputs.evidence }}
+          SKILL_CRITERION: ${{ steps.skill.outputs.skill_criterion }}
+          SKILL_EVIDENCE: ${{ steps.skill.outputs.skill_evidence }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          ./.github/workflows/scripts/slack-notify.sh draft
+
+      - name: Post "no asset (skill override)" to Slack
+        if: steps.skill.outputs.skill_decision == 'no_asset'
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ vars.SLACK_CHANNEL_ID }}
+          TAG: ${{ needs.classify.outputs.tag }}
+          DOCS_PR: ${{ needs.classify.outputs.docs_pr }}
+          GATE_CRITERION: ${{ needs.classify.outputs.criterion }}
+          GATE_EVIDENCE: ${{ needs.classify.outputs.evidence }}
+          SKILL_CRITERION: ${{ steps.skill.outputs.skill_criterion }}
+          SKILL_EVIDENCE: ${{ steps.skill.outputs.skill_evidence }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          ./.github/workflows/scripts/slack-notify.sh no_asset_skill
+
+  report_no_asset:
+    needs: classify
+    if: needs.classify.outputs.decision == 'no_asset'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout code repo (for the notifier script)
+        uses: actions/checkout@v7.0.1
+
+      - name: Post "no asset needed" to Slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ vars.SLACK_CHANNEL_ID }}
+          TAG: ${{ needs.classify.outputs.tag }}
+          DOCS_PR: ${{ needs.classify.outputs.docs_pr }}
+          GATE_CRITERION: ${{ needs.classify.outputs.criterion }}
+          GATE_EVIDENCE: ${{ needs.classify.outputs.evidence }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          ./.github/workflows/scripts/slack-notify.sh no_asset_gate
+
+  report_failure:
+    needs: [classify, generate, report_no_asset]
+    if: >-
+      always() &&
+      (needs.classify.result == 'failure' ||
+       needs.generate.result == 'failure' ||
+       needs.report_no_asset.result == 'failure')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout code repo (for the notifier script)
+        uses: actions/checkout@v7.0.1
+
+      - name: Post failure to Slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ vars.SLACK_CHANNEL_ID }}
+          TAG: ${{ needs.classify.outputs.tag || github.event.client_payload.tag || github.event.inputs.tag || 'unknown' }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          ./.github/workflows/scripts/slack-notify.sh failure
