@@ -1,6 +1,6 @@
-# DFC Design and Integration
+# DFC Design and Integration Guide
 
-This page explains how to design a DFC schema and how to use DFC data in your Amazon Connect contact flows. It builds on [Setting Up Entities and Schemas](../setting-up-entities-and-schemas/), [Developer Reference: Node.js Client](../developer-reference-node.js-client/), and [Importing and Exporting Data](../importing-and-exporting-data/), and links to them for step-by-step instructions.
+This guide explains how to design a DFC schema and how to use DFC data in your Amazon Connect contact flows. It builds on [Setting Up Entities and Schemas](../setting-up-entities-and-schemas/), [Developer Reference: Node.js Client](../developer-reference-node.js-client/), and [Importing and Exporting Data](../importing-and-exporting-data/), and links to them for step-by-step instructions.
 
 ## Design Your Schema
 
@@ -9,8 +9,6 @@ Schemas are long-lived. Once items fill a field, its name and type are locked, s
 ### Start from the hub-and-spoke model
 
 Most contact center deployments can start from a common model rather than a blank DFC. A **Contact Source** (where a contact came in) points to an **Experience Config** (how to behave on that contact). The Experience Config is the hub. Schedules, prompts, routing, and AI settings are reusable building blocks that it references.
-
-<!-- CONFIRM: Holidays and Closure are listed as separate entities here. Managing Schedules and Closures describes Closure as a field type on items and never mentions Holidays. Confirm which model is correct. -->
 
 | Entity | What it is | Primary key | Links to |
 |---|---|---|---|
@@ -51,8 +49,6 @@ The primary key should be the natural, stable identifier a flow will use to find
 #### Model sets, not single rows
 
 Do not create one prompt per row. Model a prompt set whose fields are the prompts, for example `welcome`, `firstQuestion`, and `outOfHoursMessage`. Start with a small generic set and extend it as needed, rather than building a large set up front. Add a message by adding a Prompt field.
-
-<!-- CONFIRM: The original draft also said to add text or audio variants with the Text and S3Url naming pattern. That pattern is not documented anywhere I could find, so it was left out. Add it back here if it is a real convention. -->
 
 #### Extend, don't fork
 
@@ -100,7 +96,6 @@ For installation, the code sample, configuration options, and error handling for
 - Entity and item IDs are preserved when you promote configuration by import, so references in your flows and Lambda functions stay valid across environments
 - For installation, the code sample, configuration options, and error handling, see [Developer Reference: Node.js Client](../developer-reference-node.js-client/)
 
-
 ### Pattern: resolve the caller's language
 
 Language selection uses two Experience Config fields plus the flow. DFC holds the data, and the flow does the asking.
@@ -110,9 +105,8 @@ Language selection uses two Experience Config fields plus the flow. DFC holds th
 3. If it is true, the flow asks the caller which language they want and stores the answer in a contact attribute.
 4. The flow takes the Experience Config's prompt set name and reads `prompts/{selectedLanguage}/{name}`.
 
-<!-- CONFIRM: enableLanguageSelection and defaultLanguage are not mentioned on any other current page. Confirm they are the actual field names on the Experience Config entity. -->
+The prompt set name stays the same across languages, and only the language folder changes. Single-language numbers skip step 3. For the structure behind this, see the prompts-by-language worked example on the [Overview](../dynamic-flow-configurator-dfc-homepage/).
 
-The prompt set name stays the same across languages, and only the language folder changes. Single-language numbers skip step 3. 
 ### Pattern: "Are we open?"
 
 Being open takes three checks, not one, which is why Schedule, Holidays, and Closure are separate.
@@ -124,8 +118,6 @@ Being open takes three checks, not one, which is why Schedule, Holidays, and Clo
 | Not closed | Closure | An active ad-hoc or emergency closure covers now |
 
 Open = in Schedule hours AND not a Holidays date AND not under an active Closure. If any check fails, treat the contact center as closed.
-
-<!-- CONFIRM: (1) The docs never state how Schedule and Closure combine, so confirm the all-three-must-pass rule matches the flow kit. (2) The original draft said a Closure has an active toggle that turns it off without deleting it. Managing Schedules and Closures describes no such toggle, so that claim was removed. (3) Confirm Holidays is a separate entity in your instances. -->
 
 Keeping them separate matches how they change. A Schedule changes rarely. Holidays are entered ahead of time. A Closure is created or switched on at short notice.
 
@@ -149,8 +141,6 @@ A kit of reference flows, modules, and Lambda functions can consume this data fo
 
 Using the kit is optional. You can build your own flows against the same data.
 
-<!-- CONFIRM: The flow kit is not mentioned anywhere else in the docs. Confirm customers can get it and how. -->
-
 ### Promote configuration between environments
 
 Use export and import to move configuration from Dev to Production. Export from the root covers every entity and item, and export from an entity covers that entity, its children, and their items. Entity and item IDs are retained, so references in your flows and Lambda functions stay valid, and Connect resource ARNs are rebuilt from resource names in the target. Imports apply immediately, bypass change request approval, overwrite any record with a matching ID, and cannot be reverted. Do not edit the exported file by hand. For validation errors and troubleshooting, see [Importing and Exporting Data](../importing-and-exporting-data/).
@@ -159,11 +149,9 @@ Use export and import to move configuration from Dev to Production. Export from 
 
 ## Behavior to Plan For
 
-<!-- CONFIRM: Setting Up Entities and Schemas states two different lock rules (cannot be deleted or renamed while sub-entities or items exist, and lock once items hold data). The first row below states both. Reconcile them on that page. -->
-
 | Topic | What to expect |
 |---|---|
 | Schema changes over time | Fields lock once items hold data: the name and type cannot change, and the field cannot be deleted until the item data is removed. Fields also cannot be deleted or renamed while sub-entities or items exist. Schema edits go through a change request and show as pending until approved. See [Setting Up Entities and Schemas](../setting-up-entities-and-schemas/). |
-| Links and deletions | An entity can be deleted only when it is empty. Bulk delete is blocked when any selected item has inbound references. Imports are rejected when they reference records missing in the target. Connect resource ARNs are rebuilt by name on import. 
+| Links and deletions | An entity can be deleted only when it is empty. Bulk delete is blocked when any selected item has inbound references. Imports are rejected when they reference records missing in the target. Connect resource ARNs are rebuilt by name on import. See "What happens when a target changes" on the [Overview](../dynamic-flow-configurator-dfc-homepage/). |
 | Change requests and audit | Schema changes, item create, edit, and delete, and bulk actions go through change requests with approval and are recorded in the Audit Log. Approved bulk actions can be reverted. Imports apply immediately, are recorded as one Import entry, and cannot be reverted. See [Bulk Editing and Deleting Items](../bulk-editing-and-deleting-items/) and [Importing and Exporting Data](../importing-and-exporting-data/). |
 | Permissions | Roles are created in CxCentral. Entity tags and approver access are set in DFC Permissions. Schema authoring needs Entity Editor or Admin. Editing items needs Item Editor, and creating items needs Item Creator. Only Admin can create or delete top-level entities and manage permissions. Access is per instance. See [Managing DFC Permissions](../managing-dfc-permissions/). |
