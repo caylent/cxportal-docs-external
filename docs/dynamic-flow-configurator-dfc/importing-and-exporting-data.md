@@ -13,7 +13,7 @@ description: >-
 * Changes from an import apply immediately. The DFC Browser refreshes automatically after import
   &#x20;completes.
 * Import does not place records into the entity you have selected. Every record goes to the entity ID recorded in the file. Selecting a different entity before importing changes nothing about where the data lands.
-* Imports are always auto-approved — they don't route through the change-request approval flow. Imports are always auto-approved — they don't route through the change-request approval flow.
+* Imports are always auto-approved — they don't route through the change-request approval flow. 
 
 !!! note "Key behaviors"
 
