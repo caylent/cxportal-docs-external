@@ -15,6 +15,7 @@ Technical teams define the structure and rules once. Business and operations tea
 
 !!! warning ""
 DFC is designed for teams responsible for managing customer interaction behavior. DFC is not intended for agents and does not require deep technical expertise to use. Common uses:
+
 * Prompt content: update prompt text or message variants in one place and reuse them across flows
 * Hours of operation: store schedules centrally so routing and messaging follow the latest business hours
 * Allow and block lists: store lists such as blocked caller IDs or blocked destinations that flows check while running
