@@ -13,7 +13,6 @@ Technical teams define the structure and rules once. Business and operations tea
 
 [Watch video](https://www.youtube.com/watch?index=2&list=PLpgcSwyApvJBEYmlf0pjnS2XvFjvR8X1Y&v=Y0Pnro-0_bo)
 
-!!! warning ""
 DFC is designed for teams responsible for managing customer interaction behavior. DFC is not intended for agents and does not require deep technical expertise to use. Common uses:
 
 * Prompt content: update prompt text or message variants in one place and reuse them across flows
