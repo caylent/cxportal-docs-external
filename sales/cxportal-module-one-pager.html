@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CxPortal module one-pager · Caylent</title>
+  <link rel="stylesheet" href="one-pager.css">
+</head>
+<body>
+  <div class="chrome">
+    <div class="chrome-copy">
+      <strong>CxPortal module one-pager</strong>
+      <span>Pick a module, edit any line, then print. Letter, margins none, background graphics on, headers off.</span>
+    </div>
+    <label>Module
+      <select id="module" aria-label="Choose a module"></select>
+    </label>
+    <div class="fit-status is-ok" id="fit-status" role="status">Fits on one page</div>
+    <button type="button" id="print">Print / Save PDF</button>
+  </div>
+
+  <div class="stage">
+    <article class="sheet" id="sheet" aria-label="One-pager">
+      <div class="measure" id="measure">
+        <header class="mast">
+          <p class="wordmark">CAYLENT</p>
+          <div>
+            <p class="product-name">CxPortal</p>
+            <p class="product-sub">Amazon Connect</p>
+          </div>
+        </header>
+
+        <section class="main">
+          <div class="eyebrow">
+            <p class="kicker">CxPortal module</p>
+            <div class="chip field" id="f-category" contenteditable="true" spellcheck="true"></div>
+          </div>
+          <div>
+            <h1 class="field" id="f-name" contenteditable="true" spellcheck="true"></h1>
+            <p class="headline field" id="f-headline" contenteditable="true" spellcheck="true"></p>
+          </div>
+
+          <div class="split">
+            <div>
+              <h2 class="kicker">The situation <svg viewBox="0 0 19 12" aria-hidden="true"><path d="M0.875 6H18.5M18.5 6L14 1.5M18.5 6L14 10.5" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg></h2>
+              <div class="pain"><span class="sq"></span><span class="field" id="pain-0" contenteditable="true" spellcheck="true"></span></div>
+              <div class="pain"><span class="sq"></span><span class="field" id="pain-1" contenteditable="true" spellcheck="true"></span></div>
+              <div class="pain"><span class="sq"></span><span class="field" id="pain-2" contenteditable="true" spellcheck="true"></span></div>
+            </div>
+            <div>
+              <h2 class="kicker">What changes <svg viewBox="0 0 19 12" aria-hidden="true"><path d="M0.875 6H18.5M18.5 6L14 1.5M18.5 6L14 10.5" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg></h2>
+              <p class="shift field" id="f-shift" contenteditable="true" spellcheck="true"></p>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="kicker">What your team can do <svg viewBox="0 0 19 12" aria-hidden="true"><path d="M0.875 6H18.5M18.5 6L14 1.5M18.5 6L14 10.5" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg></h2>
+            <div class="caps">
+              <div class="cap"><span class="num">01</span><div><h3 class="field" id="cap-t-0" contenteditable="true" spellcheck="true"></h3><p class="field" id="cap-b-0" contenteditable="true" spellcheck="true"></p></div></div>
+              <div class="cap"><span class="num">02</span><div><h3 class="field" id="cap-t-1" contenteditable="true" spellcheck="true"></h3><p class="field" id="cap-b-1" contenteditable="true" spellcheck="true"></p></div></div>
+              <div class="cap"><span class="num">03</span><div><h3 class="field" id="cap-t-2" contenteditable="true" spellcheck="true"></h3><p class="field" id="cap-b-2" contenteditable="true" spellcheck="true"></p></div></div>
+              <div class="cap"><span class="num">04</span><div><h3 class="field" id="cap-t-3" contenteditable="true" spellcheck="true"></h3><p class="field" id="cap-b-3" contenteditable="true" spellcheck="true"></p></div></div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="kicker">Who it’s for <svg viewBox="0 0 19 12" aria-hidden="true"><path d="M0.875 6H18.5M18.5 6L14 1.5M18.5 6L14 10.5" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg></h2>
+            <div class="people">
+              <div class="person"><h3 class="field" id="person-r-0" contenteditable="true" spellcheck="true"></h3><p class="field" id="person-b-0" contenteditable="true" spellcheck="true"></p></div>
+              <div class="person"><h3 class="field" id="person-r-1" contenteditable="true" spellcheck="true"></h3><p class="field" id="person-b-1" contenteditable="true" spellcheck="true"></p></div>
+              <div class="person"><h3 class="field" id="person-r-2" contenteditable="true" spellcheck="true"></h3><p class="field" id="person-b-2" contenteditable="true" spellcheck="true"></p></div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="band">
+          <h2 class="kicker">Why it matters</h2>
+          <div class="outcomes">
+            <div class="outcome"><h3 class="field" id="out-l-0" contenteditable="true" spellcheck="true"></h3><p class="field" id="out-b-0" contenteditable="true" spellcheck="true"></p></div>
+            <div class="outcome"><h3 class="field" id="out-l-1" contenteditable="true" spellcheck="true"></h3><p class="field" id="out-b-1" contenteditable="true" spellcheck="true"></p></div>
+            <div class="outcome"><h3 class="field" id="out-l-2" contenteditable="true" spellcheck="true"></h3><p class="field" id="out-b-2" contenteditable="true" spellcheck="true"></p></div>
+          </div>
+          <p class="fit field" id="f-fit" contenteditable="true" spellcheck="true"></p>
+          <div class="meta">
+            <div>Prepared for <span class="field" id="f-account" data-keep="true" contenteditable="true" spellcheck="true">{{Account name}}</span></div>
+            <div><span class="field" id="f-seller" data-keep="true" contenteditable="true" spellcheck="true">{{Your name}}</span></div>
+            <div><span class="field" id="f-date" data-keep="true" contenteditable="true" spellcheck="true"></span></div>
+          </div>
+          <p class="partner">AWS Premier Tier Services Partner · <a href="https://caylent.com/services/customer-experience-transformation">caylent.com</a></p>
+        </footer>
+      </div>
+    </article>
+
+    <section class="coaching">
+      <h2>How to use this in the room</h2>
+      <ol>
+        <li>Read the headline and stop. Ask whether that is the result they are missing.</li>
+        <li>Use the three lines under The situation only if they are still describing the old way of working.</li>
+        <li>The green panel is the turn. The four capabilities are proof, so pick the two that match this account.</li>
+        <li>Close on Why it matters, and ask which of the three they would put in front of their leader.</li>
+      </ol>
+      <h3>Before you send it</h3>
+      <ul>
+        <li>The bar at the top must say the page fits. If it does not, shorten a field. Do not shrink the type.</li>
+        <li>Leave numbers off the page unless the figure is this customer’s, or already approved for external use.</li>
+        <li>Starter copy follows the product guides. Read it against the account and change any line that does not fit.</li>
+        <li>Print settings: Letter, scale 100, margins none, background graphics on, headers and footers off.</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    const MODULES = [
+      {
+        id: "blank",
+        label: "Blank template",
+        category: "{{Category}}",
+        name: "{{Module name}}",
+        headline: "{{One sentence a buyer can repeat: the result this module delivers.}}",
+        pains: [
+          "{{The friction the buyer feels on a normal day. One line.}}",
+          "{{A second friction, tied to how the work gets done today.}}",
+          "{{What that costs them: time, risk, or dependence on a few people.}}"
+        ],
+        shift: "{{What is true once this module is in place? Two short sentences. Name who does the work, and what they can now do themselves.}}",
+        caps: [
+          ["{{Capability}}", "{{What the buyer can do, in one line.}}"],
+          ["{{Capability}}", "{{What the buyer can do, in one line.}}"],
+          ["{{Capability}}", "{{What the buyer can do, in one line.}}"],
+          ["{{Capability}}", "{{What the buyer can do, in one line.}}"]
+        ],
+        people: [
+          ["{{Role}}", "{{Why this person cares, in one line.}}"],
+          ["{{Role}}", "{{Why this person cares, in one line.}}"],
+          ["{{Role}}", "{{Why this person cares, in one line.}}"]
+        ],
+        outcomes: [
+          ["{{Outcome}}", "{{The business result, with no invented metric.}}"],
+          ["{{Outcome}}", "{{The business result, with no invented metric.}}"],
+          ["{{Outcome}}", "{{The business result, with no invented metric.}}"]
+        ],
+        fit: "{{Where this sits: CxPortal on Amazon Connect, or say so if it is a different Caylent tool.}}"
+      },
+      {
+        id: "dfc",
+        label: "Dynamic Flow Configurator",
+        category: "Contact handling",
+        name: "Dynamic Flow Configurator",
+        headline: "Business teams change prompts, hours, and routing from CxPortal, while contact-flow logic stays with the technical team.",
+        pains: [
+          "Hours, prompts, and transfer rules live inside contact flows, so a small update waits on a developer.",
+          "A copy or schedule change can become a release that touches every flow sharing that logic.",
+          "Operations cannot move at the pace of the contact center, and a few engineers become the path for every edit."
+        ],
+        shift: "Operations updates the values flows look up: prompts, hours, closures, and routing. The change is available to every flow that uses it. Technical teams define the schema once. The business owns the day-to-day data.",
+        caps: [
+          ["Flow data, apart from flow logic", "Update prompts, hours, allow lists, and transfer destinations while the flow design stays put."],
+          ["One change, every flow", "A value updated here is available to any contact flow that references it."],
+          ["Guardrails included", "Schemas and role-based access keep edits inside the rules technical teams set."],
+          ["Built for a long list", "Bulk edit, import, and export when a seasonal update or a large record set lands at once."]
+        ],
+        people: [
+          ["Business admins", "Own the values customers hear and the rules that route them."],
+          ["Operations teams", "Adjust hours, closures, and transfers as the day changes."],
+          ["Developers", "Define schemas once, then read the data from flows and Lambda."]
+        ],
+        outcomes: [
+          ["Speed", "Experience changes move with the business, on the day they are needed."],
+          ["Control", "Flow logic stays with the people who design it. Data changes stay inside the schema."],
+          ["Ownership", "The team that knows the customer runs the experience after go-live."]
+        ],
+        fit: "Part of CxPortal, on your Amazon Connect environment. Business teams update flow data. Technical teams keep the flow logic."
+      },
+      {
+        id: "flow-analyzer",
+        label: "Flow Analyzer",
+        category: "Contact handling",
+        name: "Flow Analyzer",
+        headline: "See the path of a contact, the failure, and the block to open, in one place.",
+        pains: [
+          "A broken interaction means logs in one console, the flow in another, and a senior engineer to connect them.",
+          "The contact ID, the blocks it hit, Lambda errors, and the transcript are not in the same view.",
+          "An explanation waits on the few people who can read the logs and the flow together."
+        ],
+        shift: "Flow Analyzer opens the contact journey in CxPortal: the path through the flow, the logs, detected problems, and the transcript. From a flagged block, the team can open that step in the Amazon Connect flow editor.",
+        caps: [
+          ["Find the contact", "Search by contact ID, or filter down to the interaction that needs an explanation."],
+          ["The path it took", "Flow view and interaction view show how the contact actually moved."],
+          ["Problems, called out", "Detected issues, flow logs, and Lambda trouble sit next to the path."],
+          ["Open the block", "Jump from a flagged step into the Amazon Connect flow editor."]
+        ],
+        people: [
+          ["Developers and QA", "Trace a contact to the block, the log line, and the Lambda that failed."],
+          ["Operations teams", "Explain what happened on a contact from the same workspace they already use."],
+          ["Support engineers", "Start from the contact ID on the ticket and land on the failure."]
+        ],
+        outcomes: [
+          ["Faster diagnosis", "The journey, the logs, and the failure are already assembled."],
+          ["Broader ownership", "More of the team can investigate a flow, alongside the people who built it."],
+          ["One workspace", "The path and the logs are together. The flow editor is one jump away."]
+        ],
+        fit: "Part of CxPortal, on your Amazon Connect environment. Investigation starts from the contact, in the portal."
+      },
+      {
+        id: "acgr",
+        label: "Amazon Connect Global Resiliency",
+        category: "Resiliency",
+        name: "Amazon Connect Global Resiliency",
+        headline: "Operations redirects contact-center traffic to another Region from one screen during an incident.",
+        pains: [
+          "A regional incident means command-line steps, several consoles, and the few people who know the runbook.",
+          "Traffic, agents, and numbers are split across Regions, with no single operating picture.",
+          "Recovery waits on whoever is on call and can reconstruct the procedure under pressure."
+        ],
+        shift: "CxPortal gives operations one place to watch Region health, manage traffic distribution groups, and run a failover from a saved playbook. Traffic moves. Agent assignments stay as they are.",
+        caps: [
+          ["Region health in one view", "See primary and secondary Region status, and how resources are distributed."],
+          ["Failover playbooks", "Save the scenario in advance, then run it when a Region needs to take over."],
+          ["Traffic distribution groups", "Group the agents and numbers that share a distribution, and adjust it."],
+          ["An operations-led bridge", "The people on the incident can shift traffic from the portal."]
+        ],
+        people: [
+          ["Operations teams", "Watch Region health and trigger failover while the incident is unfolding."],
+          ["Business admins", "Configure traffic distribution groups and playbooks before they are needed."],
+          ["Incident leads", "Run a known scenario from a playbook the team already saved."]
+        ],
+        outcomes: [
+          ["Continuity", "Customers can still reach you when a Region is unavailable."],
+          ["A known procedure", "A saved playbook stands in for assembling commands on the bridge."],
+          ["Visible control", "The traffic shift is explicit, and the team can see what moved."]
+        ],
+        fit: "Part of CxPortal. Failover redirects traffic between Regions by updating distribution. Agent assignments stay in place."
+      },
+      {
+        id: "knowledge",
+        label: "Knowledge Management",
+        category: "Customer engagement",
+        name: "Knowledge Management",
+        headline: "The content behind your Connect agents stays current, tagged, and synced from one workspace.",
+        pains: [
+          "Answers are only as current as the last article someone remembered to publish.",
+          "Knowledge is scattered, so the wrong source surfaces and a resolvable question becomes an escalation.",
+          "Writing, review, and what is actually live sit in different places."
+        ],
+        shift: "Teams keep knowledge bases and articles in CxPortal, tag them so agents can retrieve the right source, compare versions, and sync updates to Connect agents.",
+        caps: [
+          ["Bases and articles", "Create the collections Connect agents reference during a contact."],
+          ["Tags that aid retrieval", "Label bases and articles so the agent can find the right source."],
+          ["See the change", "Compare versions before a new article becomes what customers hear."],
+          ["Sync to Connect", "Publish updates to Connect agents from the same workspace."]
+        ],
+        people: [
+          ["Contact center admins", "Create bases, load articles, and sync them to the agents that use them."],
+          ["Content managers", "Keep articles accurate, tagged, and ready for the next sync."],
+          ["Operations leaders", "Better content shows up as clearer answers and fewer needless escalations."]
+        ],
+        outcomes: [
+          ["Current answers", "Agents respond from the content your team just published."],
+          ["A review path", "Tags, versions, and the sync sit with the people who own the words."],
+          ["A shorter path to live", "A content change reaches Connect agents through a sync."]
+        ],
+        fit: "Part of CxPortal. Knowledge bases sync to Connect agents, which reference them during contact flows."
+      },
+      {
+        id: "q",
+        label: "Q in Connect",
+        category: "Customer engagement",
+        name: "Q in Connect",
+        headline: "Shape the assistant that identifies intent, retrieves knowledge, and answers in the moment.",
+        pains: [
+          "The assistant’s answers depend on prompts and sources few people can safely change.",
+          "Harder issues need more than one step, and that chain is difficult to see or adjust.",
+          "Agents and customers feel it when the assistant is generic or pointed at the wrong source."
+        ],
+        shift: "Administrators shape prompts, AI agents, and knowledge bases in CxPortal. Pre-processing reads intent and searches knowledge. Answer prompts turn that into a response. AI agents chain steps for harder issues, from the contact flow.",
+        caps: [
+          ["Prompts you control", "Tell the assistant how to read the contact and how to write the answer."],
+          ["Agents for harder issues", "Chain prompts so a multi-step problem is worked in the flow."],
+          ["Knowledge behind the answer", "Point the assistant at the bases it should use."],
+          ["Invoked from the flow", "The assistant joins the journey at the step you choose."]
+        ],
+        people: [
+          ["Administrators", "Configure prompts, agents, and knowledge bases, then reference them in flows."],
+          ["Contact center agents", "Get a recommended answer while the customer is still on the contact."],
+          ["Your customers", "Receive a specific response in self-service and in the assisted moment."]
+        ],
+        outcomes: [
+          ["Resolution in the moment", "More issues are handled from the knowledge you maintain."],
+          ["A consistent voice", "Answers follow the prompts and the sources you approved."],
+          ["Fit to the operation", "The assistant is tuned to your flows, your prompts, and your knowledge."]
+        ],
+        fit: "Part of CxPortal. Q in Connect is configured here and invoked from your Amazon Connect contact flows."
+      },
+      {
+        id: "wfm",
+        label: "Workforce Management",
+        category: "Workforce",
+        name: "Workforce Management",
+        headline: "Supervisors see who is off schedule now, and can compare the roster with forecasted demand.",
+        pains: [
+          "Interval reports describe an adherence problem after the queue has already felt it.",
+          "The schedule and what each agent actually did live apart, so supervisors reconcile them by hand.",
+          "Gaps across teams, regions, and lines of business show up late, when the interval is already lost."
+        ],
+        shift: "Live agent status streams in from Amazon Connect. CxPortal lines the schedule up against what the agent did, minute by minute, and rolls that view from one agent to the program.",
+        caps: [
+          ["The floor, live", "Status, time in status, and contacts in progress, updated in under a minute."],
+          ["Adherence as it happens", "A minute-by-minute scheduled-versus-actual view, with out-of-adherence flags."],
+          ["From team to agent", "Open a team scorecard, then the agent’s shifts, activity, and time off."],
+          ["Forecast against the roster", "See understaffed windows while there is still time to cover them."]
+        ],
+        people: [
+          ["Operations teams", "Watch live status and adherence, then open the agent who needs a conversation."],
+          ["Workforce leads", "Compare teams, find schedule gaps, and track adherence against target."],
+          ["Program owners", "See adherence and conformance by line of business, team, region, or routing profile."]
+        ],
+        outcomes: [
+          ["Time to recover", "Adherence issues surface while the interval can still be recovered."],
+          ["One timeline", "Scheduled work and actual activity sit on the same minute-by-minute view."],
+          ["Program scale", "The same picture runs from a single team up to the operation."]
+        ],
+        fit: "Part of CxPortal. Live status streams from Amazon Connect. Schedules come from the Forecasting, Capacity Planning, and Scheduling add-on."
+      },
+      {
+        id: "campaigns",
+        label: "Campaigns",
+        category: "Customer engagement",
+        name: "Campaigns",
+        headline: "Launch voice, SMS, and email outreach from one place, and watch delivery while it is running.",
+        pains: [
+          "Notifications and surveys are assembled outside the contact center, then reconciled afterward.",
+          "Quiet hours, retries, and lists are easy to get wrong when every send is assembled from scratch.",
+          "Leaders see results after the send, when a bad list or a bad message can no longer be caught."
+        ],
+        shift: "Teams create a campaign group, choose voice, SMS, or email, and set the message, the schedule, and the list. The dashboard shows delivery while the campaign is in flight.",
+        caps: [
+          ["Voice, SMS, and email", "Notifications and surveys across the channels your contact center already runs."],
+          ["The send, in one place", "Sender identities, recipient lists, and reusable templates live with the campaign."],
+          ["A schedule that respects people", "Launch now or later, with quiet hours and retry rules on the campaign."],
+          ["Delivery while it runs", "Status and delivery are on the dashboard during the send."]
+        ],
+        people: [
+          ["Business admins", "Set up groups, sender identities, and the rules campaigns run under."],
+          ["Operations teams", "Load lists, launch, and watch delivery and status."],
+          ["Campaign owners", "See performance while there is still time to act on this send."]
+        ],
+        outcomes: [
+          ["One motion for outreach", "Voice, SMS, and email follow the same path from list to launch."],
+          ["A controlled send", "Schedule, quiet hours, and the list are part of the campaign."],
+          ["Visibility in flight", "Delivery is visible while the campaign is still running."]
+        ],
+        fit: "Part of CxPortal. Campaign groups keep outreach, lists, and templates together for the teams who send them."
+      },
+      {
+        id: "pbr",
+        label: "Proficiency-Based Routing",
+        category: "Agents and routing",
+        name: "Proficiency-Based Routing",
+        headline: "Each contact reaches an available agent who meets the skill rule you wrote.",
+        pains: [
+          "Contacts land on whoever is free, then transfer once the real skill need shows up.",
+          "Skill definitions, ratings, and routing logic drift apart as the team changes.",
+          "A routing change is hard to review, schedule, or undo after it runs."
+        ],
+        shift: "Define the skills that matter, rate each agent, and write rules that match a contact to an available agent who qualifies. As people train up, ratings change. Updates follow the same review path as other CxPortal changes.",
+        caps: [
+          ["Skills that match the work", "Attributes such as language or product, on a 1 to 5 scale or labels you define."],
+          ["A profile for every agent", "Rate agents, turn skills on or off, and see who can take which work."],
+          ["Rules that widen in steps", "Start with the best match, then open the pool if no one is available."],
+          ["Review before it runs", "Approve and schedule routing changes, with a record of what changed."]
+        ],
+        people: [
+          ["Contact center admins", "Build attributes, scales, rules, and the assignments behind them."],
+          ["Workforce managers", "See where skills are thin and where routing is missing the right agents."],
+          ["Operations teams", "Update ratings as people are trained, on the assignment view."]
+        ],
+        outcomes: [
+          ["First-contact fit", "The agent who receives the contact meets the rule you wrote."],
+          ["A living skill model", "Ratings and rules change as the team changes, under the same approval path."],
+          ["A record of the change", "Assignments and rule updates can be reviewed, scheduled, and traced."]
+        ],
+        fit: "Part of CxPortal, on Amazon Connect proficiency routing. Rule and rating changes can go through CxPortal change management."
+      },
+      {
+        id: "batch",
+        label: "Agent Batch Editor",
+        category: "Agents and routing",
+        name: "Agent Batch Editor",
+        headline: "Apply one routing, auto-accept, or after-call-work change across the agents you select.",
+        pains: [
+          "Amazon Connect updates agents one record at a time, which stalls on a large floor.",
+          "A campaign, a peak, or a same-day volume shift means dozens of identical edits.",
+          "A missed agent shows up later as a routing miss, after the moment to fix it has passed."
+        ],
+        shift: "Filter to the agents who need the same change. Set routing profile, auto-accept, or after-call-work time once, and apply it to the selection. Where your process requires it, the update waits for approval before it runs.",
+        caps: [
+          ["Select the population", "Filter to the agents who should receive the same update."],
+          ["The changes that matter mid-shift", "Routing profile, auto-accept, and after-call-work time limit."],
+          ["One action, many agents", "The same change applies to every agent in the selection."],
+          ["A check before it runs", "Bulk updates can require approval, and agent data can be exported."]
+        ],
+        people: [
+          ["Business admins", "Keep agent configuration aligned with how the floor is actually staffed."],
+          ["Operations teams", "Reposition agents for a campaign, a peak, or a sudden shift in volume."],
+          ["Workforce managers", "Move a group of agents in one action, from a single filtered list."]
+        ],
+        outcomes: [
+          ["A faster floor change", "One action covers the agents you selected."],
+          ["The same setting everywhere", "Each selected agent gets the same profile, auto-accept, or wrap-up time."],
+          ["A gate when you want one", "Approval can sit in front of the change, with an export of agent data."]
+        ],
+        fit: "Part of CxPortal. Amazon Connect still holds the agent record. This module applies one change to the agents you select."
+      },
+      {
+        id: "change",
+        label: "Change Management",
+        category: "Users and access",
+        name: "Change Management",
+        headline: "Every CxPortal configuration change can be reviewed, scheduled, audited, and reversed.",
+        pains: [
+          "Configuration changes reach production with no single queue for a second set of eyes.",
+          "When something is wrong, the before-and-after state is stuck with the person who made the edit.",
+          "A change set for later is easy to lose track of, and just as hard to stop."
+        ],
+        shift: "Changes from other modules wait in one queue. Approvers accept or reject them, including in bulk. Scheduled changes stay visible and can be cancelled before they run. The audit log keeps who requested the change, who approved it, and the before-and-after state. A completed change can be reverted from that record.",
+        caps: [
+          ["A queue for every change", "Approve or reject requests one by one, or as a bulk group."],
+          ["Schedule, then release", "An approved change can run later, and can be cancelled before it does."],
+          ["A log with a memory", "Who requested it, who approved it, when it ran, and what changed."],
+          ["Revert from the record", "Roll back a change that already ran, from its audit log entry."]
+        ],
+        people: [
+          ["Business admins", "Review requests, turn back what should not run, and revert a bad change."],
+          ["Operations teams", "Watch the log, track what is scheduled, and export records."],
+          ["Risk and compliance", "Follow a change from request to result in one record."]
+        ],
+        outcomes: [
+          ["A reviewer on the change", "Production edits can wait for someone other than the author."],
+          ["A way back", "A change that should not have run can be reversed from its record."],
+          ["A trace", "The request, the approval, and the before-and-after state stay together."]
+        ],
+        fit: "Part of CxPortal. This is the review, schedule, audit, and revert path for changes made in other modules."
+      },
+      {
+        id: "access",
+        label: "Access Management",
+        category: "Users and access",
+        name: "Access Management",
+        headline: "Decide who can see, edit, and approve work in CxPortal, down to the instance.",
+        pains: [
+          "Shared admin access is the shortcut, and it leaves a weak answer for who can change production.",
+          "The same person needs different rights on different Amazon Connect instances.",
+          "Security teams have to ask someone to explain the access model before they can review it."
+        ],
+        shift: "Create a role, assign what it can do, and invite users into it. Global permissions cover portal-wide actions. Instance permissions set what that role can access, edit, or approve on each Amazon Connect instance.",
+        caps: [
+          ["Roles that match the work", "A role is a named set of permissions you assign to people."],
+          ["Global and instance rights", "Separate portal-wide actions from what a role can do on each instance."],
+          ["People under those roles", "Invite users and give them the role that fits the job."],
+          ["Access you can narrow", "Limit rights by instance and by module, including who can approve a change."]
+        ],
+        people: [
+          ["IT and system admins", "Build the role model and keep it aligned with how teams work."],
+          ["Operations managers", "Give supervisors, specialists, and admins the access the job needs."],
+          ["Security and compliance", "See who can do what, and keep production changes with the right roles."]
+        ],
+        outcomes: [
+          ["Rights that match the job", "People receive the modules and instances their work requires."],
+          ["One model, many instances", "The same role can carry different instance rights where the work differs."],
+          ["Something to review", "Access is defined as roles and assignments, and those can be inspected."]
+        ],
+        fit: "Part of CxPortal. Roles control portal-wide actions and, separately, what a person can do on each Amazon Connect instance."
+      },
+      {
+        id: "cases",
+        label: "CxCases",
+        category: "Support",
+        name: "CxCases",
+        headline: "Submit, track, and manage Caylent support requests in CxCentral, beside CxPortal.",
+        pains: [
+          "Support requests live in inboxes, so status depends on who was last copied.",
+          "Leaders cannot see repeat issues across the organization from a single thread.",
+          "Everyday users and company admins need different visibility into the same set of requests."
+        ],
+        shift: "General users submit a case and follow their own requests. Company admins see cases across the organization, manage contacts, update cases in bulk, and use the dashboard to spot patterns.",
+        caps: [
+          ["One place for a request", "Submit a case and follow it from open to resolved."],
+          ["A view that matches the role", "Users see their cases. Company admins see the organization."],
+          ["Bulk updates", "Admins move many cases in one pass when a shared issue changes."],
+          ["Patterns, not only tickets", "The admin dashboard surfaces trends and repeat issues."]
+        ],
+        people: [
+          ["General users", "Open a case, comment, and track the requests they submitted."],
+          ["Company admins", "See every case, manage contacts, and update work in bulk."],
+          ["Support owners", "Use the trend view to catch the issues that keep returning."]
+        ],
+        outcomes: [
+          ["A visible status", "The requester and the admin can both see where a request stands."],
+          ["Less inbox chasing", "Follow-up happens on the case, and admins can update many at once."],
+          ["Support next to the product", "Cases live in CxCentral, with the rest of the Caylent workspace."]
+        ],
+        fit: "CxCases runs in CxCentral, Caylent’s workspace for your products and support, and is powered by Amazon Connect."
+      },
+      {
+        id: "pinpoint",
+        label: "Pinpoint Migration Tool",
+        category: "Migration",
+        name: "Pinpoint Migration Tool",
+        headline: "Move supported Pinpoint campaigns, journeys, segments, templates, and endpoints into Amazon Connect.",
+        pains: [
+          "Pinpoint assets are spread across endpoints, templates, segments, campaigns, and journeys.",
+          "A manual rebuild drops pieces, and no one can say exactly what transferred.",
+          "Cutover planning stalls when there is no preflight and no written result to hand to stakeholders."
+        ],
+        shift: "The Caylent Migration Tool for Amazon Pinpoint checks the source, exports the resources you select, and creates the supported resources in Amazon Connect. A report lists what moved, what was skipped, and what still needs a person.",
+        caps: [
+          ["A preflight first", "Check credentials, permissions, and access before any resource is created."],
+          ["The assets that carry", "Endpoints, templates, segments, campaigns, and eligible journeys."],
+          ["Export, then import", "A command-line path from Pinpoint into the matching Amazon Connect resource."],
+          ["A result you can hand over", "The report names what migrated, what was skipped, and what is manual."]
+        ],
+        people: [
+          ["Migration leads", "Plan the cutover from a preflight and a written result."],
+          ["Developers", "Run the commands, read the output, and work the post-migration list."],
+          ["Stakeholders", "See what moved, instead of asking whether a journey was included."]
+        ],
+        outcomes: [
+          ["A mapped destination", "Each supported Pinpoint resource has a defined home in Amazon Connect."],
+          ["A source left intact", "The tool reads Pinpoint. It does not modify, delete, or overwrite it."],
+          ["A record of the move", "The report is the list of what transferred and what did not."]
+        ],
+        fit: "A Caylent command-line tool on AWS Marketplace. It reads Pinpoint and creates supported resources in Amazon Connect. It does not change the Pinpoint account."
+      }
+    ];
+
+    const byId = Object.fromEntries(MODULES.map((mod) => [mod.id, mod]));
+    const select = document.getElementById("module");
+    const fitStatus = document.getElementById("fit-status");
+    let currentId = "blank";
+    let dirty = false;
+
+    MODULES.forEach((mod) => {
+      const option = document.createElement("option");
+      option.value = mod.id;
+      option.textContent = mod.label;
+      select.appendChild(option);
+    });
+
+    function text(id, value) {
+      const el = document.getElementById(id);
+      el.textContent = value;
+      el.classList.toggle("is-placeholder", value.includes("{{"));
+    }
+
+    function apply(id) {
+      const mod = byId[id];
+      text("f-category", mod.category);
+      text("f-name", mod.name);
+      text("f-headline", mod.headline);
+      mod.pains.forEach((line, i) => text("pain-" + i, line));
+      text("f-shift", mod.shift);
+      mod.caps.forEach(([title, body], i) => {
+        text("cap-t-" + i, title);
+        text("cap-b-" + i, body);
+      });
+      mod.people.forEach(([role, body], i) => {
+        text("person-r-" + i, role);
+        text("person-b-" + i, body);
+      });
+      mod.outcomes.forEach(([label, body], i) => {
+        text("out-l-" + i, label);
+        text("out-b-" + i, body);
+      });
+      text("f-fit", mod.fit);
+      currentId = id;
+      select.value = id;
+      dirty = false;
+      document.title = id === "blank"
+        ? "CxPortal module one-pager · Caylent"
+        : mod.name + " · CxPortal · Caylent";
+      ["f-account", "f-seller", "f-date"].forEach((fieldId) => {
+        const el = document.getElementById(fieldId);
+        el.classList.toggle("is-placeholder", el.textContent.includes("{{"));
+      });
+      checkFit();
+    }
+
+    function checkFit() {
+      const sheet = document.getElementById("sheet");
+      const measure = document.getElementById("measure");
+      const over = measure.offsetHeight > sheet.clientHeight + 1;
+      fitStatus.textContent = over
+        ? "Too long for one page. Shorten a field."
+        : "Fits on one page";
+      fitStatus.classList.toggle("is-ok", !over);
+      fitStatus.classList.toggle("is-bad", over);
+    }
+
+    document.getElementById("f-date").textContent = new Date().toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric"
+    });
+
+    select.addEventListener("change", () => {
+      if (dirty && !window.confirm("Replace the page with the selected module? Edits on the page will be cleared. Account, your name, and the date stay.")) {
+        select.value = currentId;
+        return;
+      }
+      apply(select.value);
+    });
+
+    document.body.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && event.target.classList && event.target.classList.contains("field")) {
+        event.preventDefault();
+      }
+    });
+
+    document.body.addEventListener("paste", (event) => {
+      if (!event.target.classList || !event.target.classList.contains("field")) return;
+      event.preventDefault();
+      const pasted = (event.clipboardData || window.clipboardData).getData("text").replace(/\s+/g, " ").trim();
+      document.execCommand("insertText", false, pasted);
+    });
+
+    document.body.addEventListener("input", (event) => {
+      const target = event.target;
+      if (!target.classList || !target.classList.contains("field")) return;
+      target.classList.toggle("is-placeholder", target.textContent.includes("{{"));
+      if (!target.dataset.keep) dirty = true;
+      checkFit();
+    });
+
+    document.getElementById("print").addEventListener("click", () => {
+      if (fitStatus.classList.contains("is-bad")) {
+        const proceed = window.confirm("This page is taller than one letter sheet. Print anyway?");
+        if (!proceed) return;
+      }
+      window.print();
+    });
+
+    const requested = new URLSearchParams(location.search).get("module");
+    apply(byId[requested] ? requested : "blank");
+    window.addEventListener("load", checkFit);
+  </script>
+</body>
+</html>
