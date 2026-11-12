@@ -1,6 +1,6 @@
-# DFC Design and Integration Guide
+# DFC Design and Integration
 
-This guide explains how to design a DFC schema and how to use DFC data in your Amazon Connect contact flows. It builds on [Setting Up Entities and Schemas](../setting-up-entities-and-schemas/), [Developer Reference: Node.js Client](../developer-reference-node.js-client/), and [Importing and Exporting Data](../importing-and-exporting-data/), and links to them for step-by-step instructions.
+This page explains how to design a DFC schema and how to use DFC data in your Amazon Connect contact flows. It builds on [Setting Up Entities and Schemas](../setting-up-entities-and-schemas/), [Developer Reference: Node.js Client](../developer-reference-node.js-client/), and [Importing and Exporting Data](../importing-and-exporting-data/), and links to them for step-by-step instructions.
 
 ## Design Your Schema
 
@@ -35,7 +35,7 @@ Make it a field when it only ever lives inside its parent and is not reused. Mak
 
 #### Make dimensions entities, not pick lists
 
-If something varies by customer, market, or language, make it a row in a lookup entity rather than a field name or a pick list option. A new row needs no schema change and no change to locked fields. A lookup entity can also carry metadata in one place, for example a Language row holding its locale and voice. For a worked example, see the prompts-by-language example on the [Overview](../dynamic-flow-configurator-dfc-homepage/).
+If something varies by customer, market, or language, make it a row in a lookup entity rather than a field name or a pick list option. A new row needs no schema change and no change to locked fields. A lookup entity can also carry metadata in one place, for example a Language row holding its locale and voice. 
 
 | Poor shape: hardcoded dimensions | Good shape: dimensions as entities |
 |---|---|
@@ -73,18 +73,33 @@ Prefer a small number of well-named root entities, keep sub-entities to five lev
 
 ### How a flow reads DFC
 
-DFC stores configuration, and your contact flow consumes it. A flow invokes a Lambda function that queries DFC by path with the DFC Node.js client, then uses the returned values to decide what to do.
+DFC stores configuration, and your contact flow consumes it. A flow gets DFC data by invoking a Lambda function that queries DFC by path. You have two options:
 
-1. The contact flow invokes the Lambda function and passes it the paths to look up.
-2. The Lambda function calls `queryByPath` (or `queryByPathBatch` for several paths at once) with your Connect instance ID.
+**Option 1: Use the default DFC lookup Lambda (recommended for simple lookups)**
+
+Caylent provides a default DFC lookup Lambda. Invoke it from your flow, passing the path and your Connect instance ID, and it returns the record. Use this option when all you need is to look up a value and branch on it.
+
+1. The contact flow invokes the DFC lookup Lambda and passes it the path to look up and the Connect instance ID.
+2. The Lambda function returns the entity or item. Use the `evaluated` field, which holds the final merged values with entity defaults resolved.
+3. The flow branches on the values and plays prompts, transfers, or applies hours.
+
+**Option 2: Write your own Lambda with the DFC Node.js client**
+
+Use the Node.js package when you want to run other logic in the Lambda before returning to the flow, such as combining several lookups, transforming values, or calling another system.
+
+1. The contact flow invokes your Lambda function and passes it the paths to look up.
+2. Your Lambda function calls `queryByPath` (or `queryByPathBatch` for several paths at once) with your Connect instance ID.
 3. DFC returns the entity or item. Use the `evaluated` field, which holds the final merged values with entity defaults resolved.
-4. The flow branches on the values and plays prompts, transfers, or applies hours.
+4. Your Lambda applies any additional logic and returns the result to the flow, which branches on the values and plays prompts, transfers, or applies hours.
 
-Before you build:
+For installation, the code sample, configuration options, and error handling for the Node.js client, see Developer Reference: Node.js Client.
+
+**Before you build:**
 
 - Check a path in Path Tester first. It shows exactly what the Lambda function will receive
 - Entity and item IDs are preserved when you promote configuration by import, so references in your flows and Lambda functions stay valid across environments
 - For installation, the code sample, configuration options, and error handling, see [Developer Reference: Node.js Client](../developer-reference-node.js-client/)
+
 
 ### Pattern: resolve the caller's language
 
@@ -97,8 +112,7 @@ Language selection uses two Experience Config fields plus the flow. DFC holds th
 
 <!-- CONFIRM: enableLanguageSelection and defaultLanguage are not mentioned on any other current page. Confirm they are the actual field names on the Experience Config entity. -->
 
-The prompt set name stays the same across languages, and only the language folder changes. Single-language numbers skip step 3. For the structure behind this, see the prompts-by-language worked example on the [Overview](../dynamic-flow-configurator-dfc-homepage/).
-
+The prompt set name stays the same across languages, and only the language folder changes. Single-language numbers skip step 3. 
 ### Pattern: "Are we open?"
 
 Being open takes three checks, not one, which is why Schedule, Holidays, and Closure are separate.
@@ -150,6 +164,6 @@ Use export and import to move configuration from Dev to Production. Export from 
 | Topic | What to expect |
 |---|---|
 | Schema changes over time | Fields lock once items hold data: the name and type cannot change, and the field cannot be deleted until the item data is removed. Fields also cannot be deleted or renamed while sub-entities or items exist. Schema edits go through a change request and show as pending until approved. See [Setting Up Entities and Schemas](../setting-up-entities-and-schemas/). |
-| Links and deletions | An entity can be deleted only when it is empty. Bulk delete is blocked when any selected item has inbound references. Imports are rejected when they reference records missing in the target. Connect resource ARNs are rebuilt by name on import. See "What happens when a target changes" on the [Overview](../dynamic-flow-configurator-dfc-homepage/). |
+| Links and deletions | An entity can be deleted only when it is empty. Bulk delete is blocked when any selected item has inbound references. Imports are rejected when they reference records missing in the target. Connect resource ARNs are rebuilt by name on import. 
 | Change requests and audit | Schema changes, item create, edit, and delete, and bulk actions go through change requests with approval and are recorded in the Audit Log. Approved bulk actions can be reverted. Imports apply immediately, are recorded as one Import entry, and cannot be reverted. See [Bulk Editing and Deleting Items](../bulk-editing-and-deleting-items/) and [Importing and Exporting Data](../importing-and-exporting-data/). |
 | Permissions | Roles are created in CxCentral. Entity tags and approver access are set in DFC Permissions. Schema authoring needs Entity Editor or Admin. Editing items needs Item Editor, and creating items needs Item Creator. Only Admin can create or delete top-level entities and manage permissions. Access is per instance. See [Managing DFC Permissions](../managing-dfc-permissions/). |
