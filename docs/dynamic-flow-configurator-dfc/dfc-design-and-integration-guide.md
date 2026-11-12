@@ -1,4 +1,4 @@
-# DFC Design and Integration Guide
+# DFC Design and Integration 
 
 This guide explains how to design a DFC schema and how to use DFC data in your Amazon Connect contact flows. It builds on [Setting Up Entities and Schemas](../setting-up-entities-and-schemas/), [Developer Reference: Node.js Client](../developer-reference-node.js-client/), and [Importing and Exporting Data](../importing-and-exporting-data/), and links to them for step-by-step instructions.
 
