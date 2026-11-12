@@ -9,17 +9,14 @@ DFC separates two things:
 * **Flow logic:** The flow design and decision paths, managed by technical teams
 * **Flow data:** The values the flow looks up while running, managed by businesses and operational teams
 
-Technical teams define the structure and rules once. Business and operations teams manage the values that change day to day.
-
-[Watch video](https://www.youtube.com/watch?index=2&list=PLpgcSwyApvJBEYmlf0pjnS2XvFjvR8X1Y&v=Y0Pnro-0_bo)
-
-DFC is designed for teams responsible for managing customer interaction behavior. DFC is not intended for agents and does not require deep technical expertise to use. Common uses:
+Technical teams define the structure and rules once. Business and operations teams manage the values that change day to day. DFC is not intended for agents and does not require deep technical expertise to use. Common uses:
 
 * Prompt content: update prompt text or message variants in one place and reuse them across flows
 * Hours of operation: store schedules centrally so routing and messaging follow the latest business hours
 * Allow and block lists: store lists such as blocked caller IDs or blocked destinations that flows check while running
 * Transfer routing: define transfer points that send contacts to queues or external destinations, so flows query data at runtime instead of relying on hard-coded routing logic
 
+[Watch video](https://www.youtube.com/watch?index=2&list=PLpgcSwyApvJBEYmlf0pjnS2XvFjvR8X1Y&v=Y0Pnro-0_bo)
 
 ***
 
