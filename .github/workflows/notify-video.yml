@@ -1,0 +1,100 @@
+# Lives in the DOCS repo (caylent/cxportal-docs-external) at
+# .github/workflows/notify-video.yml — NOT in the code repo.
+#
+# When a release-docs PR is merged to main, tell the code repo's "Release Video
+# (draft)" workflow to evaluate that release for new GTM videos. Does nothing for
+# ordinary docs merges. Holds no AI or cloud credentials; its one secret can only
+# send a repository_dispatch to the code repo.
+#
+# Setup:
+#   - Repo variable VIDEO_CODE_REPO = <owner>/<code-repo> (the repo that holds release-video.yml)
+#   - Repo secret   VIDEO_DISPATCH_TOKEN = fine-grained PAT or GitHub App token with
+#     "Contents: write" on THAT repo only (repository_dispatch requires it).
+#     Prefer a GitHub App owned by the org over a personal PAT; a PAT expires
+#     silently and the failure shows up here as a 403/404 at the dispatch step.
+#   - Optional variable RELEASE_BRANCH_PREFIX (default "release-docs/"): the head
+#     branch prefix the release-docs workflow uses for its PRs. CONFIRM THIS
+#     against open-draft-pr.sh; if it is wrong, nothing will ever fire.
+
+name: Notify video automation
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Send a docs-merged event for this tag (e.g. 2.14.0), using the current main commit."
+        required: true
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Find the release this merge documents
+        id: find
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+          MANUAL_TAG: ${{ github.event.inputs.release_tag }}
+          PREFIX: ${{ vars.RELEASE_BRANCH_PREFIX || 'release-docs/' }}
+        run: |
+          set -euo pipefail
+          TAG_RE='^v?[0-9]+\.[0-9]+\.[0-9]+$'
+          PR=""
+
+          if [ -n "$MANUAL_TAG" ]; then
+            TAG="$MANUAL_TAG"
+          else
+            # The merged PR for this commit (works for merge, squash and rebase merges).
+            PRJSON="$(gh api "repos/$REPO/commits/$SHA/pulls" --jq '.[0] // empty')"
+            if [ -z "$PRJSON" ]; then
+              echo "No PR for $SHA (direct push?). Nothing to do."; echo "fire=false" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+            PR="$(jq -r '.number' <<<"$PRJSON")"
+            HEAD_REF="$(jq -r '.head.ref' <<<"$PRJSON")"
+            TITLE="$(jq -r '.title' <<<"$PRJSON")"
+            case "$HEAD_REF" in
+              "$PREFIX"*) ;;
+              *) echo "PR #$PR head '$HEAD_REF' is not a release-docs branch. Nothing to do."
+                 echo "fire=false" >> "$GITHUB_OUTPUT"; exit 0 ;;
+            esac
+            # Tag from the branch name first, then the title. Untrusted text:
+            # only a strict version-number match survives.
+            TAG="$(printf '%s\n%s\n' "$HEAD_REF" "$TITLE" | grep -oE 'v?[0-9]+\.[0-9]+\.[0-9]+' | head -n1 || true)"
+          fi
+
+          if ! [[ "${TAG:-}" =~ $TAG_RE ]]; then
+            echo "::warning::Could not determine a release tag for this merge; not dispatching."
+            echo "fire=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          echo "Release docs merged for $TAG (PR #${PR:-manual}, $SHA)."
+          {
+            echo "fire=true"
+            echo "tag=$TAG"
+            echo "pr=${PR:-}"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Dispatch to the code repo
+        if: steps.find.outputs.fire == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.VIDEO_DISPATCH_TOKEN }}
+          CODE_REPO: ${{ vars.VIDEO_CODE_REPO }}
+          TAG: ${{ steps.find.outputs.tag }}
+          PR: ${{ steps.find.outputs.pr }}
+          SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if [ -z "$CODE_REPO" ]; then echo "::error::VIDEO_CODE_REPO variable is not set"; exit 1; fi
+          gh api "repos/$CODE_REPO/dispatches" \
+            -f event_type=docs-merged \
+            -f "client_payload[tag]=$TAG" \
+            -f "client_payload[docs_sha]=$SHA" \
+            -f "client_payload[docs_pr]=$PR"
+          echo "Dispatched docs-merged for $TAG to $CODE_REPO."
