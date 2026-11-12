@@ -7,7 +7,7 @@ description: Create entities, sub-entities, and schemas, then add items to an en
 ## Before You Begin
 
 * You need a DFC permission level that allows creating entities and editing schemas (**Entity Editor** or **Admin**) to create entities, sub-entities, and define schemas. Adding items requires at least **Item Creator**. See [Managing DFC Permissions](managing-dfc-permissions.md).
-* Plan your schema before adding items. Once items populate a field with data, the field's name and type are locked and the field can't be deleted.
+* Plan your schema before adding items. Once items populate a field with data, the field's name and type are locked and the field can't be deleted. For guidance on how to structure entities, see [DFC Design and Integration](dfc-design-and-integration-guide).
 
 !!! warning
 
