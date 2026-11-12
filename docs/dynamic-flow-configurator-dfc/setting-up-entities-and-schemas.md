@@ -17,7 +17,7 @@ description: Create entities, sub-entities, and schemas, then add items to an en
 
 ### Limits and Constraints
 
-* **Primary key required.** Each schema must define a required primary key. The first field you add to a new schema is always created as the primary key — required and locked to type String. If a schema somehow has fields but no primary key, **Save Changes** shows: "Every Entity needs one Primary field to save. Open a String field and turn on "Primary Key"."
+* **Primary key required.** Each schema must define a required primary key. The first field you add to a new schema is always created as the primary key — required and locked to type String. If a schema somehow has fields but no primary key, **Save Changes** shows: "Every Entity needs one Primary field to save. Open a String field and turn on "Primary Key"." Choose a natural, stable identifier that flows will use to find the item, such as address for a Contact Source, code for a Language, or name for a Schedule. Pick a value that will not need to change.
 * **No slash in primary key values.** Primary key values must not contain a slash (/). Because DFC\
   resolves paths using the format /path/to/entity/, a slash in a primary key value would be interpreted as an additional path segment, causing the query to fail.
 * **Fields lock once items hold data.** When existing items populate a field, the field's name and type are locked and the field can't be deleted. To rename or delete the field, remove the item data first.
