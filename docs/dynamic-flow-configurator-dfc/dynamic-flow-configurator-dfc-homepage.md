@@ -82,34 +82,6 @@ A routing destination shows both at once: its queue lives in Connect, and its ho
 
 Sub-entities inherit their parent's schema, so you define a structure once and reuse it. Inherited fields cannot be changed at the sub-entity level, but you can add more fields to a sub-entity. A field marked Overridable lets items or sub-entities override its default value.
 
-### Worked example: prompts by language
-
-Prompts vary along one axis, language, so they are a natural fit for hierarchy. The prompt set is the unit: its fields are the prompts.
-
-```text
-prompts/                    schema defined here: name (primary key),
-                            welcome, firstQuestion, outOfHours (all Prompt)
-  en-us/                    language sub-entity, inherits the schema
-    main                    item: a filled-in prompt set
-    support
-  es-mx/                    language sub-entity, inherits the schema
-    main
-```
-
-| Level | What lives there | Who changes it |
-| --- | --- | --- |
-| Root (`prompts/`) | The schema: one Prompt field per message slot | Technical team, through a change request |
-| Language folder | A grouping that inherits the schema | Technical team, when a language is added |
-| Item (leaf) | The actual prompt text for one set in one language | Business team |
-
-What this gives you:
-
-- **Add a message** by adding one Prompt field at the root. Language folders inherit it.
-- **Add a language** by creating a sub-entity and adding a row to your Language entity. No schema change.
-- **Reuse names across languages.** An item's primary key only needs to be unique within its folder, so `main` can exist under `en-us/` and `es-mx/`. The path keeps them distinct.
-- **Keep language details in one place.** The flow reads the language code from the path and looks up voice and locale from the Language entity, rather than copying them into every prompt item.
-- **Keep it shallow.** Favor more root-level entities with fewer layers. Limit sub-entities to five levels, which keeps structure clear and queries fast.
-
 ### How changes take effect
 
 Changes to schemas and items are submitted as change requests and take effect once approved.
