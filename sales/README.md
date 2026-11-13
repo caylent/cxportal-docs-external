@@ -6,9 +6,13 @@ The page uses Caylent’s public brand: deep space `#101010`, galaxy green `#97C
 
 ## Open it
 
-Open `cxportal-module-one-pager.html` in Chrome. Keep this folder together. The typeface is `fonts/roboto-latin.woff2`.
+Three copies of the same template live in this folder. Use whichever tool the team has open.
 
-The module menu loads starter copy drawn from the product guides:
+- `cxportal-module-one-pager.html` opens in Chrome. Keep this folder together so `fonts/roboto-latin.woff2` loads. The module menu swaps starter copy without leaving the page.
+- `cxportal-module-one-pager.pptx` is the PowerPoint deck. Slide 1 is the blank template. Each later slide is one module, already filled. Duplicate the slide you need, edit the text, and delete the rest before you send.
+- To use it in Google Drive, upload the PowerPoint file and open it with Google Slides. The deck is US Letter, so the upload keeps the one-page size. Edit there, then download a PDF or a PowerPoint file.
+
+The module menu and the PowerPoint slides use the same starter copy, drawn from the product guides:
 
 - Dynamic Flow Configurator
 - Flow Analyzer
@@ -42,6 +46,8 @@ In the print dialog:
 
 Save as PDF and send the PDF.
 
+In PowerPoint or Google Slides, print or export with one slide per page on US Letter, with background graphics on. Speaker notes stay off the page.
+
 ## How to write a module
 
 Each block has one job:
@@ -58,7 +64,7 @@ Each block has one job:
 | Why it matters | Three business results. No invented metric. |
 | Closing line | Where the module sits: CxPortal on Amazon Connect, or a plain description if it is a different Caylent tool. |
 
-To add a module to the menu, add an object to the `MODULES` list in `cxportal-module-one-pager.html`, using the same fields as the entries already there.
+To add a module to the menu, add an object to the `MODULES` list in `cxportal-module-one-pager.html`, using the same fields as the entries already there. Then rebuild the PowerPoint file with `python3 sales/build_pptx.py`.
 
 ## Rules
 
