@@ -16,7 +16,7 @@ Workforce Management gives supervisors real-time and historical visibility into 
 
 - **Live events stream in from Amazon Connect** — Every agent status change (login, Available, handling a contact, Offline) streams from your Connect instance through Kinesis and lands in CxPortal within seconds. This feeds the Agent Status page, so status, time-in-status, and contacts in progress are genuinely real time.
 - **Schedules arrive from Connect FCS** — Scheduled shifts and activities (Work, Break, Lunch) come from the Amazon Connect Forecasting, Capacity Planning & Scheduling add-on via Athena queries, refreshing roughly every 15 minutes. A just-published schedule change can briefly lag; the stream-health indicator on each page tells you how fresh the data is.
-- **Adherence is computed minute by minute** — CxPortal lines up each agent's scheduled activity against their actual activity for every minute of the day, applying a ±5-minute grace tolerance so a slightly early break doesn't count against the agent. Those per-minute verdicts roll up into everything you see.
+- **Adherence is computed minute by minute** — CxPortal lines up each agent's scheduled activity against their actual activity for every minute of the day, applying the instance's grace tolerance (its **Adherence grace minutes** setting) so a slightly early break doesn't count against the agent. Those per-minute verdicts roll up into everything you see.
 - **Everything is scoped to your instance** — All pages read from the Amazon Connect instance selected in the **Instance** selector, and history is retained at minute granularity for 90 days for scorecard ranges and trend charts.
 
 ## Who Uses This
@@ -55,7 +55,7 @@ Use Workforce Management to:
 - Monitor program-wide adherence and conformance → [Monitoring the Program Dashboard](wfm-program-dashboard.md)
 - See who is out and which time-off requests are waiting on a decision → [Reviewing Team Time Off](wfm-time-off.md)
 - Export a page's main table to CSV, or the page to PDF → [Exporting Workforce Management Data](wfm-reference.md#exporting-workforce-management-data)
-- Check which agents are counted and which targets apply → [Reviewing Workforce Management Settings](wfm-settings.md)
+- Check which agents are counted and which targets apply, set the Program Dashboard's default grouping, or choose which activities count toward time-off estimates → [Reviewing Workforce Management Settings](wfm-settings.md)
 - Review Workforce Management reference materials → [Workforce Management Reference](wfm-reference.md)
 - Review Workforce Management best practices → [Workforce Management Best Practices](wfm-best-practices.md)
 

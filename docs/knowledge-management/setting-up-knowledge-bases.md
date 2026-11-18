@@ -21,7 +21,7 @@ A **Knowledge Base** is a collection of articles that AI Agents reference to pro
 ### Add Knowledge Base <a href="#add-knowledge-base" id="add-knowledge-base"></a>
 
 1. In the left menu, expand **Knowledge Management**.
-2. Click **Knowledge Bases**. The Knowledge Base list page shows your Knowledge Bases, their Type, and Connection.
+2. Click **Knowledge Bases**. The Knowledge Base list page shows your Knowledge Bases, their Type, and Connection. To resize a column, drag the right edge of its header; double-click the edge to restore the column's default width.
 3. In the upper right corner of the screen, click **Actions**.
 4. Click **Add New Knowledge Base**.
 5. Enter Knowledge Base name and S3 bucket.

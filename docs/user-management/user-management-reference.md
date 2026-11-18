@@ -21,7 +21,7 @@
 | **Login Methods** | Password and/or SSO, each with a status badge. |
 | **Role**          | The role assigned to the user.                 |
 
-Click a user's name, or anywhere on their row, to open their detail page. The list header shows **Export Users** and **Add user** buttons and a subtitle with the user count, plus a **Search Users** box and a **Filter by role** dropdown.
+Click a user's name, or anywhere on their row, to open their detail page. The list header shows the heading **My Org’s Users • N** (where N is the user count), **Export Users** and **Add user** buttons, plus a **Search Users** box and a **Filter by role** dropdown.
 
 ***
 

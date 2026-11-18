@@ -95,13 +95,13 @@ The table exports via **Export CSV** in the page header.
 
 **Summary tiles:** **Out today** · **Out in range** (agents on approved leave, with hours) · **Pending** (All dates) · **Approved** · **Denied** · **Cancelled** (In selected range). The status tiles filter the table.
 
-**Table columns:** **Agent** · **Category** · **Dates** · **Duration** · **Status** · **Requested** (shown when the table has room) · **Decided** · **Last changed**. Every column sorts both ways; **Default order** groups Pending, Approved, Denied, then Cancelled, soonest start first.
+**Table columns:** **Agent** · **Category** · **Dates** · **Duration** · **Status** · **Submitted** · **Supervisor** · **Decided** · **Last changed** · **Staffing group**. **Supervisor** and **Staffing group** appear when requests carry staffing groups; **Decided**, **Last changed**, and **Staffing group** appear when the table has room. With staffing groups, requests are listed under one row per staffing group. Every column sorts both ways; **Default order** groups Pending, Approved, Denied, then Cancelled, soonest start first.
 
 **Statuses:** **Pending** · **Approved** · **Denied** · **Cancelled** (shown in neutral grey — a withdrawn request is not a refusal)
 
-**Filters panel:** **Date range** (Today · Next 7d · Next 30d · Custom) · **Decided on** (Today · Pick a day, up to 89 days back) · **Group Filters** · **Agents** · **Status** · **Category**
+**Filters panel:** **Date range** (All · Today · Next 7d · Next 30d · Custom) · **Decided on** (Today · Pick a day, up to 89 days back) · **Group Filters** · **Agents** · **Status** · **Category**
 
-**Per-day chart:** **Forecasted coverage per day** where the forecast reaches the range, otherwise **Agents off per day**. Clicking a day filters the table to it.
+**Forecast and coverage** (closed on arrival, below the table): the per-day chart — **Forecasted coverage per day** where the forecast reaches the range, otherwise **Agents off per day**; clicking a day filters the table to it — and **Headroom by forecast group** (**Day** · **Approved** · **Pending (est.)** · **Headroom** · **If pending approved**).
 
 See [Reviewing Team Time Off](wfm-time-off.md).
 
@@ -116,7 +116,7 @@ Agent Status, Team Scorecard, Agent Scorecard, Forecast, Capacity, and Schedulin
 | **Agent Scorecard** | One row per day of the Adherence detail table |
 | **Forecast, Capacity, and Scheduling** | One row per 15-minute interval of the rolling 12-hour plan; the coverage heat-map is not exported |
 | **Program Dashboard** | One row per Group Performance group |
-| **Time Off** | One row per request under the current filters, in the table's order |
+| **Time Off** | One row per request under the current filters, in the table's order, with estimated duration, staffing group, and supervisors |
 
 - Each CSV holds every row under the current filters and sort, not only the rows on screen. **Export CSV** is unavailable while the page is loading or after a failed load.
 - In the CSV, times carry the page's time-zone offset alongside a UTC column, durations are numbers of minutes, and percentages are plain numbers. An agent with no reading gets an empty cell, not a zero.
@@ -125,11 +125,13 @@ Agent Status, Team Scorecard, Agent Scorecard, Forecast, Capacity, and Schedulin
 
 ## Settings Reference
 
-The **Settings** page is read-only and is visible only to a Workforce Management admin. See [Reviewing Workforce Management Settings](wfm-settings.md).
+The **Settings** page (*Instance-level configuration for WFM views*) shows the instance's Workforce Management configuration. With the WFM Program Dashboard write or admin permission, you can edit the **Program Dashboard default Group By** and **Time-off estimate activities** cards; **Performance thresholds** and **Display defaults** stay read-only (thresholds are edited from the Program Dashboard's gear). Without that permission, the page reads *These settings are read-only for you.* [VERIFY: the Settings menu entry's visibility was not changed in this release — the page is still documented as appearing only for the Workforce Management admin permission] See [Reviewing Workforce Management Settings](wfm-settings.md).
 
 | Card | Contents |
 | --- | --- |
-| **Reporting population** | Headline *n of m agents counted*, then one row per security profile on the instance: **Security profile id** · **Agents** · **Status**, where Status is **Counted**, **Not counted**, or **Unknown**. When no counted security profiles are configured for the instance, every agent is counted and the card reads *No counted security profiles are configured for this instance, so every agent is counted.* |
+| **Reporting population** | Headline *n of m agents counted*, then one row per security profile on the instance: **Security profile** (the profile's name, with its id beneath) · **Agents** · **Status**, where Status is **Counted**, **Not counted**, or **Unknown**. When no counted security profiles are configured for the instance, every agent is counted and the card reads *No counted security profiles are configured for this instance, so every agent is counted.* |
+| **Program Dashboard default Group By** | The grouping the Program Dashboard's Group Performance table opens with. Choose one in **Default Group By** and click **Save**, or click **Use inherited default** to fall back to your company's setting. The card says where the value comes from: *Set for this instance.*, *Inherited from your company's settings.*, or, when nothing is chosen, that the dashboard opens on the first grouping in its list. A link that names a grouping still opens with that one. |
+| **Time-off estimate activities** | Which scheduled activities count toward a pending request's estimated hours: **Activity** · **Type** (Productive, Non-productive, or Leave) · **Paid** (Yes, No, or Unknown) · **Counts toward time off** (a checkbox marked **Default** or **Override**). By default an activity counts when Connect marks it paid. Click **Save** or **Discard changes**; changes apply from the next time-off data refresh. At most 200 activities can differ from the paid default. |
 | **Performance thresholds** | **Adherence** — Target % and At-risk floor %. **Conformance** — a Set a conformance target toggle, with Target % and At-risk floor % |
 | **Display defaults** | **Default time zone** and **Adherence grace minutes** |
 
@@ -177,7 +179,7 @@ Where a page's address names a time zone, a filter, or a drill-in scope, the add
 | **Not tracked** | Every scheduled minute so far is on an activity Connect excludes from adherence |
 
 - Adherence is tracked per minute (**Out of adherence / min** in the legends)
-- A grace tolerance of **±5 minutes** is applied (shown as **±5m grace**)
+- The instance's **Adherence grace minutes** setting (shown read-only on the Settings page under **Display defaults**) is applied as the grace tolerance; the scorecard pages no longer display the value
 - Timelines always show **Top: Scheduled · Bottom: Actual**
 - Scheduled activity types observed: **Work**, **Break**, **Lunch**
 - Actual status values observed: **Available**, **Break**, **Lunch**, **Offline**

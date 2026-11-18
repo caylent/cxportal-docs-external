@@ -17,7 +17,7 @@ On the articles page you can see all of the articles within your Knowledge Base 
 * **Tags**: This column displays the tags on the article.
 * **Summary:** This column displays the AI summary of the article contents.
 
-You can sort the list by **Article Title**, **Path**, **Knowledge Base**, **Association**, **Last Updated**, or **Modified By**.
+You can sort the list by **Article Title**, **Path**, **Knowledge Base**, **Association**, **Last Updated**, or **Modified By**. To resize a column, drag the right edge of its header; double-click the edge to restore the column's default width.
 
 ***
 
