@@ -44,7 +44,15 @@ Use the following steps to add a single article to a Knowledge Base:
 7. Enter content into the content box or click **Upload File** to browse and upload a file from your computer.
    1. You can type and edit directly into the content box. As you input content, you can see the markdown text on the left and a preview of the edited text on the right. The content is saved as a .txt file. Additionally, you can select a template and manually fill in the content sections.
    2. You can upload .txt, .html, .docx, and .pdf files directly from your computer. If you upload a .html file, you can edit the code in the content box.
-8. Once you add your content, click **Create Document**.
+8. (Optional) To associate the article with a contact flow, in the **Flow Association** card on the right, select a contact flow from the **Association** dropdown.
+9. (Optional) To tag the article, in the **Tags** card on the right, click **Add tag +** and add your tags. You can add up to 50 tags to an article. See [Tag Restrictions](managing-tags.md#tag-restrictions) for more information.
+10. Once you add your content, click **Create Document**.
+
+If you added tags or a contact flow association, the article details page shows their sync status while CxPortal applies them in Connect:
+
+* **Syncing tags and flow association to Connect.** The sync is in progress. This usually takes a few seconds.
+* **Still syncing tags and flow association to Connect.** The sync is still running and the page has stopped checking automatically. Refresh the page to check again.
+* **Tags and flow association could not be applied in Connect.** The sync failed. Edit the article and save to try again.
 
 ***
 

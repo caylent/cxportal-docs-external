@@ -95,8 +95,10 @@ When the **Documentation** or **Interactive Demos** list has more than four link
 
 The first time you open a module that has built-in help, a welcome window introduces the module, and it may play a short video. Click **Let's Go** to close the welcome. The help panel stays open behind it so you can keep exploring. The welcome appears once per module, so you won't see it again for that module after you close it.
 
+To turn a help video's sound off or on, click the speaker button in the upper right corner of the video. Your choice applies to every help video, and CxPortal remembers it in your browser the next time you open one. Muting or unmuting with the player's own volume control does the same.
+
 !!! info ""
-    Built-in help appears only on pages you have permission to open. The videos, articles, and demos in each module's help are provided by Caylent and can change between releases. [VERIFY: which modules have built-in help published at release — the content is managed separately and is not part of the release code]
+    Built-in help appears only on pages you have permission to open. The videos, articles, and demos in each module's help are provided by Caylent and can change between releases.
 
 ***
 
