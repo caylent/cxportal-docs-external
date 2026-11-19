@@ -42,7 +42,7 @@ Click **+ Filter** in the Filters panel to narrow the dashboard to specific grou
 ### Grouping the Performance Table
 
 1. In the Group Performance section, open the **Group by** dropdown.
-2. Choose **LOB**, **Team (hierarchy)**, **Region**, **Team (tag)**, or **Routing Profile**. The table opens on the instance's **Program Dashboard default Group By**, set on the Workforce Management [Settings](wfm-settings.md) page; a link that names a grouping opens with that one instead.
+2. Choose **LOB**, **Team (hierarchy)**, **Region**, **Team (tag)**, or **Routing Profile**. The table opens on the instance's **Program Dashboard default Group By**, set on the Workforce Management settings page. A link that names a grouping opens with that one instead.
 3. Read each row against the Adherence status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%.
 4. (Optional) In a row's Actions menu, click **View agents** to list the group's agents, then click an agent to open their Agent 360 profile.
 
