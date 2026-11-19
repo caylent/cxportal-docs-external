@@ -48,7 +48,7 @@ Each column has two tracks — **Top: Scheduled · Bottom: Actual**:
 - The scheduled track shows the planned activities (for example **Work**, **Break**, **Lunch**)
 - The actual track shows what the agent actually did (for example **Available**, **Break**, **Lunch**, **Offline**)
 
-The legend defines the colors: **Productive**, **Non-productive**, **Offline**, and **Out of adherence / min**, with a **±5m grace** tolerance applied.
+The legend defines the colors: **Productive**, **Non-productive**, **Offline**, and **Out of adherence / min**.
 
 ### Reviewing and Exporting Adherence Detail
 

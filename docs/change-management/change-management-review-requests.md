@@ -42,7 +42,7 @@ The target search counts as one active filter, and **Refresh data** reloads its 
 ## Reviewing a Bulk Request
 
 1. Click the row menu on a request with a **Bulk (n)** badge, then click **Review bulk change**.
-2. The dialog shows the request metadata and a **Change Summary** (e.g. "4 records affected") with the values being applied.
+2. The dialog shows the request metadata and a **Change Summary** (e.g. "4 records affected") with the values being applied. When the summary lists **Affected records**, each record shows its stored name, or its record key when no name is available. If names are returned for only some of the records, the list notes "Some names aren't shown." [VERIFY: which bulk change types return stored record names — the names come from the change-management service, not from this release's UI code]
 3. Click **Approve Bulk** or **Reject Bulk** to act on the whole group, or click **View Individual Records** to step through each record before deciding. **Item** is shown for each individual record, not for the bulk request as a whole.
 
 A request that is an individual record inside a bulk request shows a **Bulk** badge beside its target. Its row menu offers only **View bulk change**, which opens the bulk request it belongs to, and it cannot be selected for bulk approval or rejection — act on it from the bulk request instead.

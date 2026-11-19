@@ -11,7 +11,7 @@ The **Team Scorecard** page shows scheduled vs. actual adherence for all agents 
 
 - Ribbon rows include agents with nothing scheduled on the selected day; those rows report a reason in place of a percentage. 
 - Schedule data refreshes from Connect FCS roughly every 15 minutes, so a just-published shift change may lag; check the stream-health indicator for freshness
-- The ±5m grace tolerance is fixed and cannot be changed in the UI
+- The grace tolerance comes from the instance's **Adherence grace minutes** setting and cannot be changed in the UI
 - Gaps in the event stream render as No data (gap) rather than as adherence verdicts
 - Historical days are limited by the 90-day event-history retention
 - A failed refresh does not clear the scorecard — the last successful load stays on screen behind a Refresh failed banner until the next reload succeeds
@@ -28,7 +28,7 @@ The **Team Scorecard** page shows scheduled vs. actual adherence for all agents 
 - **Time Off** — Number of agents on time off
 - **Events Today** — Count of adherence events for the day (labeled Events for Range when viewing a past day)
 
-**Stream health** — Above the KPIs, a stream health indicator reports how fresh the underlying data is along with how many agents are reporting recently and how many have intervals in the selected range. The header also shows a freshness label — Live, Stream stale, or Historical — with Updated n ago · ±5m grace. A banner appears when the stream is minutes or hours behind. A range with no agent events at all is not flagged on the page: off-hours and unstaffed windows are routinely empty, which says nothing about the health of the pipeline.
+**Stream health** — Above the KPIs, a stream health indicator reports how fresh the underlying data is along with how many agents are reporting recently and how many have intervals in the selected range. The header also shows a freshness label — Live, Stream stale, or Historical — with Updated n ago. A banner appears when the stream is minutes or hours behind. A range with no agent events at all is not flagged on the page: off-hours and unstaffed windows are routinely empty, which says nothing about the health of the pipeline.
 
 **Refresh failures** — A live range reloads about every 15 seconds. If a reload fails while data is already on screen, the page keeps the last successful load and shows a banner reading *Refresh failed — showing the last loaded data. Retrying automatically.* with the underlying error in brackets; the next successful reload clears it. Only a failure on the very first load replaces the page with an error. Switching the Amazon Connect instance clears the scorecard first, so a failure for the newly selected instance is never shown as a stale refresh of the previous one.
 
@@ -51,10 +51,6 @@ The legend defines the ribbon colors: **Productive**, **Offline**, **Non-Product
 
 1. In the Filters panel's **Sort** dropdown, choose **Lowest adherence first**, **Highest adherence first**, **Name**, or **Most events**. In both adherence sorts, rows with no adherence figure are listed last, so they do not crowd out the agents who need attention.
 2. In the Filters panel's **Timezone** dropdown, choose **Pacific (PT)**, **Mountain (MT)**, **Central (CT)**, **Eastern (ET)**, or **UTC**. The time axis displays in the selected timezone.
-
-!!! note
-
-    The ribbon header shows the grace tolerance applied to adherence: ±5m grace.
 
 ### Rows With No Adherence Figure
 

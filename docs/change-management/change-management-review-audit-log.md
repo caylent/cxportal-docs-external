@@ -31,7 +31,7 @@ Columns: a selection checkbox, **Change Type**, **Bulk** (a Bulk (n) badge on bu
 3. The **Audit Log Record Details** dialog shows:
     - **Change Type**, **Status**, **Item**, **Requester**, **Requester ID**, **Creation Date**, **Scheduled?**, **Connect Change**, and **Is Bulk Request?** (bulk records only)
     - For single records: a **Before State** / **After State** diff. Added fields are marked **+**, changed fields **~**, deleted fields **-**, with summary badges (e.g. **+2 added**, **~1 changed**). 
-    - For bulk records: a **Change Summary** (e.g. "3 records affected") with counts per record type. Click **View Individual Records** to step through each underlying record's diff. **Item** is shown for each individual record, not for the bulk record as a whole.
+    - For bulk records: a **Change Summary** (e.g. "3 records affected") with counts per record type. When the summary lists **Affected records**, each record shows its stored name, or its record key when no name is available. If names are returned for only some of the records, the list notes "Some names aren't shown." [VERIFY: which bulk change types return stored record names — the names come from the change-management service, not from this release's UI code] Click **View Individual Records** to step through each underlying record's diff. **Item** is shown for each individual record, not for the bulk record as a whole.
 4. Click **Close** when finished.
 
 A record that is an individual item inside a bulk operation is reviewed from its bulk change instead: its row menu offers only **View bulk change**, and it cannot be selected for export.

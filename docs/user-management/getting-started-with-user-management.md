@@ -15,7 +15,7 @@ To access User Management:
 3. In the left menu, click **Users**.
 
 !!! info ""
-    The Users page displays a list of users with the columns **Name** (email), **User ID**, **Login Methods** (Password/SSO with a status badge), and **Role**. The subtitle shows the user count. Above the list, a **Search Users** box and a **Filter by role** dropdown let you narrow the list.
+    The Users page displays a list of users with the columns **Name** (email), **User ID**, **Login Methods** (Password/SSO with a status badge), and **Role**. The list heading, **My Org’s Users • N**, shows the user count. Above the list, a **Search Users** box and a **Filter by role** dropdown let you narrow the list.
 
 
 ***
