@@ -188,6 +188,8 @@ In the items table the field shows the application and alias IDs separated by a 
     • Phone Number
     • Lex Bot
 
+    An Amazon Connect Resource field shows **None** when it has no resource. To clear a selected resource, open the field's resource picker and click **None** at the top of the list; the field is saved with no value. If the field is required, you can't save while it is set to **None**. You can also set a field's default value to **None** in the entity's defaults.
+
 
 **Setting defaults**: For each field, you can add a default value and mark it **Overridable** if items are allowed to override it.
 
