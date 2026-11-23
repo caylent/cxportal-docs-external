@@ -19,6 +19,8 @@ Find the audit log record for the change you want to roll back. See [Reviewing A
 
 > **Note:** Bulk records with **Change Type** **Import** can't be reverted. **Revert** / **Revert Bulk** is disabled — both at the bulk level and for individual records within the group.
 
+> **Note:** Records with **Change Type** **Copy Items** can't be reverted. **Revert** is disabled, and its tooltip reads "Copies cannot be reverted. Delete the copied items from the target entity instead". To undo a copy, delete the copied items from the target entity.
+
 
 The **Status** filter on the Audit Log page includes **Reversion** and **Reverted** values for tracking reverted activity.
 

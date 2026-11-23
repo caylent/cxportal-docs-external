@@ -36,7 +36,7 @@ You can edit existing user information or roles at any time. To edit a user:
    4. To change roles, click **Change Role**.
 
 !!! info ""
-    **Edit Profile** is not shown for a user whose only login method is SSO and who has never signed in — their **Login Methods** reads "Single Sign-On (SSO) · Not logged in yet". Their name is supplied by your identity provider the first time they sign in, so there is no profile to edit yet. The button appears once the user has signed in with SSO, or if they also have a password login method. Every other action is unaffected.
+    **Edit Profile** is also available for a user whose only login method is SSO and who has never signed in — their **Login Methods** reads "Single Sign-On (SSO) · Not logged in yet". You can name the user before their first sign-in. [VERIFY: whether a name set here is kept or replaced by the identity provider's name when the user first signs in with SSO]
 
 ***
 

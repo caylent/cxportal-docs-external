@@ -29,7 +29,7 @@ Entities with children show a sub-entity count on their row, such as "3 sub-enti
 Selecting an entity adds two controls next to its name:
 
 * **Settings** (gear) — Opens the entity's settings page, where you manage its schema. See Setting Up Entities and Schemas.
-* **More** (ellipsis) — Contains **Copy ID** and **Copy Path**, for copying the entity's ID or its query path.
+* **More** (ellipsis) — Contains **Copy ID** and **Copy Path**, for copying the entity's ID or its query path. If your role can bulk edit and create items, it also contains **Copy items to…**, for copying every item in the entity into another entity. See [Bulk Editing and Deleting Items](bulk-editing-and-deleting-items.md#copy-items-to-another-entity).
 
 !!! info ""
     **Note:** The Settings gear and More menu don't appear at the Home (root) level.

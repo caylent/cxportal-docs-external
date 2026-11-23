@@ -84,6 +84,7 @@ Bulk editing is a separate capability, independent of the permission levels. It 
 * Enable it with the **Bulk Editing** toggle in the **Permission Level** section of the role's configuration page.
 * When it's off, the role can't bulk edit or bulk delete — the bulk controls are hidden and any bulk attempt is refused, even if the role can edit or delete individual items.
 * When it's on, the role can bulk edit and bulk delete, still subject to its existing item permissions and entity tags.
+* The capability also controls **Copy items to…** on an entity's **More** menu. The option is shown only when the role has bulk editing, can view items on the entity, and has a permission level that allows creating items. Create rights on the target entity are checked when you choose it.
 * Roles in the **Admin** access mode always have bulk editing. The toggle is on automatically and can't be turned off.
 * The toggle is locked off when the role's derived level is **Item Viewer**, since a read-only role can't edit items.
 * The toggle is also locked off while the role has no access at all — in **None** mode, or in **Tag Level** mode before any tag is assigned. Its description then reads **Grant this role access to configure bulk editing**.
