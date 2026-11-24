@@ -114,7 +114,7 @@ Copy every item from one entity into another entity in the same instance. You do
 The copy is submitted through a change request.
 
 !!! info ""
-    You can't choose the entity you're copying from — it's shown as **Current entity**. If the target can't receive the copy, the entity is unavailable and the reason appears below its name. [VERIFY: the rejection reasons a user can see, such as missing create rights or a different schema — the wording comes from the server and isn't in this release's diff]
+    You can't choose the entity you're copying from — it's shown as **Current entity**. If the target can't receive the copy, the entity is unavailable and the reason appears below its name. 
 
 !!! warning ""
     If a copy stops partway, some items may already have been written to the target. The error lists the items that weren't copied, and the summary is refreshed to show what's left to copy.
