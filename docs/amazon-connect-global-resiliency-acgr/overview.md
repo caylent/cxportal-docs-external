@@ -51,6 +51,7 @@ What you can do in this module:
 * Create, edit, and delete failover scenarios → [**Managing Playbooks**](managing-playbooks.md)
 * Create Traffic Distribution Groups and assign agents and phone numbers → [**Managing Traffic Distribution Groups**](managing-traffic-distribution-groups-tdgs.md)
 * Adjust how agents and phone numbers are distributed between Regions → [**Managing Traffic Distribution Groups**](managing-traffic-distribution-groups-tdgs.md)
+* View which agents are assigned and assign, reassign, or remove agents in bulk → [**Managing Agent Assignments**](managing-agent-assignments.md)
 
 ***
 

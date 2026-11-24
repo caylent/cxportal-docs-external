@@ -6,7 +6,7 @@ To access ACGR:
 
 1. Go to **CxPortal**.
 2. In the left navigation, select **ACGR**.
-3. The module opens to **Dashboard**, **Playbooks**, and **Traffic Distributions**.
+3. The module opens to **Dashboard**, **Playbooks**, **Traffic Distributions**, and **Agents**.
 
 ![](../../assets/images/Us0mArLoi1ihPowlDtze.png)
 

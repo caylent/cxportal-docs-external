@@ -88,7 +88,7 @@ To assign agents to a TDG:
 The selected agents are returned to the unassigned pool and can be added to another TDG.
 
 !!! info ""
-    **Info:** To move an agent from one TDG to another, remove the agent from the current TDG and add them to the target TDG. Agent reassignment is not available as a single action.
+    **Info:** To move agents from one TDG to another in a single action, use the **Agents** page (see [**Managing Agent Assignments**](managing-agent-assignments.md)). On this page, remove the agent from the current TDG and add them to the target TDG.
 
 
 ***
@@ -127,7 +127,7 @@ To add phone numbers to a TDG:
 
 
 !!! info ""
-    **Info:** Reassignment is available for phone numbers only. To change the TDG for an agent, remove the agent from the current TDG and add them to the target TDG.
+    **Info:** On this page, reassignment is available for phone numbers only. To change the TDG for agents, use **Assign to TDG** on the **Agents** page (see [**Managing Agent Assignments**](managing-agent-assignments.md)).
 
 
 ***
@@ -160,7 +160,7 @@ To update distributions manually:
 
 | Problem                                                          | Cause                                                  | Solution                                                                                                  |
 | ---------------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| The **Add Agents** dialog shows "No agents found."               | No unassigned agents exist.                            | Agents already assigned to another TDG must be removed from that TDG first.                               |
+| The **Add Agents** dialog shows "No agents found."               | No unassigned agents exist.                            | Agents already assigned to another TDG must be removed from that TDG first, or moved with **Assign to TDG** on the **Agents** page. |
 | The **Add Phone Numbers** dialog shows "No phone numbers found." | No unassigned phone numbers exist.                     | Numbers created after ACGR was enabled are auto-assigned to the Default TDG; reassign from there instead. |
 | You cannot rename a TDG.                                         | TDG name and description are immutable after creation. | Create a new TDG with the correct name; names and descriptions cannot be changed after creation.          |
 
