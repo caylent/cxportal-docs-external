@@ -251,6 +251,7 @@ nav:
           - Getting Started: amazon-connect-global-resiliency-acgr/getting-started-with-acgr.md
           - Multi-Region Resiliency: amazon-connect-global-resiliency-acgr/acgr-multi-region-resiliency.md
           - Managing Traffic Distribution Groups (TDGs): amazon-connect-global-resiliency-acgr/managing-traffic-distribution-groups-tdgs.md
+          - Managing Agent Assignments: amazon-connect-global-resiliency-acgr/managing-agent-assignments.md
           - Managing Playbooks: amazon-connect-global-resiliency-acgr/managing-playbooks.md
           - Triggering a Failover: amazon-connect-global-resiliency-acgr/triggering-a-failover.md
           - Setting Up SSO Authentication: amazon-connect-global-resiliency-acgr/setting-up-sso-authentication.md
