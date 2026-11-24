@@ -68,6 +68,8 @@ Use the following steps to add multiple articles to a Knowledge Base:
 6. Drag and drop files into the box or browse files on your computer.
 7. Click **Upload Files**.
 
+If some files in the batch can't be confirmed, the other files in the batch are still processed. A notification names the files that could not be confirmed ("Could not confirm *file name*"), and each of those files is marked with an error and its reason in the upload list. The dialog stays open so you can review them; click **Close** when you're done. The dialog closes on its own only when every file uploads successfully.
+
 ***
 
 ### Edit Articles <a href="#edit-articles" id="edit-articles"></a>
