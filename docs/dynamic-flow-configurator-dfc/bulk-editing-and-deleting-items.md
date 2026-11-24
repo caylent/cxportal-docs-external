@@ -29,6 +29,7 @@ Before you can bulk edit or bulk delete:
 * Your role must have the **Bulk editing** capability enabled in DFC Permissions. Without it, the row checkboxes and bulk controls are not shown and any bulk attempt is refused. See [Managing DFC Permissions.](managing-dfc-permissions.md)
 * Roles with the **Admin** permission level always have bulk editing — it's enabled automatically and can't be turned off.
 * You also need the item edit rights (for bulk edit) or delete rights (for bulk delete) on the entity. The bulk-editing capability doesn't add access beyond your existing item permissions.
+* To copy items to another entity, you need view rights on the items in the source entity and a permission level that allows creating items. Create rights on the target entity are checked when you choose it.
 
 !!! note
 
@@ -43,6 +44,7 @@ Before you can bulk edit or bulk delete:
 * **Selection follows the filter.** The header select-all checkbox selects every item currently shown. If the active filter matches more items than are shown, a banner lets you select all matching items.
 * **Bulk delete is all-or-nothing on references.** If any selected item still has inbound references, the whole submission is blocked before a change request is created — including the items that aren't referenced.
 * **Changes apply after approval.** Bulk edits and deletes route through the standard DFC change-request flow. Nothing changes until the request (or an item within it) is approved.
+* **Copies skip existing items and can't be reverted.** When you copy items to another entity, items that already exist in the target are skipped. A copy can't be reverted from the audit log — delete the copied items from the target entity instead.
 
 ***
 
@@ -94,6 +96,28 @@ The deletion is submitted as a single change request. Items are permanently remo
 !!! warning
 
     Bulk delete is a destructive action. If any selected item is still referenced by other items, the whole submission is blocked and nothing is deleted. The error message names the blocking items by their primary key so you can remove them from the selection and retry.
+
+***
+
+### **Copy Items to Another Entity**
+
+Copy every item from one entity into another entity in the same instance. You don't select items for a copy — the whole entity is copied.
+
+1. In the **DFC Browser**, select the entity you want to copy from.
+2. Click **More** (ellipsis) next to the entity's name, then click **Copy items to…**.
+3. The **Copy items to…** dialog opens. Choose the target entity from the entity list. Expand an entity to show its sub-entities, or use the search box to find an entity among the expanded ones.
+4. CxPortal checks the entity you chose and shows a summary, for example "12 items: 10 will be copied, 2 skipped (already exist)". Click **[N] skipped** to see which items are skipped.
+5. Click **Review copy**. The button is unavailable when there are no items to copy.
+6. The **Confirm copy** step shows how many items will be copied from the source to the target, and how many are skipped because they already exist there. Enter an optional **Description**, set the **Criticality**, and optionally set **Schedule For** to schedule the change.
+7. Click **Copy items**. To change the target, click **Back**.
+
+The copy is submitted through a change request.
+
+!!! info ""
+    You can't choose the entity you're copying from — it's shown as **Current entity**. If the target can't receive the copy, the entity is unavailable and the reason appears below its name. 
+
+!!! warning ""
+    If a copy stops partway, some items may already have been written to the target. The error lists the items that weren't copied, and the summary is refreshed to show what's left to copy.
 
 ***
 
@@ -153,5 +177,7 @@ The following scenarios highlight when bulk actions are commonly used.
 | **A field in the Bulk Edit modal is read-only**                                     | Primary, schedule (hours of operation), and closure fields can't be bulk edited                   | Edit these fields on individual items.                                                                                  |
 | **Submission is rejected for batch size**                                           | The selection exceeds 500 items                                                                   | Split the work into batches of 500 items or fewer.                                                                      |
 | **Review changes doesn't open the confirmation step**                               | A value you set doesn't meet its field's validation rules                                         | The message appears under the affected field. Fix the value and click **Review changes** again.                         |
+| **Copy items to… doesn't appear in the More menu**                                  | Your role doesn't have the **Bulk editing** capability, can't view items on the entity, or can't create items | Ask an administrator to check your role in DFC Permissions.                                                             |
+| **A target entity is unavailable in the Copy items to… dialog**                     | It's the entity you're copying from, or the copy check rejected it                                 | Read the reason shown below the entity name, and choose another target.                                                 |
 
 ***
