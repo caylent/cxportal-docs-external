@@ -65,7 +65,7 @@ The user detail page shows:
 6. Update the user's Email Address and Full Name.
 7. Click **Update Profile**.
 
-> **Note:** The Edit Profile option is also available for a user whose only login method is SSO and has never signed in. Their Login Method reads: "Single Sign-On (SSO): Not logged in yet". You can name the user before their first sign-in. [VERIFY: whether a name set here is kept or replaced by the identity provider's name when the user first signs in with SSO]
+> **Note:** The Edit Profile option is also available for a user whose only login method is SSO and has never signed in. Their Login Method reads: "Single Sign-On (SSO): Not logged in yet". You can name the user before their first sign-in.
 
 ### Reset a Password
 
