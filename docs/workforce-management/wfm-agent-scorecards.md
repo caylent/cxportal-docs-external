@@ -21,13 +21,13 @@ The **Agent Scorecard** page shows per-agent adherence and activity KPIs for a d
 
 ### Selecting an Agent and Date Range
 
-1. In the **Search agent** box, type the agent's name.
+1. In the **Search agent** box, type the agent's name or username (*Type a name or username…*).
 2. Select the agent from the matching results.
 3. In the Filters panel under **Range**, choose a date range: **Today**, **7d**, **30d**, or **Custom**. The Filters panel also offers a Routing Profile filter.
    - For **Custom**, click a start date in the calendar, then click an end date.
-4. (Optional) In the Filters panel's **Timezone** dropdown, choose the time zone to read the day in. The scorecard opens in the Amazon Connect instance's time zone, and your choice is remembered for your next visit. The Adherence Timeline's hours, segment details, and event markers all follow it.
+4. (Optional) In the Filters panel's **Timezone** dropdown, choose the time zone to read the day in. The scorecard opens in the Amazon Connect instance's time zone, and your choice is remembered for your next visit. The Adherence Timeline's hours, segment details, and event markers all follow it, and **Today**, **7d**, and **30d** are counted in that time zone.
 
-You can also land on this page with an agent pre-selected by following a drill-in link.
+You can also land on this page with an agent pre-selected by following a drill-in link. When the agent list cannot load, the page reads *Agent directory unavailable — use a drill-in link to load a scorecard.*
 
 
 ### Reading the KPI Cards
@@ -35,7 +35,9 @@ You can also land on this page with an agent pre-selected by following a drill-i
 The scorecard shows the two schedule-quality cards by default:
 
 - **Adherence** — The agent's adherence percentage for the selected range, with a change indicator against the prior period (from last day for **Today**, from last week for **7d**) and the total time in and out of adherence (for example 8h 32m in / 46h out). A per-day chart shows the daily adherence values across the range.
-- **Schedule Conformance** — The agent's conformance percentage. Shows **—** with *awaiting data* until conformance data is available.
+- **Schedule Conformance** — The agent's conformance percentage. Shows **—** with *awaiting data* until conformance data is available. Its per-day chart leaves a gap for a day with no online time.
+
+Percentages and change indicators show two decimals and are cut, not rounded; a change of 0.00 shows as neutral, with no arrow.
 
 Contacts Handled, Avg Handle Time, ACW, and Occupancy are still calculated for the range but are not shown unless they have been switched on for the selected instance. 
 
@@ -53,6 +55,6 @@ The legend defines the colors: **Productive**, **Non-productive**, **Offline**, 
 ### Reviewing and Exporting Adherence Detail
 
 1. Review the Adherence detail table below the timeline — it lists each day in the range.
-2. Review the columns: **Date**, **Scheduled Hours**, **Actual Hours**, **Adherence %**, **Conformance %**, **Exception Count**, and **Exception Types**.
+2. Review the columns: **Date**, **Scheduled Hours**, **Actual Hours**, **Adherence %**, **Conformance %**, **Exception Count**, and **Exception Types**. **Actual Hours** is the agent's online time as Connect reports it.
 3. In the page header, click **Export CSV** to download the table, one row per day in the range.
 4. (Optional) In the page header, click **Export PDF** to download the scorecard as a PDF. See [Exporting Workforce Management Data](wfm-reference.md#exporting-workforce-management-data).

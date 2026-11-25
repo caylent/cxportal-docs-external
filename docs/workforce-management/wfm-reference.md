@@ -119,7 +119,7 @@ Agent Status, Team Scorecard, Agent Scorecard, Forecast, Capacity, and Schedulin
 | **Time Off** | One row per request under the current filters, in the table's order |
 
 - Each CSV holds every row under the current filters and sort, not only the rows on screen. **Export CSV** is unavailable while the page is loading or after a failed load.
-- In the CSV, times carry the page's time-zone offset alongside a UTC column, durations are numbers of minutes, and percentages are plain numbers. An agent with no reading gets an empty cell, not a zero.
+- In the CSV, times carry the page's time-zone offset alongside a UTC column, durations are numbers of minutes, and percentages are plain numbers. Percentages Connect reports are written unrounded; percentages the portal works out keep one decimal. An agent with no reading gets an empty cell, not a zero.
 - **Export PDF** produces a US Letter, portrait report. Every page carries a CxPortal header naming the module and view, and a footer with when it was generated and *Page n of N*. Filter controls are left out of the capture; in their place, page one lists what the report shows — such as instance, period, time zone, agent population, and active filters.
 - While an export runs, the buttons read **Exporting...** or **Generating...**. A failed CSV export shows *The CSV could not be exported. Try again.*
 
@@ -161,7 +161,7 @@ Each value shows the number of agents matching it when the instance reports coun
 
 ## Remembered View Preferences
 
-Agent Status, Team Scorecard, Agent Scorecard, Forecast, Capacity and Scheduling, and the Program Dashboard remember the time zone and group filters you last used, and Agent Status also remembers the ordering. Time Off remembers the group filters, leave categories, and table ordering. Preferences are held per viewer, per Amazon Connect instance, and per page, so switching instance switches preferences with it.
+Agent Status, Team Scorecard, Agent Scorecard, Forecast, Capacity and Scheduling, and the Program Dashboard remember the time zone and group filters you last used, and Agent Status also remembers the ordering. Time Off remembers the group filters, leave categories, and table ordering. Preferences are held per viewer, per Amazon Connect instance, and per page, so switching instance switches preferences with it. Unlike the other preferences, the time zone you pick is shared: choosing one on any Workforce Management page carries it to the other pages for you on that instance. Team Scorecard also remembers the **Show** selection, the **Sort** order, and the agents you searched for.
 
 Where a page's address names a time zone, a filter, or a drill-in scope, the address wins over the remembered preference — a shared link shows its recipient what the sender saw. Pages that carry no preference yet open in the instance's default time zone, and in the browser's time zone where the instance names none.
 
@@ -182,4 +182,5 @@ Where a page's address names a time zone, a filter, or a drill-in scope, the add
 - Scheduled activity types observed: **Work**, **Break**, **Lunch**
 - Actual status values observed: **Available**, **Break**, **Lunch**, **Offline**
 - Adherence is measured over agents with a measured day; agents with no status data for their scheduled time are reported as **No data** rather than averaged into the percentage
+- Adherence and conformance percentages show two decimals and are cut, not rounded — 82.699% reads 82.69%, so a figure just under 100% never reads 100%
 - Conformance is uncapped and can read above 100% when an agent works beyond their scheduled time; the Schedule Conformance Trend axis grows past 100% rather than clipping such a day
