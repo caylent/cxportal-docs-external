@@ -14,15 +14,16 @@ The **Program Dashboard** page shows program-wide adherence and conformance for 
 - Group Performance rolls up by one Group by dimension at a time
 - Schedule Conformance tiles and columns show as unavailable until conformance data exists for the range
 - Schedule Conformance is uncapped — it can read above 100% when an agent works beyond their scheduled time, and the Schedule Conformance Trend axis extends past 100% instead of clipping those days
+- Adherence and conformance percentages show two decimals and are cut, not rounded — 82.699% reads 82.69%, so a figure just under 100% never reads 100%
 - Date ranges are bounded by the 90-day history retention
 
 ## Step-by-Step Instructions
 
 ### Reading the Page
 
-- **KPI tiles** — Total Agents Active, Scheduled Adherence (with the count of agents in adherence), Schedule Conformance, and Agents Off Schedule, with status badges such as Below Target and Needs Attention. The Total Agents Active, Scheduled Adherence and Schedule Conformance labels carry an information icon that opens the metric's definition, a **How it's calculated** list, and its data **Source**.
-- **Trends** — Schedule Adherence Trend and Schedule Conformance Trend charts, each plotted against the target line (Target 92%). The axis runs 0–100% and extends higher when a series reads above 100%, so a day worked beyond schedule is not clipped at the top.
-- **Group Performance** — A table grouped by the Group by dimension (LOB, Team (hierarchy), Region, Team (tag), or Routing Profile) with columns Group Name, Agents, Adherence %, In Adherence, Conformance %, In Conformance (agent-days), and Status. Status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%. A group with no measured agent-days shows — for its percentages and **Not measured** in Status instead of failing the target. A final **All groups** row totals the agents and recomputes adherence and conformance from the summed counts, rather than averaging the groups' percentages. Each row's Actions menu offers **View in Forecast, Capacity, and Scheduling** and **View agents**. The Adherence %, Conformance % and status column headings carry an information icon that opens the metric's definition.
+- **KPI tiles** — Total Agents Active, Scheduled Adherence (with the count of agents in adherence), Schedule Conformance, and Agents Off Schedule, with status badges such as Below Target and Needs Attention. When Connect has no adherence figure for anything in the selection, Scheduled Adherence shows **—** with no status badge rather than 0.0% Below Target, and Agents Off Schedule shows no On Track or Needs Attention verdict until there is a live count. The Total Agents Active, Scheduled Adherence and Schedule Conformance labels carry an information icon that opens the metric's definition, a **How it's calculated** list, and its data **Source**.
+- **Trends** — Schedule Adherence Trend and Schedule Conformance Trend charts, each plotted against the target line (Target 92%). The axis runs 0–100% and extends higher when a series reads above 100%, so a day worked beyond schedule is not clipped at the top. Each point is labelled with its percentage — every day on a 7-day range, and at most 8 evenly spaced days, counted back from the latest, on a longer range. Hovering a point shows its value, for example *Adherence 74.76%*; a day with no conformance figure shows **—**.
+- **Group Performance** — A table grouped by the Group by dimension (for example LOB, Team (hierarchy), Region, Team (tag), Routing Profile, or Staffing Group) with columns Group Name, Agents, Adherence %, In Adherence, Conformance %, In Conformance (agent-days), and Status. Status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%. A group counts as measured when Connect scored any of its time, so past days show figures too; a group Connect scored none of shows — for its percentages and **Not measured** in Status instead of failing the target. Conformance % shows wherever the group had scheduled time. A final **All groups** row totals the agents and shows Connect's adherence and conformance across all the groups, weighted by time, rather than averaging the groups' percentages. The In Adherence and In Conformance headings explain that the percentage beside each count is Connect's figure for the window. Each row's Actions menu offers **View in Forecast, Capacity, and Scheduling** and **View agents**. The Adherence %, Conformance % and status column headings carry an information icon that opens the metric's definition.
 - **Filters** — **+ Filter**, **Date Range** (Today, 7d, 30d, Custom), and a **Timezone** dropdown. The dashboard opens in the instance's time zone, and the time zone and filters you last used are remembered for your next visit.
 
 ### Choosing a Date Range
@@ -42,9 +43,11 @@ Click **+ Filter** in the Filters panel to narrow the dashboard to specific grou
 ### Grouping the Performance Table
 
 1. In the Group Performance section, open the **Group by** dropdown.
-2. Choose **LOB**, **Team (hierarchy)**, **Region**, **Team (tag)**, or **Routing Profile**.
+2. Choose a dimension, for example **LOB**, **Team (hierarchy)**, **Region**, **Team (tag)**, **Routing Profile**, or **Staffing Group**.
 3. Read each row against the Adherence status thresholds: On Target ≥ 92% · At Risk 80–92% · Below Target < 80%.
 4. (Optional) In a row's Actions menu, click **View agents** to list the group's agents, then click an agent to open their Agent 360 profile.
+
+The table opens grouped by the instance's default Group by when that dimension is offered and has values [VERIFY: where the instance's default Group by is configured — the Settings page does not list it]. Otherwise it opens grouped by **Staffing Group** where the instance reports it with values, and otherwise by the first dimension that has values.
 
 !!! info ""
 
@@ -52,4 +55,4 @@ Click **+ Filter** in the Filters panel to narrow the dashboard to specific grou
 
 ### Exporting the Program Dashboard
 
-In the page header, click **Export CSV** to download the Group Performance table, one row per group in the table's order, or click **Export PDF** to download the dashboard as a PDF. See [Exporting Workforce Management Data](wfm-reference.md#exporting-workforce-management-data).
+In the page header, click **Export CSV** to download the Group Performance table, one row per group in the table's order — a cell the table shows as — is left empty — or click **Export PDF** to download the dashboard as a PDF. See [Exporting Workforce Management Data](wfm-reference.md#exporting-workforce-management-data).

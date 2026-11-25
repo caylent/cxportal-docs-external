@@ -38,19 +38,21 @@ The legend defines the ribbon colors: **Productive**, **Offline**, **Non-Product
 
 ### Choosing the Day and Zoom Level
 
-1. In the Filters panel under **Range**, click **Today** to view the current day, or click **Pick a day** and select a date from the calendar. Use the previous/next day arrows to step through days.
+1. In the Filters panel under **Range**, click **Today** to view the current day, or click **Pick a day** and select a date from the calendar. Use the previous/next day arrows to step through days. A day runs from midnight to midnight in the selected time zone, so a daylight-saving changeover day is 23 or 25 hours long, and **Today** is the current calendar day in that zone.
 2. In the Filters panel's zoom dropdown, choose **Full range**, **1 hour**, **2 hours**, **4 hours**, **8 hours**, or **Custom (drag)**.
 
 ### Filtering the Ribbon
 
 1. In the Filters panel, use the **Show** chips to limit which rows appear: **All**, **Scheduled**, **Out of adh.**, or **Time off**.
 2. In the Filters panel, click **+ Filter** under **Group Filters** and choose a dimension (for example LOB, Team (hierarchy), Region, Team (tag), or Routing Profile). Values show how many agents match them when the instance reports counts (for example L1_KY (13)), and a dimension the instance reports no values for opens to **No values**. Selected values appear as chips below **+ Filter**, each with an **✕** remove button; **Clear Filters** at the top of the panel clears them all.
-3. In the search box, type an agent name to find a specific row.
+3. Under **Show**, type an agent's name or username in the search box (*Type a name or username…*) and select one or more agents to find their rows. Each match shows the agent's username under their name.
 
 ### Changing View Options
 
 1. In the Filters panel's **Sort** dropdown, choose **Lowest adherence first**, **Highest adherence first**, **Name**, or **Most events**. In both adherence sorts, rows with no adherence figure are listed last, so they do not crowd out the agents who need attention.
 2. In the Filters panel's **Timezone** dropdown, choose **Pacific (PT)**, **Mountain (MT)**, **Central (CT)**, **Eastern (ET)**, or **UTC**. The time axis displays in the selected timezone.
+
+The **Show** selection, the **Sort** order, and the agents you searched for are remembered for your next visit.
 
 !!! note
 
@@ -73,7 +75,7 @@ Where there are no scored minutes for an agent, the end of the row reads a reaso
 
 ### Opening an Agent's Profile or Scorecard
 
-Click an agent's name to open their Agent 360 profile. To open a scorecard, use the **Search agent** box on the Agent Scorecard page. See [Viewing an Agent's Profile (Agent 360)](#viewing-an-agents-profile-agent-360) and [Reviewing Agent Scorecards](wfm-agent-scorecards.md).
+Click an agent's name to open their Agent 360 profile. The name is a link, so you can also open the profile in a new browser tab. To open a scorecard, use the **Search agent** box on the Agent Scorecard page. See [Viewing an Agent's Profile (Agent 360)](#viewing-an-agents-profile-agent-360) and [Reviewing Agent Scorecards](wfm-agent-scorecards.md).
 
 ### Exporting the Team Scorecard
 
@@ -81,17 +83,19 @@ In the page header, click **Export CSV** to download one row per agent the ribbo
 
 ## Viewing an Agent's Profile (Agent 360)
 
-The Agent 360 page shows a single agent's profile, shift details, and time off for a chosen day. Open it by clicking an agent's name on Agent Status, Team Scorecard, or Time Off.
+The Agent 360 page shows a single agent's profile, shift details, and time off for a chosen day. Open it by clicking an agent's name on Agent Status, Team Scorecard, or Time Off. Where a profile cannot be opened, the name stays a button that explains why.
 
 ### Reading the Page
 
+- **Search agent** — Above the profile card, type a name or username (*Type a name or username…*) and select one of up to 8 matches to switch to that agent's profile. Reads *Agent directory unavailable.* when the agent list cannot load.
+- **Shift timezone** — Choose the time zone the shift details read in: the day's boundaries, **Today**, the Staff Shifts, Scheduled Shift Activities and Actual Activities times, and the Timeline's axis and hover details. Time Off requests that cover whole days still read in the instance's time zone.
 - **Profile card** — The agent's identity above a row of fields: **Time zone**, **Staffing group**, **Forecast group**, **Shift profile**, **Rotation**, **Demand group** (**Demand groups** when there is more than one), and **Username**. Each demand group is listed on its own line with how the agent came to be in it in brackets — *(assigned directly)* or *(inherited from staffing group)*. A group whose origin the data does not report is listed on its own, without a clause. Rotation and the demand groups appear only when the agent has them.
 - **Shift Information** — Choose the day with **Today** or **Pick a day**, or step through days with the previous/next arrows. The chosen day is kept in the page address, so a link to the profile reopens on the same day.
 - **Staff Shifts** — The agent's shift for the day, with Start, End, Last Update, and Overtime.
 - **Scheduled Shift Activities** — One row per scheduled activity (for example Work, Break, Lunch) with Status (In Progress, Scheduled), Start, and End.
 - **Actual Activities** — The agent's recorded activity for the day, one row per stretch with **Activity**, **Start**, **Duration**, and an **Adherence** chip — **Adherent** (✓), **Non-adherent** (✗), or **Unscheduled** (no glyph). Shows *No recorded activity for this day.* when nothing has been recorded.
 - **Now divider** — On today, both activity tables show a **Now** row where the current time falls, so the day reads as done above and still to come below.
-- **Activity summary** — Above the tables, two panels summarize the day. **Time by activity** totals the day's actual activity per status as ranked bars, each with its duration and share of observed time (for example 2h 30m (31%)). **Adherence stats** lists **Adherence**, **Conformance**, **Worked**, and **Scheduled**, plus **Out of adherence** and **Unscheduled** when there is any. Unscheduled is time with nothing scheduled over it and is excluded from the adherence score, and Conformance can read over 100% when the agent worked more than was rostered. While the day is still running, both panel labels end in **· intraday** (for example Adherence stats · intraday) because they score only the part of the day that has happened; a finished day carries no marker.
+- **Activity summary** — Above the tables, two panels summarize the day. **Time by activity** totals the day's actual activity per status as ranked bars, each with its duration and share of observed time (for example 2h 30m (31%)). **Adherence stats** lists **Adherence**, **Conformance**, **Worked**, and **Scheduled**, plus **Out of adherence** and **Unscheduled** when there is any. Adherence and Conformance are Connect's figures for the day, shown with two decimals, or **—** when Connect has none. Where Connect scores by UTC day and that day differs from the one shown, a note reads *Adherence and conformance are Connect's figures for the UTC day <day>*. Unscheduled is time with nothing scheduled over it and is excluded from the adherence score, and Conformance can read over 100% when the agent worked more than was rostered. While the day is still running, both panel labels end in **· intraday** (for example Adherence stats · intraday) because they score only the part of the day that has happened; a finished day carries no marker.
 - **Timeline** — Three stacked tracks for the day, mirroring the Team Scorecard ribbon: an **Adherence per minute** band that marks only out-of-adherence stretches, in light blue, a **Scheduled** lane, and an **Actual** lane. Hovering a segment shows which track it belongs to, what it was, and its time range, and highlights the matching segment in the other lane. On today, a blue **NOW** rule marks the current time and the remainder of the Actual lane is dashed to show it has not happened yet. The axis is trimmed to the day's activity plus two hours either side rather than always spanning 12A–11P. Shows *Nothing to visualize for this day.* when both lanes are empty.
 - **Time Off** — PTO Balance as of the current date and Staff Time Off requests. The balance, hours used, and each request's **Duration** read in hours and minutes (for example 8h 30m), or — for a request whose hours Connect has not published; an overdrawn balance keeps its minus sign. A notice warns that time-off balance data may not reflect current accruals; verify in your HR system for payroll decisions.
 - **Forecasted queues** — Below the shift and time-off sections, a card listing the queues whose volume is forecast for the agent's forecast group, as chips, with the total in a badge beside the title. Where the agent's forecast group is known, the card names it under the title — *From forecast group <name>*. A list longer than 12 shows the first 12 with a **+ N more queues** control; click it to expand, then **Show less** to collapse. An agent whose forecast group has no aligned queues reads *No queues aligned to this agent's forecast group.* A **Demand Groups** card sits alongside it, and is hidden when the agent has none.
